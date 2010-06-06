@@ -1,0 +1,24 @@
+{% load cms_tags cache %}
+
+{% for child in children %}
+
+	{% if child.selected or child.ancestor %}
+		<li class="act"><a href="{{ child.get_absolute_url }}" title="{{ child.get_menu_title }}">{{ child.get_menu_title }}</a>
+	{% else %}
+	        <li><a href="{{ child.get_absolute_url }}" title="{{ child.get_menu_title }}">{{ child.get_menu_title }}</a>
+	{% endif %}
+
+        {% if child.children.all %}<ul>{% endif %}
+        {% for subchild in child.children.all %}
+          {% if subchild.ancestor %}
+             <li class="act"><a href="{{ subchild.get_absolute_url }}" title="{{ subchild.get_menu_title }}">{{ subchild.get_menu_title }}</a></li>
+          {% else %}
+             <li><a href="{{ subchild.get_absolute_url }}" title="{{ subchild.get_menu_title }}">{{ subchild.get_menu_title }}</a></li>
+          {% endif %}
+        {% endfor %}
+        {% if child.children.all %}</ul>{% endif %}
+
+        </li>
+
+{% endfor %}
+

@@ -1,0 +1,54 @@
+{% load cms_tags %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="{{ lang }}" xml:lang="{{ lang }}" >
+  <head>
+    <title>I2A Solutions &gt; {% page_attribute page_title %}</title>
+    <meta name="description" content="{% page_attribute meta_description %}"/>
+    <meta name="keywords" content="{% page_attribute meta_keywords %}"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+    <meta http-equiv="imagetoolbar" content="no" />
+    <link rel="stylesheet" media="screen" type="text/css" href="/site_media/css/style.css" />
+    <!--[if lt IE 8]> <link href="/site_media/css/style_ie.css" rel="stylesheet" type="text/css"> <![endif]-->
+
+    <script type="text/javascript" src="/site_media/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/site_media/js/chili-1.7.pack.js"></script>
+    <script type="text/javascript" src="/site_media/js/jquery.cycle.all.min.js"></script>
+    {% block head %}{% endblock %}
+  </head>
+  <body>
+
+  <div id="main">
+    <div id="tel_head">
+      <span class="lang">Call us: <strong>(818) 887 1234</strong></span>
+      <span class="lang">Language: {% language_chooser %}</span>
+      <div class="clear"></div>
+    </div>
+
+    <a href="{% page_id_url "home" %}" title=""><img src="/site_media/img/logo.png" alt="Logo" /></a>
+
+    <div id="menu">
+     <ul>
+         {% show_menu 0 100 100 100 %}
+     </ul>
+     <div class="clear"></div>
+    </div>
+
+    {% block pageheader %}{% endblock %}
+
+    {% block content %}{% endblock %}
+
+    <div class="linki">
+      {% show_menu 0 100 100 100 "cms/footer_menu.html" %}
+    </div>
+  </div>
+
+  <div id="footer">
+    <div>
+      &copy; Copyright 2010 <a href="">I2A Solutions</a>. All rights reserved.<br />
+      Use of this website signifies your agreement to the <a href="">Terms of Use</a> and <a href="">Online Privacy Policy</a>.
+    </div>
+  </div>
+  
+  </body>
+</html>

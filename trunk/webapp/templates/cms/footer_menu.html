@@ -1,0 +1,15 @@
+{% load cms_tags cache %}
+
+{% for child in children %}
+
+     {% if child.children.all %}
+        <b>{{ child.get_menu_title }}</b> :
+
+        {% for subchild in child.children.all %}
+          <a href="{{ subchild.get_absolute_url }}" title="{{ subchild.get_menu_title }}">{{ subchild.get_menu_title }}</a>
+          {% if not forloop.last %} | {% endif %}
+        {% endfor %}
+        <br/>
+     {% endif %}
+
+{% endfor %}

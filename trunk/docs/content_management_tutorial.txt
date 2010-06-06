@@ -1,0 +1,11 @@
+=============================================
+I2A website - Content Management Tutorial
+=============================================
+
+
+Panel Administrator
+-------------------
+
+Panel Administrator is available under the following URL: <web site URL>/admin/
+
+Username / password: admin / i2a123

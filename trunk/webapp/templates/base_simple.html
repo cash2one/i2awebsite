@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+
+{% block head %}
+<script type="text/javascript">
+    $('.slideshow div').cycle({
+      fx:     'fade',   //scrollLeft
+      timeout: 3000,
+      delay:   -1400
+    });
+</script>
+{% endblock %}
+
+{% block pageheader %}
+    <div id="welcome">
+      <br /><br /><br /><br /><br />
+      <div class="slideshow">
+        <h1>Welcome to I2A Web Solutions</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        <div>
+          <img src="/site_media/img/people.png" alt="" />
+          <img src="/site_media/img/people_bw.png" alt="" />
+        </div>
+      </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    {% placeholder "content" %}
+{% endblock %}
