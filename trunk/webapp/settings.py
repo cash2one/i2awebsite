@@ -7,8 +7,8 @@ if platform.node() == "CORE2":
     APPLICATION_ROOT = 'D:\\_Develop\\i2awebsite\\webapp'
     DEBUG = True
 else:
-    APPLICATION_URL = 'http://www.i2asolutions.com'
-    APPLICATION_ROOT = '/home/sddev/neubloc/trunk/webapp'
+    APPLICATION_URL = 'http://web.i2asolutions.com'
+    APPLICATION_ROOT = '/var/sites/i2awebsite-dev/webapp'
     DEBUG = False
 
 TEMPLATE_DEBUG = DEBUG
