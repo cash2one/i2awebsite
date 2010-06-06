@@ -1,0 +1,32 @@
+<VirtualHost *:80>
+ServerName web.i2asolutions.com
+
+
+    # Django settings
+    WSGIScriptAlias / /var/sites/i2awebsite-dev/webapp/wsgi_handler.py
+    WSGIDaemonProcess i2awebsite user=www-data group=www-data processes=1 threads=10
+    WSGIProcessGroup i2awebsite
+
+
+<LocationMatch ^/(.*)$>
+    #AuthName "Restricted Area"
+    #AuthType Basic
+    #AuthUserFile /etc/apache2/userpwd
+    #Require valid-user
+
+    SetOutputFilter DEFLATE
+    SetEnvIfNoCase Request_URI \
+      \.(?:gif|jpe?g|png)$ no-gzip dont-vary
+</LocationMatch>
+
+<LocationMatch ^(/(site_media|media))>
+  SetOutputFilter DEFLATE
+  SetEnvIfNoCase Request_URI \
+    \.(?:gif|jpe?g|png)$ no-gzip dont-vary
+  SetHandler None
+</LocationMatch>
+
+Alias /media /usr/lib/python2.5/site-packages/django/contrib/admin/media
+Alias /site_media /var/sites/i2awebsite-dev/webapp/site_media
+
+</VirtualHost>
