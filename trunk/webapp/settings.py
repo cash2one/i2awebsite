@@ -87,7 +87,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.middleware.csrf.CsrfResponseMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
-    'django.contrib.messages.middleware.MessageMiddleware',
+    #'django.contrib.messages.middleware.MessageMiddleware',
     'cms.middleware.page.CurrentPageMiddleware',
     'cms.middleware.user.CurrentUserMiddleware',
     'cms.middleware.multilingual.MultilingualURLMiddleware',
@@ -159,7 +159,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.admin',
     'django.contrib.sites',
-    'django.contrib.messages',
+    #'django.contrib.messages',
     'django.contrib.sitemaps',
     'tinymce',
     'cms',
@@ -174,3 +174,6 @@ INSTALLED_APPS = (
     'publisher',
     'reversion'
 )
+
+CACHE_BACKEND = 'locmem://'
+GOOGLE_MAPS_API_KEY = 'ABQIAAAAeYdkrvcHC7_L2VlgMmesdBSCosKOIM1bMMBAEnWIcBy4h0fBrxRoBlJW_DcVkFub1AfgGJkj7XXipQ'
