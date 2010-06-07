@@ -2,9 +2,10 @@
 import sys
 import platform
 
-if platform.node() == "CORE2":
+                   
+if platform.node() == "ELIJOT":
     APPLICATION_URL = 'http://localhost:8000'
-    APPLICATION_ROOT = 'D:\\_Develop\\i2awebsite\\webapp'
+    APPLICATION_ROOT = 'F:\\www\\i2a_2\\webapp'
     DEBUG = True
 else:
     APPLICATION_URL = 'http://web.i2asolutions.com'
@@ -65,6 +66,7 @@ CMS_TEMPLATES = (
         ('base_home.html', gettext('home')),
         ('base_simple.html', gettext('simple')),
         ('base_twocolumns.html', gettext('twocolumns')),
+        ('base_contact.html', gettext('contact_form')),
 )
 
 TEMPLATE_LOADERS = (

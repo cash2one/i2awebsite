@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+
+{% block content %}
+   <table cellspacing="0" cellpadding="0">
+   <tr>
+    <td valign="top">
+     <div class="box4c">
+        <table><tr><td style="width:370px;vertical-align:top;">
+        {% placeholder "p_center" %}
+        
+        <div id="form">
+        <form action="" method="post">
+          <label for="email">E-mail:<br />
+            <input class="txt" type="text" name="email" />
+          </label>
+          
+          
+          <label for="email">Name, surname:<br />
+            <input class="txt" type="text" name="name" />
+          </label>
+          
+          
+          <label for="email">Your message:<br />
+            <textarea class="txt" name="message"></textarea>
+          </label>
+          
+          <input type="button" id="send" value="Send" />
+       </form>
+       </div>
+       </td>
+       <td style="width:430px;vertical-align:top;">
+        {% placeholder "p_right" %}
+       </td>
+       </tr></table>
+     </div>
+    </td>
+    
+   </tr>
+   </table>
+{% endblock %}
