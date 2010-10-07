@@ -6,7 +6,7 @@
   while($row = db_fetch_object($result)){              
     $node = node_load(array('nid'=>$row->nid));
     if($node->status){
-      array_push($advert_data,array('nid'=>$node->nid,'title'=>$node->title,'body'=>$node->body,'position'=>$node->position,'filepath'=>$node->field_image[0]['filepath'],'filename'=>$node->field_image[0]['filename']));
+      array_push($advert_data,array('nid'=>$node->nid,'title'=>$node->title,'body'=>$node->body,'position'=>$node->position,'filepath'=>$node->field_image[0]['filepath'],'filename'=>$node->field_image[0]['filename'],'more'=>$node->field_more[0]['value']));
     }
   }
 ?>
@@ -97,9 +97,15 @@
                         <div class="left" style="background:url('. base_path() .'/'.$ad['filepath'].') top left no-repeat;">&nbsp;</div>
                         <div class="right">
                           <h1>'.$ad['title'].'</h1>
-                            '.$ad['body'].'
-                          <div class="orange-button main-orange"><a href="" title="'.$ad['title'].'">Learn more &raquo;</a></div>
-                        </div>   
+                            '.$ad['body'];
+                          
+                          if($ad['more']){
+                            echo'<div class="orange-button main-orange">';
+                            echo'<a href="'.$ad['more'].'" title="'.$ad['title'].'">Learn more &raquo;</a>';
+                            echo'</div>';
+                          }
+                        
+                        echo'</div>   
                       </div>';
                 }
               }
