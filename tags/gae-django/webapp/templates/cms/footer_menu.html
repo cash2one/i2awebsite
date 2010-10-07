@@ -1,0 +1,34 @@
+{% load cms_tags cache %}
+
+<!--{% for child in children %}
+
+     {% if child.children.all %}
+        <b>{{ child.get_menu_title }}</b> :
+
+        {% for subchild in child.children.all %}
+          <a href="{{ subchild.get_absolute_url }}" title="{{ subchild.get_menu_title }}">{{ subchild.get_menu_title }}</a>
+          {% if not forloop.last %} | {% endif %}
+        {% endfor %}
+        <br/>
+     {% endif %}
+
+{% endfor %}     -->
+
+<b>Product Design, Development: </b>
+  <a href="/expertise/product-design-development/saas-applications/" title="SaaS Applications">SaaS Applications</a> |
+  <a href="/expertise/product-design-development/mobile-applications" title="Mobile Applications">Mobile Applications</a>
+  <a href="/expertise/product-design-development/embedded-applications" title="Embedded Applications">Embedded Applications</a>  
+  <br />
+  
+<b>IT Solutions:</b>
+  <a href="/expertise/it-solutions/saleforce-solutions" title="">Saleforce.com Solutions</a>
+  <a href="/expertise/it-solutions/sugarcrm-solutions" title="">SugarCRM Solutions</a>
+  <a href="/expertise/it-solutions/google-apps-engine-solutions" title="">Google Apps Engine Solutions</a>
+  <a href="/expertise/it-solutions/telecom" title="">Telecom</a>
+  <br />  
+
+<b>Web Sites & SEO Services:</b>
+  <a href="/expertise/web-sites-seo-services/web-sites" title="">Web Sites</a>
+  <a href="/expertise/web-sites-seo-services/seo-services" title="SEO Services">SEO Services</a>
+  <br />
+    

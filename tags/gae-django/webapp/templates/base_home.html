@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+{% load cms_tags cache %}
+
+{% block head %}
+  <script type="text/javascript">
+    $('.slideshow div').cycle({
+      fx:     'fade',   //scrollLeft
+      timeout: 3000,
+      delay:   -1400
+      //speedOut: 200,
+      //before:  onBefore,
+      //after:   onAfter,
+      //next:   '#next2',
+      //prev:   '#prev2'
+    });
+
+    function onBefore() {
+      $('#output_in').html(this.title);
+    }
+
+    function onAfter() {
+      $('#output_in').html(this.title);
+    }
+  </script>
+{% endblock %}
+
+
+{% block pageheader %}
+    <div id="welcome">
+      
+      <div class="slideshow">
+         
+        <div>
+          <div style="background:url(/site_media/img/0.png) right top no-repeat;">
+            Product Design, Development<br /><br />
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br /><br /> 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.<br />
+          </div>  
+          <div style="background:url(/site_media/img/1.png) right top no-repeat;">
+            IT Solutions<br /><br />
+            Lorem Ipsum has been the industry's standard.<br /><br />
+            Dummy text ever since the 1500s, when an unknown printer took...<br />
+          </div>
+          <div style="background:url(/site_media/img/2.png) right top no-repeat;">
+            Web Sites<br /><br />
+            Lorem Ipsum is simply dummy text of the printing.<br /><br />
+            And typesetting industry. Lorem Ipsum has been the industry's standard dummy.  
+          </div>
+          <div style="background:url(/site_media/img/3.png) right top no-repeat;">
+            SEO Services<br /><br />
+            Lorem Ipsum is simply dummy text of the printing.<br /><br />
+            And typesetting industry. Lorem Ipsum has been the industry's standard dummy.  
+          </div>
+          </div>
+          
+        </div>
+      </div>
+            
+{% endblock %}
+
+
+{% block content %}
+      <div class="clear"></div>
+
+      {% block box_left %}
+      <div class="box1">
+        {% placeholder "box left" %}
+      </div>
+      {% endblock %}
+
+      {% block box_middle %}
+      <div class="box2">
+        {% placeholder "box middle" %}
+      </div>
+      {% endblock %}
+
+      {% block box_right %}
+      <div class="box3">
+        {% placeholder "box right" %}
+      </div>
+      {% endblock %}
+
+      <div class="clear"></div>
+
+      <!--{% block box_bottom %}
+      <div class="box4">
+        {% placeholder "box bottom" %}
+      </div>
+      {% endblock %}
+
+      {% block box_bottom_right %}
+      <div class="box3">
+        {% placeholder "box bottom right" %}
+      </div>
+      {% endblock %}      -->
+    <div class="clear"></div>
+
+{% endblock %}

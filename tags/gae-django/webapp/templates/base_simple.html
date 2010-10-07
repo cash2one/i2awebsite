@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load cms_tags cache %}
+
+
+
+{% block content %}
+    
+    <div class="clear"></div>
+
+      {% block box_bottom %}
+      <div class="box4">
+        {% placeholder "box bottom" %}
+      </div>
+      {% endblock %}
+
+      {% block box_bottom_right %}
+      <div class="box5">
+        {% placeholder "box bottom right" %}
+      </div>
+      {% endblock %}      
+    <div class="clear"></div>
+
+{% endblock %}
