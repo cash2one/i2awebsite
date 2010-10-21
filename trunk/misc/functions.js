@@ -14,7 +14,7 @@ $(function(){
     .cycle({ 
         fx:     'turnDown', 
         speed:  'fast', 
-        timeout: 0, 
+        timeout: 4000,
         pager:  '.menu-adv' 
   });
    
@@ -128,8 +128,9 @@ $(function(){
   
   br=$(".breadcrumb").text();
   if(br){
-    breadcrumbs=br.replace(/»/gi,'&gt;');
+    breadcrumbs=br.replace(/&raquo;/gi,'&gt;');
     breadcrumbs=breadcrumbs.replace(/&amp;/gi,'&');
+    breadcrumbs=breadcrumbs.replace(/Home Â»/gi,' ');
     breadcrumbs=breadcrumbs.replace(/\//gi,' &raquo; ');
     $("#breadcrumbs").html(breadcrumbs);
     $("#breadcrumbs :first(a)").css('color','#008AAD');

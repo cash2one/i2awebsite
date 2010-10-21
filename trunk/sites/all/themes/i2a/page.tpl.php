@@ -43,9 +43,10 @@
           <div class="clear"></div>
         </div>
         <?php
-          
           if(!empty($node->field_baner[0]['filepath']))
             $baner=base_path().$node->field_baner[0]['filepath'];
+          elseif($node->nid==26)
+            $baner=base_path().path_to_theme().'/images/baner-contact.png';
           else
             $baner=base_path().path_to_theme().'/images/baner.png';
         ?>
