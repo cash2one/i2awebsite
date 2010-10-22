@@ -87,8 +87,8 @@ ul.nice-menu-down li ul li ul, #header-region ul.nice-menu-down li ul li ul{left
 .menu-adv a:hover{text-decoration:none;color:#008AAD}
 .menu-adv a.activeSlide{color:#008aad;}
 .main-adv li{background:transparent;}
-
-.orange-button{border:#df8e0b 1px solid;color:#ffffff;font-weight:bold;padding:2px 5px;background:url(images/orange-button-bg.gif) #FFB027 bottom left repeat-x;}
+.main-adv .right p{margin-bottom:10px;}
+.orange-button{border:#df8e0b 1px solid;color:#ffffff;font-weight:bold;padding:2px 5px;margin-top:10px;background:url(images/orange-button-bg.gif) #FFB027 bottom left repeat-x;}
 .main-orange{width:85px;}
 .orange-button a{color:#ffffff;}
 .orange-button a:hover{text-decoration:none;}
@@ -221,11 +221,16 @@ li a.active{color:#5895BE;font-size:12px}
 .portfolio-box{padding:10px 8px;width:190px;height:160px;float:left;border:#ddd 1px solid;margin-bottom:15px;}
 .portfolio-box h1{text-align:center;font-size:14px;color:#455560;margin:5px 0;}
 .portfolio-box img{width:180px;border:#D1DADE 1px solid;margin:0px auto;}
+.portfolio-box-margin{margin-right:15px;}
 .img-box{width:180px;height:105px;border:#D8E5E9 1px solid;background:#EDEEEE;margin:0px auto;}
 .more-link{background:url(images/more.png) top right  no-repeat;padding-right:15px;color:#007EA0;height:11px;}
 .portfolio-opt li{list-style: none url();float:left;list-style-image: url();font-size:11px;}
 .portfolio-opt .left-p{width:120px;}
 .portfolio-opt .right-p{text-align:right;width:60px;color:#424242;font-weight:bold;}
 
+.paginator {font-size:11px;text-align:center;color:#323232;}
+.paginator a{margin:0 5px;}
+.paginator .inactive{color:#323232;}
+.paginator .active{color:#008AAD;}
 
   

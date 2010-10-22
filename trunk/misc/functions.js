@@ -1,5 +1,17 @@
+
+
+
 $(function(){
-  
+  itemsPerPage = 4;
+  paginatorStyle = 1;
+  paginatorPosition = 'bottom';
+  enableGoToPage = false;
+  $("#result").pagination();
+
+  $("#result .portfolio-box").click(function(){
+    cnt=$(this).html();
+  });
+
   //corners
   $(".login-box").corner("5px br bl");
   $(".portfolio-box").corner("5px");
@@ -132,8 +144,9 @@ $(function(){
   if(br){
     breadcrumbs=br.replace(/&raquo;/gi,'&gt;');
     breadcrumbs=breadcrumbs.replace(/&amp;/gi,'&');
-    breadcrumbs=breadcrumbs.replace(/Home »/gi,' ');
+    breadcrumbs=breadcrumbs.replace(/Home » Home/gi,'Home');
     breadcrumbs=breadcrumbs.replace(/\//gi,' &raquo; ');
+    breadcrumbs=breadcrumbs.replace(/Home/gi,'<b>Home</b>');
     $("#breadcrumbs").html(breadcrumbs);
     $("#breadcrumbs :first(a)").css('color','#008AAD');
    }
