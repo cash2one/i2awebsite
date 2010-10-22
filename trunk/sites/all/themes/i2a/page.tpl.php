@@ -1,3 +1,18 @@
+<?php 
+  if($node->nid==8){
+    $portfolio_data=array();
+    $type="'portfolio'";
+    $sql = "SELECT * FROM {node} WHERE type = $type";
+    $result = db_query($sql); 
+    while($row = db_fetch_object($result)){              
+      $port_node = node_load(array('nid'=>$row->nid));
+      //print_r($port_node);
+      if($port_node->status){
+        array_push($portfolio_data,array('nid'=>$port_node->nid,'title'=>$port_node->title,'body'=>$port_node->body,'filepath'=>$port_node->field_image[0]['filepath'],'filepath'=>$port_node->field_screen_image[0]['filepath'],'www'=>$port_node->field_www[0]['value']));
+      }
+    }
+  }
+?>
 <?php
 // $Id: page.tpl.php,v 1.18.2.1 2009/04/30 00:13:31 goba Exp $
 ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
@@ -42,7 +57,7 @@
           <?php endif; ?>
           <div class="clear"></div>
         </div>
-        <?php
+        <?php 
           if(!empty($node->field_baner[0]['filepath']))
             $baner=base_path().$node->field_baner[0]['filepath'];
           elseif($node->nid==26)
@@ -84,7 +99,13 @@
           <?php print $help; ?>
           <?php print $breadcrumb ?>
           <div class="clear-block">
-            <?php print $content ?>
+            <?php
+              $u=strstr($_SERVER['REQUEST_URI'],'/edit');
+              if($node->nid==8 && !strlen($u))
+                include('portfolio.php'); 
+              else
+                print $content 
+            ?>
           </div>
           <?php print $feed_icons ?>
           <div id="footer"><?php print $footer_message . $footer ?></div>
@@ -97,7 +118,10 @@
       <?php endif; ?>
        
        
-       <?php include('social.php'); ?>
+       <?php 
+          $footer=true;
+          include('social.php'); 
+       ?>
        <div class="clear"></div>
       </div>
       
@@ -116,12 +140,12 @@
               echo'<br />';
             }
             else{
-              echo'<div class="follow-us">';
+              /*echo'<div class="follow-us">';
               include('social.php');
-              echo'</div>';
+              echo'</div>';*/
+              ;
             }
           ?>
-          
           
           
           <div class="contact-us">

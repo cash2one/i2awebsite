@@ -94,13 +94,14 @@ ul.nice-menu-down li ul li ul, #header-region ul.nice-menu-down li ul li ul{left
 .orange-button a:hover{text-decoration:none;}
 
 .txt{padding:0;margin:0;}
-.txt .node{border:0;}
+.txt .node{border:0;margin-bottom:0px;}
+.node .content,.clear-block{margin-bottom:0;}
 .txt .left h2,.txt h1{color:#008AAD;font-size:18px;font-weight:bold;margin-bottom:10px;}
 .txt h3{font-size:14px;font-weight:bold;margin:10px 0 5px 0;}
 .txt h2{font-weight:normal;}
-.txt .follow{float:left;margin:3px 0 0 0}
-.txt h2.follow{float:left;}
-.follow li{float:left;margin:0 5px;background:transparent;padding:0;}
+.txt .follow{float:left;margin:3px 0 10px 0}
+.txt h2.follow{float:left;margin:5px 0 0 0;}
+.follow li{float:left;margin:0 10px 0 0;background:transparent;padding:0;}
 .txt h1.orange{color:#ff9600;}
 .txt .left{width:656px;margin:15px 20px 0 0;float:left;}
 .txt .left p{margin:0 0 15px 0;text-align:justify;}
@@ -210,6 +211,21 @@ html.js .resizable-textarea textarea{width:370px;}
 #site-map .site-map-box ul{padding-left:3em;}
 li a.active{color:#5895BE;font-size:12px}
 .field-field-baner{display:none;}
+
+/*portfolio*/
+.col-left{width:200px;float:left;margin-right:15px;}
+.col-right{width:440px;float:left;}
+.col-right ul li{background:transparent;padding:0;margin:10px 0 0 0;}
+
+
+.portfolio-box{padding:10px 8px;width:190px;height:160px;float:left;border:#ddd 1px solid;margin-bottom:15px;}
+.portfolio-box h1{text-align:center;font-size:14px;color:#455560;margin:5px 0;}
+.portfolio-box img{width:180px;border:#D1DADE 1px solid;margin:0px auto;}
+.img-box{width:180px;height:105px;border:#D8E5E9 1px solid;background:#EDEEEE;margin:0px auto;}
+.more-link{background:url(images/more.png) top right  no-repeat;padding-right:15px;color:#007EA0;height:11px;}
+.portfolio-opt li{list-style: none url();float:left;list-style-image: url();font-size:11px;}
+.portfolio-opt .left-p{width:120px;}
+.portfolio-opt .right-p{text-align:right;width:60px;color:#424242;font-weight:bold;}
 
 
   

@@ -2,6 +2,8 @@ $(function(){
   
   //corners
   $(".login-box").corner("5px br bl");
+  $(".portfolio-box").corner("5px");
+  
   $(".slide .left").corner("10px");
   $(".main-adv").corner("5px");
   $(".menu-adv").corner("tl tr");

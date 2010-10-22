@@ -11,9 +11,12 @@
   }
   if(!empty($social)){
     echo'<h2 class="follow">Follow us</h2>';
+    echo (($footer)?'<div class="clear"></div>':null);
+    
     echo'<ul class="follow">';
     foreach($social as $ss)
         echo'<li><a href="'.$ss['url'].'" title="'.$ss['name'].'" ><img src="'.base_path().$ss['filepath'].'" alt="'.$ss['name'].'" /></a></li>';
     echo'</ul><div class="clear"></div>';  
-  }            
+  }   
+  $footer=null;         
 ?>
