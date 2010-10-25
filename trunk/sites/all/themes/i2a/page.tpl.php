@@ -100,11 +100,17 @@
           <?php print $breadcrumb ?>
           <div class="clear-block">
             <?php
+              
               $u=strstr($_SERVER['REQUEST_URI'],'/edit');
-              if($node->nid==8 && !strlen($u))
+              if($node->nid==8 && !strlen($u) && $node->type!='portfolio'){
                 include('portfolio.php'); 
-              else
-                print $content 
+              }
+              elseif($node->type=='portfolio' && $node->nid>8 && !strlen($u)){
+                include('portfolio-node.php');
+              }
+              else{
+                print $content;
+              } 
             ?>
           </div>
           <?php print $feed_icons ?>
@@ -118,10 +124,7 @@
       <?php endif; ?>
        
        
-       <?php 
-          $footer=true;
-          include('social.php'); 
-       ?>
+       
        <div class="clear"></div>
       </div>
       
@@ -138,7 +141,7 @@
               echo'<h1 class="menu-left">'.$title.'</h1>';
               print($content);
               echo'<br />';
-            }
+            } 
             else{
               /*echo'<div class="follow-us">';
               include('social.php');
@@ -154,12 +157,15 @@
             <a href="" title="">info@i2asolutions.com</a>
           </div>
           
-          
-          
         </div>
+        
+        <?php 
+          $footer=true;
+          include('social.php'); 
+        ?>
+        
     </div>
-    
-    </div>
+    </div>  
   </div>
  <!-- end main_content --> 
  

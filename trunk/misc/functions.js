@@ -2,6 +2,9 @@
 
 
 $(function(){
+  
+  $("#hoverNav").corner();
+  
   itemsPerPage = 4;
   paginatorStyle = 1;
   paginatorPosition = 'bottom';
@@ -10,6 +13,7 @@ $(function(){
 
   $("#result .portfolio-box").click(function(){
     cnt=$(this).html();
+    
   });
 
   //corners

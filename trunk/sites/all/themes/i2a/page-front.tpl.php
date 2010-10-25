@@ -150,7 +150,7 @@
         </div>
       <?php endif; ?>
        
-      <?php include('social.php');?>
+      
        
        <div class="clear"></div>
       </div>
@@ -161,6 +161,11 @@
         </div>    
         <br />
       </div>
+      
+      <?php
+        //$front=1; 
+        include('social.php');
+      ?>
     </div>
     
     </div>

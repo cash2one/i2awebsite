@@ -1,3 +1,5 @@
+<div class="clear"></div>
+<div class="follow-container" <?php echo (($front)?'style="float:left"':null)?> >
 <?php 
   $social=array();
   $type="'social_links'";
@@ -11,7 +13,7 @@
   }
   if(!empty($social)){
     echo'<h2 class="follow">Follow us</h2>';
-    echo (($footer)?'<div class="clear"></div>':null);
+    //echo (($footer)?'<div class="clear"></div>':null);
     
     echo'<ul class="follow">';
     foreach($social as $ss)
@@ -20,3 +22,5 @@
   }   
   $footer=null;         
 ?>
+</div>
+<div class="clear"></div>

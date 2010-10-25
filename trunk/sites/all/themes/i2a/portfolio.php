@@ -23,8 +23,8 @@
           else
             echo'<div class="img-box">&nbsp;</div>';
           echo'<ul class="portfolio-opt">';
-            echo'<li class="left-p"><a href="" title="'.$pd['title'].'">'.$pd['www'].'</a></li>';
-            echo'<li class="right-p"><a href="" title="" class="more-link">more</a></li>';
+            echo'<li class="left-p"><a href="'.$pd['www'].'" title="'.$pd['title'].'">'.$pd['www'].'</a></li>';
+            echo'<li class="right-p"><a href="'.base_path().drupal_lookup_path('alias',"node/".$pd['nid']).'" title="'.$pd['title'].'" class="more-link">more</a></li>';
           echo'</ul>';
         echo'</div>';
         
