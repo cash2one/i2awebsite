@@ -1,13 +1,9 @@
 <?php
   $main_node = node_load(array('nid'=>'8'));
-  $pnode=node_load(array('nid'=>$node->nid));
-  //print_r($pnode); 
+  $pnode=node_load(array('nid'=>$node->nid)); 
 ?>
 
 <?php
-  //if(strlen($main_node->body)){
-    //echo'<div class="col-left">'.$main_node->body.'</div>';
-  //}
   echo'<div class="col-right project">';
     //echo'<h1 id="project-name">'.$pnode->title.'</h1>';
     echo'<div>'.$pnode->body.'</div>';
@@ -26,6 +22,11 @@
   echo'<a href="'.base_path().drupal_lookup_path('alias',"node/8").'" title="back" class="back-link"> back</a>';
   echo'</div>';
   
-  echo'<div class="clear"></div>';
-  
+  echo'<div class="clear"></div>';  
 ?>
+
+<script type="text/javascript">
+  $(function(){
+    $("#breadcrumbs").html('<b style="color: rgb(0, 138, 173);">Home</b> &raquo; Portfolio &raquo <?php echo $pnode->title; ?></h1>')
+  });
+</script>
