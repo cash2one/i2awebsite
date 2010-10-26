@@ -6,9 +6,8 @@
     $result = db_query($sql); 
     while($row = db_fetch_object($result)){              
       $port_node = node_load(array('nid'=>$row->nid));
-      //print_r($port_node);
-      if($port_node->status){
-        array_push($portfolio_data,array('nid'=>$port_node->nid,'title'=>$port_node->title,'body'=>$port_node->body,'filepath'=>$port_node->field_image[0]['filepath'],'filepath'=>$port_node->field_screen_image[0]['filepath'],'www'=>$port_node->field_www[0]['value']));
+      if($port_node->status){ 
+        array_push($portfolio_data,array('nid'=>$port_node->nid,'title'=>$port_node->title,'body'=>$port_node->body,'filepath'=>$port_node->field_image[0]['filepath'],'filepath'=>$port_node->field_screen_image[0]['filepath'],'www'=>$port_node->field_www[0]['value'],'short_description'=>$port_node->field_short_desc[0]['value']));
       }
     }
   }

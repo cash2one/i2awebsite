@@ -5,16 +5,16 @@
 ?>
 
 <?php
-  if(strlen($main_node->body)){
-    echo'<div class="col-left">'.$main_node->body.'</div>';
-  }
+  //if(strlen($main_node->body)){
+    //echo'<div class="col-left">'.$main_node->body.'</div>';
+  //}
   echo'<div class="col-right project">';
-    echo'<h1 id="project-name">'.$pnode->title.'</h1>';
+    //echo'<h1 id="project-name">'.$pnode->title.'</h1>';
     echo'<div>'.$pnode->body.'</div>';
     echo'<div id="project-gallery">';
       if(!empty($pnode->field_screen_image[0])){
         foreach($pnode->field_screen_image as $image){
-          echo'<a href="'.base_path().$image['filepath'].'" title="'.$pnode->title.'"><img src="'.base_path().$image['filepath'].'" alt="'.$pnode->title.'" class="lightbox" style="width:120px;" /></a>';
+          echo'<a href="'.imagecache_create_url('portfolio-lightbox', $image['filepath']).'" title="'.$pnode->title.'"><img src="'.imagecache_create_url('portfolio-scale-in', $image['filepath']).'" alt="'.$pnode->title.'" class="lightbox" /></a>';
         }
       }
     echo'<div class="clear"></div>';

@@ -4,12 +4,24 @@
 $(function(){
   
   $("#hoverNav").corner();
+  $(".portfolio-box").corner();
+  $(".in-portfolio").corner();
+  
+  
+ 
+
+  $(".portfolio-box").hover(function(){
+      $("."+$(this).attr('id')).fadeIn("slow");  
+    },function(){
+      $("."+$(this).attr('id')).fadeOut("slow");  
+  });
+  
   
   itemsPerPage = 4;
   paginatorStyle = 1;
   paginatorPosition = 'bottom';
   enableGoToPage = false;
-  $("#result").pagination();
+  ;//$("#result").pagination();
 
   $("#result .portfolio-box").click(function(){
     cnt=$(this).html();
@@ -18,7 +30,7 @@ $(function(){
 
   //corners
   $(".login-box").corner("5px br bl");
-  $(".portfolio-box").corner("5px");
+  
   
   $(".slide .left").corner("10px");
   $(".main-adv").corner("5px");
@@ -156,5 +168,5 @@ $(function(){
    }
    $(".breadcrumb").remove();
    
-});
+});                  
 
