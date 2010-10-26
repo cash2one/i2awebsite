@@ -68,7 +68,7 @@
           
           <h1 id="breadcrumbs"><?php echo $node->title ?> > <b>Web to Mobile</b></h1>
           <?php
-           ;// print_r($node->parent_item);
+           // print_r($node->parent_item);
           ?>
         </div>  
       
@@ -127,7 +127,7 @@
        <div class="clear"></div>
       </div>
       
-      <div class="right">
+      <div class="right">  
           <?php
             $menu = module_find_lowest_menu(menu_tree_page_data('primary-links'));
             $menu_a=array();
@@ -141,19 +141,18 @@
               print($content);
               echo'<br />';
             } 
-            else{
-              /*echo'<div class="follow-us">';
+            /*else{
+              echo'<div class="follow-us">';
               include('social.php');
-              echo'</div>';*/
-              ;
-            }
+              echo'</div>';
+            }*/
           ?>
           
           
           <div class="contact-us">
-            <h1>Contact Us Today!</h1>
+            <!--<h1>Contact Us Today!</h1>
             619.999.1212<br />
-            <a href="" title="">info@i2asolutions.com</a>
+            <a href="" title="">info@i2asolutions.com</a>-->
           </div>
           
         </div>

@@ -7,6 +7,7 @@ $(function(){
   $(".portfolio-box").corner();
   $(".in-portfolio").corner();
   
+  $(".contact-us").html($("#block-block-1").html());
   
  
 
