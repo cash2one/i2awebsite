@@ -133,7 +133,9 @@ ul.menu-left li.active a{color:#005268}
 /*main-form*/
 .main-form{text-align:right}
 .main-form input[type=text],.form input[type=text]{background:url(images/input-bg.gif) top left repeat-x; padding:3px 2px;border-bottom:#e1e1e1 1px solid;border-top:#848484 1px solid;border-left:#c1c1c1 1px solid;border-right:#c1c1c1 1px solid;width:165px;float:right;margin:0 0 0 10px;cursor:default;}
-#webform-client-form-27 input[type=submit],#webform-client-form-26 input[type=submit],.main-form input[type=submit],.form input[type=submit]{background:url(images/submit.gif) top left no-repeat;width:57px;height:18px;border:0;}
+/*#webform-client-form-27 input[type=submit],#webform-client-form-26 input[type=submit],.main-form input[type=submit],.form input[type=submit]{background:url(images/submit.gif) top left no-repeat;width:57px;height:18px;border:0;}*/
+#webform-client-form-27 input[type=submit],#webform-client-form-26 input[type=submit],.main-form input[type=submit],.form input[type=submit]{background:url(images/submit-buttons.png) top left no-repeat;width:72px;height:23px;border:0;margin-top:5px;}
+#webform-client-form-27 input[type=submit]:hover,#webform-client-form-26 input[type=submit]:hover,.main-form input[type=submit]:hover,.form input[type=submit]:hover{background-position: 0px -24px;}
 .main-form .clear{height:5px;}
 
 /*contact form*/
