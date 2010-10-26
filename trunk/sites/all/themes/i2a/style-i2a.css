@@ -47,7 +47,7 @@ select.input-txt250,input.input-txt250{width:270px;}
 .nice-menu li a:hover{text-decoration:none;color:#ffffff}
 .nice-menu li li a:hover{text-decoration:none;color:#008AAD}
 .nice-menu  a.active{color:#ffffff;font-size:14px;}
-.nice-menu .menuparent a.active{font-size:11px;text-decoration:underline;}
+.nice-menu .menuparent li a.active{font-size:11px;text-decoration:underline;}
 .nice-menu .menuparent a.active{/*font-size:11px;*/}
 .nice-menu li li a.active{color:#008AAD;}
 .nice-menu ul {opacity:0.92;filter:alpha(opacity=92)}
