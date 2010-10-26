@@ -89,13 +89,13 @@
         <!-- advert -->
         <div class="main-adv">
           <div class="menu-adv"></div>
-          <div class="slide">
+          <div class="slide" >
             <?php
               if(!empty($advert_data)){
                 foreach($advert_data as $ad){
                   echo'<div>
                         <div class="left" style="background:url('. base_path() .'/'.$ad['filepath'].') top left no-repeat;">&nbsp;</div>
-                        <div class="right">
+                        <div class="right" style="width:250px;position:absolute;margin:10px 0 0 670px;">
                           <h1>'.$ad['title'].'</h1>
                             '.$ad['body'];
                           
