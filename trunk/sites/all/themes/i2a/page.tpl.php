@@ -12,6 +12,9 @@
     }
   }
 ?>
+
+
+
 <?php
 // $Id: page.tpl.php,v 1.18.2.1 2009/04/30 00:13:31 goba Exp $
 ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
@@ -67,9 +70,13 @@
         <div class="baner" style="background:url(<?php print $baner; ?>) top left no-repeat">  
           
           <h1 id="breadcrumbs"><?php echo $node->title ?> > <b>Web to Mobile</b></h1>
-          <?php
-           // print_r($node->parent_item);
-          ?>
+          <?php if($node->type=='job'){ ?>
+            <script type="text/javascript">
+              $(function(){
+                $("#breadcrumbs").html('<b style="color: rgb(0, 138, 173);">Home</b> &raquo; Careers &raquo <?php echo $node->title; ?></h1>')
+              });
+            </script>
+          <?php }?>
         </div>  
       
       <div class="clear"></div>
@@ -110,7 +117,12 @@
               else{
                 print $content;
               } 
+              //array_push($job_data,array('nid'=>$job_node->nid,'title'=>$job_node->title,'short_description'=>$job_node->field_short_body[0]['value'],'body'=>$job_node->body,'reference'=>$job_node->field_reference_number[0]['value']));
+              
+              //<a href="'.base_path().drupal_lookup_path('alias',"node/".$pd['nid']).'" title="'.$pd['title'].'" class="more-link">more</a>
             ?>
+            
+            
           </div>
           <?php print $feed_icons ?>
           <div id="footer"><?php print $footer_message . $footer ?></div>
@@ -135,7 +147,7 @@
               if($mm['link']['depth']>1)
                 array_push($menu_a, $mm);
             }
-            if($menu_a){
+            if($menu_a && $node->type!='job'){
               $content =  menu_tree_output($menu_a);
               echo'<h1 class="menu-left">'.$title.'</h1>';
               print($content);

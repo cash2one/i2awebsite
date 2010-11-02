@@ -253,4 +253,17 @@ li a.active{color:#5895BE;font-size:12px;font-weight:bold;}
 
 #block-block-1{display:none;}
 
+.ul-header-job{margin:0 0 10px 0;padding:0;}
+.ul-header-job li{float:left;background:transparent;padding:0;margin:0 5px 0 0;}
+.body-job{padding:10px 0;}
+.body-job ul{10px;}
+.body-job li{background-image:url(images/list-r.png);background-position:0 2px;}
+.back-right{float:right;padding-bottom:2px;}
+.job-list{padding:0 0 10px 0;}
+.job-list h1{font-size:14px;margin:0 0 5px 0;}
+.job-list .more-link{float:right;padding-bottom:3px;margin-top:-5px;}
+#node-27 #webform-client-form-27{display:none;}
+#block-block-2 h2{font-size:14px;}
+.webform-confirmation p{font-size:14px;}
+.webform-confirmation .links{text-align:left;}
   
