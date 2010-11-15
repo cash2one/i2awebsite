@@ -66,6 +66,7 @@
       else
         echo'<div class="login-box"><a href="./logout" title="Customer Login">Logout</a></div>';
     ?>
+    <div class="call-us"><span>Call Us:</span> 1-800-555-5555</div>
     <div class="clear"></div>
     <ul class="header">
       <li><a href="<?php print base_path(); ?>" title=""><img src="<?php print base_path().path_to_theme() ?>/images/logo.gif" alt="" /></a></li>
