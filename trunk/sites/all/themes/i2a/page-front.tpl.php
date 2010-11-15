@@ -64,7 +64,7 @@
       if(!$user->uid)
         echo'<div class="login-box"  id="log-in"><a title="Customer Login">Customer Login</a></div>';  
       else
-        echo'<div class="login-box"><a href="./logout" title="Customer Login">Logout</a></div>';
+        echo'<div class="login-box"><a href="'.base_path().'logout" title="Customer Login">Logout</a></div>';
     ?>
     <div class="call-us"><span>Call Us:</span> 1-800-555-5555</div>
     <div class="clear"></div>
