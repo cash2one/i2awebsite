@@ -141,17 +141,26 @@
       </div>
       
       <div class="right">  
-          <?php            
+          
+          <?php     
+            //echo $node->nid;       
             $menu = module_find_lowest_menu(menu_tree_page_data('primary-links'));
             $menu_a=array();
             foreach($menu as $mm){
               if($mm['link']['depth']>1)
                 array_push($menu_a, $mm);
             }
+            
+            if(!$menu_a)
+              echo contact_plugin();
+            
             if($menu_a && $node->type!='job'){
               $content =  menu_tree_output($menu_a);
               echo'<h1 class="menu-left">'.$title.'</h1>';
               print($content);
+              
+              echo contact_plugin();
+              
               if(strstr($_SERVER['REQUEST_URI'],'/expertise')){
                 echo'<br />';
                 echo'<img src="'. base_path().path_to_theme().'/images/os.png" alt="" class="os" />';
@@ -166,11 +175,8 @@
             }*/
           ?>
           
-          <div class="contact-us">
-            <!--<h1>Contact Us Today!</h1>
-            619.999.1212<br />
-            <a href="" title="">info@i2asolutions.com</a>-->
-          </div>
+          <!--<div class="contact-us"></div>-->
+                    
           <br />
         </div>
         
