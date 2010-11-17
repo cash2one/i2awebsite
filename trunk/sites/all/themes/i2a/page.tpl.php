@@ -40,7 +40,7 @@
       else
         echo'<div class="login-box"><a href="'.base_path().'logout" title="Customer Login">Logout</a></div>';
     ?>
-    <div class="call-us"><span>Call Us:</span> 1-800-555-5555</div>
+    <div class="call-us"><span>Call Us:</span> 1-855-422-2777</div>
     <div class="clear"></div>
     <ul class="header">
       <li><a href="<?php print base_path(); ?>" title=""><img src="<?php print base_path().path_to_theme() ?>/images/logo.gif" alt="" /></a></li>
@@ -141,7 +141,7 @@
       </div>
       
       <div class="right">  
-          <?php
+          <?php            
             $menu = module_find_lowest_menu(menu_tree_page_data('primary-links'));
             $menu_a=array();
             foreach($menu as $mm){
@@ -152,7 +152,12 @@
               $content =  menu_tree_output($menu_a);
               echo'<h1 class="menu-left">'.$title.'</h1>';
               print($content);
-              echo'<br />';
+              if(strstr($_SERVER['REQUEST_URI'],'/expertise')){
+                echo'<br />';
+                echo'<img src="'. base_path().path_to_theme().'/images/os.png" alt="" class="os" />';
+                echo'<img src="'. base_path().path_to_theme().'/images/mob-os.png" alt="" class="os" style="margin-bottom:0" />';
+                echo'<br />';
+              }
             } 
             /*else{
               echo'<div class="follow-us">';
@@ -161,13 +166,12 @@
             }*/
           ?>
           
-          
           <div class="contact-us">
             <!--<h1>Contact Us Today!</h1>
             619.999.1212<br />
             <a href="" title="">info@i2asolutions.com</a>-->
           </div>
-          
+          <br />
         </div>
         
         <?php 

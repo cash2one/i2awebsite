@@ -150,6 +150,9 @@ function path_nodeapi(&$node, $op, $arg) {
         $alias = drupal_get_path_alias($path, $language);
         if ($path != $alias) {
           $node->path = $alias;
+          $pid = db_result(db_query("SELECT pid FROM {url_alias} WHERE dst = '%s' AND language = '%s'", $alias, $language));
+          $node->pid = $pid;
+
         }
         break;
 
