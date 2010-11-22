@@ -179,8 +179,8 @@
     <div class="main">
       <ul class="f-left">
         <li class="m1">&copy; <a href="<?php print base_path()?>" title="I2A Solutions, Inc.">I2A Solutions, Inc.</a> All Rights Reserved</li>
-        <li><a href="<?php print base_path()?>terms-of-use" title="Terms of Use">Terms of Use</a><span>|</span></li>
-        <li><a href="<?php print base_path()?>privacy-policy" title="Privacy Policy">Privacy Policy</a></li>
+        <!--<li><a href="<?php print base_path()?>terms-of-use" title="Terms of Use">Terms of Use</a><span>|</span></li>
+        <li><a href="<?php print base_path()?>privacy-policy" title="Privacy Policy">Privacy Policy</a></li>-->
       </ul>
       
       <ul class="f-right">
