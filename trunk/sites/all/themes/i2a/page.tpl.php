@@ -141,7 +141,6 @@
       </div>
       
       <div class="right">  
-          
           <?php     
             //echo $node->nid;       
             $menu = module_find_lowest_menu(menu_tree_page_data('primary-links'));
@@ -162,9 +161,10 @@
               echo contact_plugin();
               
               if(strstr($_SERVER['REQUEST_URI'],'/expertise')){
-                echo'<br />';
-                echo'<img src="'. base_path().path_to_theme().'/images/os.png" alt="" class="os" />';
-                echo'<img src="'. base_path().path_to_theme().'/images/mob-os.png" alt="" class="os" style="margin-bottom:0" />';
+                if($node->nid==3){
+                  echo'<img src="'. base_path().path_to_theme().'/images/os.png" alt="" class="os" />';
+                  echo'<img src="'. base_path().path_to_theme().'/images/mob-os.png" alt="" class="os" style="margin-bottom:0" />';
+                }
                 echo'<br />';
               }
             } 

@@ -84,11 +84,12 @@ ul.nice-menu-down li ul li ul, #header-region ul.nice-menu-down li ul li ul{left
 .slide .left div ul{margin:0 10px;}
 .main-adv{background:#ffffff;padding:10px;margin:15px 0 10px 0;height:295px;}
 .main-adv .slide .left li{float:right;}
-.menu-adv{background:#ffffff;position:absolute;z-index:997;padding:10px;opacity:0.8;filter:alpha(opacity=80);width:636px;margin:1px 0 0 1px;}
+.menu-adv{background:#333333;position:absolute;z-index:997;padding:10px;opacity:0.85;filter:alpha(opacity=80);width:636px;margin:1px 0 0 1px;}
 .menu-adv img{margin:0 10px;}
-.menu-adv a{color:#455560;font-size:14px;font-weight:bold;}
-.menu-adv a:hover{text-decoration:none;color:#008AAD}
-.menu-adv a.activeSlide{color:#008aad;}
+.menu-adv span{margin:0 10px;color:#FFB253;}
+.menu-adv a{/*color:#455560;*/color:#ededed;font-size:14px;font-weight:bold;}
+.menu-adv a:hover{text-decoration:none;color:#A6CEE7;/*color:#008AAD*/}
+.menu-adv a.activeSlide{color:#A6CEE7;}
 .main-adv li{background:transparent;}
 .main-adv .right p{margin-bottom:10px;}
 .orange-button{border:#df8e0b 1px solid;color:#ffffff;font-weight:bold;padding:2px 5px;margin-top:10px;background:url(images/orange-button-bg.gif) #FFB027 bottom left repeat-x;}

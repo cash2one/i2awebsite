@@ -43,7 +43,8 @@
             if(!i)
               $(this).css('margin-left','100px');
             if(i<3)
-              k='<img src="<?php print base_path().path_to_theme() ?>/images/menu-li.png" alt="" />';
+              //k='<img src="<?php print base_path().path_to_theme() ?>/images/menu-li.png" alt="" />';
+              k='<span>&rsaquo;</span>';
             else
               k='';
             if(tab[i])
