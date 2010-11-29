@@ -1,4 +1,5 @@
 <?php 
+
   if($node->nid==8){
     $portfolio_data=array();
     $type="'portfolio'";
@@ -114,6 +115,12 @@
               }
               elseif($node->type=='portfolio' && $node->nid>8 && !strlen($u)){
                 include('portfolio-node.php');
+              }
+              elseif($node->nid==3 && !strlen($u) && $node->type!='expertise_cs'){
+                include('expertise.php'); 
+              }
+              elseif($node->type=='expertise_cs' && $node->nid>8 && !strlen($u)){
+                include('expertise-node.php');
               }
               else{
                 print $content;

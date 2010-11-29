@@ -1,4 +1,10 @@
 <?php 
+  if($node->nid==29){
+    $main_node = node_load(array('nid'=>29));
+    $period_type=$main_node->field_type[0]['value'];
+    $period=1000*$main_node->field_period[0]['value'];
+  }
+
   $advert_data=array();
   $type="'main_page_adverts'";
   $sql = "SELECT * FROM {node} WHERE type = $type";
@@ -9,6 +15,9 @@
       array_push($advert_data,array('nid'=>$node->nid,'title'=>$node->title,'body'=>$node->body,'position'=>$node->position,'filepath'=>$node->field_image[0]['filepath'],'filename'=>$node->field_image[0]['filename'],'more'=>$node->field_more[0]['value']));
     }
   }
+  
+  
+  
 ?>
 
 <?php
@@ -29,6 +38,14 @@
     <script type="text/javascript">
       /*<![CDATA[*/ 	
     	  $(function(){
+    	   $('.slide') 
+            .cycle({ 
+                fx:     '<?php echo $period_type; ?>', 
+                speed:  'fast', 
+                timeout: <?php echo $period; ?>,
+                pager:  '.menu-adv' 
+          });
+    	  
     	    <?php
     	      $str='';
             for($i=0,$ii=count($advert_data);$i<$ii;$i++){
@@ -50,6 +67,7 @@
             if(tab[i])
               $(this).html(tab[i]+k);  
           });
+          
         });
       	
       /*]]>*/

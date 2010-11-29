@@ -148,34 +148,29 @@ input[type=text]{/*float:left;*/background:url(images/input-bg.gif) top left rep
 textarea{/*float:left;*/background:url(images/input-bg.gif) top left repeat-x; padding:3px 2px;border-bottom:#e1e1e1 1px solid;border-top:#848484 1px solid;border-left:#c1c1c1 1px solid;border-right:#c1c1c1 1px solid;width:410px;height:100px;margin:5px 0 10px 0;cursor:default;}
 .form .clear{height:5px;}
 sup{color:#ff9600;}
-
 .footer{background:#d1dade;padding:15px 0 25px 0;}
 .footer li{padding:0;background:transparent;}
 .f-left .m1{margin:0 10px 0 0;}
 .f-left li{float:left;}
 .f-right li{float:right;}
 .f-left span,.f-right span{margin:0 5px;}
-
 .baner{padding:20px;width:910px;height:100px;margin:10px 0}
 .baner h1{font-weight:normal;margin:80px 0 0 0;}
 .baner h1 a{color:#455560;/*#008aad*/}
 .baner h1 a:hover{text-decoration:none;}
 
-
 #webform-client-form-26 .error,
 #webform-client-form-27 .error,
 .main-form input.error,.form input.error,.form textarea.error{background:url(images/error.gif) #FFFFB5 top right no-repeat;border-bottom:#e1e1e1 1px solid;border-top:#848484 1px solid;border-left:#c1c1c1 1px solid;border-right:#c1c1c1 1px solid;}
 .main-form input.valid,.form input.valid,.form textarea.valid{background:url(images/ok.gif) top right no-repeat;}
-
-
 .node{padding-top:0;padding-bottom:0;}
 .left table{margin-bottom:20px;}
 #block-user-0,#user-login-form ul, #dialog h2{display:none;}
 #user-login-form label{font-weight:normal;text-align:left;clear:both;}
 #user-login-form input[type=text],#user-login-form input[type=password]{float:left;background:url(images/input-bg.gif) top left repeat-x; padding:3px 2px;border-bottom:#e1e1e1 1px solid;border-top:#848484 1px solid;border-left:#c1c1c1 1px solid;border-right:#c1c1c1 1px solid;width:300px;margin:5px 0 10px 0;cursor:default;}
-#user-login-form input[type=submit]{background:url(images/submit.gif) no-repeat scroll left top transparent;border:0 none;height:18px;width:57px;float:left;margin:5px 0;}
-
-
+#user-login-form input[type=submit]{float:left;background:url(images/submit-buttons.png) top left no-repeat;width:72px;height:24px;border:0;margin-top:5px;}
+#user-login-form:hover{background-position: 0px -24px;}
+/*#user-login-form input[type=submit]{background:url(images/submit.gif) no-repeat scroll left top transparent;border:0 none;height:18px;width:57px;float:left;margin:5px 0;}*/
 html.js .resizable-textarea textarea{width:370px;}
 .form-button, .form-submit{margin:0;}
 .form-item label{font-weight:normal;}
@@ -270,3 +265,5 @@ li a.active{color:#5895BE;font-size:12px;font-weight:bold;}
 .webform-confirmation p{font-size:14px;}
 .webform-confirmation .links{text-align:left;}
 .os{width:233px;margin:0 0 10px 10px}  
+.group-rotation{display:none}
+#node-form .group-rotation{display:block}

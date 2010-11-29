@@ -40,14 +40,6 @@ $(function(){
   $(".contact-us").corner("5px");
   $(".follow-us").corner("5px");
 
-
-  $('.slide') 
-    .cycle({ 
-        fx:     'turnDown', 
-        speed:  'fast', 
-        timeout: 4000,
-        pager:  '.menu-adv' 
-  });
    
   	
   	$("#user-login-form").validate({
