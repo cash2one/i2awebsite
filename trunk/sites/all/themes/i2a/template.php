@@ -16,8 +16,8 @@ function contact_plugin(){
     $form_email=$row->email;
   }
   
-  $txt='<img usemap="#contactplugin" src="'. base_path().path_to_theme() .'/images/contact-us-plugin.png" alt="CONTACT US" style="margin:10px 0 10px 10px;" />';
-  $txt.='<map name="contactplugin">
+  $txt='<img usemap="#contactplugin" src="'. base_path().path_to_theme() .'/images/contact-us-plugin.png" alt="CONTACT US" class="plugin-right" />';
+  $txt.='<map name="contactplugin" id="contactplugin">
     <area shape="rect" coords="15,50,115,87" href="'.base_path().drupal_get_path_alias('node/26').'" alt="FILL OUT OUR FORM" />
     <area shape="rect" coords="115,40,225,75" href="mailto:'.$form_email.'" alt="FILL OUT OUR FORM" />
   </map>';

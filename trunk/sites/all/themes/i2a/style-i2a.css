@@ -84,14 +84,14 @@ ul.nice-menu-down li ul li ul, #header-region ul.nice-menu-down li ul li ul{left
 .slide .left div ul{margin:0 10px;}
 .main-adv{background:#ffffff;padding:10px;margin:15px 0 10px 0;height:295px;}
 .main-adv .slide .left li{float:right;}
-.menu-adv{background:#333333;position:absolute;z-index:997;padding:10px;opacity:0.85;filter:alpha(opacity=80);width:636px;margin:1px 0 0 1px;}
+.menu-adv{background:#F5F0EC;position:absolute;z-index:997;padding:7px 10px;opacity:0.93;filter:alpha(opacity=93);width:636px;margin:1px 0 0 1px;}
 .menu-adv img{margin:0 10px;}
-.menu-adv span{margin:0 10px;color:#FFB253;}
-.menu-adv a{/*color:#455560;*/color:#ededed;font-size:14px;font-weight:bold;}
-.menu-adv a:hover{text-decoration:none;color:#A6CEE7;/*color:#008AAD*/}
-.menu-adv a.activeSlide{color:#A6CEE7;}
+.menu-adv span{margin:0px 10px;color:#0082a4;font-size:18px;font-weight:normal}
+.menu-adv a{color:#455560;font-size:14px;font-weight:bold;}
+.menu-adv a:hover{text-decoration:none;color:#008AAD}
+.menu-adv a.activeSlide{color:#008AAD;}
 .main-adv li{background:transparent;}
-.main-adv .right p{margin-bottom:10px;}
+.main-adv .right p{margin-bottom:10px;letter-spacing:0.2px;text-align:justify;}
 .orange-button{border:#df8e0b 1px solid;color:#ffffff;font-weight:bold;padding:2px 5px;margin-top:10px;background:url(images/orange-button-bg.gif) #FFB027 bottom left repeat-x;}
 .main-orange{width:85px;}
 .orange-button a{color:#ffffff;}
@@ -108,9 +108,10 @@ ul.nice-menu-down li ul li ul, #header-region ul.nice-menu-down li ul li ul{left
 .txt h2.follow{float:left;margin:3px 10px 10px 0;text-align:right;color:#008AAD;font-weight:bold;font-size:16px;}
 .follow li{float:right;margin:0 10px 10px 0;background:transparent;padding:0;}
 .txt h1.orange{color:#ff9600;}
-.txt .left{width:656px;margin:15px 20px 0 0;float:left;}
+/*.txt .left{width:656px;margin:15px 20px 0 0;float:left;}*/
+.txt .left{float:left;margin: 15px 20px 0 0;width:685px;}
 .txt .left p{margin:0 0 15px 0;text-align:justify;}
-.txt .right{width:250px;float:left;margin:15px 0 0 0;}
+.txt .right{width:245px;float:left;margin:15px 0 0 0;}
 .node p{margin: 0 0 15px 0;}
 
 ul.primary-links li a, ul.primary-links li a:link, ul.primary-links li a:visited{background:transparent}
@@ -125,7 +126,8 @@ div.follow-us ul.follow{margin:10px 0 0 40px}
 h1.menu-left{font-weight:normal;color:#005268;font-size:18px;border-bottom:#9acdd9 2px dotted;margin:10px 0 0 0;padding:0 0 5px 0;}
 ul.menu, ul.menu-left{/*font-size:14px;*/padding:5px 0 0 10px;}
 ul.menu li, ul.menu-left li{background:transparent;border-bottom:#9acdd9 2px dotted;padding:5px 2px;list-style-position: inside;}
-ul.menu li{background:url(images/menu-li.png) left center no-repeat;padding-left:10px;width:225px;}
+ul.menu li{background:url(images/menu-li.png) left center no-repeat;padding-left:10px;width:220px;}
+.plugin-right{margin:10px 0 10px 12px;}
 ul.menu-left li img{margin:0 7px 0 0; }
 ul.menu-left li a:hover{text-decoration:none;color:#005268}
 ul.menu-left li.active a{color:#005268}
@@ -177,7 +179,7 @@ html.js .resizable-textarea textarea{width:370px;}
 .form-item{margin:0;}
 #contact-us-today p{display:none}
 #contact-us-today .webform-component{clear:both;margin:0 0 3px 0;}
-#contact-us-today .webform-component label{float:left;width:78px;}
+#contact-us-today .webform-component label{float:left;width:72px;}
 #contact-us-today .webform-component input{float:left;width:155px;}
 #contact-us-today .form-item{margin: 0 0 5px 0;}
 #contact-us-today .clear{height:0;}
@@ -194,13 +196,14 @@ html.js .resizable-textarea textarea{width:370px;}
 .site-map-menus ul li.expanded{padding-left:7px;}
 .site-map-menu a{font-weight:bold;}
 .site-map-menu li li  a{font-weight:normal;} 
-.site-map-menus .expanded a{font-weight:bold;}
-.site-map-menus ul li.expanded {font-weight:bold;}
+.site-map-menus .expanded a{/*font-weight:bold;*/font-weight:normal;}
+.site-map-menus ul li.expanded {/*font-weight:bold;*/font-weight:normal;}
+.site-map-menus li.leaf{margin:5px 0;}
 
 .site-map-menu li{list-style: disc url()}
 
 /*1*/
-.site-map-menu a{font-weight:bold;font-size:14px;color:#0081A3}
+.site-map-menu a{font-weight:bold;*/font-size:14px;color:#0081A3}
 .site-map-menu li{color:#00BBE2;list-style: square url();padding:3px 0  }
 /*2*/
 .site-map-menu li li a{font-weight:bold;font-size:13px;color:#455560}
