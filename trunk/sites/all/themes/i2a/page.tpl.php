@@ -1,5 +1,4 @@
 <?php 
-
   if($node->nid==8){
     $portfolio_data=array();
     $type="'portfolio'";
@@ -198,35 +197,10 @@
  <!-- end main_content --> 
  
  <!-- footer -->
-  <div class="clear"></div>
-  <div class="footer">
-    <div class="main">
-      <ul class="f-left">
-        <li class="m1">&copy; <a href="<?php print base_path()?>" title="I2A Solutions, Inc.">I2A Solutions, Inc.</a> All Rights Reserved</li>
-        <!--<li><a href="<?php print base_path()?>terms-of-use" title="Terms of Use">Terms of Use</a><span>|</span></li>
-        <li><a href="<?php print base_path()?>privacy-policy" title="Privacy Policy">Privacy Policy</a></li>-->
-      </ul>
-      
-      <ul class="f-right">
-        <li><a href="<?php print base_path()?>sitemap" title="Site Map">Site Map</a></li>
-        <li><a href="<?php print base_path()?>contact-us" title="Contact Us">Contact Us</a><span>|</span></li>
-        <li><a href="<?php print base_path()?>careers" title="Careers">Careers</a><span>|</span></li>
-        <li><a href="<?php print base_path()?>portfolio" title="Portfolio">Portfolio</a><span>|</span></li>
-        <li><a href="<?php print base_path()?>expertise" title="Expertise">Expertise</a><span>|</span></li>
-        <li><a href="<?php print base_path()?>about-us" title="About Us">About Us</a><span>|</span></li>
-        <li><a href="<?php print base_path()?>" title="Home">Home</a><span>|</span></li>
-      </ul>
-      <div class="clear"></div>
-    </div>
-  </div>
+ <?php 
+    include('footer.tpl.php'); 
+ ?>
  <!-- end footer -->
-  
-  
-  
-  
-
-
-
 
   <?php print $closure ?>
   </body>

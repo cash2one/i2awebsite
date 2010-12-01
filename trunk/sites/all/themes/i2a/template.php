@@ -8,6 +8,12 @@
  */
  
  
+function get_title_magically($nid)
+{
+  $node = node_load(array('nid'=>$nid));
+  return $node->title;
+} 
+ 
 function contact_plugin(){
   $form_email='';
   $sql = "SELECT email FROM {webform_emails} WHERE from_address='default'  LIMIT 1";
