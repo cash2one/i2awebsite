@@ -108,7 +108,7 @@
           <div class="clear-block">
             <?php
               
-              $u=strstr($_SERVER['REQUEST_URI'],'/edit');
+              $u=((strstr($_SERVER['REQUEST_URI'],'/edit') || strstr($_SERVER['REQUEST_URI'],'/delete'))?true:false);
               if($node->nid==8 && !strlen($u) && $node->type!='portfolio'){
                 include('portfolio.php'); 
               }
