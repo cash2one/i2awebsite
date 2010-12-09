@@ -250,7 +250,7 @@ li a.active{color:#5895BE;font-size:12px;font-weight:bold;}
 
 #project-name{color:#45616F;font-size:16px;}
 #project-gallery{margin:15px 0 10px 0;}
-#project-gallery img {/*width:100px;*/border:#999999 1px solid;padding:3px;margin:0 10px 0 0;float:left;}
+#project-gallery img {/*width:100px;*/border:#999999 1px solid;padding:3px;margin:0 10px 10px 0;float:left;}
 .project ul{padding:0 0 0 20px;}
 .project li{list-style-image: url(images/list-r.png);color:#676767}
 
