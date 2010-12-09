@@ -165,6 +165,8 @@ sup{color:#ff9600;}
 #webform-client-form-27 .error,
 .main-form input.error,.form input.error,.form textarea.error{background:url(images/error.gif) #FFFFB5 top right no-repeat;border-bottom:#e1e1e1 1px solid;border-top:#848484 1px solid;border-left:#c1c1c1 1px solid;border-right:#c1c1c1 1px solid;}
 .main-form input.valid,.form input.valid,.form textarea.valid{background:url(images/ok.gif) top right no-repeat;}
+#webform-client-form-26 input.valid,#webform-client-form-26 input.valid,#webform-client-form-26 textarea.valid{background:url(images/ok.gif) top right no-repeat;}
+
 .node{padding-top:0;padding-bottom:0;}
 .left table{margin-bottom:20px;}
 #block-user-0,#user-login-form ul, #dialog h2{display:none;}

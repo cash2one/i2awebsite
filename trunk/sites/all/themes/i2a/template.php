@@ -160,6 +160,8 @@ drupal_add_js('misc/functions.js');
 
 
 drupal_add_css('misc/custom-theme/jquery-ui-1.8.5.custom.css');
+drupal_add_css('misc/jquery.tooltip.css');
+
 
 
 
