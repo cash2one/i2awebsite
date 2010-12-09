@@ -6,8 +6,7 @@ $(function(){
   $("#hoverNav").corner();
   $(".portfolio-box").corner();
   $(".in-portfolio").corner();
-  $("#project-gallery img").corner("5px");
-  
+  $("#project-gallery img, .baner").corner("5px");
   $(".contact-us").html($("#block-block-1").html());
   
  

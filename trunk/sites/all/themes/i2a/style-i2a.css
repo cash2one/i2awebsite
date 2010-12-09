@@ -106,7 +106,7 @@ ul.nice-menu-down li ul li ul, #header-region ul.nice-menu-down li ul li ul{left
 .txt .follow{margin:3px 0 10px 0;float:left;}
 .follow-container{float:right;margin:0 20px 0 0;}
 .txt h2.follow{float:left;margin:3px 10px 10px 0;text-align:right;color:#008AAD;font-weight:bold;font-size:16px;}
-.follow li{float:right;margin:0 10px 10px 0;background:transparent;padding:0;}
+.follow li{float:left;margin:0 0 10px 10px;background:transparent;padding:0;}
 .txt h1.orange{color:#ff9600;}
 /*.txt .left{width:656px;margin:15px 20px 0 0;float:left;}*/
 .txt .left{float:left;margin: 15px 20px 0 0;width:685px;}

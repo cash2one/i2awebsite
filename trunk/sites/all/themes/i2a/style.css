@@ -28,6 +28,7 @@ input {
 textarea, select {
   font: 12px/160% Verdana, sans-serif;
   color: #494949;
+  width:200px;
 }
 
 h1, h2, h3, h4, h5, h6 {

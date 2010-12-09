@@ -13,7 +13,8 @@
           'body'=>$port_node->body,
           'filepath'=>$port_node->field_image_file[0]['filepath'],
           'www'=>$port_node->field_www[0]['value'],
-          'short_description'=>$port_node->field_short_description[0]['value']
+          'short_description'=>$port_node->field_short_description[0]['value'],
+          'order'=>$port_node->field_order_list[0]['value']
         ));
       }
     }
@@ -25,6 +26,14 @@
   }
   echo'<div class="col-right" style="width:656px;">';
   if($expertise_data){
+    /* order */
+    $ord=array();
+    for($i=0,$ii=count($expertise_data);$i<$ii;$i++){
+        $ord[$i]=$expertise_data[$i]['order'];
+    }
+    array_multisort($ord, SORT_ASC, $expertise_data);
+    /* END order */
+  
     $i=0;
     echo'<div id="result">';
     foreach($expertise_data as $pd){

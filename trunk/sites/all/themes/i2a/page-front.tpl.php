@@ -34,7 +34,9 @@
       <?php print phptemplate_get_ie_styles(); ?>
     <![endif]-->
     <link type="text/css" rel="stylesheet" media="all" href="<?php print base_path().path_to_theme() ?>/style-i2a.css" />
-    
+    <!--[if IE]>
+      <link type="text/css" rel="stylesheet" media="all" href="<?php print base_path().path_to_theme() ?>/style-i2a-ie.css" />
+    <![endif]-->
     <script type="text/javascript">
       /*<![CDATA[*/ 	
     	  $(function(){

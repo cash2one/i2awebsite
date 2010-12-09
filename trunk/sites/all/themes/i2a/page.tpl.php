@@ -7,7 +7,7 @@
     while($row = db_fetch_object($result)){              
       $port_node = node_load(array('nid'=>$row->nid));
       if($port_node->status){ 
-        array_push($portfolio_data,array('nid'=>$port_node->nid,'title'=>$port_node->title,'body'=>$port_node->body,'filepath'=>$port_node->field_image[0]['filepath'],'filepath'=>$port_node->field_screen_image[0]['filepath'],'www'=>$port_node->field_www[0]['value'],'short_description'=>$port_node->field_short_desc[0]['value']));
+        array_push($portfolio_data,array('nid'=>$port_node->nid,'title'=>$port_node->title,'body'=>$port_node->body,'filepath'=>$port_node->field_image[0]['filepath'],'filepath'=>$port_node->field_screen_image[0]['filepath'],'www'=>$port_node->field_www[0]['value'],'short_description'=>$port_node->field_short_desc[0]['value'],'order'=>$port_node->field_order[0]['value']));
       }
     }
   }
@@ -29,6 +29,9 @@
       <?php print phptemplate_get_ie_styles(); ?>
     <![endif]-->
     <link type="text/css" rel="stylesheet" media="all" href="<?php print base_path().path_to_theme() ?>/style-i2a.css" />
+    <!--[if IE]>
+    <link type="text/css" rel="stylesheet" media="all" href="<?php print base_path().path_to_theme() ?>/style-i2a-ie.css" />
+    <![endif]-->
   </head>
 
   <body<?php print phptemplate_body_class($left, $right); ?>>
@@ -159,6 +162,7 @@
             if(!$menu_a)
               echo contact_plugin();
             
+            
             if($menu_a && $node->type!='job'){
               $content =  menu_tree_output($menu_a);
               echo'<h1 class="menu-left">'.$title.'</h1>';
@@ -173,7 +177,10 @@
                 }
                 echo'<br />';
               }
-            } 
+            }
+            
+            if($node->type=='job')
+              echo contact_plugin(); 
             /*else{
               echo'<div class="follow-us">';
               include('social.php');

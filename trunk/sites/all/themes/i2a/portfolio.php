@@ -10,16 +10,22 @@
   echo'<div class="col-right" style="width:656px;">';
 
   
+  /* order */
+  $ord=array();
+  for($i=0,$ii=count($portfolio_data);$i<$ii;$i++){
+      $ord[$i]=$portfolio_data[$i]['order'];
+  }
+  array_multisort($ord, SORT_ASC, $portfolio_data);
+  /* END order */
+  
   if($portfolio_data){
     $i=0;
     echo'<div id="result">';
+    
     foreach($portfolio_data as $pd){
         if(!empty($pd['filepath'])){
             $f=base_path() .'/'.$pd['filepath'];   
             
-        
-      
-         
         echo'<div id="p'.$i.'" class="portfolio-box '.(($i%2==0)?'portfolio-box-margin':null).'" style="background:url('.imagecache_create_url('portfolio-scale', $pd['filepath']).') top left no-repeat;">';
            
           echo'<div class="in-portfolio p'.$i.'">';
