@@ -280,3 +280,5 @@ li a.active{color:#5895BE;font-size:12px;font-weight:bold;}
 
 #bottomNavClose{margin-top:0;height:18px;}
 #imageData #bottomNav{height:auto;}
+
+.breadcrumb{display:none}
