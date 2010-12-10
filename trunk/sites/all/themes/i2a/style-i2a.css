@@ -75,7 +75,7 @@ ul.nice-menu-down li.menuparent:hover, ul.nice-menu-down li.over, #header-region
 ul.nice-menu-down li ul li ul, #header-region ul.nice-menu-down li ul li ul{left:191px;}
 
 .slide h1{font-size:16px;color:#008aad;margin:0 0 10px 0;font-weight:bold;}
-.slide .right{width:240px;float:left;}
+.slide .right{width:240px;float:left;margin:10px 0 0 670px;position:absolute;width:250px;}
 .slide .right ul{padding-left:18px;margin:10px 0;}
 .slide .right li{list-style: disc url();padding:3px 0 3px 0;}
 .slide .left{width:656px;height:290px;float:left;margin:0 20px 0 0;border:#dddddd 1px solid;}

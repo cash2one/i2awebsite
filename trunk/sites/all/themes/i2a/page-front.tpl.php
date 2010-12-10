@@ -37,6 +37,15 @@
     <!--[if IE]>
       <link type="text/css" rel="stylesheet" media="all" href="<?php print base_path().path_to_theme() ?>/style-i2a-ie.css" />
     <![endif]-->
+    
+    <!--[if IE 7]>
+    <style type="text/css">
+      .slide .right{margin:10px 0 0 0px;}
+    </style>
+      
+    <![endif]-->
+    
+    
     <script type="text/javascript">
       /*<![CDATA[*/ 	
     	  $(function(){
@@ -117,7 +126,7 @@
                 foreach($advert_data as $ad){
                   echo'<div>
                         <div class="left" style="background:url('. base_path() .$ad['filepath'].') top left no-repeat;">&nbsp;</div>
-                        <div class="right" style="width:250px;position:absolute;margin:10px 0 0 670px;">
+                        <div class="right" >
                           <h1>'.$ad['title'].'</h1>
                             '.$ad['body'];
                           
