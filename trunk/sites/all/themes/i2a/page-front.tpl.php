@@ -37,13 +37,10 @@
     <!--[if IE]>
       <link type="text/css" rel="stylesheet" media="all" href="<?php print base_path().path_to_theme() ?>/style-i2a-ie.css" />
     <![endif]-->
-    
     <!--[if IE 7]>
-    <style type="text/css">
-      .slide .right{margin:10px 0 0 0px;}
-    </style>
-      
+    <link type="text/css" rel="stylesheet" media="all" href="<?php print base_path().path_to_theme() ?>/style-i2a-ie7.css" />
     <![endif]-->
+   
     
     
     <script type="text/javascript">

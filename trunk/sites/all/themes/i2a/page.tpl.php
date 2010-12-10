@@ -7,6 +7,7 @@
     while($row = db_fetch_object($result)){              
       $port_node = node_load(array('nid'=>$row->nid));
       if($port_node->status){ 
+        
         array_push($portfolio_data,
                 array('nid'=>$port_node->nid,
                     'title'=>$port_node->title,
@@ -43,6 +44,9 @@
     <link type="text/css" rel="stylesheet" media="all" href="<?php print base_path().path_to_theme() ?>/style-i2a.css" />
     <!--[if IE]>
     <link type="text/css" rel="stylesheet" media="all" href="<?php print base_path().path_to_theme() ?>/style-i2a-ie.css" />
+    <![endif]-->
+    <!--[if IE 7]>
+    <link type="text/css" rel="stylesheet" media="all" href="<?php print base_path().path_to_theme() ?>/style-i2a-ie7.css" />
     <![endif]-->
   </head>
 
