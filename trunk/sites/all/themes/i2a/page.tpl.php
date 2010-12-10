@@ -7,7 +7,19 @@
     while($row = db_fetch_object($result)){              
       $port_node = node_load(array('nid'=>$row->nid));
       if($port_node->status){ 
-        array_push($portfolio_data,array('nid'=>$port_node->nid,'title'=>$port_node->title,'body'=>$port_node->body,'filepath'=>$port_node->field_image[0]['filepath'],'filepath'=>$port_node->field_screen_image[0]['filepath'],'www'=>$port_node->field_www[0]['value'],'short_description'=>$port_node->field_short_desc[0]['value'],'order'=>$port_node->field_order[0]['value']));
+        array_push($portfolio_data,
+                array('nid'=>$port_node->nid,
+                    'title'=>$port_node->title,
+                    'body'=>$port_node->body,
+                    'filepath'=>$port_node->field_image[0]['filepath'],
+                    'filepath'=>$port_node->field_screen_image[0]['filepath'],
+                    'www'=>$port_node->field_www[0]['value'],
+                    'short_description'=>$port_node->field_short_desc[0]['value'],
+                    'order'=>$port_node->field_order[0]['value'],
+                    'field_fi_scale'=>$port_node->field_fi_scale_p[0]['value'],
+                    'field_th_scale'=>$port_node->field_th_scale_p[0]['value']
+                )
+        );
       }
     }
   }
@@ -68,8 +80,11 @@
             $baner=base_path().$node->field_baner[0]['filepath'];
           elseif($node->nid==26)
             $baner=base_path().path_to_theme().'/images/baner-contact.png';
+          elseif($node->type="case-study")
+            $baner=base_path().path_to_theme().'/images/baner-portfolio-stock.png';
           else
             $baner=base_path().path_to_theme().'/images/baner.png';
+          
         ?>
         <div class="baner" style="background:url(<?php print $baner; ?>) top left no-repeat">  
           
@@ -110,8 +125,9 @@
           <?php print $breadcrumb ?>
           <div class="clear-block">
             <?php
+              $node=node_load(array('nid'=>$node->nid));
+              $u=((strstr($_SERVER['REQUEST_URI'],'/edit') || strstr($_SERVER['REQUEST_URI'],'/delete'))?'true':null);
               
-              $u=((strstr($_SERVER['REQUEST_URI'],'/edit') || strstr($_SERVER['REQUEST_URI'],'/delete'))?true:false);
               if($node->nid==8 && !strlen($u) && $node->type!='portfolio'){
                 include('portfolio.php'); 
               }
@@ -125,11 +141,13 @@
                 include('expertise-node.php');
               }
               else{
+                
                 print $content;
-              } 
-              //array_push($job_data,array('nid'=>$job_node->nid,'title'=>$job_node->title,'short_description'=>$job_node->field_short_body[0]['value'],'body'=>$job_node->body,'reference'=>$job_node->field_reference_number[0]['value']));
-              
-              //<a href="'.base_path().drupal_lookup_path('alias',"node/".$pd['nid']).'" title="'.$pd['title'].'" class="more-link">more</a>
+              }
+
+               /*
+              array_push($job_data,array('nid'=>$job_node->nid,'title'=>$job_node->title,'short_description'=>$job_node->field_short_body[0]['value'],'body'=>$job_node->body,'reference'=>$job_node->field_reference_number[0]['value']));
+              <a href="'.base_path().drupal_lookup_path('alias',"node/".$pd['nid']).'" title="'.$pd['title'].'" class="more-link">more</a>*/
             ?>
             
             
@@ -150,8 +168,7 @@
       </div>
       
       <div class="right">  
-          <?php     
-            //echo $node->nid;       
+          <?php            
             $menu = module_find_lowest_menu(menu_tree_page_data('primary-links'));
             $menu_a=array();
             foreach($menu as $mm){
@@ -181,15 +198,9 @@
             
             if($node->type=='job')
               echo contact_plugin(); 
-            /*else{
-              echo'<div class="follow-us">';
-              include('social.php');
-              echo'</div>';
-            }*/
+
           ?>
-          
-          <!--<div class="contact-us"></div>-->
-                    
+
           <br />
         </div>
         

@@ -10,11 +10,18 @@
     echo'<div id="project-gallery">';
       if(!empty($pnode->field_screen_image[0])){
         foreach($pnode->field_screen_image as $image){
-          echo'<a href="'.imagecache_create_url('portfolio-lightbox', $image['filepath']).'" title="'.$pnode->title.'"><img src="'.imagecache_create_url('portfolio-scale-in', $image['filepath']).'" alt="'.$pnode->title.'" class="lightbox" /></a>';
+            echo'<div>';
+                $image_file=imagecache_create_url($pnode->field_th_scale_p[0]['value'], $image['filepath']);
+                $file_size=getimagesize($image_file);
+                $css='style="padding-top:'.((120-$file_size[1])/2).'px;"';
+                echo'<a href="'.imagecache_create_url('portfolio-lightbox', $image['filepath']).'" title="'.$pnode->title.'">
+                        <img '.$css.' src="'.$image_file.'" alt="'.$pnode->title.'" class="lightbox" />
+                    </a>';
+              echo'</div>';
         }
       }
-    echo'<div class="clear"></div>';
   echo'</div>';
+  echo'<div class="clear"></div>';
                  
   if(!empty($pnode->field_www[0]['value']))
     echo'<br /><b>See online:</b> <a href="'.$pnode->field_www[0]['value'].'" title="See onlline: '.$pnode->title.'">'.$pnode->field_www[0]['value'].'</a>';
