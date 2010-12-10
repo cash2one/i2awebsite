@@ -21,7 +21,7 @@
     
     foreach($portfolio_data as $pd){
         if(!empty($pd['filepath'])){
-            $f=base_path() .''.$pd['filepath'];   
+            $f=base_path() .'/'.$pd['filepath'];   
             $image_file=imagecache_create_url($pd['field_fi_scale'], $pd['filepath']);
 
             //$file_size=getimagesize($image_file);
