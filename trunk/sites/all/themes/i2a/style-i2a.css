@@ -59,8 +59,8 @@ ul.nice-menu-down li ul,ul.nice-menu-down li:hover ul{border-left:#3FB6D3 1px so
 ul.nice-menu-down li ul ul{}
 ul.nice-menu-down li a{}
 
-ul.nice-menu-down li li{padding:3px 0 3px 10px;border-top:#3FB6D3 1px dotted;background:url(images/menu-li.1png) #ffffff 5px center no-repeat;}/*bez tla*/
-ul.nice-menu-down li li li{padding:3px 12px;border-top:#3FB6D3 1px dotted;background:url(images/menu-li.1png) #ffffff 5px center no-repeat;}/*bez tla*/
+ul.nice-menu-down li li{padding:3px 0 3px 10px;border-top:#3FB6D3 1px dotted;background:url(images/menu-li.png) #ffffff 5px center no-repeat;}/*bez tla*/
+ul.nice-menu-down li li li{padding:3px 12px;border-top:#3FB6D3 1px dotted;background:url(images/menu-li.png) #ffffff 5px center no-repeat;}/*bez tla*/
 ul.nice-menu-down li ul{padding:0;}
 ul.nice-menu-down li li a{color:#008AAD;font-size:11px;font-weight:normal;}
 ul.nice-menu-down li li.over, #header-region ul.nice-menu-down li li.menuparent:hover, #header-region ul.nice-menu-down li li.over{background:transparent;border:0;}

@@ -1,4 +1,4 @@
-<?php 
+<?php
   if($node->nid==29){
     $main_node = node_load(array('nid'=>29));
     $period_type=$main_node->field_type[0]['value'];
@@ -116,7 +116,7 @@
               if(!empty($advert_data)){
                 foreach($advert_data as $ad){
                   echo'<div>
-                        <div class="left" style="background:url('. base_path() .'/'.$ad['filepath'].') top left no-repeat;">&nbsp;</div>
+                        <div class="left" style="background:url('. base_path() .$ad['filepath'].') top left no-repeat;">&nbsp;</div>
                         <div class="right" style="width:250px;position:absolute;margin:10px 0 0 670px;">
                           <h1>'.$ad['title'].'</h1>
                             '.$ad['body'];
