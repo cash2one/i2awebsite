@@ -13,11 +13,11 @@
       if(!empty($pnode->field_image_file[0])){
         foreach($pnode->field_image_file as $image){
               echo'<div>';
-                $image_file=imagecache_create_url($pnode->field_th_scale[0]['value'], $image['filepath']);
-                $file_size=getimagesize($image_file);
-                $css='style="padding-top:'.((120-$file_size[1])/2).'px;"';
+                //$image_file=imagecache_create_url($pnode->field_th_scale[0]['value'], $image['filepath']);
+                //$file_size=getimagesize($image_file);
+                //$css='style="padding-top:'.((120-$file_size[1])/2).'px;"';
                 echo'<a href="'.imagecache_create_url('portfolio-lightbox', $image['filepath']).'" title="'.$pnode->title.'">
-                        <img '.$css.' src="'.$image_file.'" alt="'.$pnode->title.'" class="lightbox" />
+                        <img  src="'.$image_file.'" alt="'.$pnode->title.'" class="lightbox" />
                     </a>';
               echo'</div>';
         }

@@ -43,7 +43,7 @@
         if(!empty($pd['filepath'])){
             $f=base_path() .'/'.$pd['filepath'];   
                
-        echo'<div id="p'.$i.'" class="portfolio-box '.(($i%2==0)?'portfolio-box-margin':null).'" style="background:url('.imagecache_create_url($pd['field_fi_scale'], $pd['filepath']).') top left no-repeat;">';
+        echo'<div id="p'.$i.'" class="portfolio-box '.(($i%2==0)?'portfolio-box-margin':null).'" style="background:url('.imagecache_create_url($pd['field_fi_scale'], $pd['filepath']).') center center no-repeat;">';
            
           echo'<div class="in-portfolio p'.$i.'">';
             echo'<h1>'.$pd['title'].'</h1>';
