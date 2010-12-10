@@ -1,9 +1,13 @@
 $(function(){
   
-  $("#hoverNav").corner();
-  $(".portfolio-box").corner();
-  $(".in-portfolio").corner();
-  $("#project-gallery img, #project-gallery div, .baner ").corner("5px");
+  
+  if(!$.browser.msie && $.browser.version!='7.0'){
+    $("#hoverNav").corner();
+    $(".portfolio-box").corner();
+    $(".in-portfolio").corner();
+    $("#project-gallery img, #project-gallery div, .baner ").corner("5px");
+  }
+  
   $(".contact-us").html($("#block-block-1").html());
   
  
@@ -148,11 +152,11 @@ $(function(){
   
   br=$(".breadcrumb").text();
   if(br){
-    breadcrumbs=br.replace(/&raquo;/gi,'&gt;');
+    /*breadcrumbs=br.replace(/&raquo;/gi,'&gt;');
     breadcrumbs=breadcrumbs.replace(/&amp;/gi,'&');
     breadcrumbs=breadcrumbs.replace(/Home » Home/gi,'Home');
     breadcrumbs=breadcrumbs.replace(/\//gi,' &raquo; ');
-    breadcrumbs=breadcrumbs.replace(/Home/gi,'<b>Home</b>');
+    breadcrumbs=breadcrumbs.replace(/Home/gi,'<b>Home</b>');*/
     $("#breadcrumbs").html(breadcrumbs);
     $("#breadcrumbs :first(a)").css('color','#008AAD');
    }

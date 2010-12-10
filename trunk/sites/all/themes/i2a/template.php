@@ -156,6 +156,7 @@ drupal_add_js('misc/paginator.js');
 
 drupal_add_js('misc/chili-1.7.pack.js');
 drupal_add_js('misc/jquery.cycle.all.js');
+drupal_add_js('misc/jquery.client.js');
 drupal_add_js('misc/functions.js');
 
 
