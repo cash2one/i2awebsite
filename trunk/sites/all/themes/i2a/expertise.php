@@ -41,7 +41,7 @@
     echo'<div id="result">';
     foreach($expertise_data as $pd){
         if(!empty($pd['filepath'])){
-            $f=base_path() .'/'.$pd['filepath'];   
+            $f=base_path() .''.$pd['filepath'];   
                
         echo'<div id="p'.$i.'" class="portfolio-box '.(($i%2==0)?'portfolio-box-margin':null).'" style="background:url('.imagecache_create_url($pd['field_fi_scale'], $pd['filepath']).') center center no-repeat;">';
            
