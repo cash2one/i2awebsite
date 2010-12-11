@@ -23,8 +23,10 @@
         if(!empty($pd['filepath'])){
             $f=base_path() .'/'.$pd['filepath'];   
             $image_file=imagecache_create_url($pd['field_fi_scale'], $pd['filepath']);
-
-            //$file_size=getimagesize($image_file);
+             
+            $file_size=getimagesize($image_file);
+            
+            
             //$css_top=((180-$file_size[1])/2).'px';
             //$css_left=((305-$file_size[0])/2).'px';
             echo'<div id="p'.$i.'" class="portfolio-box '.(($i%2==0)?'portfolio-box-margin':null).'" style="background:url('.$image_file.') center center no-repeat;">';
