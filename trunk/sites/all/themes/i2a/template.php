@@ -6,14 +6,21 @@
  *
  * Adds 'sidebar-left', 'sidebar-right' or 'sidebars' classes as needed.
  */
- 
+
  
 function get_title_magically($nid)
 {
   $node = node_load(array('nid'=>$nid));
   return $node->title;
 } 
- 
+
+$items['node/27/done'] = array(
+    'title'            => 'Thank you',
+    'page callback'    => 'feedback_done_page',
+    'access callback'  => TRUE,
+    'type'             => MENU_CALLBACK,
+  );
+
 function contact_plugin(){
   $form_email='';
   $sql = "SELECT email FROM {webform_emails} WHERE from_address='default'  LIMIT 1";
@@ -157,6 +164,7 @@ drupal_add_js('misc/paginator.js');
 drupal_add_js('misc/chili-1.7.pack.js');
 drupal_add_js('misc/jquery.cycle.all.js');
 drupal_add_js('misc/jquery.client.js');
+drupal_add_js('misc/jquery.maskedinput-1.2.2.min.js');
 drupal_add_js('misc/functions.js');
 
 

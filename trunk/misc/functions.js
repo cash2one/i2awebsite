@@ -152,15 +152,18 @@ $(function(){
   
   br=$(".breadcrumb").text();
   if(br){
-    /*breadcrumbs=br.replace(/&raquo;/gi,'&gt;');
+    breadcrumbs=br.replace(/&raquo;/gi,'&gt;');
     breadcrumbs=breadcrumbs.replace(/&amp;/gi,'&');
     breadcrumbs=breadcrumbs.replace(/Home » Home/gi,'Home');
     breadcrumbs=breadcrumbs.replace(/\//gi,' &raquo; ');
-    breadcrumbs=breadcrumbs.replace(/Home/gi,'<b>Home</b>');*/
+    breadcrumbs=breadcrumbs.replace(/Home/gi,'<b>Home</b>');
     $("#breadcrumbs").html(breadcrumbs);
     $("#breadcrumbs :first(a)").css('color','#008AAD');
    }
    $(".breadcrumb").remove();
-   
+
+  $("#edit-submitted-phone").mask("(999) 999-9999", {placeholder:" _ "});
+
+
 });                  
 

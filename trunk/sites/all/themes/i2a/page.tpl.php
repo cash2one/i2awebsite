@@ -1,4 +1,7 @@
-<?php 
+
+<?php
+   $nn=$node->type;
+  
   if($node->nid==8){
     $portfolio_data=array();
     $type="'portfolio'";
@@ -99,7 +102,38 @@
                 $("#breadcrumbs").html('<b style="color: rgb(0, 138, 173);">Home</b> &raquo; Careers &raquo <?php echo $node->title; ?></h1>')
               });
             </script>
-          <?php }?>
+          <?php
+            }
+            if(strstr($_SERVER['REQUEST_URI'],'/sitemap')){
+          ?>
+            <script type="text/javascript">
+              $(function(){
+                $("#breadcrumbs").html('<b style="color: rgb(0, 138, 173);">Home</b> &raquo; Sitemap </h1>')
+              });
+            </script>
+          <?php
+            }
+            if(strstr($_SERVER['REQUEST_URI'],'/node/27/done')){
+          ?>
+            <script type="text/javascript">
+              $(function(){
+                $(".left .links a").attr('href','javascript:history.back()');
+              });
+            </script>
+          <?php
+            }
+            if($nn=='job'){
+           ?>
+            <script type="text/javascript">
+              $(function(){
+                $("#breadcrumbs").html('<b style="color: rgb(0, 138, 173);">Home</b> &raquo; Open Positions &raquo; <?php echo $node->title?> </h1>')
+              });
+            </script>
+            <?php
+            }
+
+          ?>
+          
         </div>  
       
       <div class="clear"></div>
@@ -179,12 +213,13 @@
               if($mm['link']['depth']>1)
                 array_push($menu_a, $mm);
             }
+
             
-            if(!$menu_a)
-              echo contact_plugin();
+            //if(!$menu_a)
+              //echo contact_plugin();
             
             
-            if($menu_a && $node->type!='job'){
+            if(count($menu_a)>1 && $node->type!='job'){
               $content =  menu_tree_output($menu_a);
               echo'<h1 class="menu-left">'.$title.'</h1>';
               print($content);
@@ -199,9 +234,11 @@
                 echo'<br />';
               }
             }
+            else
+                echo contact_plugin();
             
-            if($node->type=='job')
-              echo contact_plugin(); 
+            //if($node->type=='job')
+              //echo contact_plugin();
 
           ?>
 
