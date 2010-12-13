@@ -95,7 +95,7 @@
         ?>
         <div class="baner" style="background:url(<?php print $baner; ?>) top left no-repeat">  
           
-          <h1 id="breadcrumbs"><?php echo $node->title ?> > <b>Web to Mobile</b></h1>
+          <h1 id="breadcrumbs"><?php echo $node->title ?> <!--> <b>Web to Mobile</b>--></h1>
           <?php if($node->type=='job'){ ?>
             <script type="text/javascript">
               $(function(){
