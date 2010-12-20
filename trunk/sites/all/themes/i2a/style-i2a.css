@@ -77,16 +77,16 @@ ul.nice-menu-down li ul li ul, #header-region ul.nice-menu-down li ul li ul{left
 .slide h1{font-size:16px;color:#008aad;margin:0 0 10px 0;font-weight:bold;}
 .slide .right{width:240px;float:left;margin:10px 0 0 670px;position:absolute;width:250px;}
 .slide .right ul{padding-left:18px;margin:10px 0;}
-.slide .right li{list-style: disc url();padding:3px 0 3px 0;}
-.slide .left{width:656px;height:290px;float:left;margin:0 20px 0 0;border:#dddddd 1px solid;}
+.slide .right li{list-style: disc;padding:3px 0 3px 0;}
+.slide .left{width:658px;height:292px;float:left;margin:0 20px 0 0;/*border:#dddddd 1px solid;*/}
 
 .slide .left div{background:#ffffff;opacity:0.8;filter:alpha(opacity=80)}
 .slide .left div ul{margin:0 10px;}
 .main-adv{background:#ffffff;padding:10px;margin:15px 0 10px 0;height:295px;}
 .main-adv .slide .left li{float:right;}
-.menu-adv{background:#F5F0EC;position:absolute;z-index:997;padding:7px 10px;opacity:0.93;filter:alpha(opacity=93);width:636px;margin:1px 0 0 1px;}
+.menu-adv{background:url(images/bg-slide.png) top left no-repeat;position:absolute;z-index:997;padding:7px 10px;opacity:0.93;filter:alpha(opacity=93);width:636px;margin:1px 0 0 1px;}
 .menu-adv img{margin:0 10px;}
-.menu-adv span{margin:0px 10px;color:#0082a4;font-size:18px;font-weight:normal}
+.menu-adv span{margin:0px 10px;color:#0082a4;font-size:14px;font-weight:normal}
 .menu-adv a{color:#455560;font-size:14px;font-weight:bold;}
 .menu-adv a:hover{text-decoration:none;color:#008AAD}
 .menu-adv a.activeSlide{color:#008AAD;}

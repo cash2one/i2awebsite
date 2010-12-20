@@ -34,9 +34,9 @@ $(function(){
   $(".login-box").corner("5px br bl");
   
   
-  $(".slide .left").corner("10px");
+  //$(".slide .left").corner("10px");
   $(".main-adv").corner("5px");
-  $(".menu-adv").corner("tl tr");
+  $(".menu-adv").corner("tl tr 5px");
   $(".orange-button").corner("5px");
   $(".contact-us").corner("5px");
   $(".follow-us").corner("5px");
