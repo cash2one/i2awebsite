@@ -51,7 +51,7 @@ technologies = {
         },
     'cassandra': {
         'icon': 'tech_used_07',
-        'title': 'Cassandra',
+        'title': 'Apache Cassandra',
         'url': 'cassandra'
         },
     'solr': {
@@ -61,7 +61,7 @@ technologies = {
         },
     'apache': {
         'icon': 'tech_used_09',
-        'title': 'Apache Web Server + modwsgi, Nginx',
+        'title': 'Apache Web Server',
         'url': 'apachews'
         },
     'linux': {
@@ -71,7 +71,7 @@ technologies = {
         },
     'ios': {
         'icon': 'tech_used_11',
-        'title': 'iOS 6',
+        'title': 'iOS',
         'url': 'ios'
         },
     'android': {
@@ -131,7 +131,7 @@ technologies = {
         },
     'dotnet': {
         'icon': 'tech_used_23',
-        'title': '.NET Compact Framework',
+        'title': '.NET Framework',
         'url': 'dotnet'
         },
     'skype': {
@@ -144,14 +144,14 @@ technologies = {
         'title': 'jQuery',
         'url': 'jquery'
         },
-    'rest': {
+    'oradb': {
         'icon': 'tech_used_26',
-        'title': 'Oracle Rest Web Services',
-        'url': 'rest'
+        'title': 'Oracle DB',
+        'url': 'oradb'
         },
     'mssql': {
         'icon': 'tech_used_27',
-        'title': 'MSSql',
+        'title': 'Microsoft SQL Server',
         'url': 'mssql'
         },
     'opencv': {
@@ -159,7 +159,6 @@ technologies = {
         'title': 'OpenCV',
         'url': 'opencv'
         }
-    
 }
 
 projects = {
@@ -192,7 +191,7 @@ projects = {
         'solution_location': True,
         'url': '/portfolio/location-platforms/tripbucket',
         'category': 'location-platforms',
-        'techs': ['jquery', 'python', 'django', 'celery', 'mysql', 'openstreetmap', 'rabbitmq', 'cassandra', 'solr', 'apache', 'linux', 'postgresql', 'postgis'],
+        'techs': ['jquery', 'python', 'django', 'celery', 'openstreetmap', 'rabbitmq', 'postgresql', 'postgis', 'cassandra', 'solr', 'apache', 'linux'],
         'challenge': u'Create a website consumers could use to create a bucket list of dreams and track, record, and share their experiences with friends and other community members.'
         },
     'tripbucket_ad_platform':{
@@ -204,7 +203,7 @@ projects = {
         'featured': False,
         'url': '/portfolio/ad-platforms/tripbucket_ad_platform',
         'category': 'ad-platforms',
-        'techs': ['jquery', 'python', 'django', 'celery', 'mysql', 'apache', 'linux'],
+        'techs': ['python', 'java', 'postgresql', 'apache', 'linux'],
         'challenge': u'Create an ad platform that allows advertisers to send targeted ads to consumers who use travel-related web-based and mobile applications.'
         },
     'tripbucket_mobile':{
@@ -217,7 +216,7 @@ projects = {
         'solution_ad_delivery': True,
         'url': '/portfolio/mobile-apps/tripbucket_mobile',
         'category': 'mobile-apps',
-        'techs': ['jquery', 'python', 'django', 'celery', 'mysql', 'ios', 'android', 'linux', 'rest'],
+        'techs': ['ios', 'android'],
         'challenge': u'Create a companion mobile TripBucket application that would work on iPhones and Android-based cell phones.'
         },
     'moasis':{
@@ -234,7 +233,7 @@ projects = {
         'solution_location': True,
         'url': '/portfolio/ad-platforms/moasis',
         'category': 'ad-platforms',
-        'techs': ['jquery', 'python', 'django', 'celery', 'mysql', 'openstreetmap', 'rabbitmq', 'cassandra', 'solr', 'apache', 'linux'],
+        'techs': ['jquery', 'python', 'django', 'celery', 'mysql', 'openstreetmap', 'rabbitmq', 'cassandra', 'java', 'apache', 'linux', 'ios', 'android'],
         'challenge': u'Create a hyper location-based ad platform that allows advertisers to send targeted ads to people based on their location.'
         },
     'att':{
@@ -265,7 +264,7 @@ projects = {
         'solution_mobile': True,
         'url': '/portfolio/mobile-apps/mobile_deposit',
         'category': 'mobile-apps',
-        'techs': ['jquery', 'dotnet','java','blackberry','symbian','ios','skype'],
+        'techs': ['dotnet', 'java', 'blackberry', 'symbian', 'ios', 'skype'],
         'challenge': u'Create a secure distributed web and mobile solution that enables financial services organizations to offer remote check deposit capture to consumers and business customers.'
         },
     'facial_recognition':{
@@ -291,7 +290,7 @@ projects = {
         'solution_enterprise': True,
         'url': '/portfolio/saas-applications/knowledge_management_system',
         'category': 'saas-applications',
-        'techs': ['jquery', 'java', 'rest'],
+        'techs': ['java', 'oradb', 'mssql', 'apache'],
         'challenge': u'Create a SaaS application that enables globally distributed organizations to collaborate with each other seamlessly while retaining and protecting their intellectual capital. The client needed to create a flexible SaaS KMS that would cover needs from many different industries.'
         },
     'nba_team_applications':{
@@ -304,7 +303,7 @@ projects = {
         'solution_mobile': True,
         'url': '/portfolio/mobile-apps/nba_team_applications',
         'category': 'mobile-apps',
-        'techs': ['jquery', 'python', 'django', 'celery', 'mysql', 'java', 'ios', 'android', 'linux'],
+        'techs': ['python', 'django', 'celery', 'mysql', 'java', 'ios', 'android', 'linux'],
         'challenge': u'Create mobile applications that are used by NBA teams to stay connected with their fan base. The apps needed to work across multiple platforms and be capable of providing the quickest updates available while handling tens of thousands of users simultaneously.'
         },
     'nhl_team_applications':{
@@ -317,7 +316,7 @@ projects = {
         'solution_mobile': True,
         'url': '/portfolio/mobile-apps/nhl_team_applications',
         'category': 'mobile-apps',
-        'techs': ['jquery', 'python', 'django', 'celery', 'mysql', 'java', 'ios', 'android', 'linux'],
+        'techs': ['python', 'django', 'mysql', 'java', 'ios', 'android', 'linux'],
         'challenge': u'Create mobile applications used by NHL teams to stay connected with their fans. The apps were required to work across multiple platforms and provide near real-time game updates, while simultaneously handling tens of thousands of concurrent users.'
         },
     'salesforce':{
@@ -332,7 +331,7 @@ projects = {
         'solution_telephony': True,
         'url': '/portfolio/saas-applications/salesforce',
         'category': 'saas-applications',
-        'techs': ['jquery', 'php', 'mysql', 'linux', 'apex', 'rest', 'mssql'],
+        'techs': ['jquery', 'java', 'mysql', 'linux', 'apex'],
         'challenge': u'Build a web-based application that seamlessly integrates the client’s many eCommerce applications into Salesforce.com. The solution needed to consolidate all the call center agents into one telephony solution based on Salesforce.com.'
         },
     'socialjane':{
@@ -412,7 +411,7 @@ projects = {
         'solution_location': True,
         'url': '/portfolio/ad-platforms/sport-ad-server',
         'category': 'ad-platforms',
-        'techs': ['python', 'django', 'linux', 'celery', 'mysql', 'apache'],
+        'techs': ['python', 'django', 'linux', 'java', 'mysql', 'apache', 'ios', 'android'],
         'challenge': u'Create an ad platform that allows advertisers to send targeted ads to people who use sports related web-based and mobile applications.'
         }
 }
