@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+
+{% block meta_title %}i2aSolutions - Scheduling & Alerting Applications{% endblock %}
+{% block meta_desc %}Many companies, large and small, have unique needs for online scheduling applications or workforce management issues that a web or mobile applications will solve.{% endblock %}
+
+{% block content %}
+<div class="content_wrapper">
+    <div class="page_title"><h1>Scheduling & Alerting Applications</h1></div>
+    
+    <div class="pagination_container">
+        <div class="pagination" style="z-index:2;">
+            <span class="pagination_left"></span>
+            <a class="pagination_center" href="/">Home page</a>
+            <span class="pagination_right"></span>
+        </div>
+        <div class="pagination pagination_active" style="z-index:1;">
+            <span class="pagination_left"></span>
+            <a class="pagination_center" href="/solutions-scheduling-alerting">Scheduling & Alerting Applications</a>
+            <span class="pagination_right"></span>
+        </div>
+        <div class="clear"></div>
+    </div>
+    
+    <div class="wrapper916" style="margin-top:20px;">
+    	<h2 class="header fs18 orange">Scheduling & Alerting Applications</h2>
+    	<p>Many companies, large and small, have unique needs for online scheduling applications or workforce management issues that a web or mobile applications will solve. i2a Solutions has worked diligently to provide custom development services where required to support these types of scenarios.</p>
+		<div class="header fs18">Featured projects</div>
+		<div class="project_row">
+            {% for project in projects.values  %}
+            	{% if project.solution_scheduling %}
+	            <div class="project">
+	            	<a href="{{ project.url }}">
+	                <div class="project_img">
+	                	<img src="{{ project.img_thumb }}" />
+	                    <span class="project_hover"></span>
+	                    <strong class="project_caption">{{ project.caption }}</strong>
+	                </div>
+	                </a>
+	                <div class="project_img_shadow"></div>
+	            </div>
+	            {% endif %}
+            {% endfor %}
+        </div>
+        <div class="clear"></div>
+		<div class="page_full" style="margin-top:25px;">
+	        <div class="page_2_col_container">
+		        <div class="page_2_col">
+		        	<h3 class="header fs14 blue">Many different types of applications:</h3>
+		            <p>We have designed and developed many types of scheduling and alert applications.
+					<ul>
+						<li>Airline booking and scheduling applications</li>
+						<li>Scheduling medical appointments</li>
+						<li>Assuring patients take their medicine on time</li>
+						<li>Teaching children how to schedule their task and get awards</li>
+						<li>An enhanced scheduling system for home services</li>
+						<li>Time management system</li>
+					</ul>		            
+		            </p> 
+		        </div>
+		        <div class="page_2_col">
+		        	<h3 class="header fs14 blue">Alerts & notifications</h3>
+		            <p>Our schedule solutions utilize many different types of way to alert and notify users of upcoming appointments or issues that have occurred. These range from:
+		            <ul>
+					   <li>IVR systems to call the users with Text-to-Speech alerts</li>
+					   <li>SMS text alerts with ability to send confirmations of receiving alerts</li>
+					   <li>Emailing reminders</li>
+					   <li>Desktop popup alerts</li>
+		            </ul>
+		            </p>
+		        </div>
+		        <div class="clear"></div>
+	        </div>
+	    </div>
+	    <div class="clear"></div>
+		<div class="page_full" style="margin-top:25px;">
+	        <div class="page_2_col_container">
+		        <div class="page_2_col">
+		        	<h3 class="header fs14 blue">Integration to other online platforms</h3>
+		            <p>We have integrated our applications to many different types of 3rd party applications and devices including:
+					<ul>
+						<li>Many different types of calendaring applications (Google, Outlook, iCloud, etc.)</li>
+						<li>Social media sites (Facebook, Twitter, etc.)</li>
+						<li>Devices (time clocks, medical devices, monitoring platforms)</li>
+					</ul>		            
+		            </p> 
+		        </div>
+		        <div class="clear"></div>
+	        </div>
+	    </div>
+    </div>
+</div>
+{% endblock %}

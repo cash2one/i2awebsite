@@ -1,0 +1,28 @@
+{% extends '../../base-portfolio.html' %}
+
+{% block challenge %}
+<p>Create mobile applications that are used by NBA teams to stay connected with their fan base. The apps needed to
+work across multiple platforms and be capable of providing the quickest updates available while handling tens of
+thousands of users simultaneously.</p>
+{% endblock %}
+
+{% block solution %}
+<p>When creating an application that will appeal to the NBA fans of a particular team it’s imperative to include access
+to real time data during games. We access NBA’s data feed to provide users with real time box scores, shots on
+goal, and in-game individual player data. There is also a built-in e-commerce component for ticket sales. When the
+team is off the court we use automated feeds to keep fans updated on player stats, news, photo galleries, videos,
+and more. We created an application that could be unique to each team by building a customizable Content
+Management System (CMS) on the back-end so that each team could decide how they will interact with fans and
+the type of information the app will provide.</p>
+<p>Keeping in mind that NBA teams have different requirements for their individual
+apps we designed a scalable app that can support large numbers of fans
+simultaneously. We built a customizable Content Management System (CMS) on
+the back-end giving teams the ability to choose the type of information provided
+by the app, to stream live video or radio broadcasts of the game, and to decide
+how they will interact with fans. For teams that want to monetize the application
+we included an integrated ad platform that can be turned on or off.</p>
+<p>Each NBA application is compatible with iPhone and Android devices.</p>
+{% endblock %}  
+
+{% block website_url %}https://itunes.apple.com/us/app/detroit-pistons-official-mobile/id570797670?mt=8&ls=1{% endblock %}
+{% block website_anchor %}Detroit Pistons iPhone App - download from iTunes{% endblock %}

@@ -1,0 +1,55 @@
+{% extends '../base.html' %}
+
+{% block meta_title %}i2aSolutions - Ad Platforms Portfolio{% endblock %}
+{% block meta_desc %}Our solutions allow a publisher to manage any number of advertisers and campaigns using fixed price, CPM or CPC ad models.{% endblock %}
+
+{% block content %}
+<div class="content_wrapper">
+    
+    <div class="page_title"><h1>Ad platforms</h1></div>
+    
+    <div class="pagination_container">
+        <div class="pagination" style="z-index:3;">
+            <span class="pagination_left"></span>
+            <a class="pagination_center" href="/">Home page</a>
+            <span class="pagination_right"></span>
+        </div>
+        <div class="pagination" style="z-index:2;">
+            <span class="pagination_left"></span>
+            <a class="pagination_center" href="/portfolio">Portfolio</a>
+            <span class="pagination_right"></span>
+        </div>
+        <div class="pagination pagination_active" style="z-index:1;">
+            <span class="pagination_left"></span>
+            <a class="pagination_center" href="/portfolio/ad-platforms">Ad platforms</a>
+            <span class="pagination_right"></span>
+        </div>
+        <div class="clear"></div>
+    </div>
+    
+    <div class="wrapper916" style="margin-top:20px;">
+	<p></p>
+	</div>
+    
+    <div class="wrapper916"  style="margin-top:20px;">
+        <div class="project_row">
+            {% for project in projects.values  %}
+            	{% ifequal project.category 'ad-platforms' %}
+	            <div class="project">
+	            	<a href="{{ project.url }}">
+	                <div class="project_img">
+	                	<img src="{{ project.img_thumb }}" />
+	                    <span class="project_hover"></span>
+	                    <strong class="project_caption">{{ project.caption }}</strong>
+	                </div>
+	                </a>
+	                <div class="project_img_shadow"></div>
+	            </div>
+	            {% endifequal %}
+            {% endfor %}
+        </div>
+        <div class="clear"></div>
+    
+    </div>
+</div> <!-- class=content_wrapper -->
+{% endblock %}

@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Allow: /expertise
+Allow: /services
+Allow: /careers
+Allow: /contact
+

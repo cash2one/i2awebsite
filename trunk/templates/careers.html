@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block meta_title %}i2aSolutions - Careers{% endblock %}
+{% block meta_desc %}If you enjoy problem solving, look for a challenging and stimulating work environment, possess strong communication skills, and are passionate about web and mobile technologies, we would like to hear from you.{% endblock %}
+
+{% block content %}
+<div class="content_wrapper">
+    <div class="page_title"><h1>i2aSolutions - Careers</h1></div>
+    
+    <div class="pagination_container">
+        <div class="pagination" style="z-index:2;">
+            <span class="pagination_left"></span>
+            <a class="pagination_center" href="/">Home page</a>
+            <span class="pagination_right"></span>
+        </div>
+        <div class="pagination pagination_active" style="z-index:1;">
+            <span class="pagination_left"></span>
+            <a class="pagination_center" href="/careers">Careers</a>
+            <span class="pagination_right"></span>
+        </div>
+        <div class="clear"></div>
+    </div>
+    
+    <div class="wrapper916" style="margin-top:40px;">
+        <div class="page_full">
+        	{% include "quick_contact.html" %}
+            <h2 class="header fs18 orange">Careers</h2>
+            <p>At i2a Solutions, we recognize that our experts are central to both i2a's and our client's success. While our company is built on tech knowledge, experience and teamwork, the collaborative nature of our process depends equally on our employees' passion, inventiveness and personal integrity.</p>
+			<p>If you enjoy problem solving, look for a challenging and stimulating work environment, possess strong communication skills, and are passionate about <a href="/technologies">web and mobile technologies</a>, we would like to hear from you. </p>
+        </div>
+        <div class="page_full">
+	        <h2 class="header fs18 orange" style="margin-top:40px; margin-bottom:20px;">Open Positions</h2>
+	        <div class="page_2_col_container">
+		        <div class="page_2_col">
+		        	<h3 class="header fs16 blue">Ruby on Rails Web Developer (San Diego, CA, USA)</h3>
+		            <p>You would work closely with our product managers and designers to extend a large, high-visibility web application which is tightly integrated with a virtual world.</p>
+		        </div>
+		        <div class="page_2_col">
+		        	<h3 class="header fs16 blue">Java Developer (Krakow, POLAND)</h3>
+		            <p>We're looking for a talented Java Developer who has expertise building enterprise software with understanding of JBOSS application server, database optimization and message queues.</p>
+		        </div>
+		        <div class="clear"></div>
+	        </div>
+	        <div class="page_2_col_container" style="margin-top:10px;">
+		        <div class="page_2_col">
+		        	<h3 class="header fs16 blue">PHP Developer (San Diego, CA, USA)</h3>
+		            <p>We are looking for a talented and experienced PHP Software Engineer with good communication skills and a proven track record in PHP Development. The position is a full-time position based in our San Diego office.</p>
+		        </div>
+		        <div class="page_2_col">
+		        	<h3 class="header fs16 blue">Senior Python Developer (Krakow, POLAND)</h3>
+		            <p>We're looking for a Senior Python Developer who has expertise building large websites and scaling them with deep understanding of caching, databases, and optimization. The position is a full-time position based in our Krakow office.</p>
+		        </div>
+		        <div class="clear"></div>
+	        </div>
+	    </div>
+    </div>
+</div>
+{% endblock %}

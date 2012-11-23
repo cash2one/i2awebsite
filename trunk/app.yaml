@@ -1,0 +1,11 @@
+application: i2a-solutions
+version: 10
+runtime: python
+api_version: 1
+
+handlers:
+- url: /site_media
+  static_dir: site_media
+
+- url: .*
+  script: main.py

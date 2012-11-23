@@ -1,0 +1,32 @@
+{% extends '../../base-portfolio.html' %}
+
+
+{% block challenge %}
+<p>Create a secure distributed web and mobile solution that enables financial
+services organizations to offer remote check deposit capture to consumers and
+business customers.</p>
+{% endblock %}
+
+{% block solution %}
+<p>To create a successful application we considered user behavior and the phone’s
+camera limitations. Since we were creating a new type of imaging application
+that would also have to quickly train users how to use it effectively, this process
+required significant R&D. First, we tested camera phones from multiple
+manufacturers and determined cell phones with an integrated 2-megapixel
+camera with user controls (for example, auto focus) and ample storage space
+would be able to handle the application. Next, we studied how consumers took
+pictures with their camera phones and matched it with existing smartphone
+technology to create a working product.</p>
+<p>Essentially, we turned the phone’s camera into a portable scanner. In order to help users get a successful scan
+when taking a picture of the document we developed a series of measurements the captured image had to meet
+before it could be submitted to the bank (was it in focus, were shadows an issue, was the check cut off in the
+photo, etc.). This resulted in a set of scan measurements above and beyond those already required by financial
+institutions. Once those requirements were set, we added auto correction and created rules to train consumers
+how to take the picture correctly to produce an acceptable scan. When the image was successfully captured the
+image would be submitted to the financial institution utilizing the required encryption protocols. The extensive
+R&D and user research resulted in an easy to use mobile application that works on multiple platforms that can
+now be found in the mobile offering of multiple banks.</p>
+{% endblock %}  
+
+{% block website_url %}http://www.miteksystems.com/solutions/banking/mobile-deposit{% endblock %}
+{% block website_anchor %}http://www.miteksystems.com/{% endblock %}

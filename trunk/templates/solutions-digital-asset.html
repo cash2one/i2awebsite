@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+
+{% block meta_title %}i2aSolutions - Digital Asset Management{% endblock %}
+{% block meta_desc %}We can create digital rights control solutions that help protect and monitor your intellectual property. We also help content providers set and manage permissions to make media content access and distribution transparent and adjustable while ensuring due IP protection.{% endblock %}
+
+{% block content %}
+<div class="content_wrapper">
+    <div class="page_title"><h1>Digital Asset Management</h1></div>
+    
+    <div class="pagination_container">
+        <div class="pagination" style="z-index:2;">
+            <span class="pagination_left"></span>
+            <a class="pagination_center" href="/">Home page</a>
+            <span class="pagination_right"></span>
+        </div>
+        <div class="pagination pagination_active" style="z-index:1;">
+            <span class="pagination_left"></span>
+            <a class="pagination_center" href="/solutions-digital-asset">Digital Asset Management</a>
+            <span class="pagination_right"></span>
+        </div>
+        <div class="clear"></div>
+    </div>
+    
+    <div class="wrapper916" style="margin-top:20px;">
+    	<h2 class="header fs18 orange">Digital Asset Management</h2>
+    	<p>We know how to implement and how to customize web applications to meet your company’s specific needs, so you can start with a system that’s robust and scalable. We will evaluate the data that needs to be acquired, how it needs to be accessed, and how that data will evolve over time. Whether you’re already utilizing cloud computing or want to migrate existing data to a cloud computing architecture, we can help you centralize your data with minimal support required by your existing development team.</p>
+    	<div class="header fs18">Featured projects</div>
+		<div class="project_row">
+            {% for project in projects.values  %}
+            	{% if project.solution_digital_asset %}
+	            <div class="project">
+	            	<a href="{{ project.url }}">
+	                <div class="project_img">
+	                	<img src="{{ project.img_thumb }}" />
+	                    <span class="project_hover"></span>
+	                    <strong class="project_caption">{{ project.caption }}</strong>
+	                </div>
+	                </a>
+	                <div class="project_img_shadow"></div>
+	            </div>
+	            {% endif %}
+            {% endfor %}
+        </div>
+        <div class="clear"></div>
+        <div class="page_full" style="margin-top:5px;">
+	        <div class="page_2_col_container">
+		        <div class="page_2_col">
+		        	<h3 class="header fs16 blue">Digital Rights Control and Management</h3>
+		            <p>We can create digital rights control solutions that help protect and monitor your intellectual property. We also help content providers set and manage permissions to make media content access and distribution transparent and adjustable while ensuring due IP protection.</p> 
+		        </div>
+		        <div class="page_2_col">
+		        	<h3 class="header fs16 blue">Web 2.0 and Social Networking</h3>
+		            <p>i2a Solutions is an expert in building cutting-edge social and collaboration web 2.0 solutions, including those allowing users to upload, create, share and sell all types of digital content such as video, audio, documents, images, and even software in an easy, convenient and secure environment.</p>
+		        </div>
+		        <div class="clear"></div>
+	        </div>
+	    </div>
+	    <div class="page_full" style="margin-top:35px;">
+	        <div class="page_2_col_container">
+		        <div class="page_2_col">
+		        	<h3 class="header fs16 blue">Advertisement Management</h3>
+		            <p>We deliver ad management solutions to help create, manage, rotate, bill, track and monitor advertisements across your Internet resources and third party networks. We create flexible tools that allow dynamic ad placement, delivering discreet, personalized, and timely ads to the refined and predictable target audience.</p> 
+		        </div>
+		        <div class="clear"></div>
+	        </div>
+	    </div>
+    </div>
+</div>
+{% endblock %}
