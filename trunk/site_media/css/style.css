@@ -1,15 +1,3 @@
-/*
-Theme Name: Capri Default
-Theme URI:
-Author: Artur Fidelus
-Author URI: http://www.ethel.pl
-Description: Default skin
-Version: 1.0
-License:
-License URI:
-Tags:
-*/
-
 /* =Reset default browser CSS. Based on work by Eric Meyer */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -249,6 +237,7 @@ a:active, a:hover { }
 	border-bottom:1px solid #2b2b2b;
 	display:none;
 }
+.menu_toggle_bg ul { position:absolute; left:0px; }
 .menu_toggle_bg ul li { display:inline; list-style:none; margin-left:4px; background-position:0px 8px; }
 .menu_toggle_bg ul li:first-child { background:none; margin-left:0px; }
 .menu_toggle_bg ul li a { color:#fff; font-size:12px; line-height:28px; }
@@ -433,11 +422,12 @@ position:absolute; left:454px; top:-14px; cursor:pointer; }
 margin-left:5px; margin-top:0px !important; }
 .footer_logo:hover { border-color:#008aad; }
 .footer_logo:first-child { margin-left:0px; }
-.footer_logo_01 { background-position:0px 0px; }
-.footer_logo_02 { background-position:-47px 0px; }
-.footer_logo_03 { background-position:-94px 0px; }
-.footer_logo_04 { background-position:-141px 0px; }
-.footer_logo_05 { background-position:-188px 0px; }
+.footer_logo_01 { background-position:0px 0px; } /* MOASIS */
+.footer_logo_02 { background-position:-47px 0px; } /* MOM */
+.footer_logo_03 { background-position:-94px 0px; } /* ATT */
+.footer_logo_04 { background-position:-141px 0px; } /* NHL */
+.footer_logo_05 { background-position:-188px 0px; } /* NBA */
+.footer_logo_06 { background-position:0px -47px; } /* TRIPBUCKET */
 .social_icon { background:url("../img/social_icons_sprite.png"); width:25px; height:25px; display:block; text-indent:-9999px; float:left; margin-left:4px; }
 .social_icon:first-child { margin-left:0px; }
 .social_icon { opacity:0.6; }

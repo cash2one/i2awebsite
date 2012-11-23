@@ -1,5 +1,5 @@
 $(function(){
-	$('#slider').nivoSlider({effect:'fade,fold', pauseTime:7000})
+	$('#slider').nivoSlider({effect:'fade,fold', pauseTime:7000});
 	$('.tooltip').tipsy({gravity: 's'}); // nw | n | ne | w | e | sw | s | se
 	$('.technologies_used a.tooltip ').hover(function(){
 		$(this).animate({"opacity":1},200);
@@ -23,7 +23,7 @@ $(function(){
 		e.preventDefault();
 		$(this).toggleClass('toggle');
 		$('.menu_toggle_bg').slideToggle();
-	})
+	});
 	
 	$('.social_icon').hover(function(){
 		$(this).animate({"opacity":"1"},400);
