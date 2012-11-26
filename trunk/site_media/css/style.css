@@ -502,6 +502,22 @@ span.pagination_right { display:inline-block;  width:17px; background-position:-
 .tech_used_26 { background-position:-45px -270px; }
 .tech_used_27 { background-position:-90px -270px; }
 .tech_used_28 { background-position:-135px -270px; }
+.tech_used_29 { background-position:0px -315px; }
+.tech_used_30 { background-position:-45px -315px; }
+.tech_used_31 { background-position:-90px -315px; }
+.tech_used_32 { background-position:-135px -315px; }
+.tech_used_33 { background-position:0px -360px; }
+.tech_used_34 { background-position:-45px -360px; }
+.tech_used_35 { background-position:-90px -360px; }
+.tech_used_36 { background-position:-135px -360px; }
+.tech_used_37 { background-position:0px -405px; }
+.tech_used_38 { background-position:-45px -405px; }
+.tech_used_39 { background-position:-90px -405px; }
+.tech_used_40 { background-position:-135px -405px; }
+.tech_used_41 { background-position:0px -450px; }
+.tech_used_42 { background-position:-45px -450px; }
+.tech_used_43 { background-position:-90px -450px; }
+.tech_used_44 { background-position:-135px -450px; }
 .technology { margin:0 6px 2px 0; }
 ul.technology_list_icons li:first-child { margin-left:0px; padding-left:0px; }
 
