@@ -503,6 +503,7 @@ span.pagination_right { display:inline-block;  width:17px; background-position:-
 .tech_used_27 { background-position:-90px -270px; }
 .tech_used_28 { background-position:-135px -270px; }
 .technology { margin:0 6px 2px 0; }
+ul.technology_list_icons li:first-child { margin-left:0px; padding-left:0px; }
 
 .google_map { background:url("../img/map_shadow.jpg") no-repeat bottom; width:426px; padding-bottom:26px; background-size:426px auto;}
 .google_map iframe { padding:2px; border:1px solid #354550; }
