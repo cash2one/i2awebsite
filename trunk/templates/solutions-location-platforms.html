@@ -28,8 +28,7 @@
     	<p>LBS services allow businesses to provide offers of locally relevant products and services when consumers are most susceptible to make purchases. Whether you want to create a website application that uses location based technology to enhance the user experience or build a location based mobile application we have the expertise to make it an engaging and successful product. We work with your company to get the product requirements and evaluate whether commercial or open source mapping solutions would best serve the product.</p>
     	<div class="header fs18">Featured projects</div>
 		<div class="project_row">
-            {% for project in projects.values  %}
-            	{% if project.solution_location %}
+            {% for project in projects_location  %}
 	            <div class="project">
 	            	<a href="{{ project.url }}">
 	                <div class="project_img">
@@ -40,7 +39,6 @@
 	                </a>
 	                <div class="project_img_shadow"></div>
 	            </div>
-	            {% endif %}
             {% endfor %}
         </div>
         <div class="clear"></div>

@@ -27,8 +27,7 @@
     	<p>Many companies, large and small, have unique needs for online scheduling applications or workforce management issues that a web or mobile applications will solve. i2a Solutions has worked diligently to provide custom development services where required to support these types of scenarios.</p>
 		<div class="header fs18">Featured projects</div>
 		<div class="project_row">
-            {% for project in projects.values  %}
-            	{% if project.solution_scheduling %}
+            {% for project in projects_solution %}
 	            <div class="project">
 	            	<a href="{{ project.url }}">
 	                <div class="project_img">
@@ -39,7 +38,6 @@
 	                </a>
 	                <div class="project_img_shadow"></div>
 	            </div>
-	            {% endif %}
             {% endfor %}
         </div>
         <div class="clear"></div>
