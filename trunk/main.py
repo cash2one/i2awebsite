@@ -188,6 +188,7 @@ projects = {
         'solution_digital_asset': True,
         'solution_scheduling': 4,
         'solution_location': 2,
+        'solution_social': 2,
         'url': '/portfolio/location-platforms/tripbucket',
         'category': 'location-platforms',
         'techs': ['jquery', 'python', 'django', 'celery', 'openstreetmap', 'rabbitmq', 'postgresql', 'postgis', 'cassandra', 'solr', 'apache', 'linux'],
@@ -301,6 +302,7 @@ projects = {
         'img_wide_alt': 'NBA Team Applications',
         'featured': False,
         'solution_mobile': True,
+        'solution_social': 3,
         'url': '/portfolio/mobile-apps/nba_team_applications',
         'category': 'mobile-apps',
         'techs': ['python', 'django', 'celery', 'mysql', 'java', 'ios', 'android', 'linux'],
@@ -314,6 +316,7 @@ projects = {
         'img_wide_alt': 'NHL Team Mobile Applications',
         'featured': True,
         'solution_mobile': True,
+        'solution_social': 4,
         'url': '/portfolio/mobile-apps/nhl_team_applications',
         'category': 'mobile-apps',
         'techs': ['python', 'django', 'mysql', 'java', 'ios', 'android', 'linux'],
@@ -341,6 +344,7 @@ projects = {
         'img_wide': '/site_media/img/portfolio/socialjane_wide.jpg',
         'img_wide_alt': 'SocialJane - Women Social Network',
         'featured': False,
+        'solution_social': 1,
         'url': '/portfolio/saas-applications/socialjane',
         'category': 'saas-applications',
         'techs': ['jquery', 'php', 'mysql', 'linux', 'apache'],
@@ -435,6 +439,7 @@ class MainPage(webapp.RequestHandler):
                     'featured': filter(lambda x: x['featured'], projects.values()),
                     'not_featured': filter(lambda x: not x['featured'], projects.values()),
                     'projects_solution': sorted([proj for proj in projects.values() if  proj.get('solution_scheduling')], key=lambda proj: proj['solution_scheduling']),
+                    'projects_social': sorted([proj for proj in projects.values() if  proj.get('solution_social')], key=lambda proj: proj['solution_social']),
                     'projects_location': sorted([proj for proj in projects.values() if  proj.get('solution_location')], key=lambda proj: proj['solution_location'])
                     }
     def get(self):
@@ -468,6 +473,7 @@ def main():
         ('/solutions-consulting', MainPage),
         ('/solutions-mobile', MainPage),
         ('/solutions-web', MainPage),
+        ('/solutions-social', MainPage),
         ('/solutions-digital-asset', MainPage),
         ('/solutions-ad-delivery', MainPage),
         ('/solutions-scheduling-alerting', MainPage),
