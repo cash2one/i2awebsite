@@ -47,7 +47,7 @@ $(function(){
         <p>i2a Solutions has successfully completed many projects for our customers in many different industries and technologies. Do not hesitate to <a href="/contact">contact us</a> in case you need more info about case studies below, or would like to obtain a similar project.</p>
     </div>
     
-    <div class="wrapper916" style="margin-top:25px;"><div class="header fs18">Featured projects</div></div>
+    <div class="wrapper916" style="margin-top:25px;"><div class="header fs18">Featured Projects</div></div>
     
     <div class="wrapper916" style="margin-top:25px;">
     	<div class="page_2_col_container">
@@ -75,7 +75,7 @@ $(function(){
         
         <div id="more_projects">
 	        <div class="page_2_col_container">
-	        	{% for project in not_featured %}
+	        	{% for project in projects_not_featured %}
 	            	<div class="page_2_col">
 		            	<div class="header fs14 blue"><a href="{{ project.url }}">{{ project.title }}</a></div>
 			            <div class="project fl" style="margin-right:10px;">
