@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+
+{% block meta_title %}i2aSolutions - Social Media Applications & Social Networking Applications{% endblock %}
+{% block meta_desc %}i2a Solutions is an app development company that creates a variety of specific mobile applications for iPhone, iPad, Android, Microsoft, and BlackBerry platforms.{% endblock %}
+{% block extra_js %}<script type="text/javascript" src="{{ SITE_MEDIA }}/js/no-minify/solutions_bar.js"></script>{% endblock %}
+
+{% block content %}
+<div class="content_wrapper">
+    <div class="page_title"><h1>Social Media Applications</h1></div>
+    
+    <div class="pagination_container">
+        <div class="pagination" style="z-index:2;">
+            <span class="pagination_left"></span>
+            <a class="pagination_center" href="/">Home page</a>
+            <span class="pagination_right"></span>
+        </div>
+        <div class="pagination pagination_active" style="z-index:1;">
+            <span class="pagination_left"></span>
+            <a class="pagination_center" href="/solutions-social">Social Media Applications</a>
+            <span class="pagination_right"></span>
+        </div>
+        <div class="clear"></div>
+    </div>
+    
+    <div class="wrapper916" style="margin-top:20px;">
+    	<h2 class="header fs18 orange">Social Media Applications & Social Networking Applications</h2>
+    	<p>At i2a Solutions, we incorporate all the social media tools needed in mobile and web-based apps without compromising the finished product. We believe there is plenty of room for new and engaging social networking applications to emerge as leaders in the social space and have the expertise to make your vision a reality. We will also provide the tools needed to perform effective social media management.</p>
+		<p> There is a difference between social networking and social media, but both are important when creating web-based applications. Social networking sites require a personal connection while social media sites offer a more public forum.
+		Social networking is a tool people with common interests or goals use to meet online, to exchange ideas, and to share information. Social media is a content sharing platform that people and companies use for promotion and interacting with others.</p>
+		<div class="header fs18">Featured projects</div>
+		<div class="project_row">
+            {% for project in projects_social %}
+	            <div class="project">
+	            	<a href="{{ project.url }}">
+	                <div class="project_img">
+	                	<img src="{{ project.img_thumb }}" />
+	                    <span class="project_hover"></span>
+	                    <strong class="project_caption">{{ project.caption }}</strong>
+	                </div>
+	                </a>
+	                <div class="project_img_shadow"></div>
+	            </div>
+            {% endfor %}
+        </div>
+        <div class="clear"></div>
+        <div class="page_full" style="margin-top:35px;">
+	        <div class="page_2_col_container">
+		        <div class="page_2_col">
+		        	<h3 class="header fs16 blue">Social Media Tools and Community Building</h3>
+		            <p>We create the social media tools your company needs to engage with both general and niche on-line communities. When implementing social media tactics into a website or app we can create unique branding for your online community and seamlessly incorporate compatibility with the most popular social media tools.</p>
+		        </div>
+		        <div class="page_2_col">
+		        	<h3 class="header fs16 blue">Social Media Applications and Commerce</h3>
+		            <p>Looking to incorporate social commerce features into an existing application or develop a full-size social-based commerce project from the ground up? We can help you integrate web payment systems safely and securely. We work with all the popular payment gateways so you can use the system you prefer.</p>
+		        </div>
+		        <div class="clear"></div>
+	        </div>
+	        <div class="page_2_col_container" style="margin-top:30px;">
+		        <div class="page_2_col">
+		        	<h3 class="header fs16 blue">Online Services with Social Media Tools</h3>
+		            <p>Social media and social network features can be instrumental in the success of an online service. At i2a Solutions, we have the expertise to develop social-centric online service platforms that are scalable and optimized to provide the tools and features needed for enhanced visibility and a rich user experience.</p>
+		        </div>
+		        <div class="page_2_col">
+		        	<h3 class="header fs16 blue">Content Exchange and Delivery Social Networking Applications</h3>
+		            <p>Successful social networking applications are often designed around exchanging media content. Our extensive expertise in building scalable solutions that can manage, store, and deliver large volumes of data is a key differentiator when it comes to developing a robust social network platform.</p>
+		        </div>
+		        <div class="clear"></div>
+	        </div>
+	    </div>
+    </div>
+    
+</div>
+{% endblock %}
