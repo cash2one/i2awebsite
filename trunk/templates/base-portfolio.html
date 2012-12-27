@@ -62,12 +62,13 @@
         <div class="page_right_col">
         	<div class="header fs18 blue">Technologies used</div>
         	<div class="fs12 dark gothic" style="margin-top:-6px; margin-bottom:6px;">Click on icon to learn more about that technology.</div>
-        	{% block portfolio_right_col %}
             <div class="technologies_used">
                 {% for tech in techs %}
 					<a href="/technologies#{{ tech.url }}" title="{{ tech.title }}" class="tooltip"><span class="tech_used {{ tech.icon }}"></span></a>
 				{% endfor %}
             </div>
+            <div class="clear"></div>
+            {% block portfolio_right_col %}
             {% endblock %}
         </div>
         <div class="clear"></div>

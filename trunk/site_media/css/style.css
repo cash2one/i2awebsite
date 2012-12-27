@@ -518,6 +518,23 @@ span.pagination_right { display:inline-block;  width:17px; background-position:-
 .tech_used_42 { background-position:-45px -450px; }
 .tech_used_43 { background-position:-90px -450px; }
 .tech_used_44 { background-position:-135px -450px; }
+
+.case_icon { background:url("../img/case_icons.jpg") no-repeat; width:45px; height:45px; margin-left:1px; float:left; display:block; margin-bottom:1px;}
+.case_icon_01 { background-position:0px 0px; }
+.case_icon_02 { background-position:-45px 0px; }
+.case_icon_03 { background-position:-90px 0px; }
+.case_icon_04 { background-position:-135px 0px; }
+.case_icon_05 { background-position:-180px 0px; }
+.case_icon_06 { background-position:0px -45px; }
+.case_icon_07 { background-position:-45px -45px; }
+.case_icon_08 { background-position:-90px -45px; }
+.case_icon_09 { background-position:-135px -45px; }
+.case_icon_10 { background-position:-180px -45px; }
+
+.case_award { width:230px; height:74px; margin-left:1px; display:block; text-indent:-9999px; }
+.case_award_01 { background:url("../img/bai_award.jpg") no-repeat; }
+.case_award_02 { background:url("../img/b3_award.jpg") no-repeat; }
+
 .technology { margin:0 6px 2px 0; }
 ul.technology_list_icons li:first-child { margin-left:0px; padding-left:0px; }
 
