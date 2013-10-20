@@ -16,11 +16,15 @@
 	border-top: 1px dotted white;
 	width: 100px;
 	padding-right: 114px;
-	font-size: 10px;
-	font-weight: normal !important;
+	font-size: 12px;
+	font-weight: bold !important;
+	 background:rgba(0,0,0,0.7);
+	 padding-top:5px;
+	 padding-bottom:5px;
+	 padding-left:10px;
 }
 .nivo-control:hover, .nivo-control.active { border-top:3px solid white; }
-.nivo-control:hover {  background:rgba(255,255,255,0.1); }
+.nivo-control:hover {  background:rgba(0,0,0,0.4); }
 #slider img { border-radius:8px; }
 
 /* The Nivo Slider styles */

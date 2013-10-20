@@ -278,6 +278,7 @@ font-size:24px; text-align:center; vertical-align:middle; line-height:41px; floa
 .about_us_right_col { float:right; width:513px; }
 .what_we_do_txt { margin-left:104px; }
 .what_we_do { margin-top:25px; }
+.what_we_do .button{ margin-top:25px;}
 .what_we_do:first-child { margin-top:0px; }
 .what_we_do_portfolio:first-child { margin-left:0px; }
 .what_we_do_portfolio { margin-top:0px !important; float:left; text-align:center; margin-left:110px; }
@@ -579,7 +580,7 @@ span.pagination_right { display:inline-block;  width:17px; background-position:-
 
 .case_award { width:230px; height:74px; margin-left:1px; display:block; text-indent:-9999px; }
 .case_award_01 { background:url("../img/bai_award.jpg") no-repeat; }
-.case_award_02 { background:url("../img/b3_award.jpg") no-repeat; }
+.case_award_02 { width:240px; height:240px; background:url("../img/mip2012-winner-seal.jpg") no-repeat; }
 
 .technology { margin:0 6px 2px 0; }
 ul.technology_list_icons li:first-child { margin-left:0px; padding-left:0px; }
@@ -632,3 +633,6 @@ submit input {
 .toggle_menu { height:30px; width:227px; text-align:center; vertical-align:middle; line-height:30px; cursor:pointer; }
 .toggle_menu.orange_gradient { color:#2E4337; }
 .toggle_menu.navy_gradient { color:#fff; }
+
+.logos{width:500px!important;}
+.logos td {padding:0 30px;vertical-align:middle;text-align:center;width:65px;}

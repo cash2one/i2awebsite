@@ -1,11 +1,19 @@
 application: i2a-solutions
-version: 11
-runtime: python
+version: 12
+runtime: python27
 api_version: 1
+threadsafe: true
 
 handlers:
 - url: /site_media
   static_dir: site_media
 
 - url: .*
-  script: main.py
+  script: main.app
+  
+libraries:
+- name: webapp2
+  version: latest
+- name: django
+  version: 1.2
+

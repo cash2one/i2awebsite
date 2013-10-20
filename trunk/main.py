@@ -1,14 +1,14 @@
 # coding: utf8
-#!/usr/bin/env python
 import os
 from datetime import datetime
 
+import webapp2
 from google.appengine.ext import webapp
 from google.appengine.ext.webapp import util, template
 from google.appengine.api import mail
 
-from django.template import RequestContext
-from django.shortcuts import render_to_response
+os.environ['DJANGO_SETTINGS_MODULE'] = 'settings'
+from django.template.loader import render_to_string
 
 DEBUG = False
 GOOGLE_API_KEY = ''
@@ -173,7 +173,7 @@ projects = {
         'solution_digital_asset': True,
         'solution_scheduling': 1,
         'solution_telephony': True,
-        'not_featured' : 1,
+        'not_featured' : 10,
         'url': '/portfolio/saas-applications/mom_method',
         'category': 'saas-applications',
         'techs': ['jquery', 'python', 'django', 'celery', 'mysql', 'apache', 'linux'],
@@ -185,11 +185,12 @@ projects = {
         'img_thumb': '/site_media/img/portfolio/tripbucket_thumb.jpg',
         'img_wide': '/site_media/img/portfolio/tripbucket_wide.jpg',
         'img_wide_alt': 'Tripbucket - dream it, plan it, do it, share it',
-        'featured': True,
+        'featured': False,
         'solution_digital_asset': True,
         'solution_scheduling': 4,
         'solution_location': 2,
         'solution_social': 2,
+        'not_featured' : 20,
         'url': '/portfolio/location-platforms/tripbucket',
         'category': 'location-platforms',
         'techs': ['jquery', 'python', 'django', 'celery', 'openstreetmap', 'rabbitmq', 'postgresql', 'postgis', 'cassandra', 'solr', 'apache', 'linux'],
@@ -203,7 +204,7 @@ projects = {
         'img_wide_alt': 'Tripbucket - dream it, plan it, do it, share it',
         'featured': False,
         'solution_ad_delivery': True,
-        'not_featured' : 7,
+        'not_featured' : 80,
         'url': '/portfolio/ad-platforms/tripbucket_ad_platform',
         'category': 'ad-platforms',
         'techs': ['python', 'java', 'postgresql', 'apache', 'linux'],
@@ -215,9 +216,9 @@ projects = {
         'img_thumb': '/site_media/img/portfolio/tripbucket_mobile_thumb.jpg',
         'img_wide': '/site_media/img/portfolio/tripbucket_mobile_wide.jpg',
         'img_wide_alt': 'Tripbucket - dream it, plan it, do it, share it',
-        'featured': False,
+        'featured' : True,
         'solution_mobile': True,
-        'not_featured' : 4,
+        'order_featured':60,
         'url': '/portfolio/mobile-apps/tripbucket_mobile',
         'category': 'mobile-apps',
         'techs': ['ios', 'android'],
@@ -235,14 +236,15 @@ projects = {
         'solution_digital_asset': True,
         'solution_scheduling': 3,
         'solution_location': 1,
+        'order_featured':30,
         'url': '/portfolio/ad-platforms/moasis',
         'category': 'ad-platforms',
         'techs': ['jquery', 'python', 'django', 'celery', 'mysql', 'openstreetmap', 'rabbitmq', 'cassandra', 'java', 'apache', 'linux', 'ios', 'android'],
         'challenge': u'Create a hyper location-based ad platform that allows advertisers to send targeted ads to people based on their location.'
         },
     'att':{
-        'title': 'AT&amp;T eCommerce Site',
-        'caption': 'AT&amp;T eCommerce Site',
+        'title': 'AT&T eCommerce Site',
+        'caption': 'AT&T eCommerce Site',
         'img_thumb': '/site_media/img/portfolio/att_thumb.jpg',
         'img_wide': '/site_media/img/portfolio/att_wide.jpg',
         'img_wide_alt': 'AT&amp;T eCommerce Site',
@@ -252,6 +254,7 @@ projects = {
         'solution_web': True,
         'solution_location': 3,
         'solution_telephony': True,
+        'order_featured':20,
         'url': '/portfolio/saas-applications/att',
         'category': 'saas-applications',
         'techs': ['jquery', 'php', 'symfony', 'mysql', 'apache', 'linux'],
@@ -266,6 +269,7 @@ projects = {
         'featured': True,
         'solution_consulting': True,
         'solution_mobile': True,
+        'order_featured':40,
         'url': '/portfolio/mobile-apps/mobile_deposit',
         'category': 'mobile-apps',
         'techs': ['dotnet', 'java', 'blackberry', 'symbian', 'ios', 'skype'],
@@ -279,7 +283,7 @@ projects = {
         'img_wide_alt': 'Facial Recognition Application R&D',
         'featured': False,
         'solution_consulting': True,
-        'not_featured' : 10,
+        'not_featured' : 100,
         'url': '/portfolio/saas-applications/facial_recognition',
         'category': 'saas-applications',
         'techs': ['jquery', 'python', 'django', 'apache', 'linux', 'postgresql', 'opencv'],
@@ -293,7 +297,7 @@ projects = {
         'img_wide_alt': 'Knowledge Management System',
         'featured': False,
         'solution_enterprise': True,
-        'not_featured' : 6,
+        'not_featured' : 70,
         'url': '/portfolio/saas-applications/knowledge_management_system',
         'category': 'saas-applications',
         'techs': ['java', 'oradb', 'mssql', 'apache'],
@@ -305,10 +309,10 @@ projects = {
         'img_thumb': '/site_media/img/portfolio/nba_thumb.jpg',
         'img_wide': '/site_media/img/portfolio/nba_wide.jpg',
         'img_wide_alt': 'NBA Team Applications',
-        'featured': False,
+        'featured': True,
         'solution_mobile': True,
         'solution_social': 3,
-        'not_featured' : 3,
+        'order_featured': 60,
         'url': '/portfolio/mobile-apps/nba_team_applications',
         'category': 'mobile-apps',
         'techs': ['python', 'django', 'celery', 'mysql', 'java', 'ios', 'android', 'linux'],
@@ -323,6 +327,7 @@ projects = {
         'featured': True,
         'solution_mobile': True,
         'solution_social': 4,
+        'order_featured':10,
         'url': '/portfolio/mobile-apps/nhl_team_applications',
         'category': 'mobile-apps',
         'techs': ['python', 'django', 'mysql', 'java', 'ios', 'android', 'linux'],
@@ -338,7 +343,7 @@ projects = {
         'solution_enterprise': True,
         'solution_consulting': True,
         'solution_telephony': True,
-        'not_featured' : 5,
+        'not_featured' : 30,
         'url': '/portfolio/saas-applications/salesforce',
         'category': 'saas-applications',
         'techs': ['jquery', 'java', 'mysql', 'linux', 'apex'],
@@ -352,7 +357,7 @@ projects = {
         'img_wide_alt': 'SocialJane - Women Social Network',
         'featured': False,
         'solution_social': 1,
-        'not_featured' : 2,
+        'not_featured' : 60,
         'url': '/portfolio/saas-applications/socialjane',
         'category': 'saas-applications',
         'techs': ['jquery', 'php', 'mysql', 'linux', 'apache'],
@@ -377,7 +382,7 @@ projects = {
         'img_wide': '/site_media/img/portfolio/tsd_wide.jpg',
         'img_wide_alt': 'Technical Support eCommerce Site',
         'featured': False,
-        'not_featured' : 9,
+        'not_featured' : 90,
         'url': '/portfolio/saas-applications/technical_support',
         'category': 'saas-applications',
         'techs': ['jquery', 'php', 'symfony', 'mysql', 'apache', 'linux'],
@@ -389,12 +394,13 @@ projects = {
         'img_thumb': '/site_media/img/portfolio/independa_thumb.jpg',
         'img_wide': '/site_media/img/portfolio/independa_wide.jpg',
         'img_wide_alt': 'Home Healthcare Monitoring',
-        'featured': True,
+        'featured': False,
         'solution_enterprise': True,
         'solution_web': True,
         'solution_digital_asset': True,
         'solution_scheduling': 2,
         'solution_telephony': True,
+        'not_featured' : 50,
         'url': '/portfolio/saas-applications/independa',
         'category': 'saas-applications',
         'techs': ['python', 'django', 'celery', 'jquery', 'postgresql', 'rabbitmq', 'twilio', 'apache', 'linux'],
@@ -422,7 +428,7 @@ projects = {
         'featured': False,
         'solution_ad_delivery': True,
         'solution_location': 4,
-        'not_featured' : 8,
+        'not_featured' : 40,
         'url': '/portfolio/ad-platforms/sport-ad-server',
         'category': 'ad-platforms',
         'techs': ['python', 'django', 'linux', 'java', 'mysql', 'apache', 'ios', 'android'],
@@ -430,7 +436,7 @@ projects = {
         }
 }
 
-class MainPage(webapp.RequestHandler):
+class MainPage(webapp2.RequestHandler):
     def initialize(self, request, response):
         super(MainPage, self).initialize(request, response)
         path = self.request.path[1:] or '/'
@@ -446,16 +452,18 @@ class MainPage(webapp.RequestHandler):
                     'template': dir[-1],
                     'project': project,
                     'techs': techs,
-                    'featured': filter(lambda x: x['featured'], projects.values()),
+                    'featured': sorted([proj for proj in filter(lambda x: x['featured'], projects.values()) if proj.get('order_featured') ], key=lambda proj:proj['order_featured']) ,
                     'not_featured': filter(lambda x: not x['featured'], projects.values()),
                     'projects_not_featured': sorted([proj for proj in projects.values() if  proj.get('not_featured')], key=lambda proj: proj['not_featured']),
                     'projects_solution': sorted([proj for proj in projects.values() if  proj.get('solution_scheduling')], key=lambda proj: proj['solution_scheduling']),
                     'projects_social': sorted([proj for proj in projects.values() if  proj.get('solution_social')], key=lambda proj: proj['solution_social']),
-                    'projects_location': sorted([proj for proj in projects.values() if  proj.get('solution_location')], key=lambda proj: proj['solution_location'])
+                    'projects_location': sorted([proj for proj in projects.values() if  proj.get('solution_location')], key=lambda proj: proj['solution_location']),
+                    
                     }
     def get(self):
         path = os.path.join(os.path.dirname(__file__), self.template_file)
-        self.response.out.write(template.render(path, self.ctx))
+        #self.response.out.write(template.render(path, self.ctx))
+        self.response.out.write(render_to_string(path, self.ctx))
 
 class ContactPage(MainPage):
     def post(self, *args):
@@ -468,9 +476,8 @@ class ContactPage(MainPage):
         message.send()
         self.redirect('/contact')
 
-def main():
-    webapp.template.register_template_library('filters')
-    application = webapp.WSGIApplication(
+webapp.template.register_template_library('util.filters')
+app = webapp2.WSGIApplication(
        [('/', MainPage), 
         ('/careers', MainPage), 
         ('/process', MainPage), 
@@ -494,8 +501,4 @@ def main():
         ('/contact', ContactPage),
         ] + [(project['url'], MainPage) for project in projects.values()],
         debug=DEBUG)
-    util.run_wsgi_app(application)
-
-if __name__ == '__main__':
-    main()
 
