@@ -302,13 +302,109 @@ li a {text-decoration: none;
 .header {
     clear: both;
 }
+.header.default {
+    height: 213px;
+    background: url(../img/cats_headers/cats.jpg);
+}
 .header.ad {
     height: 213px;
     background: url(../img/cats_headers/ad.jpg);
 }
+.header.location {
+    height: 213px;
+    background: url(../img/cats_headers/location.jpg);
+}
+.header.mobile {
+    height: 213px;
+    background: url(../img/cats_headers/mobile.jpg);
+}
+.header.web {
+    height: 213px;
+    background: url(../img/cats_headers/web.jpg);
+}
+.header.atnt {
+    height: 367px;
+    background: url(../img/portfolio_headers/atnt.jpg);
+}
 .header.b3 {
     height: 367px;
     background: url(../img/portfolio_headers/b3.jpg);
+}
+.header.billpay {
+    height: 367px;
+    background: url(../img/portfolio_headers/bill_pay_app.jpg);
+}
+.header.facial {
+    height: 367px;
+    background: url(../img/portfolio_headers/facial.jpg);
+}
+.header.independa {
+    height: 367px;
+    background: url(../img/portfolio_headers/independa.jpg);
+}
+.header.kms {
+    height: 367px;
+    background: url(../img/portfolio_headers/knowledge.jpg);
+}
+.header.moasis {
+    height: 367px;
+    background: url(../img/portfolio_headers/moasis.jpg);
+}
+.header.mobile_check {
+    height: 367px;
+    background: url(../img/portfolio_headers/mobilecheck.jpg);
+}
+.header.mom {
+    height: 367px;
+    background: url(../img/portfolio_headers/mom.jpg);
+}
+.header.nba {
+    height: 367px;
+    background: url(../img/portfolio_headers/nba.jpg);
+}
+.header.nba_dev {
+    height: 367px;
+    background: url(../img/portfolio_headers/nba_pd.jpg);
+}
+.header.nba_rtp {
+    height: 367px;
+    background: url(../img/portfolio_headers/nba_rtp.jpg);
+}
+.header.nhl {
+    height: 367px;
+    background: url(../img/portfolio_headers/nhl.jpg);
+}
+.header.salesforce {
+    height: 367px;
+    background: url(../img/portfolio_headers/digitalmojo.jpg);
+}
+.header.socialjane {
+    height: 367px;
+    background: url(../img/portfolio_headers/socialjane.jpg);
+}
+.header.tdg {
+    height: 367px;
+    background: url(../img/portfolio_headers/tdg.jpg);
+}
+.header.tech_support {
+    height: 367px;
+    background: url(../img/portfolio_headers/technicalsupport.jpg);
+}
+.header.tb {
+    height: 367px;
+    background: url(../img/portfolio_headers/tb.jpg);
+}
+.header.portfolio {
+    height: 367px;
+    background: url(../img/page_headers/portfolio.jpg);
+}
+.header.technologies {
+    height: 367px;
+    background: url(../img/page_headers/technologies.jpg);
+}
+.header.careers {
+    height: 367px;
+    background: url(../img/page_headers/careers.jpg);
 }
 
 .bar{

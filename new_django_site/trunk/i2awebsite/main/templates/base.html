@@ -39,7 +39,7 @@ $(function() {
                 <li {% if menu_pos == "categories"   %}class="active"{% endif %}><a class="submenu_trigger" href="{% url "home" %}">SOLUTIONS</a></li>
                 <li {% if menu_pos == "technologies" %}class="active"{% endif %}><a href="{% url "technologies" %}">TECHNOLOGIES</a></li>
                 <li {% if menu_pos == "portfolio"    %}class="active"{% endif %}><a href="{% url "portfolio" %}">PORTFOLIO</a></li>
-                <li {% if menu_pos == "careers"      %}class="active"{% endif %}><a href="{% url "home" %}">CAREERS</a></li>
+                <li {% if menu_pos == "careers"      %}class="active"{% endif %}><a href="{% url "careers" %}">CAREERS</a></li>
                 <li {% if menu_pos == "contact"      %}class="active"{% endif %}><a href="{% url "home" %}">CONTACT US</a></li>
             </ul>
         </div>
@@ -59,6 +59,7 @@ $(function() {
         </ul>
     </div>
     {% block header %}
+    <div class="header default"></div>
     {% endblock header %}
 </div>
 <!-- CONTENT  -->
