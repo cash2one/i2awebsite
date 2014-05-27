@@ -1,0 +1,292 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+<meta name="viewport"  user-scalable="no">
+<meta name="viewport" content="width=device-width" />
+
+<title>tess</title>
+<link href="static/css/reset.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="static/css/main.css" media="screen" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="static/js/jquery-1.10.2.min.js"></script>
+
+<script type="text/javascript" src="static/js/jssor.core.js"></script>
+<script type="text/javascript" src="static/js/jssor.utils.js"></script>
+<script type="text/javascript" src="static/js/jssor.slider.js"></script>
+<script>
+jQuery(document).ready(function ($) {
+        var options = {
+        $AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
+        $AutoPlaySteps: 1,                                  //[Optional] Steps to go for each navigation request (this options applys only when slideshow disabled), the default value is 1
+        $AutoPlayInterval: 0,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
+        $PauseOnHover: 3,                               //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, default value is 3
+
+        $ArrowKeyNavigation: true,   			            //[Optional] Allows keyboard (arrow key) navigation or not, default value is false
+        $SlideEasing: $JssorEasing$.$EaseLinear,          //[Optional] Specifies easing for right to left animation, default value is $JssorEasing$.$EaseOutQuad
+        $SlideDuration: 3000,                                //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
+        $MinDragOffsetToSlide: 20,                          //[Optional] Minimum drag offset to trigger slide , default value is 20
+        $SlideWidth: 140,                                   //[Optional] Width of every slide in pixels, default value is width of 'slides' container
+        //$SlideHeight: 100,                                //[Optional] Height of every slide in pixels, default value is height of 'slides' container
+        $SlideSpacing: 0, 					                //[Optional] Space between each slide in pixels, default value is 0
+        $DisplayPieces: 7,                                  //[Optional] Number of pieces to display (the slideshow would be disabled if the value is set to greater than 1), the default value is 1
+        $ParkingPosition: 0,                              //[Optional] The offset position to park slide (this options applys only when slideshow disabled), default value is 0.
+        $UISearchMode: 1,                                   //[Optional] The way (0 parellel, 1 recursive, default value is 1) to search UI components (slides container, loading screen, navigator container, arrow navigator container, thumbnail navigator container etc).
+        $PlayOrientation: 1,                                //[Optional] Orientation to play slide (for auto play, navigation), 1 horizental, 2 vertical, default value is 1
+        $DragOrientation: 1                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
+        };
+
+        var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+
+        //responsive code begin
+        //you can remove responsive code if you don't want the slider scales while window resizes
+        function ScaleSlider() {
+            var bodyWidth = document.body.clientWidth;
+            if (bodyWidth)
+                jssor_slider1.$SetScaleWidth(Math.min(bodyWidth, 980));
+            else
+                window.setTimeout(ScaleSlider, 30);
+        }
+
+        ScaleSlider();
+
+        if (!navigator.userAgent.match(/(iPhone|iPod|iPad|BlackBerry|IEMobile)/)) {
+            $(window).bind('resize', ScaleSlider);
+        }
+        //responsive code end
+});
+</script>
+
+<script type="text/javascript">
+$(window).load(function(){
+        $('.preloader').fadeOut('slow',function(){$(this).remove();});
+        //$('.imagess').fadeOut(function(){$(this).remove();});
+        });
+$(function() {
+
+
+
+        $('.button').on('click', function() {
+            $('.portfolio').removeClass('portfolio').addClass('portfolioanim');
+            $('.button').removeClass('button').addClass('button_in');
+
+            });
+
+        $('.hide').on('click', function() {
+            $('.button_in').removeClass('button_in').addClass('button');
+
+            $('.portfolioanim').removeClass('portfolioanim').addClass('portfolio');
+            });
+
+        $('.buttonsmall').on('click', function() {
+            $('.boxfly_in').removeClass('boxfly_in').addClass('boxfly');
+            });
+        $('.logotabel').on('click', function() {
+            $('.portcontin').removeClass('portcontin').addClass('portcont');
+            });
+        $('.xbutton').on('click', function() {
+                $('.portcont').removeClass('portcont').addClass('portcontin');
+                });
+
+
+});
+</script>
+
+</head>
+<body>
+
+<div class="preloader"><div class="imagess"></div></div>
+
+<div class="container">
+    <div class="menu">
+        <div class="holder">
+            <div class="logo"></div>
+            <ul id="menulist">
+                <li class="active"><a href="/">ABOUT US</a></li>
+                <li ><a href="/">SOLUTIONS</a></li>
+                <li ><a href="/">TECHNOLOGIES</a></li>
+                <li ><a href="/">PORTFOLIO</a></li>
+                <li ><a href="/">CAREERS</a></li>
+                <li ><a href="/">CONTACT US</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="submenu">
+        <ul id="submenulist">
+            <li ><a href="/">Web Apps</a></li>
+            <li ><a href="/">Enterprise</a></li>
+        </ul>
+    </div>
+    
+<div class="blur">
+    <div class="light"></div>
+    <div class="bar">
+        <div class="slider_big"></div>
+        <div class="bottom">
+            <div class="pet">Companies Using Our Products</div>
+            <div class="sliderlogo">
+                <div id="slider1_container" style="position: relative; margin:0 auto; width: 980px; height: 150px; overflow: hidden; background:none;">
+
+                    <!-- Loading Screen -->
+
+
+                    <!-- Slides Container -->
+                    <div u="slides" style="cursor: move; position: absolute; margin:0 auto; width: 980px; height: 150px; overflow: hidden;">
+                        <div><img u="image" alt="Boston Bruins" src="static/img/small/bruins_logo.png" /></div>
+                        <div><img u="image" alt="Buffalo Sabres" src="static/img/small/sabres_logo.png" /></div>
+                        <div><img u="image" alt="MOM Method" src="static/img/small/mom_logo.png" /></div>
+                        <div><img u="image" alt="Denver Nuggets" src="static/img/small/nuggets_logo.png" /></div>
+                        <div><img u="image" alt="Florida Panthers" src="static/img/small/panthers_logo.png" /></div>
+                        <div><img u="image" alt="Colorado Avalanche" src="static/img/small/colorado_logo.png" /></div>
+                        <div><img u="image" alt="Tripbucket" src="static/img/small/tb_logo.png" /></div>
+                        <div><img u="image" alt="AT&T" src="static/img/small/atnt_logo.png" /></div>
+                    </div>
+                    <a style="display: none" href="http://www.jssor.com">jQuery Carousel</a>
+                </div>
+            </div>
+        </div>	
+    </div>
+
+</div>
+
+</div>
+<!-- CONTENT  -->
+
+<div class="container2">
+    <div class="box_white">
+        <div class="wrapper">
+            <h1>Who is i2aSolutions.com</h1>
+
+            <div class="column1">
+                <p>At i2a Solutions we are experts at transforming client ideas into robust consumer and enterprise applications. Our proven team of experts has designed and developed over 250 software products ranging from mobile and web applications to large-scale enterprise class solutions. Our unique breadth of knowledge and experience means we understand system design and develop products that integrate seamlessly with your company's existing infrastructure.
+
+                We know every product is unique and demands a customized design and development approach.</p>
+
+            </div>
+            <div class="column2">
+                <p>Our team of usability specialists and software engineers, working in collaboration with you and your company, will recommend a strategic and innovative design plan to meet the specific needs of your product as well as provide options that will support its long-term success.
+
+
+                To ensure cost-effective and efficient solutions for our clients we use a blended team approach. Our U.S.-based design and management team is headquartered in San Diego, California and have additional engineering offices in Central Europe.</p>
+
+            </div>
+            <div class="wrapper">
+                <div class="column1">
+                    <ul class="checks">
+                        <li>Solutions that Grow Your Business</li>
+                        <li>Focused on Our Client Success</li>		
+                    </ul>
+
+                </div>
+                <div class="column2">
+                    <ul class="checks">
+                        <li>Cost-Conscious Approach</li>			
+                        <li>Complete End-to-End Solutions</li>
+                    </ul>
+                </div>
+            </div>	
+        </div>
+
+    </div>
+    <div class="container2">
+        <div class="box_grey">
+            <div class="wrapper">
+                <h1>Solutions</h1>
+                <div class="quote">Advanced End-to-end solutions</div>
+                <div class="column3">
+                    <img src="static/img/icon_1.png">
+                    <h2>GREAT IDEAS ARE KEY TO YOUR SUCCESS</h2>
+                    <p>We have successfully completed hundreds of projects of different sizes and complexity in various business and technology domains. We take the unique ideas from our clients and design a solution that will make them a success.</p>
+                </div>
+                <div class="column3">
+                    <img src="static/img/icon_2.png">
+                    <h2>WE'LL TRANSFORM YOUR IDEAS FOR YOU</h2>
+                    <p>We work with our clients to transform their ideas into the highest quality web and mobile applications. We are capable of executing the most complex and ambitious projects, ensuring high solution usability, maintainability, performance, scalability and SEO.</p>
+                </div>
+                <div class="column4">
+                    <img src="static/img/icon_3.png">
+                    <h2>THEN WE'LL HELP YOU MAKE IT A SUCCESS!</h2>
+                    <p>Our commitment to long-term partnership is supported by full cycle servicing covering every aspect of software production and implementation. We offer complete transparency of activities and deliverables, mature project management and seamless communication.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="box_darkgrey">
+            <div class="wrapper_color">
+                <h1>Portfolio</h1>
+                <p>  </p>
+            </div>
+            <div class="wrapper_portfolio">
+                <div class="buttong2"></div>
+                <div class="buttong2"></div>
+                <div class="buttong2"></div>
+                <div class="buttong">SHOW ME MORE</div>
+            </div>
+            <div class="wrapper_portfolio">
+                <div class="logotabel"><span class="portfoliotitle"></span></div>
+                <div class="logotabel2"><span class="portfoliotitle"></span></div>
+                <div class="logotabel3"><span class="portfoliotitle"></span></div>
+                <div class="logotabel4"><span class="portfoliotitle"></span></div>
+                <div class="logotabel5"><span class="portfoliotitle"></span></div>
+                <div class="logotabel6"><span class="portfoliotitle"></span></div>
+                <div class="logotabel7"><span class="portfoliotitle"></span></div>
+                <div class="logotabel8"><span class="portfoliotitle"></span></div>
+                <div class="logotabel13"><span class="portfoliotitle"></span></div>
+                <div class="logotabel14"><span class="portfoliotitle"></span></div>
+                <div class="logotabel10"><span class="portfoliotitle"></span></div>
+                <div class="logotabel18"><span class="portfoliotitle"></span></div>
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+</div>
+
+</div>
+
+
+<div class="container2">
+<div class="box_color">
+    <div class="wrapperbottom">
+        <div class="logobottom"></div>
+        <div class="bottomcol">
+            <h1>About us</h1>
+            <ul>
+                <li>Our Process</li>
+            </ul>
+        </div>
+        <div class="bottomcol">
+            <h1>Solutions</h1>
+            <ul>
+
+
+                <li>Web Apps</li>	        
+                <li>Enterprise	 </li>    
+                <li>Mobile	     </li>     
+                <li>Ad Delivery	  </li> 
+                <li>Location Based	</li>     
+                <li>Social	   </li>     
+                <li>Digital Asset  Management	</li>    
+                <li>Scheduling	</li>       
+                <li>Telephony	v      
+                <li>Consulting</li></ul>
+        </div>
+        <div class="bottomcol"><h1>Portfolio</h1></div>
+        <div class="bottomcol"><h1>Technologies</h1></div>
+        <div class="bottomcol"><h1>Careers</h1></div>
+        <div class="bottomcol"><h1>Contact us</h1></div>
+    </div>
+</div>
+</div>
+
+</body>
+</html>
+

@@ -1,0 +1,222 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+<meta name="viewport"  user-scalable="no">
+<meta name="viewport" content="width=device-width" />
+
+<title>tess</title>
+<link href="static/css/reset.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="static/css/main.css" media="screen" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="static/js/jquery-1.10.2.min.js"></script>
+
+<script>
+jQuery(document).ready(function ($) {
+        var options = {
+        $AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
+        $AutoPlaySteps: 1,                                  //[Optional] Steps to go for each navigation request (this options applys only when slideshow disabled), the default value is 1
+        $AutoPlayInterval: 0,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
+        $PauseOnHover: 3,                               //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, default value is 3
+
+        $ArrowKeyNavigation: true,   			            //[Optional] Allows keyboard (arrow key) navigation or not, default value is false
+        $SlideEasing: $JssorEasing$.$EaseLinear,          //[Optional] Specifies easing for right to left animation, default value is $JssorEasing$.$EaseOutQuad
+        $SlideDuration: 3000,                                //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
+        $MinDragOffsetToSlide: 20,                          //[Optional] Minimum drag offset to trigger slide , default value is 20
+        $SlideWidth: 140,                                   //[Optional] Width of every slide in pixels, default value is width of 'slides' container
+        //$SlideHeight: 100,                                //[Optional] Height of every slide in pixels, default value is height of 'slides' container
+        $SlideSpacing: 0, 					                //[Optional] Space between each slide in pixels, default value is 0
+        $DisplayPieces: 7,                                  //[Optional] Number of pieces to display (the slideshow would be disabled if the value is set to greater than 1), the default value is 1
+        $ParkingPosition: 0,                              //[Optional] The offset position to park slide (this options applys only when slideshow disabled), default value is 0.
+        $UISearchMode: 1,                                   //[Optional] The way (0 parellel, 1 recursive, default value is 1) to search UI components (slides container, loading screen, navigator container, arrow navigator container, thumbnail navigator container etc).
+        $PlayOrientation: 1,                                //[Optional] Orientation to play slide (for auto play, navigation), 1 horizental, 2 vertical, default value is 1
+        $DragOrientation: 1                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
+        };
+
+        var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+
+        //responsive code begin
+        //you can remove responsive code if you don't want the slider scales while window resizes
+        function ScaleSlider() {
+            var bodyWidth = document.body.clientWidth;
+            if (bodyWidth)
+                jssor_slider1.$SetScaleWidth(Math.min(bodyWidth, 980));
+            else
+                window.setTimeout(ScaleSlider, 30);
+        }
+
+        ScaleSlider();
+
+        if (!navigator.userAgent.match(/(iPhone|iPod|iPad|BlackBerry|IEMobile)/)) {
+            $(window).bind('resize', ScaleSlider);
+        }
+        //responsive code end
+});
+</script>
+
+<script type="text/javascript">
+$(window).load(function(){
+        $('.preloader').fadeOut('slow',function(){$(this).remove();});
+        //$('.imagess').fadeOut(function(){$(this).remove();});
+        });
+$(function() {
+
+
+
+        $('.button').on('click', function() {
+            $('.portfolio').removeClass('portfolio').addClass('portfolioanim');
+            $('.button').removeClass('button').addClass('button_in');
+
+            });
+
+        $('.hide').on('click', function() {
+            $('.button_in').removeClass('button_in').addClass('button');
+
+            $('.portfolioanim').removeClass('portfolioanim').addClass('portfolio');
+            });
+
+        $('.buttonsmall').on('click', function() {
+            $('.boxfly_in').removeClass('boxfly_in').addClass('boxfly');
+            });
+        $('.logotabel').on('click', function() {
+            $('.portcontin').removeClass('portcontin').addClass('portcont');
+            });
+        $('.xbutton').on('click', function() {
+                $('.portcont').removeClass('portcont').addClass('portcontin');
+                });
+
+
+});
+</script>
+
+</head>
+<body>
+
+
+<div class="container">
+    <div class="menu">
+        <div class="holder">
+            <div class="logo"></div>
+            <ul id="menulist">
+                <li ><a href="/">ABOUT US</a></li>
+                <li ><a href="/">SOLUTIONS</a></li>
+                <li ><a href="/">TECHNOLOGIES</a></li>
+                <li ><a href="/">PORTFOLIO</a></li>
+                <li ><a href="/">CAREERS</a></li>
+                <li ><a href="/">CONTACT US</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="submenu">
+        <ul id="submenulist">
+            <li ><a href="/">Web Apps</a></li>
+            <li ><a href="/">Enterprise</a></li>
+        </ul>
+    </div>
+    
+    
+</div>
+<!-- CONTENT  -->
+
+<div class="container2">
+    <div class="box_white">
+        <div class="wrapper">
+            <div class="location">Home Page &gt; Portfolio</div>
+            <div style="clear:both;"></div>
+            <div class="column1">
+                <h2>Challenge</h2>
+                <div>
+                    <p>Create a companion mobile TripBucket application that would work on iPhones and Android-based cell phones.</p>
+
+                </div>
+            </div>
+            <div class="column2">
+                <h2>Technologies used</h2>
+                <ul class="tech_icons">
+                    <li class="tech large android"></li>
+                    <li class="tech large ios6"></li>
+
+
+                </ul>
+            </div>
+        </div>
+        <div class="wrapper">
+            <h2>Solution</h2>
+            <div class="column1">
+                <div>
+                    <p>A website may be a great way to learn about a destination and plan a trip, but people use a smartphone to document and accentuate the trip. We created a mobile application travelers could use to record their trip. The app includes the ability to add photos taken with a smartphone to dreams and to post status updates on social media sites such as Twitter and Facebook. Travelers can use the app to view more details about their destination including things to do and events occurring nearby.</p>
+
+                </div>
+            </div>
+            <div class="column2">
+                <div>
+                    <p>We tied the app experience to the TripBucket site. Users can sign-in to add dreams to their “Bucket List” and check off Bucket List items as well as add photos, tips and things to do to a specific dream. The app can also be used to search for worldwide destinations and events.</p>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container2">
+        <div class="box_grey">
+            <div class="wrapper">
+                <h1>Website</h1>
+                <div class="tight">
+                    
+                        
+                            <div class="centered"><a href="http://www.tripbucket.com"><img src="static/img/icon_www.png"><br>Tripbucket.com</a></div>
+                            
+                        
+                             
+                        
+                    
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+
+<div class="container2">
+<div class="box_color">
+    <div class="wrapperbottom">
+        <div class="logobottom"></div>
+        <div class="bottomcol">
+            <h1>About us</h1>
+            <ul>
+                <li>Our Process</li>
+            </ul>
+        </div>
+        <div class="bottomcol">
+            <h1>Solutions</h1>
+            <ul>
+
+
+                <li>Web Apps</li>	        
+                <li>Enterprise	 </li>    
+                <li>Mobile	     </li>     
+                <li>Ad Delivery	  </li> 
+                <li>Location Based	</li>     
+                <li>Social	   </li>     
+                <li>Digital Asset  Management	</li>    
+                <li>Scheduling	</li>       
+                <li>Telephony	v      
+                <li>Consulting</li></ul>
+        </div>
+        <div class="bottomcol"><h1>Portfolio</h1></div>
+        <div class="bottomcol"><h1>Technologies</h1></div>
+        <div class="bottomcol"><h1>Careers</h1></div>
+        <div class="bottomcol"><h1>Contact us</h1></div>
+    </div>
+</div>
+</div>
+
+</body>
+</html>
+
