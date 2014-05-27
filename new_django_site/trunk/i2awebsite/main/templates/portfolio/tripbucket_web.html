@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block header %}
+<div class="header ad"></div>
+{% endblock header %}
+
+{% block content %}
+<div class="container2">
+    <div class="box_white">
+        <div class="wrapper">
+            <div class="location">Home Page &gt; Portfolio</div>
+            <div style="clear:both;"></div>
+            <div class="column1">
+                <h2>Challenge</h2>
+                <div>
+                    <p>Create a website consumers could use to create a bucket list of dreams and track, record, and share their experiences with friends and other community members.</p>
+
+                </div>
+            </div>
+            <div class="column2">
+                <h2>Technologies used</h2>
+                <ul class="tech_icons">
+                    <li class="tech large rabbitmq"></li>
+                    <li class="tech large linux"></li>
+                    <li class="tech large celery"></li>
+                    <li class="tech large apache"></li>
+                    <li class="tech large python"></li>
+                    <li class="tech large jquery"></li>
+                    <li class="tech large django"></li>
+                    <li class="tech large twillo"></li>
+                    <li class="tech large postgresql"></li>
+                    <li class="tech large django"></li>
+                    <li class="tech large solr"></li>
+                    <li class="tech large cassandra"></li>
+                    <li class="tech large postgis"></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="wrapper">
+            <h2>Solution</h2>
+            <div class="column1">
+                <div>
+                    <p>We created Tripbucket, a community-based travel website, where users can create a “bucket list” of things they’d like to accomplish that includes anything from visiting worldwide destinations, trying activities, to attending sporting events and annual or monumental events. The site provides information needed to help make the “bucket list” experience unique and help users realize their dreams. We used open-source mapping software we added multiple layers to maps and eliminate unwanted advertising, creating a rich, fluid user experience. To help users book their trips faster we built-in support for the major travel portals.</p>
+
+                </div>
+            </div>
+            <div class="column2">
+                <div>
+                    <p>In addition to including forum boards, we also built a system that allows users to create a personality profile and add dreams to the site. Once a profile is created we auto generate additional activities a member may want to try when in a specific location. Once on a trip, Tripbucket users can share information about each destination by adding tips, reviews, things to do, photos, and videos into an easy to use website. Since this is a community-based site we extend the way people can share information about their “bucket list” by integrating support for social media sites like Facebook, Google+, Pinterest, Tumblr and Twitter.</p>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container2">
+        <div class="box_grey">
+            <div class="wrapper">
+                <h1>Website</h1>
+                <div class="tight">
+
+
+                    <div class="centered"><a href="http://www.tripbucket.com"><img src="{% static "img/icon_www.png" %}"><br>Tripbucket.com</a></div>
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+

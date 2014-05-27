@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block header %}
+<div class="header ad"></div>
+{% endblock header %}
+
+{% block content %}
+<div class="container2">
+    <div class="box_white">
+        <div class="wrapper">
+            <div class="location">Home Page &gt; Portfolio</div>
+            <div style="clear:both;"></div>
+            <div class="column1">
+                <h2>Challenge</h2>
+                <div>
+                    <p>Create a website to resell Tech Support for Dummies (TSD) services that integrates into the company’s web services.</p>
+
+                </div>
+            </div>
+            <div class="column2">
+                <h2>Technologies used</h2>
+                <ul class="tech_icons">
+                    <li class="tech large symfony"></li>
+                    <li class="tech large mysql"></li>
+                    <li class="tech large linux"></li>
+                    <li class="tech large apache"></li>
+                    <li class="tech large php5"></li>
+                    <li class="tech large jquery"></li>
+
+
+                </ul>
+            </div>
+        </div>
+        <div class="wrapper">
+            <h2>Solution</h2>
+            <div class="column1">
+                <div>
+                    <p>In order for a company to effectively sell Tech Support for Dummies services (technical support contracts for all types of home computers and electronics) on the web, we developed a web-based application that could access TSD’s product offerings.</p>
+
+                </div>
+            </div>
+            <div class="column2">
+                <div>
+                    <p>The site allows consumers to order either one-time support or signup for a subscription plan that includes 24x7 support. The solutions utilize by the web- based eCommerce website were also integrated into Saleforce.com and the company’s call center to offer consumers the option to also order the service via call center agents.</p>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container2">
+        <div class="box_grey">
+            <div class="wrapper">
+                <h1>Website</h1>
+                <div class="tight">
+
+
+                    <div class="centered"><a href="http://www.technicalsupport.com"><img src="{% static "img/icon_www.png" %}"><br>http://www.technicalsupport.com</a></div>
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+

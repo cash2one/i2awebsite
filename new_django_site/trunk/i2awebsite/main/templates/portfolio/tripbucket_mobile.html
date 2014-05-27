@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block header %}
+<div class="header ad"></div>
+{% endblock header %}
+
+{% block content %}
+<div class="container2">
+    <div class="box_white">
+        <div class="wrapper">
+            <div class="location">Home Page &gt; Portfolio</div>
+            <div style="clear:both;"></div>
+            <div class="column1">
+                <h2>Challenge</h2>
+                <div>
+                    <p>Create a companion mobile TripBucket application that would work on iPhones and Android-based cell phones.</p>
+
+                </div>
+            </div>
+            <div class="column2">
+                <h2>Technologies used</h2>
+                <ul class="tech_icons">
+                    <li class="tech large android"></li>
+                    <li class="tech large ios6"></li>
+
+
+                </ul>
+            </div>
+        </div>
+        <div class="wrapper">
+            <h2>Solution</h2>
+            <div class="column1">
+                <div>
+                    <p>A website may be a great way to learn about a destination and plan a trip, but people use a smartphone to document and accentuate the trip. We created a mobile application travelers could use to record their trip. The app includes the ability to add photos taken with a smartphone to dreams and to post status updates on social media sites such as Twitter and Facebook. Travelers can use the app to view more details about their destination including things to do and events occurring nearby.</p>
+
+                </div>
+            </div>
+            <div class="column2">
+                <div>
+                    <p>We tied the app experience to the TripBucket site. Users can sign-in to add dreams to their “Bucket List” and check off Bucket List items as well as add photos, tips and things to do to a specific dream. The app can also be used to search for worldwide destinations and events.</p>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container2">
+        <div class="box_grey">
+            <div class="wrapper">
+                <h1>Website</h1>
+                <div class="tight">
+
+
+                    <div class="centered"><a href="http://www.tripbucket.com"><img src="{% static "img/icon_www.png" %}"><br>Tripbucket.com</a></div>
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+

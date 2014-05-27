@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block header %}
+<div class="header ad"></div>
+{% endblock header %}
+
+{% block content %}
+<div class="container2">
+    <div class="box_white">
+        <div class="wrapper">
+            <div class="location">Home Page &gt; Portfolio</div>
+            <div style="clear:both;"></div>
+            <div class="column1">
+                <h2>Challenge</h2>
+                <div>
+                    <p>Create an interactive website to teach children how to learn how to maintain a schedule and complete tasks.</p>
+
+                </div>
+            </div>
+            <div class="column2">
+                <h2>Technologies used</h2>
+                <ul class="tech_icons">
+                    <li class="tech large mysql"></li>
+                    <li class="tech large linux"></li>
+                    <li class="tech large celery"></li>
+                    <li class="tech large apache"></li>
+                    <li class="tech large python"></li>
+                    <li class="tech large jquery"></li>
+                    <li class="tech large django"></li>
+                    
+
+                </ul>
+            </div>
+        </div>
+        <div class="wrapper">
+            <h2>Solution</h2>
+            <div class="column1">
+                <div>
+                    <p>We developed a website from the ground-up that has the sophistication parents want, but is easy enough for children to use. This required creating a kid-friendly user interface where children could track daily accomplishments such as brushing their teeth or putting away their clothes. To incorporate the needs of a rewards-based system kids receive points for each completed task. The initial reward structure is points-based, but we built the system to be scalable so as the site matures it could include additional types of rewards such as prizes.</p>
+
+                </div>
+            </div>
+            <div class="column2">
+                <div>
+                    <p>Parents can create accounts for kids and add a personal photo to represent the child in the system or select a cartoon-friendly avatar. Once an account is created parents can set up schedules and tasks from pre-populated lists or add their own options. Kids can monitor the site daily and check off tasks as they are completed. We also provided reporting tools for parents and even a blog where they can learn more about child behavior, dealing with stress, get advice, and find tips on how to use the website.</p>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container2">
+        <div class="box_grey">
+            <div class="wrapper">
+                <h1>Website</h1>
+                <div class="tight">
+                    
+                        
+                    <div class="centered"><a href="http://www.mommethod.com"><img src="{% static "img/icon_www.png" %}"><br>mommethod.com</a></div>
+                            
+                        
+                             
+                        
+                    
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+
+

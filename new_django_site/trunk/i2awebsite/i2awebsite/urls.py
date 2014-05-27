@@ -80,4 +80,104 @@ urlpatterns = patterns('',
         {'menu_pos': 'categories', 'submenu_pos': 'web'},
         name='solutions-web',
     ),
+    url(r'^portfolio/atnt/$', TemplateView.as_view(
+        template_name='portfolio/atnt.html'),
+        {'menu_pos': 'portfolio'},
+        name='portfolio-atnt',
+    ),
+    url(r'^portfolio/billpay/$', TemplateView.as_view(
+        template_name='portfolio/billpay.html'),
+        {'menu_pos': 'portfolio'},
+        name='portfolio-billpay',
+    ),
+    url(r'^portfolio/facial/$', TemplateView.as_view(
+        template_name='portfolio/facial.html'),
+        {'menu_pos': 'portfolio'},
+        name='portfolio-facial',
+    ),
+    url(r'^portfolio/fanserv/$', TemplateView.as_view(
+        template_name='portfolio/fanserv.html'),
+        {'menu_pos': 'portfolio'},
+        name='portfolio-fanserv',
+    ),
+    url(r'^portfolio/independa/$', TemplateView.as_view(
+        template_name='portfolio/independa.html'),
+        {'menu_pos': 'portfolio'},
+        name='portfolio-independa',
+    ),
+    url(r'^portfolio/kms/$', TemplateView.as_view(
+        template_name='portfolio/kms.html'),
+        {'menu_pos': 'portfolio'},
+        name='portfolio-kms',
+    ),
+    url(r'^portfolio/moasis/$', TemplateView.as_view(
+        template_name='portfolio/moasis.html'),
+        {'menu_pos': 'portfolio'},
+        name='portfolio-moasis',
+    ),
+    url(r'^portfolio/mobile_check/$', TemplateView.as_view(
+        template_name='portfolio/mobile_check.html'),
+        {'menu_pos': 'portfolio'},
+        name='portfolio-mobile_check',
+    ),
+    url(r'^portfolio/mom/$', TemplateView.as_view(
+        template_name='portfolio/mom.html'),
+        {'menu_pos': 'portfolio'},
+        name='portfolio-mom',
+    ),
+    url(r'^portfolio/nba/$', TemplateView.as_view(
+        template_name='portfolio/nba.html'),
+        {'menu_pos': 'portfolio'},
+        name='portfolio-nba',
+    ),
+    url(r'^portfolio/nba_dev/$', TemplateView.as_view(
+        template_name='portfolio/nba_dev.html'),
+        {'menu_pos': 'portfolio'},
+        name='portfolio-nba_dev',
+    ),
+    url(r'^portfolio/nba_rtp/$', TemplateView.as_view(
+        template_name='portfolio/nba_rtp.html'),
+        {'menu_pos': 'portfolio'},
+        name='portfolio-nba_rtp',
+    ),
+    url(r'^portfolio/nhl/$', TemplateView.as_view(
+        template_name='portfolio/nhl.html'),
+        {'menu_pos': 'portfolio'},
+        name='portfolio-nhl',
+    ),
+    url(r'^portfolio/salesforce/$', TemplateView.as_view(
+        template_name='portfolio/salesforce.html'),
+        {'menu_pos': 'portfolio'},
+        name='portfolio-salesforce',
+    ),
+    url(r'^portfolio/socialjane/$', TemplateView.as_view(
+        template_name='portfolio/socialjane.html'),
+        {'menu_pos': 'portfolio'},
+        name='portfolio-socialjane',
+    ),
+    url(r'^portfolio/tdg/$', TemplateView.as_view(
+        template_name='portfolio/tdg.html'),
+        {'menu_pos': 'portfolio'},
+        name='portfolio-tdg',
+    ),
+    url(r'^portfolio/tech_support/$', TemplateView.as_view(
+        template_name='portfolio/tech_support.html'),
+        {'menu_pos': 'portfolio'},
+        name='portfolio-tech_support',
+    ),
+    url(r'^portfolio/tripbucket_ad/$', TemplateView.as_view(
+        template_name='portfolio/tripbucket_ad.html'),
+        {'menu_pos': 'portfolio'},
+        name='portfolio-tripbucket_ad',
+    ),
+    url(r'^portfolio/tripbucket_mobile/$', TemplateView.as_view(
+        template_name='portfolio/tripbucket_mobile.html'),
+        {'menu_pos': 'portfolio'},
+        name='portfolio-tripbucket_mobile',
+    ),
+    url(r'^portfolio/tripbucket_web/$', TemplateView.as_view(
+        template_name='portfolio/tripbucket_web.html'),
+        {'menu_pos': 'portfolio'},
+        name='portfolio-tripbucket_web',
+    ),
 )

@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block header %}
+<div class="header ad"></div>
+{% endblock header %}
+
+{% block content %}
+<div class="container2">
+    <div class="box_white">
+        <div class="wrapper">
+            <div class="location">Home Page &gt; Portfolio</div>
+            <div style="clear:both;"></div>
+            <div class="column1">
+                <h2>Challenge</h2>
+                <div>
+                    <p>Create a hyper location-based ad platform that allows advertisers to send targeted ads to people based on their location.</p>
+
+                </div>
+            </div>
+            <div class="column2">
+                <h2>Technologies used</h2>
+                <ul class="tech_icons">
+                    <li class="tech large mysql"></li>
+                    <li class="tech large rabbitmq"></li>
+                    <li class="tech large linux"></li>
+                    <li class="tech large cassandra"></li>
+                    <li class="tech large java"></li>
+                    <li class="tech large celery"></li>
+                    <li class="tech large android"></li>
+                    <li class="tech large python"></li>
+                    <li class="tech large ios6"></li>
+                    <li class="tech large apache"></li>
+                    <li class="tech large jquery"></li>
+                    <li class="tech large django"></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="wrapper">
+            <h2>Solution</h2>
+            <div class="column1">
+                <div>
+                    <p>To deliver targeted location-based ads to consumers on a cell phone or tablet, we created a system that provides advertisers (small businesses, agencies, and marketers) the ability to target a specific customer based on their location.<br><br>
+
+                    We built an easy to use self-service platform that allows businesses to use their own graphic or text-based banner ads in a given campaign and then visually pinpoint where the ads would be delivered within specific grids in a city or region. To help accurately measure a campaign’s performance, we provided the ability to run reports using the included analytic tools. Agencies will appreciate that the system works well with third party tools such as DART reporting.</p>
+
+                </div>
+            </div>
+            <div class="column2">
+                <div>
+                    <p>The system goes beyond delivering location-specific ads, we also built-in the flexibility to integrate additional features into the ad such as the ability to place a call, see a location on a map, or even use a coupon. In addition to location parameters, users of the system can target consumers with specific interests. By implementing an auction-based bidding system companies can also decide how much they want to spend to achieve the reach they want.</p>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container2">
+        <div class="box_grey">
+            <div class="wrapper">
+                <h1>Website</h1>
+                <div class="tight">
+
+
+                    <div class="centered"><a href="http://www.moasisglobal.com"><img src="{% static "img/icon_www.png" %}"><br>Moasisglobal.com</a></div>
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

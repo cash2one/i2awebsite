@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block header %}
+<div class="header ad"></div>
+{% endblock header %}
+
+{% block content %}
+<div class="container2">
+    <div class="box_white">
+        <div class="wrapper">
+            <div class="location">Home Page &gt; Portfolio</div>
+            <div style="clear:both;"></div>
+            <div class="column1">
+                <h2>Challenge</h2>
+                <div>
+                    <p>Create mobile applications used by NHL teams to stay connected with their fans. The apps were required to work across multiple platforms and provide near real-time game updates, while simultaneously handling tens of thousands of concurrent users.</p>
+
+                </div>
+            </div>
+            <div class="column2">
+                <h2>Technologies used</h2>
+                <ul class="tech_icons">
+                    <li class="tech large mysql"></li>
+                    <li class="tech large linux"></li>
+                    <li class="tech large java"></li>
+                    <li class="tech large android"></li>
+                    <li class="tech large python"></li>
+                    <li class="tech large ios6"></li>
+                    <li class="tech large django"></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="wrapper">
+            <h2>Solution</h2>
+            <div class="column1">
+                <div>
+                    <p>Developing an application that will appeal to fans of specific NHL teams required providing access to real-time data. We accomplished this by accessing NHL’s HITS data feed to provide users with real-time box scores, shots on goal, and in-game individual player data. While attending games, fans can use the application to see parking maps and locate concession stands in the arena. There is also a built-in e-commerce component for ticket sales. When the team is off the ice we use automated feeds to keep fans updated on player stats, news, photo galleries, videos, and more.</p>
+
+                </div>
+            </div>
+            <div class="column2">
+                <div>
+                    <p>We understand that NHL teams have different requirements for their individual apps. Keeping this in mind we made sure the app was scalable to support large numbers of fans simultaneously. We built a customizable Content Management System (CMS) on the back-end giving teams the ability to choose the type of information provided by the app, to stream live video of the game, and to decide how they will interact with fans. For teams that want to monetize the application we included an integrated ad platform that can be turned on or off.
+
+                    Each NHL team application is compatible with iPhone, Android, and BlackBerry devices.</p>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container2">
+        <div class="box_grey">
+            <div class="wrapper">
+                <h1>Download</h1>
+                <div class="tight">
+                    <div class="column1">
+                        <div class="download_box">
+                            <h3>Download iPhone Apps</h3>
+                            <ul>
+                                <li><a href="http://itunes.apple.com/us/app/boston-bruins-official-mobile/id473349864?mt=8">Boston Bruins App</a></li>
+                                <li><a href="http://itunes.apple.com/us/app/dallas-stars-official-mobile/id473346827?mt=8">Dallas Stars App</a></li>
+                                <li><a href="https://itunes.apple.com/us/app/buffalo-sabres-official-mobile/id499599017?mt=8">Buffalo Sabres App</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="column2">
+                        <div class="download_box">
+                            <h3>Download Android Apps</h3>
+                            <ul>
+                                <li><a href="https://play.google.com/store/apps/details?id=com.b3connect.dmf.client.android.boston">Boston Bruins App</a></li>
+                                <li><a href="https://play.google.com/store/apps/details?id=com.b3connect.dmf.client.android.dallas">Dallas Stars App</a></li>
+                                <li><a href="https://play.google.com/store/apps/details?id=com.b3connect.dmf.client.android.sabres">Buffalo Sabres App</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+

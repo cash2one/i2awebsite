@@ -746,6 +746,9 @@ min-height:90px;
 	min-width:1200px;
 	margin:0 auto;
 }
+.wrapper_portfolio a {
+    display: block;
+}
 .logotabel{
 	background: url(../img/img_nba.png) no-repeat;
 	background-size: 100%;
@@ -1138,7 +1141,7 @@ min-height:90px;
 	min-height:300px;
 	text-align:center;
 }
-.logotabel18{
+.logotabel19{
 
 	background: url(../img/img_socialjane.png) no-repeat;
 	background-size: 100%;
@@ -1149,7 +1152,7 @@ min-height:90px;
 	min-height:300px;
 	text-align:center;
 }
-.logotabel18:hover{
+.logotabel19:hover{
 	opacity:0.8;
 	background: url(../img/img_socialjane.png) no-repeat;
 	background-size: 100%;
