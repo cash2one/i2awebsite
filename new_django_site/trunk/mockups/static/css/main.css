@@ -239,13 +239,31 @@ li a {text-decoration: none;
     padding-bottom: 2px;
     border-bottom: 3px solid #222;
 }
-.submenu {
+#submenu {
     clear: both;
-    background-color: gray;
+    background-color: #eeb604;
     width: 100%;
+    height: 34px;
+    display: none;
+    overflow-y: hidden;
+}
+#submenu.active {
+    display: block;
+}
+#submenu.animate {
+    -webkit-animation: submenu 1s;
+    -moz-animation: submenu 1s;
+    -o-animation: submenu 1s;
+    -ms-animation: submenu 1s;
+    animation: submenu 1s;
+}
+@keyframes submenu
+{
+    0%   {height: 0px;}
+    100% {height: 34px;}
 }
 #submenulist {
-    width: 800px;
+    width: 1000px;
     margin: 0 auto;
 }
 #submenulist li {
@@ -254,11 +272,18 @@ li a {text-decoration: none;
 	cursor:pointer;
 	display: inline;
 	list-style-type: none;
-	padding-left: 20px;
-	padding-right: 10px;
+	padding-left: 10px;
+	padding-right: 5px;
 
-	line-height:44px;
-	font-size:14pt;
+	line-height:34px;
+	font-size:10pt;
+    font-weight: bold;
+}
+#submenulist li a {
+    color: #000;
+}
+#submenulist li.active a {
+    color: #fff;
 }
 .logo{
 	float:left;
@@ -266,7 +291,7 @@ li a {text-decoration: none;
 	width:246px;
 	background:#222;
 
-	height:100px;
+	height:68px;
 	color:#fff;
 	font-size:14pt;
 	background: url(../img/logo.png) no-repeat;
@@ -280,6 +305,10 @@ li a {text-decoration: none;
 .header.ad {
     height: 213px;
     background: url(../img/cats_headers/ad.jpg);
+}
+.header.b3 {
+    height: 367px;
+    background: url(../img/portfolio_headers/b3.jpg);
 }
 
 .bar{
