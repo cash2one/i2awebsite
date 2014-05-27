@@ -1,0 +1,106 @@
+{% load staticfiles %}
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+<meta name="viewport"  user-scalable="no">
+<meta name="viewport" content="width=device-width" />
+
+<title>{% block title %}I2aSolutions.com{% endblock title %}</title>
+<link href="{% static "css/reset.css" %}" media="screen" rel="stylesheet" type="text/css" />
+<link href="{% static "css/main.css" %}" media="screen" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="{% static "js/jquery-1.10.2.min.js" %}"></script>
+<script type="text/javascript">
+$(function() {
+    $('#menulist a.submenu_trigger').click(function() {
+        if (!$('#submenu').hasClass('active')) {
+            $('#submenu').addClass('active');
+            $('#submenu').addClass('animate');
+        }
+        return false;
+    });
+});
+</script>
+{% block head_extra %}
+{% endblock head_extra %}
+</head>
+<body>
+{% block preloader %}
+{% endblock preloader %}
+<div class="container">
+    <div class="menu">
+        <div class="holder">
+            <div class="logo"></div>
+            <ul id="menulist">
+                <li {% if menu_pos == "home"         %}class="active"{% endif %}><a href="{% url "home" %}">ABOUT US</a></li>
+                <li {% if menu_pos == "categories"   %}class="active"{% endif %}><a class="submenu_trigger" href="{% url "home" %}">SOLUTIONS</a></li>
+                <li {% if menu_pos == "technologies" %}class="active"{% endif %}><a href="{% url "technologies" %}">TECHNOLOGIES</a></li>
+                <li {% if menu_pos == "portfolio"    %}class="active"{% endif %}><a href="{% url "portfolio" %}">PORTFOLIO</a></li>
+                <li {% if menu_pos == "careers"      %}class="active"{% endif %}><a href="{% url "home" %}">CAREERS</a></li>
+                <li {% if menu_pos == "contact"      %}class="active"{% endif %}><a href="{% url "home" %}">CONTACT US</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="submenu" {% if submenu_pos %}class="active"{% endif %}>
+        <ul id="submenulist">
+            <li {% if submenu_pos == "web"          %}class="active"{% endif %}><a href="{% url "solutions-web" %}">Web Apps</a></li>
+            <li {% if submenu_pos == "enterprise"   %}class="active"{% endif %}><a href="{% url "solutions-enterprise" %}">Enterprise</a></li>
+            <li {% if submenu_pos == "mobile"       %}class="active"{% endif %}><a href="{% url "solutions-mobile" %}">Mobile</a></li>
+            <li {% if submenu_pos == "ads"          %}class="active"{% endif %}><a href="{% url "solutions-ads" %}">Ad Delivery</a></li>
+            <li {% if submenu_pos == "location"     %}class="active"{% endif %}><a href="{% url "solutions-location" %}">Location Based</a></li>
+            <li {% if submenu_pos == "social"       %}class="active"{% endif %}><a href="{% url "solutions-social" %}">Social</a></li>
+            <li {% if submenu_pos == "assets"       %}class="active"{% endif %}><a href="{% url "solutions-assets" %}">Digital Asset Management</a></li>
+            <li {% if submenu_pos == "scheduling"   %}class="active"{% endif %}><a href="{% url "solutions-scheduling" %}">Scheduling</a></li>
+            <li {% if submenu_pos == "telephony"    %}class="active"{% endif %}><a href="{% url "solutions-telephony" %}">Telephony</a></li>
+            <li {% if submenu_pos == "consulting"   %}class="active"{% endif %}><a href="{% url "solutions-consulting" %}">Consulting</a></li>
+        </ul>
+    </div>
+    {% block header %}
+    {% endblock header %}
+</div>
+<!-- CONTENT  -->
+{% block content %}
+{% endblock content %}
+</div>
+
+
+<div class="container2">
+<div class="box_color">
+    <div class="wrapperbottom">
+        <div class="logobottom"></div>
+        <div class="bottomcol">
+            <h1>About us</h1>
+            <ul>
+                <li>Our Process</li>
+            </ul>
+        </div>
+        <div class="bottomcol">
+            <h1>Solutions</h1>
+            <ul>
+
+
+                <li>Web Apps</li>	        
+                <li>Enterprise	 </li>    
+                <li>Mobile	     </li>     
+                <li>Ad Delivery	  </li> 
+                <li>Location Based	</li>     
+                <li>Social	   </li>     
+                <li>Digital Asset  Management	</li>    
+                <li>Scheduling	</li>       
+                <li>Telephony	v      
+                <li>Consulting</li></ul>
+        </div>
+        <div class="bottomcol"><h1>Portfolio</h1></div>
+        <div class="bottomcol"><h1>Technologies</h1></div>
+        <div class="bottomcol"><h1>Careers</h1></div>
+        <div class="bottomcol"><h1>Contact us</h1></div>
+    </div>
+</div>
+</div>
+
+</body>
+</html>
+

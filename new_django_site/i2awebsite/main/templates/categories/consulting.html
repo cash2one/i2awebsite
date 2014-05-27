@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block header %}
+<div class="header ad"></div>
+{% endblock header %}
+
+{% block content %}
+<div class="container2">
+    <div class="box_white">
+        <div class="wrapper">
+            <div class="location">Home Page &gt; Web Application Development</div>
+            <div style="clear:both;"></div>
+            <h2>Consulting</h2>
+            <div>
+                <p>We know developing products can be a daunting task, but it doesn’t have to be. Bringing your company’s products and projects to fruition is one of our specialties. Whether you company is a start-up in the beginning stages of product development and need a mock-up created to see how your application will look or are midway through a project and need to refine a system architecture we can help.</p>
+            </div>
+            <div class="images_box4">
+                <img src="{% static "img/img_salesforce.png" %}" />
+                <img src="{% static "img/img_independa.png" %}" />
+                <img src="{% static "img/img_mobilecheck.png" %}" />
+                <img src="{% static "img/img_facial.png" %}" />
+            </div>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="box_grey">
+            <div class="wrapper">
+                <div class="column1">
+
+                    <h3>Our Consulting Services Include</h3>
+                    <p><ul><li>Architectural services
+                        <li>Moving to the cloud</li>
+                        <li>Website review</li>
+                        <li>Application design</li>
+                        <li>System designs</li>
+                        <li>Emerging technology consultation</li>
+                        <li>User Experience (UX) Design</li>
+                        <li>Product development</li>
+                        <li>Strategic planning</li>
+                        <li>Technology selection advisement</li>
+                        <li>Website/Application marketing</li></ul></p>
+                </div>
+                <div class="column2">
+
+                    <h3>Expertise</h3>
+                    <p>Our team of experts has a wide breadth of cross-industry experience and wide-ranging technical knowledge to bring to your project. We are committed to building successful, robust, and scalable applications and websites for midsize companies and start-ups alike. Our goal is to help you make your concept or web presence a successful reality.</p>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
