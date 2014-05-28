@@ -410,6 +410,28 @@ li a {text-decoration: none;
     height: 213px;
     background: url(../img/cats_headers/enterprise.jpg);
 }
+.header.consulting {
+    height: 213px;
+    background: url(../img/cats_headers/consulting.jpg);
+}
+.header.digitalasset {
+    height: 213px;
+    background: url(../img/cats_headers/digitalasset.jpg);
+}
+.header.scheduling {
+    height: 213px;
+    background: url(../img/cats_headers/scheduling.jpg);
+}
+.header.social {
+    height: 213px;
+    background: url(../img/cats_headers/social.jpg);
+}
+.header.telephony {
+    height: 213px;
+    background: url(../img/cats_headers/telephony.jpg);
+}
+
+
 .bar{
 	height:680px;
 	position:relative;
