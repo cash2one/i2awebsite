@@ -31,7 +31,7 @@ urlpatterns = patterns('',
         name='careers',
     ),
     url(r'^contact/$', TemplateView.as_view(
-        template_name='technologies.html'),
+        template_name='contact.html'),
         {'menu_pos': 'contact'},
         name='contact',
     ),

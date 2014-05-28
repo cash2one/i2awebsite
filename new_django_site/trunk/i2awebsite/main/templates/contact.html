@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block header %}
+<div class="header contact"></div>
+{% endblock header %}
+
+{% block content %}
+<div class="container2">
+    <div class="box_white">
+        <div class="wrapper">
+            <div class="location">Home Page &gt; Contact</div>
+            <div style="clear:both;"></div>
+            <div class="container2">
+                <div class="box_white">
+                    <div class="wrapper">
+                        <h1>Contact</h1>
+
+
+                        <p>Need information? conctact us - we love to talk!</p>
+
+
+            </div></div></div>
+
+        </div>
+        <div class="wrapper">
+
+            <div class="column33">
+                <img src="{% static "img/client.png" %}">
+                <h2>New Customers</h2>
+                <p><a href="mailto:customers@i2asolutions.com">customers@i2asolutions.com</a></p>
+
+            </div>
+
+            <div class="column33">
+                <img src="{% static "img/job.png" %}">
+                <h2>Jobs</h2>
+                <p><a href="mailto:jobs@i2asolutions.com">jobs@i2asolutions.com</a></p>
+
+            </div>
+
+            <div class="column33">
+                <img src="{% static "img/support.png" %}">
+                <h2>Support</h2>
+                <p><a href="mailto:support@i2asolutions.com">support@i2asolutions.com</a></p>
+
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+{% endblock content %}
