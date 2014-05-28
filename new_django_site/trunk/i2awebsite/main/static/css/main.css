@@ -556,6 +556,18 @@ li a {text-decoration: none;
 	background-size:100%;
 min-height:90px;
 }
+.box_screenshots {
+    margin: 0 auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.box_screenshots img {
+    float: left;
+    padding: 2px;
+    border: 1px solid gray;
+    height: 320px;
+    margin-right: 12px;
+}
 .quote{
 	width:100%;
 	margin-top:40px;
