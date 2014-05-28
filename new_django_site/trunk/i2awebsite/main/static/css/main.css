@@ -395,7 +395,14 @@ li a {text-decoration: none;
     height: 367px;
     background-image: url(../img/portfolio_headers/tb.jpg);
 }
-
+.header.tb_ad {
+    height: 367px;
+    background-image: url(../img/portfolio_headers/tb_ad.jpg);
+}
+.header.tb_mobile {
+    height: 367px;
+    background-image: url(../img/portfolio_headers/tb_mobile.jpg);
+}
 .header.portfolio {
     height: 367px;
     background-image: url(../img/page_headers/portfolio.jpg);
