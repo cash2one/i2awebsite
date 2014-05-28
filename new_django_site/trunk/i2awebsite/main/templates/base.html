@@ -40,7 +40,7 @@ $(function() {
                 <li {% if menu_pos == "technologies" %}class="active"{% endif %}><a href="{% url "technologies" %}">TECHNOLOGIES</a></li>
                 <li {% if menu_pos == "portfolio"    %}class="active"{% endif %}><a href="{% url "portfolio" %}">PORTFOLIO</a></li>
                 <li {% if menu_pos == "careers"      %}class="active"{% endif %}><a href="{% url "careers" %}">CAREERS</a></li>
-                <li {% if menu_pos == "contact"      %}class="active"{% endif %}><a href="{% url "home" %}">CONTACT US</a></li>
+                <li {% if menu_pos == "contact"      %}class="active"{% endif %}><a href="{% url "contact" %}">CONTACT US</a></li>
             </ul>
         </div>
     </div>
@@ -75,29 +75,27 @@ $(function() {
         <div class="bottomcol">
             <h1>About us</h1>
             <ul>
-                <li>Our Process</li>
+                <li><a href="{% url "our_process" %}">Our Process</a></li>
             </ul>
         </div>
         <div class="bottomcol">
             <h1>Solutions</h1>
             <ul>
-
-
-                <li>Web Apps</li>	        
-                <li>Enterprise	 </li>    
-                <li>Mobile	     </li>     
-                <li>Ad Delivery	  </li> 
-                <li>Location Based	</li>     
-                <li>Social	   </li>     
-                <li>Digital Asset  Management	</li>    
-                <li>Scheduling	</li>       
-                <li>Telephony	v      
-                <li>Consulting</li></ul>
+                <li><a href="{% url "solutions-web" %}">Web Apps</a></li>
+                <li><a href="{% url "solutions-enterprise" %}">Enterprise</a></li>
+                <li><a href="{% url "solutions-mobile" %}">Mobile</a></li>
+                <li><a href="{% url "solutions-ads" %}">Ad Delivery</a></li>
+                <li><a href="{% url "solutions-location" %}">Location Based</a></li>
+                <li><a href="{% url "solutions-social" %}">Social</a></li>
+                <li><a href="{% url "solutions-assets" %}">Digital Asset Management</a></li>
+                <li><a href="{% url "solutions-scheduling" %}">Scheduling</a></li>
+                <li><a href="{% url "solutions-telephony" %}">Telephony</a></li>
+                <li><a href="{% url "solutions-consulting" %}">Consulting</a></li>
         </div>
-        <div class="bottomcol"><h1>Portfolio</h1></div>
-        <div class="bottomcol"><h1>Technologies</h1></div>
-        <div class="bottomcol"><h1>Careers</h1></div>
-        <div class="bottomcol"><h1>Contact us</h1></div>
+        <div class="bottomcol"><h1><a href="{% url "portfolio" %}">Portfolio</a></h1></div>
+        <div class="bottomcol"><h1><a href="{% url "technologies" %}">Technologies</a></h1></div>
+        <div class="bottomcol"><h1><a href="{% url "careers" %}">Careers</a></h1></div>
+        <div class="bottomcol"><h1><a href="{% url "contact" %}">Contact us</a></h1></div>
     </div>
 </div>
 </div>

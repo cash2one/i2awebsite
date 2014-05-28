@@ -30,6 +30,15 @@ urlpatterns = patterns('',
         {'menu_pos': 'careers'},
         name='careers',
     ),
+    url(r'^contact/$', TemplateView.as_view(
+        template_name='technologies.html'),
+        {'menu_pos': 'contact'},
+        name='contact',
+    ),
+    url(r'^our_process/$', TemplateView.as_view(
+        template_name='our_process.html'),
+        name='our_process',
+    ),
     url(r'^solutions/ad_delivery/$', TemplateView.as_view(
         template_name='categories/ad_delivery.html'),
         {'menu_pos': 'categories', 'submenu_pos': 'ads'},
