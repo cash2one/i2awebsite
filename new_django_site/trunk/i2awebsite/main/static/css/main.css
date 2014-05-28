@@ -406,7 +406,10 @@ li a {text-decoration: none;
     height: 367px;
     background: url(../img/page_headers/careers.jpg);
 }
-
+.header.enterprise {
+    height: 213px;
+    background: url(../img/cats_headers/enterprise.jpg);
+}
 .bar{
 	height:680px;
 	position:relative;
