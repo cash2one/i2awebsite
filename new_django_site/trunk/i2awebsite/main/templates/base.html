@@ -47,8 +47,8 @@ $(function() {
     <div id="submenu" {% if submenu_pos %}class="active"{% endif %}>
         <ul id="submenulist">
             <li {% if submenu_pos == "web"          %}class="active"{% endif %}><a href="{% url "solutions-web" %}">Web Apps</a></li>
+             <li {% if submenu_pos == "mobile"       %}class="active"{% endif %}><a href="{% url "solutions-mobile" %}">Mobile</a></li>
             <li {% if submenu_pos == "enterprise"   %}class="active"{% endif %}><a href="{% url "solutions-enterprise" %}">Enterprise</a></li>
-            <li {% if submenu_pos == "mobile"       %}class="active"{% endif %}><a href="{% url "solutions-mobile" %}">Mobile</a></li>
             <li {% if submenu_pos == "ads"          %}class="active"{% endif %}><a href="{% url "solutions-ads" %}">Ad Delivery</a></li>
             <li {% if submenu_pos == "location"     %}class="active"{% endif %}><a href="{% url "solutions-location" %}">Location Based</a></li>
             <li {% if submenu_pos == "social"       %}class="active"{% endif %}><a href="{% url "solutions-social" %}">Social</a></li>
