@@ -301,15 +301,149 @@ li a {text-decoration: none;
 
 .header {
     clear: both;
+    background-position: center;
+}
+.header.default {
+    height: 213px;
+    background-image: url(../img/cats_headers/cats.jpg);
 }
 .header.ad {
     height: 213px;
-    background: url(../img/cats_headers/ad.jpg);
+    background-image: url(../img/cats_headers/ad.jpg);
+}
+.header.location {
+    height: 213px;
+    background-image: url(../img/cats_headers/location.jpg);
+}
+.header.mobile {
+    height: 213px;
+    background-image: url(../img/cats_headers/mobile.jpg);
+}
+.header.web {
+    height: 213px;
+    background-image: url(../img/cats_headers/web.jpg);
+}
+.header.atnt {
+    height: 367px;
+    background-image: url(../img/portfolio_headers/atnt.jpg);
 }
 .header.b3 {
     height: 367px;
-    background: url(../img/portfolio_headers/b3.jpg);
+    background-image: url(../img/portfolio_headers/b3.jpg);
 }
+.header.billpay {
+    height: 367px;
+    background-image: url(../img/portfolio_headers/bill_pay_app.jpg);
+}
+.header.facial {
+    height: 367px;
+    background-image: url(../img/portfolio_headers/facial.jpg);
+}
+.header.independa {
+    height: 367px;
+    background-image: url(../img/portfolio_headers/independa.jpg);
+}
+.header.kms {
+    height: 367px;
+    background-image: url(../img/portfolio_headers/knowledge.jpg);
+}
+.header.moasis {
+    height: 367px;
+    background-image: url(../img/portfolio_headers/moasis.jpg);
+}
+.header.mobile_check {
+    height: 367px;
+    background-image: url(../img/portfolio_headers/mobilecheck.jpg);
+}
+.header.mom {
+    height: 367px;
+    background-image: url(../img/portfolio_headers/mom.jpg);
+}
+.header.nba {
+    height: 367px;
+    background-image: url(../img/portfolio_headers/nba.jpg);
+}
+.header.nba_dev {
+    height: 367px;
+    background-image: url(../img/portfolio_headers/nba_pd.jpg);
+}
+.header.nba_rtp {
+    height: 367px;
+    background-image: url(../img/portfolio_headers/nba_rtp.jpg);
+}
+.header.nhl {
+    height: 367px;
+    background-image: url(../img/portfolio_headers/nhl.jpg);
+}
+.header.salesforce {
+    height: 367px;
+    background-image: url(../img/portfolio_headers/digitalmojo.jpg);
+}
+.header.socialjane {
+    height: 367px;
+    background-image: url(../img/portfolio_headers/socialjane.jpg);
+}
+.header.tdg {
+    height: 367px;
+    background-image: url(../img/portfolio_headers/tdg.jpg);
+}
+.header.tech_support {
+    height: 367px;
+    background-image: url(../img/portfolio_headers/technicalsupport.jpg);
+}
+.header.tb {
+    height: 367px;
+    background-image: url(../img/portfolio_headers/tb.jpg);
+}
+.header.tb_ad {
+    height: 367px;
+    background-image: url(../img/portfolio_headers/tb_ad.jpg);
+}
+.header.tb_mobile {
+    height: 367px;
+    background-image: url(../img/portfolio_headers/tb_mobile.jpg);
+}
+.header.portfolio {
+    height: 367px;
+    background-image: url(../img/page_headers/portfolio.jpg);
+}
+.header.technologies {
+    height: 367px;
+    background-image: url(../img/page_headers/technologies.jpg);
+}
+.header.careers {
+    height: 367px;
+    background-image: url(../img/page_headers/careers.jpg);
+}
+.header.enterprise {
+    height: 213px;
+    background-image: url(../img/cats_headers/enterprise.jpg);
+}
+.header.consulting {
+    height: 213px;
+    background-image: url(../img/cats_headers/consulting.jpg);
+}
+.header.digitalasset {
+    height: 213px;
+    background-image: url(../img/cats_headers/digitalasset.jpg);
+}
+.header.scheduling {
+    height: 213px;
+    background-image: url(../img/cats_headers/scheduling.jpg);
+}
+.header.social {
+    height: 213px;
+    background-image: url(../img/cats_headers/social.jpg);
+}
+.header.telephony {
+    height: 213px;
+    background-image: url(../img/cats_headers/telephony.jpg);
+}
+.header.contact {
+    height: 213px;
+    background-image: url(../img/page_headers/contact_us.jpg);
+}
+
 
 .bar{
 	height:680px;
@@ -429,6 +563,18 @@ li a {text-decoration: none;
 	background-size:100%;
 min-height:90px;
 }
+.box_screenshots {
+    margin: 0 auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.box_screenshots img {
+    float: left;
+    padding: 2px;
+    border: 1px solid gray;
+    height: 320px;
+    margin-right: 12px;
+}
 .quote{
 	width:100%;
 	margin-top:40px;
@@ -469,10 +615,41 @@ min-height:90px;
 	width:370px;
 	margin-right:60px;
 }
+.column66{
+	float:left;
+
+	width:370px;
+	margin-right:60px;
+}
 .column2{
 	float:left;
 	width:370px;
 }
+.columnx{
+	float:left;
+
+	width:370px;
+	margin-right:60px;
+}
+.columny{
+	float:left;
+	width:370px;
+}
+.column33{
+	text-align:center;
+	float:left;
+	width:266px;
+}
+.column33 h2{
+	text-align:center;
+	float:left;
+	width:266px;
+}
+.column33 p{
+	text-align:center;
+	float:left;
+	width:266px;
+}s
 .wrapper .tight {
     margin-left: 65px;
     margin-right: 65px;
@@ -685,7 +862,7 @@ min-height:90px;
 .tech.terracotta {
     background-position: -300% -700%;
 }
-.tech.unknown3 {
+.tech.aws {
     background-position: 0% -800%;
 }
 .tech.joomla {
@@ -745,6 +922,9 @@ min-height:90px;
 	max-width:1920px;
 	min-width:1200px;
 	margin:0 auto;
+}
+.wrapper_portfolio a {
+    display: block;
 }
 .logotabel{
 	background: url(../img/img_nba.png) no-repeat;
@@ -1138,7 +1318,7 @@ min-height:90px;
 	min-height:300px;
 	text-align:center;
 }
-.logotabel18{
+.logotabel19{
 
 	background: url(../img/img_socialjane.png) no-repeat;
 	background-size: 100%;
@@ -1149,7 +1329,7 @@ min-height:90px;
 	min-height:300px;
 	text-align:center;
 }
-.logotabel18:hover{
+.logotabel19:hover{
 	opacity:0.8;
 	background: url(../img/img_socialjane.png) no-repeat;
 	background-size: 100%;
