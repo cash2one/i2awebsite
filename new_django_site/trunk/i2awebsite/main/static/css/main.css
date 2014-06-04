@@ -14,7 +14,7 @@ height:44px;
 	left: 50%;
 	top: 50%;
 	background: url(../img/logobottom.png);
-	margin: -60px 0 0 -60px;
+	margin: -110px 0 0 -110px;
 	z-index: 89;
 	-webkit-animation: preload 2s infinite;
 	-moz-animation: preload 2s infinite;
@@ -1563,5 +1563,5 @@ display:none;
 	font-family:"karbon_bold";
 }
 .alex{
-	
+
 }
