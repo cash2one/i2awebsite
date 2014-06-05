@@ -20,11 +20,22 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 SECRET_KEY = 'm2jqmdqd3#cx3=9$f91td^tulvz$-1+fip_%s61dq+=)23qegj'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-TEMPLATE_DEBUG = True
+TEMPLATE_DEBUG = DEBUG
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1',
+                 'i2asolutions.com']
+
+ADMINS = MANAGERS = (
+    ('Mariusz Okulanis', 'mokulanis@i2asolutions.com'),
+)
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'email123999@gmail.com'
+EMAIL_HOST_PASSWORD = '1q2w3e4r99911'
+EMAIL_USE_TLS = True
+DEFAULT_FROM_EMAIL = 'email123999@gmail.com'
 
 
 # Application definition
