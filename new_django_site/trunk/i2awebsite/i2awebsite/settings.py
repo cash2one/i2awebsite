@@ -25,7 +25,8 @@ DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
 ALLOWED_HOSTS = ['127.0.0.1',
-                 'i2asolutions.com']
+                 'i2asolutions.com',
+                 'www.i2asolutions.com']
 
 ADMINS = MANAGERS = (
     ('Mariusz Okulanis', 'mokulanis@i2asolutions.com'),
