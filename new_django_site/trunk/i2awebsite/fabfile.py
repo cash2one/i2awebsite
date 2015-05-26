@@ -34,9 +34,6 @@ def deploy(remote_dir, svn_rev='', nfs=False):
             sudo('chmod +x manage.py')
             with prefix('source /opt/virtualenv/i2awebsite/bin/activate'):
                 sudo('./manage.py collectstatic --noinput')
-            #     sudo('./manage.py migrate --noinput')
-            #     sudo('./manage.py collectstatic --noinput')
-            # sudo('touch capp_django/wsgi.py')
     sudo('service i2awebsite restart')
     return
 
