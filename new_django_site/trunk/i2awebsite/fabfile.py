@@ -37,6 +37,6 @@ def deploy(remote_dir, svn_rev='', nfs=False):
             #     sudo('./manage.py migrate --noinput')
             #     sudo('./manage.py collectstatic --noinput')
             # sudo('touch capp_django/wsgi.py')
-    #sudo('service i2awebsite restart')
+    sudo('service i2awebsite restart')
     return
 
