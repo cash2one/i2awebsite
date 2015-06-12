@@ -195,9 +195,7 @@ li a {text-decoration: none;
 	height:50px;
 	color:#222;
 	font-size:20px;
-	text-align:right; 
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+	text-align:right;
 
 }
 .holder{
@@ -600,7 +598,7 @@ min-height:90px;
 	padding-top:40px;
 	position:relative;
 	margin: 0 auto;
-	max-width:1200px;
+	width:1200px;
 	text-align:center;
 }
 .wrapper_color{
@@ -632,6 +630,10 @@ min-height:90px;
 
 	width:370px;
 	margin-right:60px;
+}
+.column77{
+	width:100%;
+	float:left;
 }
 .columny{
 	float:left;
@@ -921,39 +923,451 @@ min-height:90px;
 }
 .wrapper_portfolio{
 	width:100%;
-	max-width:1200px;
+	max-width:1920px;
+	min-width:1200px;
 	margin:0 auto;
 }
-.wrapper_portfolio > a {
+.wrapper_portfolio a {
     display: block;
-    width:25%;
+}
+.logotabel{
+	background: url(../img/img_nba.png) no-repeat;
+	background-size: 100%;
+	width:25%;
 	float:left;
+	max-height:400px;
+	min-width:300px;
+	min-height:300px;
 	text-align:center;
 }
-.wrapper_portfolio > a:hover {
-	opacity: 0.8;
+.logotabel2{
+	background: url(../img/img_nhl.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:300px;
+	min-height:300px;
+	text-align:center;
 }
-.wrapper_portfolio > a > img {
-	max-width: 100%;
-	min-width: 100%;
-	display: block;
+.logotabel3{
+	background: url(../img/img_moasis.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:300px;
+	min-height:300px;
+	text-align:center;
+}
+.logotabel4{
+	background: url(../img/img_atnt.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:300px;
+	min-height:300px;
+	text-align:center;
+}
+.logotabel5{
+	background: url(../img/img_tdgarden.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:300px;
+	min-height:300px;
+	text-align:center;
+}
+.logotabel6{
+	background: url(../img/img_mobilecheck.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:300px;
+	min-height:300px;
+	text-align:center;
+}
+.logotabel7{
+	background: url(../img/img_nbapd.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:300px;
+	min-height:300px;
+	text-align:center;
+}
+.logotabel8{
+	background: url(../img/img_independa.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:300px;
+	min-height:300px;
+	text-align:center;
+}
+.logotabel:hover{
+	opacity:0.8;
+	background: url(../img/img_nba.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:300px;
+	min-height:300px;
+	text-align:center;
+}
+.logotabel2:hover{
+	opacity:0.8;
+	background: url(../img/img_nhl.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:300px;
+	min-height:300px;
+	text-align:center;
+}
+.logotabel3:hover{
+	opacity:0.8;
+	background: url(../img/img_moasis.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:300px;
+	min-height:300px;
+	text-align:center;
+}
+.logotabel4:hover{
+	opacity:0.8;
+	background: url(../img/img_atnt.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:300px;
+	min-height:300px;
+	text-align:center;
+}
+.logotabel5:hover{
+	opacity:0.8;
+	background: url(../img/img_tdgarden.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:300px;
+	min-height:300px;
+	text-align:center;
+}
+.logotabel6:hover{
+	opacity:0.8;
+	background: url(../img/img_mobilecheck.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:300px;
+	min-height:300px;
+	text-align:center;
+}
+.logotabel7:hover{
+	opacity:0.8;
+	background: url(../img/img_nbapd.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:300px;
+	min-height:300px;
+	text-align:center;
+}
+.logotabel8:hover{
+	opacity:0.8;
+	background: url(../img/img_independa.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:300px;
+	min-height:300px;
+	text-align:center;
 }
 .buttong{
 	float:left;
-	width: 25%;
-	min-height:65px;
+	width:23%;
+	min-width:250px;
+	height:40px;
 	padding:1%;
 	background:#171717;
 	line-height:40px;
 	text-align:center;
 	font-size:23pt;
 	color:#bbb;
-	box-sizing: border-box;
 	font-family:"karbon_bold";
 }
 .buttong:hover{
+	float:left;
+	width:23%;
+	min-width:300px;
+	height:40px;
+	padding:1%;
 	background:#ddd;
+	line-height:40px;
+	text-align:center;
+	font-size:23pt;
 	color:#222;
+	font-family:"karbon_bold";
+}
+.logotabel9{
+
+	background: url(../img/img_nbartp.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:300px;
+	min-height:300px;
+	text-align:center;
+}
+.logotabel9:hover{
+	opacity:0.8;
+	background: url(../img/img_nbartp.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:300px;
+	min-height:300px;
+	text-align:center;
+}
+.logotabel10{
+
+	background: url(../img/img_fanserv.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:300px;
+	min-height:300px;
+	text-align:center;
+}
+.logotabel10:hover{
+	opacity:0.8;
+	background: url(../img/img_fanserv.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:300px;
+	min-height:300px;
+	text-align:center;
+}
+.logotabel11{
+
+	background: url(../img/img_mom.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:300px;
+	min-height:300px;
+	text-align:center;
+}
+.logotabel11:hover{
+	opacity:0.8;
+	background: url(../img/img_mom.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:300px;
+	min-height:300px;
+	text-align:center;
+}
+.logotabel12{
+
+	background: url(../img/img_salesforce.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:300px;
+	min-height:300px;
+	text-align:center;
+}
+.logotabel12:hover{
+	opacity:0.8;
+	background: url(../img/img_salesforce.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:300px;
+	min-height:300px;
+	text-align:center;
+}
+.logotabel13{
+
+	background: url(../img/img_tripbucket.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:300px;
+	min-height:300px;
+	text-align:center;
+}
+.logotabel13:hover{
+	opacity:0.8;
+	background: url(../img/img_tripbucket.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:300px;
+	min-height:300px;
+	text-align:center;
+}
+.logotabel14{
+
+	background: url(../img/img_tripbucket_mobile.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:300px;
+	min-height:300px;
+	text-align:center;
+}
+.logotabel14:hover{
+	opacity:0.8;
+	background: url(../img/img_tripbucket_mobile.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:300px;
+	min-height:300px;
+	text-align:center;
+}
+.logotabel15{
+
+	background: url(../img/img_tb_ad.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:300px;
+	min-height:300px;
+	text-align:center;
+}
+.logotabel15:hover{
+	opacity:0.8;
+	background: url(../img/img_tb_ad.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:300px;
+	min-height:300px;
+	text-align:center;
+}
+.logotabel16{
+
+	background: url(../img/img_kms.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:300px;
+	min-height:300px;
+	text-align:center;
+}
+.logotabel16:hover{
+	opacity:0.8;
+	background: url(../img/img_kms.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:300px;
+	min-height:300px;
+	text-align:center;
+}
+.logotabel17{
+
+	background: url(../img/img_facial.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:300px;
+	min-height:300px;
+	text-align:center;
+}
+.logotabel17:hover{
+	opacity:0.8;
+	background: url(../img/img_facial.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:300px;
+	min-height:300px;
+	text-align:center;
+}
+.logotabel19{
+
+	background: url(../img/img_socialjane.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:300px;
+	min-height:300px;
+	text-align:center;
+}
+.logotabel19:hover{
+	opacity:0.8;
+	background: url(../img/img_socialjane.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:300px;
+	min-height:300px;
+	text-align:center;
+}
+.logotabel18{
+
+	background: url(../img/img_billpay.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:300px;
+	min-height:300px;
+	text-align:center;
+}
+.logotabel18:hover{
+	opacity:0.8;
+	background: url(../img/img_billpay.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:300px;
+	min-height:300px;
+	text-align:center;
+}
+.logotabel img{
+	float:left;
 }
 
 .logorow{
@@ -1141,12 +1555,12 @@ display:none;
 
 .buttong2{
 	float:left;
-	width:25%;
-	box-sizing: border-box;
-	-moz-box-sizing: border-box;
+	width:23%;
+	min-width:250px;
+	height:40px;
+	padding:1%;
 	background:#171717;
 	line-height:40px;
-	min-height: 65px;
 	text-align:center;
 	font-size:23pt;
 	color:#bbb;
@@ -1164,7 +1578,7 @@ display:none;
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 720px) {
 	.preloader {
 	display:none;
 }
@@ -1208,12 +1622,6 @@ display:none;
 display:none;
 }
 
-
-.holder{
-	width:100%;
-	margin:0 auto;
-	
-}
 .menu{
 	float:left;
 	font-family: 'fira_regular';
@@ -1228,6 +1636,12 @@ display:none;
 	text-align:center;
 
 }
+.holder{
+	width:100%;
+	margin:0 auto;
+	
+}
+
 #menulist li{
 	-webkit-font-smoothing: antialiased;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
@@ -1707,7 +2121,7 @@ width:100%;
 	float:center;
 	width:90%;
 	margin-left:0%;
-}
+}s
 .wrapper .tight {
     margin-left: 0px;
     margin-right: 0px;
@@ -1804,14 +2218,10 @@ width:100%;
 	
 }
 .wrapper_portfolio{
-	width:100%;
+	width:320px;
+	max-width:720px;
+	min-width:320px;
 	margin:0px auto;
-}
-.wrapper_portfolio > a {
-	max-width: 370px;
-	width: 100%;
-	margin: auto;
-	float: none;
 }
 .column3{
 	float:left;
@@ -1853,11 +2263,451 @@ width:100%;
 	font-family:"karbon_regular";
 	text-align:left;
 }
+.logotabel{
+	background: url(../img/img_nba.png) no-repeat;
+	background-size: 100%;
+	float:left;
+	width:160px;
+	height:103px;
+	text-align:center;
+	max-height:103px;
+	min-width:160px;
+	min-height:103px;
+}
+.logotabel2{
+	background: url(../img/img_nhl.png) no-repeat;
+	background-size: 100%;
+	float:left;
+	width:160px;
+	height:103px;
+	text-align:center;
+	max-height:103px;
+	min-width:160px;
+	min-height:103px;
+}
+.logotabel3{
+	background: url(../img/img_moasis.png) no-repeat;
+	background-size: 100%;
+	float:left;
+	width:160px;
+	height:103px;
+		text-align:center;
+	max-height:103px;
+	min-width:160px;
+	min-height:103px;
+}
+.logotabel4{
+	background: url(../img/img_atnt.png) no-repeat;
+	background-size: 100%;
+	float:left;
+	width:160px;
+	height:103px;
+	text-align:center;
+	max-height:103px;
+	min-width:160px;
+	min-height:103px;
+}
+.logotabel5{
+	background: url(../img/img_tdgarden.png) no-repeat;
+	background-size: 100%;
+	float:left;
+	width:160px;
+	height:103px;
+	text-align:center;
+	max-height:103px;
+	min-width:160px;
+	min-height:103px;
+}
+.logotabel6{
+	background: url(../img/img_mobilecheck.png) no-repeat;
+	background-size: 100%;
+	float:left;
+	width:160px;
+	height:103px;
+	text-align:center;
+	max-height:103px;
+	min-width:160px;
+	min-height:103px;
+}
+.logotabel7{
+	background: url(../img/img_nbapd.png) no-repeat;
+	background-size: 100%;
+	float:left;
+	width:160px;
+	height:103px;
+	text-align:center;
+	max-height:103px;
+	min-width:160px;
+	min-height:103px;
+}
+.logotabel8{
+	background: url(../img/img_independa.png) no-repeat;
+	background-size: 100%;
+	float:left;
+	width:160px;
+	height:103px;
+	text-align:center;
+	max-height:103px;
+	min-width:160px;
+	min-height:103px;
+}
+.logotabel:hover{
+	opacity:0.8;
+	background: url(../img/img_nba.png) no-repeat;
+	background-size: 100%;
+	float:left;
+	width:160px;
+	height:103px;
+	text-align:center;
+	max-height:103px;
+	min-width:160px;
+	min-height:103px;
+}
+.logotabel2:hover{
+	opacity:0.8;
+	background: url(../img/img_nhl.png) no-repeat;
+	background-size: 100%;
+	float:left;
+	width:160px;
+	height:103px;
+	text-align:center;
+	max-height:103px;
+	min-width:160px;
+	min-height:103px;
+}
+.logotabel3:hover{
+	opacity:0.8;
+	background: url(../img/img_moasis.png) no-repeat;
+	background-size: 100%;
+	float:left;
+	width:160px;
+	height:103px;
+	text-align:center;
+	max-height:103px;
+	min-width:160px;
+	min-height:103px;
+}
+.logotabel4:hover{
+	opacity:0.8;
+	background: url(../img/img_atnt.png) no-repeat;
+	background-size: 100%;
+	float:left;
+	width:160px;
+	height:103px;
+	text-align:center;
+	max-height:103px;
+	min-width:160px;
+	min-height:103px;
+}
+.logotabel5:hover{
+	opacity:0.8;
+	background: url(../img/img_tdgarden.png) no-repeat;
+	background-size: 100%;
+	float:left;
+	width:160px;
+	height:103px;
+	text-align:center;
+	max-height:103px;
+	min-width:160px;
+	min-height:103px;
+}
+.logotabel6:hover{
+	opacity:0.8;
+	background: url(../img/img_mobilecheck.png) no-repeat;
+	background-size: 100%;
+	float:left;
+	width:160px;
+	height:103px;
+	text-align:center;
+	max-height:103px;
+	min-width:160px;
+	min-height:103px;
+}
+.logotabel7:hover{
+	opacity:0.8;
+	background: url(../img/img_nbapd.png) no-repeat;
+	background-size: 100%;
+	float:left;
+	width:160px;
+	height:103px;
+	text-align:center;
+	max-height:103px;
+	min-width:160px;
+	min-height:103px;
+}
+.logotabel8:hover{
+	opacity:0.8;
+	background: url(../img/img_independa.png) no-repeat;
+	background-size: 100%;
+	float:left;
+	width:160px;
+	height:103px;
+	text-align:center;
+	max-height:103px;
+	min-width:160px;
+	min-height:103px;
+}
 .buttong{
 display:none;
 }
 .buttong:hover{
 display:none;
+}
+.logotabel9{
+
+	background: url(../img/img_nbartp.png) no-repeat;
+	background-size: 100%;
+	float:left;
+	width:160px;
+	text-align:center;
+	max-height:103px;
+	min-width:160px;
+	min-height:103px;
+}
+.logotabel9:hover{
+	opacity:0.8;
+	background: url(../img/img_nbartp.png) no-repeat;
+	background-size: 100%;
+	float:left;
+	width:160px;
+	text-align:center;
+	max-height:103px;
+	min-width:160px;
+	min-height:103px;
+}
+.logotabel10{
+
+	background: url(../img/img_fanserv.png) no-repeat;
+	background-size: 100%;
+	float:left;
+	width:160px;
+	text-align:center;
+	max-height:103px;
+	min-width:160px;
+	min-height:103px;
+}
+.logotabel10:hover{
+	opacity:0.8;
+	background: url(../img/img_fanserv.png) no-repeat;
+	background-size: 100%;
+	float:left;
+	width:160px;
+	text-align:center;
+	max-height:103px;
+	min-width:160px;
+	min-height:103px;
+}
+.logotabel11{
+
+	background: url(../img/img_mom.png) no-repeat;
+	background-size: 100%;
+	float:left;
+	width:50%;
+	text-align:center;
+	max-height:103px;
+	min-width:160px;
+	min-height:103px;
+}
+.logotabel11:hover{
+	opacity:0.8;
+	background: url(../img/img_mom.png) no-repeat;
+	background-size: 100%;
+	float:left;
+	width:50%;
+	text-align:center;
+	max-height:103px;
+	min-width:160px;
+	min-height:103px;
+}
+.logotabel12{
+
+	background: url(../img/img_salesforce.png) no-repeat;
+	background-size: 100%;
+	float:left;
+	width:50%;
+	text-align:center;
+	max-height:103px;
+	min-width:160px;
+	min-height:103px;
+}
+.logotabel12:hover{
+	opacity:0.8;
+	background: url(../img/img_salesforce.png) no-repeat;
+	background-size: 100%;
+	float:left;
+	width:50%;
+	text-align:center;
+	max-height:103px;
+	min-width:160px;
+	min-height:103px;
+}
+.logotabel13{
+
+	background: url(../img/img_tripbucket.png) no-repeat;
+	background-size: 100%;
+	float:left;
+	width:160px;
+	height:103px;
+	text-align:center;
+	max-height:103px;
+	min-width:160px;
+	min-height:103px;
+}
+.logotabel13:hover{
+	opacity:0.8;
+	background: url(../img/img_tripbucket.png) no-repeat;
+	background-size: 100%;
+	float:left;
+	width:160px;
+	height:103px;
+	text-align:center;
+	max-height:103px;
+	min-width:160px;
+	min-height:103px;
+}
+.logotabel14{
+
+	background: url(../img/img_tripbucket_mobile.png) no-repeat;
+	background-size: 100%;
+	float:left;
+	width:160px;
+	height:103px;
+	text-align:center;
+	max-height:103px;
+	min-width:160px;
+	min-height:103px;
+}
+.logotabel14:hover{
+	opacity:0.8;
+	background: url(../img/img_tripbucket_mobile.png) no-repeat;
+	background-size: 100%;
+	float:left;
+	width:160px;
+	height:103px;
+		text-align:center;
+	max-height:103px;
+	min-width:160px;
+	min-height:103px;
+}
+.logotabel15{
+
+	background: url(../img/img_tb_ad.png) no-repeat;
+	background-size: 100%;
+	float:left;
+	width:160px;
+	height:103px;
+		text-align:center;
+	max-height:103px;
+	min-width:160px;
+	min-height:103px;
+}
+.logotabel15:hover{
+	opacity:0.8;
+	background: url(../img/img_tb_ad.png) no-repeat;
+	background-size: 100%;
+	float:left;
+	width:160px;
+	height:103px;
+	text-align:center;
+	max-height:103px;
+	min-width:160px;
+	min-height:103px;
+}
+.logotabel16{
+
+	background: url(../img/img_kms.png) no-repeat;
+	background-size: 100%;
+	float:left;
+	width:160px;
+	height:103px;
+	text-align:center;
+	max-height:103px;
+	min-width:160px;
+	min-height:103px;
+}
+.logotabel16:hover{
+	opacity:0.8;
+	background: url(../img/img_kms.png) no-repeat;
+	background-size: 100%;
+	float:left;
+	width:160px;
+	height:103px;
+	text-align:center;
+	max-height:103px;
+	min-width:160px;
+	min-height:103px;
+}
+.logotabel17{
+
+	background: url(../img/img_facial.png) no-repeat;
+	background-size: 100%;
+	float:left;
+	width:160px;
+	height:103px;
+	text-align:center;
+	max-height:103px;
+	min-width:160px;
+	min-height:103px;
+}
+.logotabel17:hover{
+	opacity:0.8;
+	background: url(../img/img_facial.png) no-repeat;
+	background-size: 100%;
+	float:left;
+	width:160px;
+	height:103px;
+	text-align:center;
+	max-height:103px;
+	min-width:160px;
+	min-height:103px;
+}
+.logotabel19{
+
+	background: url(../img/img_socialjane.png) no-repeat;
+	background-size: 100%;
+	float:left;
+	width:160px;
+	height:103px;
+	text-align:center;
+	max-height:103px;
+	min-width:160px;
+	min-height:103px;
+}
+.logotabel19:hover{
+	opacity:0.8;
+	background: url(../img/img_socialjane.png) no-repeat;
+	background-size: 100%;
+	float:left;
+	width:160px;
+	height:103px;
+	text-align:center;
+	max-height:103px;
+	min-width:160px;
+	min-height:103px;
+}
+.logotabel18{
+
+	background: url(../img/img_billpay.png) no-repeat;
+	background-size: 100%;
+	float:left;
+	width:160px;
+	height:103px;
+	text-align:center;
+	max-height:103px;
+	min-width:160px;
+	min-height:103px;
+}
+.logotabel18:hover{
+	opacity:0.8;
+	background: url(../img/img_billpay.png) no-repeat;
+	background-size: 100%;
+	float:left;
+	width:160px;
+	height:103px;
+	text-align:center;
+	max-height:103px;
+	min-width:160px;
+	min-height:103px;
 }
 .buttong2{
 	display:none;
@@ -1956,7 +2806,7 @@ display:none;
 
 
 
-@media screen and (min-width : 768px) and (max-width : 1200px) {
+@media screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 
 .preloader {
 	position: fixed;
@@ -2537,7 +3387,7 @@ min-height:90px;
 	text-align:center;
 	float:left;
 	width:266px;
-}
+}s
 .wrapper .tight {
     margin-left: 65px;
     margin-right: 65px;
@@ -2807,15 +3657,186 @@ min-height:90px;
 }
 .wrapper_portfolio{
 	width:100%;
-	max-width:1200px;
+	max-width:1920px;
+	min-width:768px;
 	margin:0 auto;
 }
 .wrapper_portfolio a {
     display: block;
 }
+.logotabel{
+	background: url(../img/img_nba.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:100px;
+	min-height:100px;
+	text-align:center;
+}
+.logotabel2{
+	background: url(../img/img_nhl.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:100px;
+	min-height:100px;
+	text-align:center;
+}
+.logotabel3{
+	background: url(../img/img_moasis.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:100px;
+	min-height:100px;
+	text-align:center;
+}
+.logotabel4{
+	background: url(../img/img_atnt.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:100px;
+	min-height:100px;
+	text-align:center;
+}
+.logotabel5{
+	background: url(../img/img_tdgarden.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:100px;
+	min-height:100px;
+	text-align:center;
+}
+.logotabel6{
+	background: url(../img/img_mobilecheck.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:100px;
+	min-height:100px;
+	text-align:center;
+}
+.logotabel7{
+	background: url(../img/img_nbapd.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:100px;
+	min-height:100px;
+	text-align:center;
+}
+.logotabel8{
+	background: url(../img/img_independa.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:100px;
+	min-height:100px;
+	text-align:center;
+}
+.logotabel:hover{
+	opacity:0.8;
+	background: url(../img/img_nba.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:100px;
+	min-height:100px;
+	text-align:center;
+}
+.logotabel2:hover{
+	opacity:0.8;
+	background: url(../img/img_nhl.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:100px;
+	min-height:100px;
+	text-align:center;
+}
+.logotabel3:hover{
+	opacity:0.8;
+	background: url(../img/img_moasis.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:100px;
+	min-height:100px;
+	text-align:center;
+}
+.logotabel4:hover{
+	opacity:0.8;
+	background: url(../img/img_atnt.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:100px;
+	min-height:100px;
+	text-align:center;
+}
+.logotabel5:hover{
+	opacity:0.8;
+	background: url(../img/img_tdgarden.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:100px;
+	min-height:100px;
+	text-align:center;
+}
+.logotabel6:hover{
+	opacity:0.8;
+	background: url(../img/img_mobilecheck.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:100px;
+	min-height:100px;
+	text-align:center;
+}
+.logotabel7:hover{
+	opacity:0.8;
+	background: url(../img/img_nbapd.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:100px;
+	min-height:100px;
+	text-align:center;
+}
+.logotabel8:hover{
+	opacity:0.8;
+	background: url(../img/img_independa.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:100px;
+	min-height:100px;
+	text-align:center;
+}
 .buttong{
 	float:left;
-	width:25%;
+	width:23%;
+	min-width:150px;
+	height:40px;
 	padding:1%;
 	background:#171717;
 	line-height:40px;
@@ -2823,12 +3844,264 @@ min-height:90px;
 	font-size:23pt;
 	color:#bbb;
 	font-family:"karbon_bold";
-	box-sizing: border-box;
-	-moz-box-sizing: border-box;
 }
 .buttong:hover{
+	float:left;
+	width:23%;
+	min-width:100px;
+	height:40px;
+	padding:1%;
 	background:#ddd;
+	line-height:40px;
+	text-align:center;
+	font-size:23pt;
 	color:#222;
+	font-family:"karbon_bold";
+}
+.logotabel9{
+
+	background: url(../img/img_nbartp.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:100px;
+	min-height:100px;
+	text-align:center;
+}
+.logotabel9:hover{
+	opacity:0.8;
+	background: url(../img/img_nbartp.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:100px;
+	min-height:100px;
+	text-align:center;
+}
+.logotabel10{
+
+	background: url(../img/img_fanserv.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:100px;
+	min-height:100px;
+	text-align:center;
+}
+.logotabel10:hover{
+	opacity:0.8;
+	background: url(../img/img_fanserv.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:100px;
+	min-height:100px;
+	text-align:center;
+}
+.logotabel11{
+
+	background: url(../img/img_mom.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:100px;
+	min-height:100px;
+	text-align:center;
+}
+.logotabel11:hover{
+	opacity:0.8;
+	background: url(../img/img_mom.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:100px;
+	min-height:100px;
+	text-align:center;
+}
+.logotabel12{
+
+	background: url(../img/img_salesforce.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:100px;
+	min-height:100px;
+	text-align:center;
+}
+.logotabel12:hover{
+	opacity:0.8;
+	background: url(../img/img_salesforce.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:100px;
+	min-height:100px;
+	text-align:center;
+}
+.logotabel13{
+
+	background: url(../img/img_tripbucket.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:100px;
+	min-height:100px;
+	text-align:center;
+}
+.logotabel13:hover{
+	opacity:0.8;
+	background: url(../img/img_tripbucket.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:100px;
+	min-height:100px;
+	text-align:center;
+}
+.logotabel14{
+
+	background: url(../img/img_tripbucket_mobile.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:100px;
+	min-height:100px;
+	text-align:center;
+}
+.logotabel14:hover{
+	opacity:0.8;
+	background: url(../img/img_tripbucket_mobile.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:100px;
+	min-height:100px;
+	text-align:center;
+}
+.logotabel15{
+
+	background: url(../img/img_tb_ad.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:100px;
+	min-height:100px;
+	text-align:center;
+}
+.logotabel15:hover{
+	opacity:0.8;
+	background: url(../img/img_tb_ad.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:100px;
+	min-height:100px;
+	text-align:center;
+}
+.logotabel16{
+
+	background: url(../img/img_kms.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:100px;
+	min-height:100px;
+	text-align:center;
+}
+.logotabel16:hover{
+	opacity:0.8;
+	background: url(../img/img_kms.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:100px;
+	min-height:100px;
+	text-align:center;
+}
+.logotabel17{
+
+	background: url(../img/img_facial.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:100px;
+	min-height:100px;
+	text-align:center;
+}
+.logotabel17:hover{
+	opacity:0.8;
+	background: url(../img/img_facial.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:100px;
+	min-height:100px;
+	text-align:center;
+}
+.logotabel19{
+
+	background: url(../img/img_socialjane.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:100px;
+	min-height:100px;
+	text-align:center;
+}
+.logotabel19:hover{
+	opacity:0.8;
+	background: url(../img/img_socialjane.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:100px;
+	min-height:100px;
+	text-align:center;
+}
+.logotabel18{
+
+	background: url(../img/img_billpay.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:100px;
+	min-height:100px;
+	text-align:center;
+}
+.logotabel18:hover{
+	opacity:0.8;
+	background: url(../img/img_billpay.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:100px;
+	min-height:100px;
+	text-align:center;
+}
+.logotabel img{
+	float:left;
 }
 
 .logorow{
@@ -3016,9 +4289,10 @@ display:none;
 
 .buttong2{
 	float:left;
-	width:25%;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+	width:23%;
+	min-width:250px;
+	height:40px;
+	padding:1%;
 	background:#171717;
 	line-height:40px;
 	text-align:center;

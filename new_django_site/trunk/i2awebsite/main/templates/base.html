@@ -54,7 +54,7 @@ $(function() {
             <li {% if submenu_pos == "social"       %}class="active"{% endif %}><a href="{% url "solutions-social" %}">Social</a></li>
             <li {% if submenu_pos == "assets"       %}class="active"{% endif %}><a href="{% url "solutions-assets" %}">Digital Asset Management</a></li>
             <li {% if submenu_pos == "scheduling"   %}class="active"{% endif %}><a href="{% url "solutions-scheduling" %}">Scheduling</a></li>
-            <li {% if submenu_pos == "telephony"    %}class="active"{% endif %}><a href="{% url "solutions-telephony" %}">Telephony</a></li>
+            
             <li {% if submenu_pos == "consulting"   %}class="active"{% endif %}><a href="{% url "solutions-consulting" %}">Consulting</a></li>
         </ul>
     </div>
@@ -72,31 +72,14 @@ $(function() {
 <div class="box_color">
     <div class="wrapperbottom">
         <div class="logobottom"></div>
-        <div class="bottomcol">
-            <h1>About us</h1>
-            <ul>
-                <li><a href="{% url "our_process" %}">Our Process</a></li>
-            </ul>
-        </div>
-        <div class="bottomcol">
-            <h1>Solutions</h1>
-            <ul>
-                <li><a href="{% url "solutions-web" %}">Web Apps</a></li>
-                <li><a href="{% url "solutions-enterprise" %}">Enterprise</a></li>
-                <li><a href="{% url "solutions-mobile" %}">Mobile</a></li>
-                <li><a href="{% url "solutions-ads" %}">Ad Delivery</a></li>
-                <li><a href="{% url "solutions-location" %}">Location Based</a></li>
-                <li><a href="{% url "solutions-social" %}">Social</a></li>
-                <li><a href="{% url "solutions-assets" %}">Digital Asset Management</a></li>
-                <li><a href="{% url "solutions-scheduling" %}">Scheduling</a></li>
-                <li><a href="{% url "solutions-telephony" %}">Telephony</a></li>
-                <li><a href="{% url "solutions-consulting" %}">Consulting</a></li>
-        </div>
+
         <div class="bottomcol"><h1><a href="{% url "portfolio" %}">Portfolio</a></h1></div>
         <div class="bottomcol"><h1><a href="{% url "technologies" %}">Technologies</a></h1></div>
         <div class="bottomcol"><h1><a href="{% url "careers" %}">Careers</a></h1></div>
         <div class="bottomcol"><h1><a href="{% url "contact" %}">Contact us</a></h1></div>
     </div>
+
+  <p style="color:#fff; width:100%; text-align:center;"> Copyright &copy; 2014, i2a Solutions Inc.</p>
 </div>
 </div>
 
