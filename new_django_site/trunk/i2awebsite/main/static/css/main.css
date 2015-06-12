@@ -16,11 +16,11 @@ height:44px;
 	background: url(../img/logobottom.png);
 	margin: -110px 0 0 -110px;
 	z-index: 89;
-	-webkit-animation: preload 2s infinite;
-	-moz-animation: preload 2s infinite;
-	-o-animation: preload 2s infinite;
-	-ms-animation: preload 2s infinite;
-	animation: preload 2s infinite;
+	-webkit-animation: preload 1s infinite;
+	-moz-animation: preload 1s infinite;
+	-o-animation: preload 1s infinite;
+	-ms-animation: preload 1s infinite;
+	animation: preload 1s infinite;
 }
 @keyframes preload
 {
@@ -383,6 +383,45 @@ li a {text-decoration: none;
     height: 367px;
     background-image: url(../img/portfolio_headers/socialjane.jpg);
 }
+.header.telvise {
+    height: 367px;
+    background-image: url(../img/portfolio_headers/telvise.jpg);
+}
+.header.trekadoo {
+	width:100%;
+    height: 367px;
+    background-image: url(../img/portfolio_headers/trekadoo.jpg);
+}
+.header.impressme {
+	width:100%;
+    height: 367px;
+    background-image: url(../img/portfolio_headers/impressme.jpg);
+}
+.header.mflyer {
+	width:100%;
+    height: 367px;
+    background-image: url(../img/portfolio_headers/mflyer.jpg);
+}
+.header.spendit {
+	width:100%;
+    height: 367px;
+    background-image: url(../img/portfolio_headers/spendit.jpg);
+}
+.header.creativeprocess {
+	width:100%;
+    height: 367px;
+    background-image: url(../img/portfolio_headers/creativeprocess.jpg);
+}
+.header.fansircle {
+	width:100%;
+    height: 367px;
+    background-image: url(../img/portfolio_headers/fansircle.jpg);
+}
+.header.nba_combine {
+	width:100%;
+    height: 367px;
+    background-image: url(../img/portfolio_headers/nba_combine.jpg);
+}
 .header.tdg {
     height: 367px;
     background-image: url(../img/portfolio_headers/tdg.jpg);
@@ -634,6 +673,7 @@ min-height:90px;
 .column77{
 	width:100%;
 	float:left;
+	margin-top:30px
 }
 .columny{
 	float:left;
@@ -706,6 +746,25 @@ min-height:90px;
 	font-family: 'fira_light';
 	line-height:16pt;
 	text-align:justify;
+	font-size:13pt;
+	color:#1c2543;
+}
+.wrapper h4{
+	color:#1c2543;
+	width:100%;
+	text-align:center;
+	line-height:24pt;
+	font-size:16pt;
+	font-family: 'karbon_regular';
+	text-align:center;
+	opacity:0.9;
+}
+
+.centeredz{
+	margin-top:30px;
+	font-family: 'fira_light';
+	line-height:16pt;
+	text-align:center;
 	font-size:13pt;
 	color:#1c2543;
 }
@@ -931,7 +990,7 @@ min-height:90px;
     display: block;
 }
 .logotabel{
-	background: url(../img/img_nba.png) no-repeat;
+	background: url(../img/img_nba.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -941,7 +1000,7 @@ min-height:90px;
 	text-align:center;
 }
 .logotabel2{
-	background: url(../img/img_nhl.png) no-repeat;
+	background: url(../img/img_nhl.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -951,7 +1010,7 @@ min-height:90px;
 	text-align:center;
 }
 .logotabel3{
-	background: url(../img/img_moasis.png) no-repeat;
+	background: url(../img/img_moasis.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -961,7 +1020,7 @@ min-height:90px;
 	text-align:center;
 }
 .logotabel4{
-	background: url(../img/img_atnt.png) no-repeat;
+	background: url(../img/img_atnt.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -971,7 +1030,7 @@ min-height:90px;
 	text-align:center;
 }
 .logotabel5{
-	background: url(../img/img_tdgarden.png) no-repeat;
+	background: url(../img/img_tdgarden.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -981,7 +1040,7 @@ min-height:90px;
 	text-align:center;
 }
 .logotabel6{
-	background: url(../img/img_mobilecheck.png) no-repeat;
+	background: url(../img/img_mobilecheck.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -991,7 +1050,7 @@ min-height:90px;
 	text-align:center;
 }
 .logotabel7{
-	background: url(../img/img_nbapd.png) no-repeat;
+	background: url(../img/img_nbapd.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1001,7 +1060,7 @@ min-height:90px;
 	text-align:center;
 }
 .logotabel8{
-	background: url(../img/img_independa.png) no-repeat;
+	background: url(../img/img_independa.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1012,7 +1071,7 @@ min-height:90px;
 }
 .logotabel:hover{
 	opacity:0.8;
-	background: url(../img/img_nba.png) no-repeat;
+	background: url(../img/img_nba.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1023,7 +1082,7 @@ min-height:90px;
 }
 .logotabel2:hover{
 	opacity:0.8;
-	background: url(../img/img_nhl.png) no-repeat;
+	background: url(../img/img_nhl.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1034,7 +1093,7 @@ min-height:90px;
 }
 .logotabel3:hover{
 	opacity:0.8;
-	background: url(../img/img_moasis.png) no-repeat;
+	background: url(../img/img_moasis.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1045,7 +1104,7 @@ min-height:90px;
 }
 .logotabel4:hover{
 	opacity:0.8;
-	background: url(../img/img_atnt.png) no-repeat;
+	background: url(../img/img_atnt.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1056,7 +1115,7 @@ min-height:90px;
 }
 .logotabel5:hover{
 	opacity:0.8;
-	background: url(../img/img_tdgarden.png) no-repeat;
+	background: url(../img/img_tdgarden.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1067,7 +1126,7 @@ min-height:90px;
 }
 .logotabel6:hover{
 	opacity:0.8;
-	background: url(../img/img_mobilecheck.png) no-repeat;
+	background: url(../img/img_mobilecheck.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1078,7 +1137,7 @@ min-height:90px;
 }
 .logotabel7:hover{
 	opacity:0.8;
-	background: url(../img/img_nbapd.png) no-repeat;
+	background: url(../img/img_nbapd.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1089,7 +1148,7 @@ min-height:90px;
 }
 .logotabel8:hover{
 	opacity:0.8;
-	background: url(../img/img_independa.png) no-repeat;
+	background: url(../img/img_independa.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1126,7 +1185,7 @@ min-height:90px;
 }
 .logotabel9{
 
-	background: url(../img/img_nbartp.png) no-repeat;
+	background: url(../img/img_nbartp.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1137,7 +1196,7 @@ min-height:90px;
 }
 .logotabel9:hover{
 	opacity:0.8;
-	background: url(../img/img_nbartp.png) no-repeat;
+	background: url(../img/img_nbartp.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1148,7 +1207,7 @@ min-height:90px;
 }
 .logotabel10{
 
-	background: url(../img/img_fanserv.png) no-repeat;
+	background: url(../img/img_fanserv.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1159,7 +1218,7 @@ min-height:90px;
 }
 .logotabel10:hover{
 	opacity:0.8;
-	background: url(../img/img_fanserv.png) no-repeat;
+	background: url(../img/img_fanserv.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1170,7 +1229,7 @@ min-height:90px;
 }
 .logotabel11{
 
-	background: url(../img/img_mom.png) no-repeat;
+	background: url(../img/img_mom.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1181,7 +1240,7 @@ min-height:90px;
 }
 .logotabel11:hover{
 	opacity:0.8;
-	background: url(../img/img_mom.png) no-repeat;
+	background: url(../img/img_mom.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1192,7 +1251,7 @@ min-height:90px;
 }
 .logotabel12{
 
-	background: url(../img/img_salesforce.png) no-repeat;
+	background: url(../img/img_salesforce.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1203,7 +1262,7 @@ min-height:90px;
 }
 .logotabel12:hover{
 	opacity:0.8;
-	background: url(../img/img_salesforce.png) no-repeat;
+	background: url(../img/img_salesforce.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1214,7 +1273,7 @@ min-height:90px;
 }
 .logotabel13{
 
-	background: url(../img/img_tripbucket.png) no-repeat;
+	background: url(../img/img_tripbucket.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1225,7 +1284,7 @@ min-height:90px;
 }
 .logotabel13:hover{
 	opacity:0.8;
-	background: url(../img/img_tripbucket.png) no-repeat;
+	background: url(../img/img_tripbucket.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1236,7 +1295,7 @@ min-height:90px;
 }
 .logotabel14{
 
-	background: url(../img/img_tripbucket_mobile.png) no-repeat;
+	background: url(../img/img_tripbucket_mobile.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1247,7 +1306,7 @@ min-height:90px;
 }
 .logotabel14:hover{
 	opacity:0.8;
-	background: url(../img/img_tripbucket_mobile.png) no-repeat;
+	background: url(../img/img_tripbucket_mobile.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1258,7 +1317,7 @@ min-height:90px;
 }
 .logotabel15{
 
-	background: url(../img/img_tb_ad.png) no-repeat;
+	background: url(../img/img_tb_ad.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1269,7 +1328,7 @@ min-height:90px;
 }
 .logotabel15:hover{
 	opacity:0.8;
-	background: url(../img/img_tb_ad.png) no-repeat;
+	background: url(../img/img_tb_ad.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1280,7 +1339,7 @@ min-height:90px;
 }
 .logotabel16{
 
-	background: url(../img/img_kms.png) no-repeat;
+	background: url(../img/img_kms.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1291,7 +1350,7 @@ min-height:90px;
 }
 .logotabel16:hover{
 	opacity:0.8;
-	background: url(../img/img_kms.png) no-repeat;
+	background: url(../img/img_kms.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1302,7 +1361,7 @@ min-height:90px;
 }
 .logotabel17{
 
-	background: url(../img/img_facial.png) no-repeat;
+	background: url(../img/img_facial.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1313,7 +1372,7 @@ min-height:90px;
 }
 .logotabel17:hover{
 	opacity:0.8;
-	background: url(../img/img_facial.png) no-repeat;
+	background: url(../img/img_facial.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1324,7 +1383,7 @@ min-height:90px;
 }
 .logotabel19{
 
-	background: url(../img/img_socialjane.png) no-repeat;
+	background: url(../img/img_socialjane.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1335,7 +1394,7 @@ min-height:90px;
 }
 .logotabel19:hover{
 	opacity:0.8;
-	background: url(../img/img_socialjane.png) no-repeat;
+	background: url(../img/img_socialjane.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1346,7 +1405,7 @@ min-height:90px;
 }
 .logotabel18{
 
-	background: url(../img/img_billpay.png) no-repeat;
+	background: url(../img/img_billpay.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1357,7 +1416,183 @@ min-height:90px;
 }
 .logotabel18:hover{
 	opacity:0.8;
-	background: url(../img/img_billpay.png) no-repeat;
+	background: url(../img/img_billpay.jpg) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:300px;
+	min-height:300px;
+	text-align:center;
+}
+.logotabel20{
+
+	background: url(../img/img_telvise.jpg) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:300px;
+	min-height:300px;
+	text-align:center;
+}
+.logotabel20:hover{
+	opacity:0.8;
+	background: url(../img/img_telvise.jpg) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:300px;
+	min-height:300px;
+	text-align:center;
+}
+.logotabel21{
+
+	background: url(../img/img_trekadoo.jpg) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:300px;
+	min-height:300px;
+	text-align:center;
+}
+.logotabel21:hover{
+	opacity:0.8;
+	background: url(../img/img_trekadoo.jpg) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:300px;
+	min-height:300px;
+	text-align:center;
+}
+.logotabel22{
+
+	background: url(../img/img_impressme.jpg) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:300px;
+	min-height:300px;
+	text-align:center;
+}
+.logotabel22:hover{
+	opacity:0.8;
+	background: url(../img/img_impressme.jpg) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:300px;
+	min-height:300px;
+	text-align:center;
+}
+.logotabel23{
+
+	background: url(../img/img_mflyer.jpg) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:300px;
+	min-height:300px;
+	text-align:center;
+}
+.logotabel23:hover{
+	opacity:0.8;
+	background: url(../img/img_mflyer.jpg) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:300px;
+	min-height:300px;
+	text-align:center;
+}
+.logotabel24{
+
+	background: url(../img/img_spendit.jpg) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:300px;
+	min-height:300px;
+	text-align:center;
+}
+.logotabel24:hover{
+	opacity:0.8;
+	background: url(../img/img_spendit.jpg) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:300px;
+	min-height:300px;
+	text-align:center;
+}
+.logotabel25{
+
+	background: url(../img/img_creativeprocess.jpg) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:300px;
+	min-height:300px;
+	text-align:center;
+}
+.logotabel25:hover{
+	opacity:0.8;
+	background: url(../img/img_creativeprocess.jpg) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:300px;
+	min-height:300px;
+	text-align:center;
+}
+.logotabel26{
+
+	background: url(../img/img_fansircle.jpg) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:300px;
+	min-height:300px;
+	text-align:center;
+}
+.logotabel26:hover{
+	opacity:0.8;
+	background: url(../img/img_fansircle.jpg) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:300px;
+	min-height:300px;
+	text-align:center;
+}
+.logotabel27{
+
+	background: url(../img/img_nba_combine.jpg) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:300px;
+	min-height:300px;
+	text-align:center;
+}
+.logotabel27:hover{
+	opacity:0.8;
+	background: url(../img/img_nba_combine.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1507,19 +1742,19 @@ display:none;
 	margin-top:20px;
 	float:left;
 	width:222px;
-	height:300px;
+	height:100px;
 	background: url(../img/logobottom.png) no-repeat center top;
 }
 .bottomcol{
 	margin-top:20px;
 	float:left;
-	width:143px;
-	height:300px;
+	width:214px;
+	height:auto;
 	color:#fff;
 	margin-left:20px;
 	font-size:14pt;
 	font-family:"karbon_regular";
-	text-align:left;
+	text-align:right;
 }
 .bottomcol h1{
 	margin-bottom:10px;
@@ -1704,6 +1939,7 @@ display:none;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.000);
 	cursor:pointer;
 	display: inline;
+	page-break-inside: avoid;
 	list-style-type: none;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -1844,6 +2080,46 @@ display:none;
     height: 140px;
 	background-size:230%;
     background-image: url(../img/portfolio_headers/socialjane.jpg);
+}
+.header.telvise {
+	width:100%;
+    height: 140px;
+    background-image: url(../img/portfolio_headers/telvise.jpg);
+}
+.header.trekadoo {
+	width:100%;
+    height: 140px;
+    background-image: url(../img/portfolio_headers/trekadoo.jpg);
+}
+.header.impressme {
+	width:100%;
+    height: 140px;
+    background-image: url(../img/portfolio_headers/impressme.jpg);
+}
+.header.mflyer {
+	width:100%;
+    height: 140px;
+    background-image: url(../img/portfolio_headers/mflyer.jpg);
+}
+.header.spendit {
+	width:100%;
+    height: 140px;
+    background-image: url(../img/portfolio_headers/spendit.jpg);
+}
+.header.creativeprocess {
+	width:100%;
+    height: 140px;
+    background-image: url(../img/portfolio_headers/creativeprocess.jpg);
+}
+.header.fansircle {
+	width:100%;
+    height: 140px;
+    background-image: url(../img/portfolio_headers/fansircle.jpg);
+}
+.header.nba_combine {
+	width:100%;
+    height: 140px;
+    background-image: url(../img/portfolio_headers/nba_combine.jpg);
 }
 .header.tdg {
 	width:100%;
@@ -2075,7 +2351,7 @@ width:100%;
 .column1{
 	float:left;
 
-		width:90%;
+	width:90%;
 	margin-left:5%;
 	
 }
@@ -2109,6 +2385,11 @@ width:100%;
 		
 	width:100%;
 	margin-left:0%;
+}
+.column77{
+	width:100%;
+	float:left;
+	margin-top:30px
 }
 .column33 h2{
 	text-align:center;
@@ -2709,6 +2990,198 @@ display:none;
 	min-width:160px;
 	min-height:103px;
 }
+.logotabel20{
+
+	background: url(../img/img_telvise.png) no-repeat;
+	background-size: 100%;
+	float:left;
+	width:160px;
+	height:103px;
+	text-align:center;
+	max-height:103px;
+	min-width:160px;
+	min-height:103px;
+}
+.logotabel20:hover{
+	opacity:0.8;
+	background: url(../img/img_telvise.png) no-repeat;
+	background-size: 100%;
+	float:left;
+	width:160px;
+	height:103px;
+	text-align:center;
+	max-height:103px;
+	min-width:160px;
+	min-height:103px;
+}
+.logotabel21{
+
+	background: url(../img/img_trekadoo.png) no-repeat;
+	background-size: 100%;
+	float:left;
+	width:160px;
+	height:103px;
+	text-align:center;
+	max-height:103px;
+	min-width:160px;
+	min-height:103px;
+}
+.logotabel21:hover{
+	opacity:0.8;
+	background: url(../img/img_trekadoo.png) no-repeat;
+	background-size: 100%;
+	float:left;
+	width:160px;
+	height:103px;
+	text-align:center;
+	max-height:103px;
+	min-width:160px;
+	min-height:103px;
+}
+.logotabel22{
+
+	background: url(../img/img_impressme.png) no-repeat;
+	background-size: 100%;
+	float:left;
+	width:160px;
+	height:103px;
+	text-align:center;
+	max-height:103px;
+	min-width:160px;
+	min-height:103px;
+}
+.logotabel22:hover{
+	opacity:0.8;
+	background: url(../img/img_impressme.png) no-repeat;
+	background-size: 100%;
+	float:left;
+	width:160px;
+	height:103px;
+	text-align:center;
+	max-height:103px;
+	min-width:160px;
+	min-height:103px;
+}
+.logotabel23{
+
+	background: url(../img/img_mflyer.png) no-repeat;
+	background-size: 100%;
+	float:left;
+	width:160px;
+	height:103px;
+	text-align:center;
+	max-height:103px;
+	min-width:160px;
+	min-height:103px;
+}
+.logotabel23:hover{
+	opacity:0.8;
+	background: url(../img/img_mflyer.png) no-repeat;
+	background-size: 100%;
+	float:left;
+	width:160px;
+	height:103px;
+	text-align:center;
+	max-height:103px;
+	min-width:160px;
+	min-height:103px;
+}
+.logotabel24{
+
+	background: url(../img/img_spendit.png) no-repeat;
+	background-size: 100%;
+	float:left;
+	width:160px;
+	height:103px;
+	text-align:center;
+	max-height:103px;
+	min-width:160px;
+	min-height:103px;
+}
+.logotabel24:hover{
+	opacity:0.8;
+	background: url(../img/img_spendit.png) no-repeat;
+	background-size: 100%;
+	float:left;
+	width:160px;
+	height:103px;
+	text-align:center;
+	max-height:103px;
+	min-width:160px;
+	min-height:103px;
+}
+.logotabel25{
+
+	background: url(../img/img_creativeprocess.png) no-repeat;
+	background-size: 100%;
+	float:left;
+	width:160px;
+	height:103px;
+	text-align:center;
+	max-height:103px;
+	min-width:160px;
+	min-height:103px;
+}
+.logotabel25:hover{
+	opacity:0.8;
+	background: url(../img/img_creativeprocess.png) no-repeat;
+	background-size: 100%;
+	float:left;
+	width:160px;
+	height:103px;
+	text-align:center;
+	max-height:103px;
+	min-width:160px;
+	min-height:103px;
+}
+.logotabel26{
+
+	background: url(../img/img_fansircle.png) no-repeat;
+	background-size: 100%;
+	float:left;
+	width:160px;
+	height:103px;
+	text-align:center;
+	max-height:103px;
+	min-width:160px;
+	min-height:103px;
+}
+.logotabel26:hover{
+	opacity:0.8;
+	background: url(../img/img_fansircle.png) no-repeat;
+	background-size: 100%;
+	float:left;
+	width:160px;
+	height:103px;
+	text-align:center;
+	max-height:103px;
+	min-width:160px;
+	min-height:103px;
+}
+.logotabel27{
+
+	background: url(../img/img_nba_combine.png) no-repeat;
+	background-size: 100%;
+	float:left;
+	width:160px;
+	height:103px;
+	text-align:center;
+	max-height:103px;
+	min-width:160px;
+	min-height:103px;
+}
+.logotabel27:hover{
+	opacity:0.8;
+	background: url(../img/img_nba_combine.png) no-repeat;
+	background-size: 100%;
+	float:left;
+	width:160px;
+	height:103px;
+	text-align:center;
+	max-height:103px;
+	min-width:160px;
+	min-height:103px;
+}
 .buttong2{
 	display:none;
 }
@@ -2787,11 +3260,17 @@ display:none;
     text-align: center;
     background: none;
 }
-.column2 ul{
-	text-align:center;
+.column1 ul{
+	text-align:left;
 	list-style-type:none;
-	margin-left:0px;
-	line-height:20px;
+	margin-left:20px;
+	line-height:24px;
+}
+.column2 ul{
+	text-align:left;
+	list-style-type:none;
+	margin-left:20px;
+	line-height:24px;
 }
 }
 
@@ -2879,7 +3358,7 @@ li a {text-decoration: none;
     clear: both;
 	position:relative;
 	width:100%;
-	height:500px;
+	height:430px;
 	background:url(../img/bgtop.jpg) center;
 	background-size:160%;
 
@@ -2927,7 +3406,7 @@ li a {text-decoration: none;
 	position:relative;
 	padding:10px;
 	top:0px;
-	width:100%;
+	width: calc(100% - 20px);
 	background:#fff;
 	height:50px;
 	color:#222;
@@ -3061,95 +3540,159 @@ li a {text-decoration: none;
     background-image: url(../img/cats_headers/web.jpg);
 }
 .header.atnt {
-    height: 367px;
-    background-image: url(../img/portfolio_headers/atnt.jpg);
+     height: 267px;
+    background-size:160%;
+    background-image: url(../img/portfolio_headers/atnt2.jpg);
 }
 .header.b3 {
-    height: 367px;
+     height: 267px;
+    background-size:175%;
     background-image: url(../img/portfolio_headers/b3.jpg);
 }
 .header.billpay {
-    height: 367px;
+     height: 267px;
+    background-size:190%;
     background-image: url(../img/portfolio_headers/bill_pay_app.jpg);
 }
 .header.facial {
-    height: 367px;
+     height: 267px;
+    background-size:190%;
     background-image: url(../img/portfolio_headers/facial.jpg);
 }
 .header.independa {
-    height: 367px;
+     height: 267px;
+    background-size:190%;
     background-image: url(../img/portfolio_headers/independa.jpg);
 }
 .header.kms {
-    height: 367px;
+     height: 267px;
+    background-size:190%;
     background-image: url(../img/portfolio_headers/knowledge.jpg);
 }
 .header.moasis {
-    height: 367px;
+     height: 267px;
+    background-size:190%;
     background-image: url(../img/portfolio_headers/moasis.jpg);
 }
 .header.mobile_check {
-    height: 367px;
-    background-image: url(../img/portfolio_headers/mobilecheck.jpg);
+     height: 267px;
+    background-size:190%;
+    background-image: url(../img/portfolio_headers/mobilecheck2.jpg);
 }
 .header.mom {
-    height: 367px;
+     height: 267px;
+    background-size:175%;
     background-image: url(../img/portfolio_headers/mom.jpg);
 }
 .header.nba {
-    height: 367px;
-    background-image: url(../img/portfolio_headers/nba.jpg);
+     height: 267px;
+    background-size:180%;
+    background-image: url(../img/portfolio_headers/nba2.jpg);
 }
 .header.nba_dev {
-    height: 367px;
+    height: 267px;
+    background-size:190%;
     background-image: url(../img/portfolio_headers/nba_pd.jpg);
+    
 }
 .header.nba_rtp {
-    height: 367px;
+     height: 267px;
+    background-size:170%;
     background-image: url(../img/portfolio_headers/nba_rtp.jpg);
 }
 .header.nhl {
-    height: 367px;
-    background-image: url(../img/portfolio_headers/nhl.jpg);
+    height: 237px;
+    background-size:160%;
+    background-image: url(../img/portfolio_headers/nhl2.jpg);
 }
 .header.salesforce {
-    height: 367px;
+     height: 267px;
+    background-size:190%;
     background-image: url(../img/portfolio_headers/digitalmojo.jpg);
 }
 .header.socialjane {
-    height: 367px;
+    height: 267px;
+    background-size:190%;
     background-image: url(../img/portfolio_headers/socialjane.jpg);
 }
+.header.telvise {
+    height: 267px;
+    background-size:190%;
+    background-image: url(../img/portfolio_headers/telvise.jpg);
+}
+.header.trekadoo {
+    height: 267px;
+    background-size:190%;
+    background-image: url(../img/portfolio_headers/trekadoo.jpg);
+}
+.header.impressme {
+    height: 267px;
+    background-size:190%;
+    background-image: url(../img/portfolio_headers/impressme.jpg);
+}
+.header.mflyer {
+    height: 267px;
+    background-size:190%;
+    background-image: url(../img/portfolio_headers/mflyer.jpg);
+}
+.header.spendit {
+    height: 267px;
+    background-size:190%;
+    background-image: url(../img/portfolio_headers/spendit.jpg);
+}
+.header.creativeprocess {
+    height: 267px;
+    background-size:190%;
+    background-image: url(../img/portfolio_headers/creativeprocess.jpg);
+}
+.header.fansircle {
+    height: 267px;
+    background-size:190%;
+    background-image: url(../img/portfolio_headers/fansircle.jpg);
+}
+.header.nba_combine {
+    height: 267px;
+    background-size:190%;
+    background-image: url(../img/portfolio_headers/nba_combine.jpg);
+}
 .header.tdg {
-    height: 367px;
+     height: 267px;
+    background-size:190%;
     background-image: url(../img/portfolio_headers/tdg.jpg);
 }
 .header.tech_support {
-    height: 367px;
+     height: 267px;
+    background-size:190%;
     background-image: url(../img/portfolio_headers/technicalsupport.jpg);
 }
 .header.tb {
-    height: 367px;
+     height: 267px;
+    background-size:190%;
     background-image: url(../img/portfolio_headers/tb.jpg);
 }
 .header.tb_ad {
-    height: 367px;
+     height: 267px;
+    background-size:190%;
     background-image: url(../img/portfolio_headers/tb_ad.jpg);
 }
 .header.tb_mobile {
-    height: 367px;
+     height: 267px;
+    background-size:190%;
     background-image: url(../img/portfolio_headers/tb_mobile.jpg);
 }
 .header.portfolio {
-    height: 367px;
+     height: 267px;
+    background-size:190%;
     background-image: url(../img/page_headers/portfolio.jpg);
 }
 .header.technologies {
-    height: 367px;
+     height: 267px;
+    background-size:190%;
     background-image: url(../img/page_headers/technologies.jpg);
 }
 .header.careers {
-    height: 367px;
+     height: 267px;
+    background-size:190%;
     background-image: url(../img/page_headers/careers.jpg);
 }
 .header.enterprise {
@@ -3205,7 +3748,7 @@ li a {text-decoration: none;
 	font-size:14px;
 	
 	background:  url(../img/tranfering.png) no-repeat center top;
-	background-size:50%;
+	background-size:40%;
 }
 .subtitle_t{
 	-webkit-font-smoothing: antialiased;
@@ -3234,7 +3777,7 @@ li a {text-decoration: none;
 	bottom:250px;
 	width:100%;
 	background: url(../img/black_alpha.png) repeat;
-	height:170px;
+	height:175px;
 	color:#fff;
 }
 .pet{
@@ -3344,7 +3887,7 @@ min-height:90px;
 	padding-top:40px;
 	position:relative;
 	margin: 0 auto;
-	width:800px;
+	width:100%;
 	text-align:center;
 }
 .column1{
@@ -3366,17 +3909,17 @@ min-height:90px;
 .columnx{
 	float:left;
 
-	width:370px;
-	margin-right:60px;
+	width:45%;
+	margin-right:5%;
 }
 .columny{
 	float:left;
-	width:370px;
+	width:50%;
 }
 .column33{
 	text-align:center;
 	float:left;
-	width:266px;
+	width:33%;
 }
 .column33 h2{
 	text-align:center;
@@ -3460,7 +4003,7 @@ min-height:90px;
 }
 .wrapper .images_box4 img {
     float: left;
-    width: 200px;
+    width: 25%;
 }
 .wrapper .tech_list {
     margin-bottom: 25pt;
@@ -3671,7 +4214,7 @@ min-height:90px;
 	float:left;
 	max-height:400px;
 	min-width:100px;
-	min-height:100px;
+	min-height:170px;
 	text-align:center;
 }
 .logotabel2{
@@ -3681,7 +4224,7 @@ min-height:90px;
 	float:left;
 	max-height:400px;
 	min-width:100px;
-	min-height:100px;
+	min-height:170px;
 	text-align:center;
 }
 .logotabel3{
@@ -3691,7 +4234,7 @@ min-height:90px;
 	float:left;
 	max-height:400px;
 	min-width:100px;
-	min-height:100px;
+	min-height:170px;
 	text-align:center;
 }
 .logotabel4{
@@ -3701,7 +4244,7 @@ min-height:90px;
 	float:left;
 	max-height:400px;
 	min-width:100px;
-	min-height:100px;
+	min-height:170px;
 	text-align:center;
 }
 .logotabel5{
@@ -3711,7 +4254,7 @@ min-height:90px;
 	float:left;
 	max-height:400px;
 	min-width:100px;
-	min-height:100px;
+	min-height:170px;
 	text-align:center;
 }
 .logotabel6{
@@ -3721,7 +4264,7 @@ min-height:90px;
 	float:left;
 	max-height:400px;
 	min-width:100px;
-	min-height:100px;
+	min-height:170px;
 	text-align:center;
 }
 .logotabel7{
@@ -3731,7 +4274,7 @@ min-height:90px;
 	float:left;
 	max-height:400px;
 	min-width:100px;
-	min-height:100px;
+	min-height:170px;
 	text-align:center;
 }
 .logotabel8{
@@ -3741,7 +4284,7 @@ min-height:90px;
 	float:left;
 	max-height:400px;
 	min-width:100px;
-	min-height:100px;
+	min-height:170px;
 	text-align:center;
 }
 .logotabel:hover{
@@ -3752,7 +4295,7 @@ min-height:90px;
 	float:left;
 	max-height:400px;
 	min-width:100px;
-	min-height:100px;
+	min-height:170px;
 	text-align:center;
 }
 .logotabel2:hover{
@@ -3763,7 +4306,7 @@ min-height:90px;
 	float:left;
 	max-height:400px;
 	min-width:100px;
-	min-height:100px;
+	min-height:170px;
 	text-align:center;
 }
 .logotabel3:hover{
@@ -3774,7 +4317,7 @@ min-height:90px;
 	float:left;
 	max-height:400px;
 	min-width:100px;
-	min-height:100px;
+	min-height:170px;
 	text-align:center;
 }
 .logotabel4:hover{
@@ -3785,7 +4328,7 @@ min-height:90px;
 	float:left;
 	max-height:400px;
 	min-width:100px;
-	min-height:100px;
+	min-height:170px;
 	text-align:center;
 }
 .logotabel5:hover{
@@ -3796,7 +4339,7 @@ min-height:90px;
 	float:left;
 	max-height:400px;
 	min-width:100px;
-	min-height:100px;
+	min-height:170px;
 	text-align:center;
 }
 .logotabel6:hover{
@@ -3807,7 +4350,7 @@ min-height:90px;
 	float:left;
 	max-height:400px;
 	min-width:100px;
-	min-height:100px;
+	min-height:170px;
 	text-align:center;
 }
 .logotabel7:hover{
@@ -3818,7 +4361,7 @@ min-height:90px;
 	float:left;
 	max-height:400px;
 	min-width:100px;
-	min-height:100px;
+	min-height:170px;
 	text-align:center;
 }
 .logotabel8:hover{
@@ -3829,7 +4372,7 @@ min-height:90px;
 	float:left;
 	max-height:400px;
 	min-width:100px;
-	min-height:100px;
+	min-height:170px;
 	text-align:center;
 }
 .buttong{
@@ -3866,7 +4409,7 @@ min-height:90px;
 	float:left;
 	max-height:400px;
 	min-width:100px;
-	min-height:100px;
+	min-height:170px;
 	text-align:center;
 }
 .logotabel9:hover{
@@ -3877,7 +4420,7 @@ min-height:90px;
 	float:left;
 	max-height:400px;
 	min-width:100px;
-	min-height:100px;
+	min-height:170px;
 	text-align:center;
 }
 .logotabel10{
@@ -3888,7 +4431,7 @@ min-height:90px;
 	float:left;
 	max-height:400px;
 	min-width:100px;
-	min-height:100px;
+	min-height:170px;
 	text-align:center;
 }
 .logotabel10:hover{
@@ -3899,7 +4442,7 @@ min-height:90px;
 	float:left;
 	max-height:400px;
 	min-width:100px;
-	min-height:100px;
+	min-height:170px;
 	text-align:center;
 }
 .logotabel11{
@@ -3910,7 +4453,7 @@ min-height:90px;
 	float:left;
 	max-height:400px;
 	min-width:100px;
-	min-height:100px;
+	min-height:170px;
 	text-align:center;
 }
 .logotabel11:hover{
@@ -3921,7 +4464,7 @@ min-height:90px;
 	float:left;
 	max-height:400px;
 	min-width:100px;
-	min-height:100px;
+	min-height:170px;
 	text-align:center;
 }
 .logotabel12{
@@ -3932,7 +4475,7 @@ min-height:90px;
 	float:left;
 	max-height:400px;
 	min-width:100px;
-	min-height:100px;
+	min-height:170px;
 	text-align:center;
 }
 .logotabel12:hover{
@@ -3943,7 +4486,7 @@ min-height:90px;
 	float:left;
 	max-height:400px;
 	min-width:100px;
-	min-height:100px;
+	min-height:170px;
 	text-align:center;
 }
 .logotabel13{
@@ -3954,7 +4497,7 @@ min-height:90px;
 	float:left;
 	max-height:400px;
 	min-width:100px;
-	min-height:100px;
+	min-height:170px;
 	text-align:center;
 }
 .logotabel13:hover{
@@ -3965,7 +4508,7 @@ min-height:90px;
 	float:left;
 	max-height:400px;
 	min-width:100px;
-	min-height:100px;
+	min-height:170px;
 	text-align:center;
 }
 .logotabel14{
@@ -3976,7 +4519,7 @@ min-height:90px;
 	float:left;
 	max-height:400px;
 	min-width:100px;
-	min-height:100px;
+	min-height:170px;
 	text-align:center;
 }
 .logotabel14:hover{
@@ -3987,7 +4530,7 @@ min-height:90px;
 	float:left;
 	max-height:400px;
 	min-width:100px;
-	min-height:100px;
+	min-height:170px;
 	text-align:center;
 }
 .logotabel15{
@@ -3998,7 +4541,7 @@ min-height:90px;
 	float:left;
 	max-height:400px;
 	min-width:100px;
-	min-height:100px;
+	min-height:170px;
 	text-align:center;
 }
 .logotabel15:hover{
@@ -4009,7 +4552,7 @@ min-height:90px;
 	float:left;
 	max-height:400px;
 	min-width:100px;
-	min-height:100px;
+	min-height:170px;
 	text-align:center;
 }
 .logotabel16{
@@ -4020,7 +4563,7 @@ min-height:90px;
 	float:left;
 	max-height:400px;
 	min-width:100px;
-	min-height:100px;
+	min-height:170px;
 	text-align:center;
 }
 .logotabel16:hover{
@@ -4031,7 +4574,7 @@ min-height:90px;
 	float:left;
 	max-height:400px;
 	min-width:100px;
-	min-height:100px;
+	min-height:170px;
 	text-align:center;
 }
 .logotabel17{
@@ -4042,7 +4585,7 @@ min-height:90px;
 	float:left;
 	max-height:400px;
 	min-width:100px;
-	min-height:100px;
+	min-height:170px;
 	text-align:center;
 }
 .logotabel17:hover{
@@ -4053,7 +4596,7 @@ min-height:90px;
 	float:left;
 	max-height:400px;
 	min-width:100px;
-	min-height:100px;
+	min-height:170px;
 	text-align:center;
 }
 .logotabel19{
@@ -4064,7 +4607,7 @@ min-height:90px;
 	float:left;
 	max-height:400px;
 	min-width:100px;
-	min-height:100px;
+	min-height:170px;
 	text-align:center;
 }
 .logotabel19:hover{
@@ -4075,7 +4618,7 @@ min-height:90px;
 	float:left;
 	max-height:400px;
 	min-width:100px;
-	min-height:100px;
+	min-height:170px;
 	text-align:center;
 }
 .logotabel18{
@@ -4086,7 +4629,7 @@ min-height:90px;
 	float:left;
 	max-height:400px;
 	min-width:100px;
-	min-height:100px;
+	min-height:170px;
 	text-align:center;
 }
 .logotabel18:hover{
@@ -4097,7 +4640,183 @@ min-height:90px;
 	float:left;
 	max-height:400px;
 	min-width:100px;
-	min-height:100px;
+	min-height:170px;
+	text-align:center;
+}
+.logotabel20{
+
+	background: url(../img/img_telvise.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:100px;
+	min-height:170px;
+	text-align:center;
+}
+.logotabel20:hover{
+	opacity:0.8;
+	background: url(../img/img_telvise.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:100px;
+	min-height:170px;
+	text-align:center;
+}
+.logotabel21{
+
+	background: url(../img/img_trekadoo.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:100px;
+	min-height:170px;
+	text-align:center;
+}
+.logotabel21:hover{
+	opacity:0.8;
+	background: url(../img/img_trekadoo.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:100px;
+	min-height:170px;
+	text-align:center;
+}
+.logotabel22{
+
+	background: url(../img/img_impressme.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:100px;
+	min-height:170px;
+	text-align:center;
+}
+.logotabel22:hover{
+	opacity:0.8;
+	background: url(../img/img_impressme.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:100px;
+	min-height:170px;
+	text-align:center;
+}
+.logotabel23{
+
+	background: url(../img/img_mflyer.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:100px;
+	min-height:170px;
+	text-align:center;
+}
+.logotabel23:hover{
+	opacity:0.8;
+	background: url(../img/img_mflyer.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:100px;
+	min-height:170px;
+	text-align:center;
+}
+.logotabel24{
+
+	background: url(../img/img_spendit.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:100px;
+	min-height:170px;
+	text-align:center;
+}
+.logotabel24:hover{
+	opacity:0.8;
+	background: url(../img/img_spendit.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:100px;
+	min-height:170px;
+	text-align:center;
+}
+.logotabel25{
+
+	background: url(../img/img_creativeprocess.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:100px;
+	min-height:170px;
+	text-align:center;
+}
+.logotabel25:hover{
+	opacity:0.8;
+	background: url(../img/img_creativeprocess.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:100px;
+	min-height:170px;
+	text-align:center;
+}
+.logotabel26{
+
+	background: url(../img/img_fansircle.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:100px;
+	min-height:170px;
+	text-align:center;
+}
+.logotabel26:hover{
+	opacity:0.8;
+	background: url(../img/img_fansircle.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:100px;
+	min-height:170px;
+	text-align:center;
+}
+.logotabel27{
+
+	background: url(../img/img_nba_combine.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:100px;
+	min-height:170px;
+	text-align:center;
+}
+.logotabel27:hover{
+	opacity:0.8;
+	background: url(../img/img_nba_combine.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:100px;
+	min-height:170px;
 	text-align:center;
 }
 .logotabel img{
@@ -4137,6 +4856,11 @@ min-height:90px;
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
 	border-radius: 6px;
+}
+.column77{
+	width:100%;
+	float:left;
+	margin-top:30px
 }
 .portcontin{
 display:none;
@@ -4247,13 +4971,13 @@ display:none;
 .bottomcol{
 	margin-top:10px;
 	float:left;
-	width:15%;
+	width:25%;
 	height:auto;
 	color:#fff;
-	margin-left:1%;
+	margin-left:0%;
 	font-size:12pt;
 	font-family:"karbon_regular";
-	text-align:left;
+	text-align:center;
 }
 .bottomcol h1{
 	margin-bottom:10px;
@@ -4262,13 +4986,13 @@ display:none;
 }
 .column1 ul{
 	text-align:left;
-	list-style-type:circle;
+	list-style-type:none;
 	margin-left:20px;
 	line-height:24px;
 }
 .column2 ul{
 	text-align:left;
-	list-style-type:circle;
+	list-style-type:none;
 	margin-left:20px;
 	line-height:24px;
 }
