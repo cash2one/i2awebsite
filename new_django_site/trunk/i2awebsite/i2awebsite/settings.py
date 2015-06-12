@@ -30,14 +30,17 @@ ALLOWED_HOSTS = ['127.0.0.1',
 
 ADMINS = MANAGERS = (
     ('Mariusz Okulanis', 'mokulanis@i2asolutions.com'),
+    ('Pawel Roman', 'proman@i2asolutions.com'),
 )
 
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'email123999@gmail.com'
-EMAIL_HOST_PASSWORD = '1q2w3e4r99911'
+EMAIL_HOST = 'xmail.i2asolutions.com'
+EMAIL_HOST_USER = 'mailer@qa.i2asolutions.com'
+EMAIL_HOST_PASSWORD = 'Dakawadjoks4'
+EMAIL_SUBJECT_PREFIX = '[I2A Website]'
 EMAIL_USE_TLS = True
-DEFAULT_FROM_EMAIL = 'email123999@gmail.com'
-
+EMAIL_PORT = 587
+DEFAULT_FROM_EMAIL = 'I2A Website <noreply@qa.i2asolutions.com>'
+SERVER_EMAIL = 'I2A Website <noreply@qa.i2asolutions.com>'
 
 # Application definition
 
