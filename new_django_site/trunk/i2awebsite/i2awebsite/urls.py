@@ -170,6 +170,46 @@ urlpatterns = patterns('',
         {'menu_pos': 'portfolio'},
         name='portfolio-tech_support',
     ),
+    url(r'^portfolio/telvise/$', TemplateView.as_view(
+        template_name='portfolio/telvise.html'),
+        {'menu_pos': 'portfolio'},
+        name='portfolio-telvise',
+    ),
+        url(r'^portfolio/trekadoo/$', TemplateView.as_view(
+        template_name='portfolio/trekadoo.html'),
+        {'menu_pos': 'portfolio'},
+        name='portfolio-trekadoo',
+    ),
+         url(r'^portfolio/impressme/$', TemplateView.as_view(
+        template_name='portfolio/impressme.html'),
+        {'menu_pos': 'portfolio'},
+        name='portfolio-impressme',
+    ),
+         url(r'^portfolio/mflyer/$', TemplateView.as_view(
+        template_name='portfolio/mflyer.html'),
+        {'menu_pos': 'portfolio'},
+        name='portfolio-mflyer',
+    ),
+        url(r'^portfolio/spendit/$', TemplateView.as_view(
+        template_name='portfolio/spendit.html'),
+        {'menu_pos': 'portfolio'},
+        name='portfolio-spendit',
+    ),
+        url(r'^portfolio/creativeprocess/$', TemplateView.as_view(
+        template_name='portfolio/creativeprocess.html'),
+        {'menu_pos': 'portfolio'},
+        name='portfolio-creativeprocess',
+    ),
+        url(r'^portfolio/fansircle/$', TemplateView.as_view(
+        template_name='portfolio/fansircle.html'),
+        {'menu_pos': 'portfolio'},
+        name='portfolio-fansircle',
+    ),
+        url(r'^portfolio/nba_combine/$', TemplateView.as_view(
+        template_name='portfolio/nba_combine.html'),
+        {'menu_pos': 'portfolio'},
+        name='portfolio-nba_combine',
+    ),
     url(r'^portfolio/tripbucket_ad/$', TemplateView.as_view(
         template_name='portfolio/tripbucket_ad.html'),
         {'menu_pos': 'portfolio'},
