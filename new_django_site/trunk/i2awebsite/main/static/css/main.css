@@ -990,7 +990,7 @@ min-height:90px;
     display: block;
 }
 .logotabel{
-	background: url(../img/img_nba.jpg) no-repeat;
+	background: url(../img/img_nba.png) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1000,7 +1000,7 @@ min-height:90px;
 	text-align:center;
 }
 .logotabel2{
-	background: url(../img/img_nhl.jpg) no-repeat;
+	background: url(../img/img_nhl.png) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1010,7 +1010,7 @@ min-height:90px;
 	text-align:center;
 }
 .logotabel3{
-	background: url(../img/img_moasis.jpg) no-repeat;
+	background: url(../img/img_moasis.png) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1020,7 +1020,7 @@ min-height:90px;
 	text-align:center;
 }
 .logotabel4{
-	background: url(../img/img_atnt.jpg) no-repeat;
+	background: url(../img/img_atnt.png) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1030,7 +1030,7 @@ min-height:90px;
 	text-align:center;
 }
 .logotabel5{
-	background: url(../img/img_tdgarden.jpg) no-repeat;
+	background: url(../img/img_tdgarden.png) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1040,7 +1040,7 @@ min-height:90px;
 	text-align:center;
 }
 .logotabel6{
-	background: url(../img/img_mobilecheck.jpg) no-repeat;
+	background: url(../img/img_mobilecheck.png) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1050,7 +1050,7 @@ min-height:90px;
 	text-align:center;
 }
 .logotabel7{
-	background: url(../img/img_nbapd.jpg) no-repeat;
+	background: url(../img/img_nbapd.png) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1060,7 +1060,7 @@ min-height:90px;
 	text-align:center;
 }
 .logotabel8{
-	background: url(../img/img_independa.jpg) no-repeat;
+	background: url(../img/img_independa.png) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1071,7 +1071,7 @@ min-height:90px;
 }
 .logotabel:hover{
 	opacity:0.8;
-	background: url(../img/img_nba.jpg) no-repeat;
+	background: url(../img/img_nba.png) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1082,7 +1082,7 @@ min-height:90px;
 }
 .logotabel2:hover{
 	opacity:0.8;
-	background: url(../img/img_nhl.jpg) no-repeat;
+	background: url(../img/img_nhl.png) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1093,7 +1093,7 @@ min-height:90px;
 }
 .logotabel3:hover{
 	opacity:0.8;
-	background: url(../img/img_moasis.jpg) no-repeat;
+	background: url(../img/img_moasis.png) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1104,7 +1104,7 @@ min-height:90px;
 }
 .logotabel4:hover{
 	opacity:0.8;
-	background: url(../img/img_atnt.jpg) no-repeat;
+	background: url(../img/img_atnt.png) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1115,7 +1115,7 @@ min-height:90px;
 }
 .logotabel5:hover{
 	opacity:0.8;
-	background: url(../img/img_tdgarden.jpg) no-repeat;
+	background: url(../img/img_tdgarden.png) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1126,7 +1126,7 @@ min-height:90px;
 }
 .logotabel6:hover{
 	opacity:0.8;
-	background: url(../img/img_mobilecheck.jpg) no-repeat;
+	background: url(../img/img_mobilecheck.png) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1137,7 +1137,7 @@ min-height:90px;
 }
 .logotabel7:hover{
 	opacity:0.8;
-	background: url(../img/img_nbapd.jpg) no-repeat;
+	background: url(../img/img_nbapd.png) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1148,7 +1148,7 @@ min-height:90px;
 }
 .logotabel8:hover{
 	opacity:0.8;
-	background: url(../img/img_independa.jpg) no-repeat;
+	background: url(../img/img_independa.png) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1185,7 +1185,7 @@ min-height:90px;
 }
 .logotabel9{
 
-	background: url(../img/img_nbartp.jpg) no-repeat;
+	background: url(../img/img_nbartp.png) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1196,7 +1196,7 @@ min-height:90px;
 }
 .logotabel9:hover{
 	opacity:0.8;
-	background: url(../img/img_nbartp.jpg) no-repeat;
+	background: url(../img/img_nbartp.png) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1207,7 +1207,7 @@ min-height:90px;
 }
 .logotabel10{
 
-	background: url(../img/img_fanserv.jpg) no-repeat;
+	background: url(../img/img_fanserv.png) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1218,7 +1218,7 @@ min-height:90px;
 }
 .logotabel10:hover{
 	opacity:0.8;
-	background: url(../img/img_fanserv.jpg) no-repeat;
+	background: url(../img/img_fanserv.png) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1229,7 +1229,7 @@ min-height:90px;
 }
 .logotabel11{
 
-	background: url(../img/img_mom.jpg) no-repeat;
+	background: url(../img/img_mom.png) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1240,7 +1240,7 @@ min-height:90px;
 }
 .logotabel11:hover{
 	opacity:0.8;
-	background: url(../img/img_mom.jpg) no-repeat;
+	background: url(../img/img_mom.png) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1251,7 +1251,7 @@ min-height:90px;
 }
 .logotabel12{
 
-	background: url(../img/img_salesforce.jpg) no-repeat;
+	background: url(../img/img_salesforce.png) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1262,7 +1262,7 @@ min-height:90px;
 }
 .logotabel12:hover{
 	opacity:0.8;
-	background: url(../img/img_salesforce.jpg) no-repeat;
+	background: url(../img/img_salesforce.png) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1273,7 +1273,7 @@ min-height:90px;
 }
 .logotabel13{
 
-	background: url(../img/img_tripbucket.jpg) no-repeat;
+	background: url(../img/img_tripbucket.png) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1284,7 +1284,7 @@ min-height:90px;
 }
 .logotabel13:hover{
 	opacity:0.8;
-	background: url(../img/img_tripbucket.jpg) no-repeat;
+	background: url(../img/img_tripbucket.png) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1295,7 +1295,7 @@ min-height:90px;
 }
 .logotabel14{
 
-	background: url(../img/img_tripbucket_mobile.jpg) no-repeat;
+	background: url(../img/img_tripbucket_mobile.png) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1306,7 +1306,7 @@ min-height:90px;
 }
 .logotabel14:hover{
 	opacity:0.8;
-	background: url(../img/img_tripbucket_mobile.jpg) no-repeat;
+	background: url(../img/img_tripbucket_mobile.png) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1317,7 +1317,7 @@ min-height:90px;
 }
 .logotabel15{
 
-	background: url(../img/img_tb_ad.jpg) no-repeat;
+	background: url(../img/img_tb_ad.png) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1328,7 +1328,7 @@ min-height:90px;
 }
 .logotabel15:hover{
 	opacity:0.8;
-	background: url(../img/img_tb_ad.jpg) no-repeat;
+	background: url(../img/img_tb_ad.png) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1339,7 +1339,7 @@ min-height:90px;
 }
 .logotabel16{
 
-	background: url(../img/img_kms.jpg) no-repeat;
+	background: url(../img/img_kms.png) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1350,7 +1350,7 @@ min-height:90px;
 }
 .logotabel16:hover{
 	opacity:0.8;
-	background: url(../img/img_kms.jpg) no-repeat;
+	background: url(../img/img_kms.png) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1361,7 +1361,7 @@ min-height:90px;
 }
 .logotabel17{
 
-	background: url(../img/img_facial.jpg) no-repeat;
+	background: url(../img/img_facial.png) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1372,7 +1372,7 @@ min-height:90px;
 }
 .logotabel17:hover{
 	opacity:0.8;
-	background: url(../img/img_facial.jpg) no-repeat;
+	background: url(../img/img_facial.png) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1383,7 +1383,7 @@ min-height:90px;
 }
 .logotabel19{
 
-	background: url(../img/img_socialjane.jpg) no-repeat;
+	background: url(../img/img_socialjane.png) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1394,7 +1394,7 @@ min-height:90px;
 }
 .logotabel19:hover{
 	opacity:0.8;
-	background: url(../img/img_socialjane.jpg) no-repeat;
+	background: url(../img/img_socialjane.png) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1405,7 +1405,7 @@ min-height:90px;
 }
 .logotabel18{
 
-	background: url(../img/img_billpay.jpg) no-repeat;
+	background: url(../img/img_billpay.png) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1416,7 +1416,7 @@ min-height:90px;
 }
 .logotabel18:hover{
 	opacity:0.8;
-	background: url(../img/img_billpay.jpg) no-repeat;
+	background: url(../img/img_billpay.png) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1427,7 +1427,7 @@ min-height:90px;
 }
 .logotabel20{
 
-	background: url(../img/img_telvise.jpg) no-repeat;
+	background: url(../img/img_telvise.png) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1438,7 +1438,7 @@ min-height:90px;
 }
 .logotabel20:hover{
 	opacity:0.8;
-	background: url(../img/img_telvise.jpg) no-repeat;
+	background: url(../img/img_telvise.png) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1449,7 +1449,7 @@ min-height:90px;
 }
 .logotabel21{
 
-	background: url(../img/img_trekadoo.jpg) no-repeat;
+	background: url(../img/img_trekadoo.png) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1460,7 +1460,7 @@ min-height:90px;
 }
 .logotabel21:hover{
 	opacity:0.8;
-	background: url(../img/img_trekadoo.jpg) no-repeat;
+	background: url(../img/img_trekadoo.png) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1471,7 +1471,7 @@ min-height:90px;
 }
 .logotabel22{
 
-	background: url(../img/img_impressme.jpg) no-repeat;
+	background: url(../img/img_impressme.png) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1482,7 +1482,7 @@ min-height:90px;
 }
 .logotabel22:hover{
 	opacity:0.8;
-	background: url(../img/img_impressme.jpg) no-repeat;
+	background: url(../img/img_impressme.png) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1493,7 +1493,7 @@ min-height:90px;
 }
 .logotabel23{
 
-	background: url(../img/img_mflyer.jpg) no-repeat;
+	background: url(../img/img_mflyer.png) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1504,7 +1504,7 @@ min-height:90px;
 }
 .logotabel23:hover{
 	opacity:0.8;
-	background: url(../img/img_mflyer.jpg) no-repeat;
+	background: url(../img/img_mflyer.png) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1515,7 +1515,7 @@ min-height:90px;
 }
 .logotabel24{
 
-	background: url(../img/img_spendit.jpg) no-repeat;
+	background: url(../img/img_spendit.png) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1526,7 +1526,7 @@ min-height:90px;
 }
 .logotabel24:hover{
 	opacity:0.8;
-	background: url(../img/img_spendit.jpg) no-repeat;
+	background: url(../img/img_spendit.png) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1537,7 +1537,7 @@ min-height:90px;
 }
 .logotabel25{
 
-	background: url(../img/img_creativeprocess.jpg) no-repeat;
+	background: url(../img/img_creativeprocess.png) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1548,7 +1548,7 @@ min-height:90px;
 }
 .logotabel25:hover{
 	opacity:0.8;
-	background: url(../img/img_creativeprocess.jpg) no-repeat;
+	background: url(../img/img_creativeprocess.png) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1559,7 +1559,7 @@ min-height:90px;
 }
 .logotabel26{
 
-	background: url(../img/img_fansircle.jpg) no-repeat;
+	background: url(../img/img_fansircle.png) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1570,7 +1570,7 @@ min-height:90px;
 }
 .logotabel26:hover{
 	opacity:0.8;
-	background: url(../img/img_fansircle.jpg) no-repeat;
+	background: url(../img/img_fansircle.png) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1581,7 +1581,7 @@ min-height:90px;
 }
 .logotabel27{
 
-	background: url(../img/img_nba_combine.jpg) no-repeat;
+	background: url(../img/img_nba_combine.png) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1592,7 +1592,7 @@ min-height:90px;
 }
 .logotabel27:hover{
 	opacity:0.8;
-	background: url(../img/img_nba_combine.jpg) no-repeat;
+	background: url(../img/img_nba_combine.png) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
