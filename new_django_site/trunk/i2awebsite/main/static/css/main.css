@@ -835,8 +835,8 @@ min-height:90px;
     margin-top: 15px;
 }
 .tech {
-    display: block;
-    float: left;
+    display: inline-block;
+    /*float: left;*/
 }
 .tech.small {
     width: 25px;
@@ -852,8 +852,10 @@ min-height:90px;
     margin-right: 5px;
 }
 .tech_icons {
+	margin: auto;
     margin-top: 30px;
     width: 300px;
+    text-align: center;
 }
 .tech_icons .tech {
     margin: 0 0 1px 1px;
@@ -3398,6 +3400,7 @@ display:none;
 	background:url(../img/barw.png) no-repeat center bottom;
 }
 .tech_icons {
+	margin: auto;
     margin-top: 30px;
     width:auto;
 }
@@ -4188,6 +4191,7 @@ min-height:90px;
     margin-right: 5px;
 }
 .tech_icons {
+	margin: auto;
     margin-top: 30px;
     width: 300px;
 }
