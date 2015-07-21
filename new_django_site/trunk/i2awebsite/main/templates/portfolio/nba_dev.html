@@ -1,27 +1,16 @@
-{% extends "base.html" %}
+{% extends "base_portfolio.html" %}
 {% load staticfiles %}
 
 {% block header %}
 <div class="header nba_dev"></div>
 {% endblock header %}
 
-{% block content %}
-<div class="container2">
-    <div class="box_white">
-        <div class="wrapper">
-            <div class="location">Home Page &gt; Portfolio</div>
-            <div style="clear:both;"></div>
-            <div class="column1">
-                <h2>Idea</h2>
-                <div>
+{% block content.idea %}
                     <p>Build a mobile and web-based tool for the NBA to keep all players up to
 
                     date on internal events and training programs.</p>
-
-                </div>
-            </div>
-            <div class="column2">
-                <h2>Technologies used</h2>
+{% endblock content.idea %}
+{% block content.technologies %}
                 <ul class="tech_icons">
                     <li class="tech large ios6"></li>
                     <li class="tech large django"></li>
@@ -32,12 +21,8 @@
                     <li class="tech large android"></li>
 
                 </ul>
-            </div>
-        </div>
-        <div class="wrapper">
-            <h2>Solution</h2>
-            <div class="column1">
-                <div>
+{% endblock content.technologies %}
+{% block content.solution %}
                     <p>We designed and built a multi-platform app for the NBA’s Player 
 
                     Development Program (PD). The iPhone, iPad, Android Phone and 
@@ -48,10 +33,7 @@
 
                     knowledge once each assignment is completed.</p>
 
-                </div>
-            </div>
-            <div class="column2">
-                <div>
+
                     <p>The app also manages
 
                     the schedule of each individual player and enables communications
@@ -62,24 +44,5 @@
 
                     training programs on both a league-wide and franchise level.</p>
 
-                </div>
-            </div>
-        </div>
 
-    </div>
-    <div class="container2">
-        <div class="box_grey">
-            <div class="wrapper">
-
-
-
-
-
-
-
-            </div>
-        </div>
-    </div>
-</div>
-{% endblock content %}
-
+{% endblock content.solution %}

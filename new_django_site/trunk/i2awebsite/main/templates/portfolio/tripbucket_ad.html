@@ -1,25 +1,15 @@
-{% extends "base.html" %}
+{% extends "base_portfolio.html" %}
 {% load staticfiles %}
 
 {% block header %}
 <div class="header tb_ad"></div>
 {% endblock header %}
 
-{% block content %}
-<div class="container2">
-    <div class="box_white">
-        <div class="wrapper">
-            <div class="location">Home Page &gt; Portfolio</div>
-            <div style="clear:both;"></div>
-            <div class="column1">
-                <h2>Idea</h2>
-                <div>
+{% block content.idea %}
                     <p>Create an ad platform that allows advertisers to send targeted ads to consumers who use travel-related web-based and mobile applications.</p>
 
-                </div>
-            </div>
-            <div class="column2">
-                <h2>Technologies used</h2>
+{% endblock content.idea %}
+{% block content.technologies %}
                 <ul class="tech_icons">
                     <li class="tech large linux"></li>
                     <li class="tech large java"></li>
@@ -29,27 +19,15 @@
 
 
                 </ul>
-            </div>
-        </div>
-        <div class="wrapper">
-            <h2>Solution</h2>
-            <div class="column1">
-                <div>
+{% endblock content.technologies %}
+{% block content.solution %}
                     <p>We built an easy to use self-service ad platform that allows businesses to target travel enthusiasts based on destinations and trip preferences. We created an easy-to-use system that developers of travel-based mobile and web-based app can use to register their apps for possible advertising opportunities. Advertisers utilize the system to send targeted ads to users of travel-related mobile apps or web-based apps. They can also set parameters for how much they want to spend on a campaign and use their own graphic or text-based banner ads.</p>
 
-                </div>
-            </div>
-            <div class="column2">
-                <div>
+
                     <p>In addition to specific travel parameters, advertisers can target ads to be delivered to users based on gender, age, and interest. To help accurately measure a campaign’s performance, we included the ability to run reports using the included analytic tools. Agencies will appreciate that the system works well with third party tools such as DART reporting.</p>
 
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <div class="container2">
-        <div class="box_grey">
+ {% endblock content.solution %}
+{% block content.bottom %}
             <div class="wrapper">
                 <h1>Website</h1>
                 <div class="tight">
@@ -64,8 +42,5 @@
 
                 </div>
             </div>
-        </div>
-    </div>
-</div>
-{% endblock content %}
 
+{% endblock content.bottom %}

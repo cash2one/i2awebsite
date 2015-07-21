@@ -1,19 +1,11 @@
-{% extends "base.html" %}
+{% extends "base_portfolio.html" %}
 {% load staticfiles %}
 
 {% block header %}
 <div class="header mflyer"></div>
 {% endblock header %}
 
-{% block content %}
-<div class="container2">
-    <div class="box_white">
-        <div class="wrapper">
-            <div class="location">Home Page &gt; Portfolio</div>
-            <div style="clear:both;"></div>
-            <div class="column1">
-                <h2>Idea</h2>
-                <div>
+{% block content.idea %}
                     <p>Paper flyers cost a lot for a small business to design, print and ship to the customer. Moreover,
 
 there is no easy way to track the return on paper flyers or measure their success in impressions, 
@@ -23,11 +15,9 @@ leads or sales. Moasis Global wanted to create a more targeted, measurable and p
 for businesses to deliver relevant content, deals and advertising directly to their customers’ 
 
 mobile phones using Moasis Global’s patented geo-location technology.</p>
+{% endblock content.idea %}
+{% block content.technologies %}
 
-                </div>
-            </div>
-            <div class="column2">
-                <h2>Technologies used</h2>
                 <ul class="tech_icons">
                     <li class="tech large mysql"></li>
                     <li class="tech large linux"></li>
@@ -39,12 +29,8 @@ mobile phones using Moasis Global’s patented geo-location technology.</p>
                     <li class="tech large django"></li>
 
                 </ul>
-            </div>
-        </div>
-        <div class="wrapper">
-            <h2>Solution</h2>
-            <div class="column1">
-                <div>
+{% endblock content.technologies %}
+{% block content.solution %}
                     <p>mFlyer connects businesses with local customers using the power of mobile technology and geo-
 location marketing to promote sales, drive leads and bring nearby customers right to a business’ 
 
@@ -58,10 +44,7 @@ Custom mobile advertisements display from within the customer’s existing apps 
 
 on their phone, meaning that no new app downloads or special technology is required.</p>
 
-                </div>
-            </div>
-            <div class="column2">
-                <div>
+
                     <p> With a
 
 simple click of a button, businesses can expand their ad’s reach on social media and to email 
@@ -76,30 +59,15 @@ paperless alternative the perfect marketing tool to reach out to relevant custom
 
 place and the right time.</p>
 
-                </div>
-            </div>
-        </div>
-
-    </div>
- <div class="container2">
-        <div class="box_grey">
+{% endblock content.solution %}
+{% block content.bottom %}
             <div class="wrapper">
                 <h1>Website</h1>
                 <div class="tight">
 
 
                     <div class="centered"><a href="http://www.mflyer.com"><img src="{% static "img/icon_www.png" %}"><br>mflyer.com</a></div>
-
-
-
-
-
-
                 </div>
             </div>
-        </div>
-    </div>
 
-</div>
-{% endblock content %}
-
+{% endblock content.bottom %}

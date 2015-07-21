@@ -1,38 +1,24 @@
-{% extends "base.html" %}
+{% extends "base_portfolio.html" %}
 {% load staticfiles %}
 
 {% block header %}
 <div class="header spendit"></div>
 {% endblock header %}
 
-{% block content %}
-<div class="container2">
-    <div class="box_white">
-        <div class="wrapper">
-            <div class="location">Home Page &gt; Portfolio</div>
-            <div style="clear:both;"></div>
-            <div class="column1">
-                <h2>Idea</h2>
-                <div>
+{% block content.idea %}
                     <p>To create a fun, all ages lifestyle app designed to allow users to dream up how they would spend 
 
 money if they had an unlimited amount of funds to access and use each day.</p>
 
-                </div>
-            </div>
-            <div class="column2">
-                <h2>Technologies used</h2>
+{% endblock content.idea %}
+{% block content.technologies %}
                 <ul class="tech_icons">
                     <li class="tech large ios6"></li>
 
 
                 </ul>
-            </div>
-        </div>
-        <div class="wrapper">
-            <h2>Solution</h2>
-            <div class="column1">
-                <div>
+{% endblock content.technologies %}
+{% block content.solution %}
                     <p>$pend it encourages users to stretch their imaginations by playing a fun game with gobs of
 
 virtual money. On the $pend it app, players can deposit an unlimited amount of funds into a 
@@ -47,23 +33,15 @@ homes, vacations, charitable donations, or even non-tangible items, like good he
 
 relationships. </p>
 
-                </div>
-            </div>
-            <div class="column2">
-                <div><p>Another key feature of the app is a personal affirmations section that allows
+                <p>Another key feature of the app is a personal affirmations section that allows
 
 the app’s users to write positive statements, thanksgivings, or inspirational quotes to remind 
 
 themselves of all they’re grateful for in their real lives each day. The $pend it app makes the 
 
 impossible possible and is ideal app for the dreamer in everyone.</p>
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <div class="container2">
-        <div class="box_grey">
+{% endblock content.solution %}
+{% block content.bottom %}
             <div class="wrapper">
                 <h1>Website</h1>
                 <div class="tight">
@@ -78,8 +56,4 @@ impossible possible and is ideal app for the dreamer in everyone.</p>
 
                 </div>
             </div>
-        </div>
-    </div>
-</div>
-{% endblock content %}
-
+{% endblock content.bottom %}

@@ -1,25 +1,15 @@
-{% extends "base.html" %}
+{% extends "base_portfolio.html" %}
 {% load staticfiles %}
 
 {% block header %}
 <div class="header socialjane"></div>
 {% endblock header %}
 
-{% block content %}
-<div class="container2">
-    <div class="box_white">
-        <div class="wrapper">
-            <div class="location">Home Page &gt; Portfolio</div>
-            <div style="clear:both;"></div>
-            <div class="column1">
-                <h2>Idea</h2>
-                <div>
+{% block content.idea %}
                     <p>Complete a social networking site designed for women.</p>
 
-                </div>
-            </div>
-            <div class="column2">
-                <h2>Technologies used</h2>
+{% endblock content.idea %}
+{% block content.technologies %}
                 <ul class="tech_icons">
                     <li class="tech large mysql"></li>
 
@@ -30,27 +20,16 @@
                     <li class="tech large php5"></li>
 
                 </ul>
-            </div>
-        </div>
-        <div class="wrapper">
-            <h2>Solution</h2>
-            <div class="column1">
-                <div>
+{% endblock content.technologies %}
+{% block content.solution %}
                     <p>To help women find other members who have like-minded ideas and similar interests, we developed questionnaires that take into account everything from hobbies to astrological sign to social habits. We gave users the ability to fill out as much or as little information as they would like. Once a profile is completed, we use that data and geo-location tools to match them with other members in their area. To protect the site from spam and unwanted solicitations we incorporated permissions during the completion of each step required to create a member profile.</p>
 
-                </div>
-            </div>
-            <div class="column2">
-                <div>
+     
                     <p>We built-in a messaging platform so members could easily reach out and connect with each other. The site operates as a subscription-based model, so we included transaction tools to handle payments. We included a content management system that supports multiple users to help facilitate the creation of blog posts and articles.</p>
 
-                </div>
-            </div>
-        </div>
+{% endblock content.solution %}
+{% block content.bottom %}
 
-    </div>
-    <div class="container2">
-        <div class="box_grey">
             <div class="wrapper">
                 <h1>Website</h1>
                 <div class="tight">
@@ -65,8 +44,4 @@
 
                 </div>
             </div>
-        </div>
-    </div>
-</div>
-{% endblock content %}
-
+{% endblock content.bottom %}

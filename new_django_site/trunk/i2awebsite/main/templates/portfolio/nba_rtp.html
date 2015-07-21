@@ -1,26 +1,16 @@
-{% extends "base.html" %}
+{% extends "base_portfolio.html" %}
 {% load staticfiles %}
 
 {% block header %}
 <div class="header nba_rtp"></div>
 {% endblock header %}
 
-{% block content %}
-<div class="container2">
-    <div class="box_white">
-        <div class="wrapper">
-            <div class="location">Home Page &gt; Portfolio</div>
-            <div style="clear:both;"></div>
-            <div class="column1">
-                <h2>Idea</h2>
-                <div>
+{% block content.idea %}
                     <p>Build a mobile and web-based tool for the NBA to train its incoming players
                     on employment practices and league policies.</p>
 
-                </div>
-            </div>
-            <div class="column2">
-                <h2>Technologies used</h2>
+{% endblock content.idea %}
+{% block content.technologies %}
                 <ul class="tech_icons">
                     <li class="tech large ios6"></li>
                     <li class="tech large django"></li>
@@ -31,12 +21,8 @@
 
 
                 </ul>
-            </div>
-        </div>
-        <div class="wrapper">
-            <h2>Solution</h2>
-            <div class="column1">
-                <div>
+{% endblock content.technologies %}
+{% block content.solution %}
                     <p>We designed and built an iPad app and Content Management
 
                     System (CMS) for the NBA’s Rookie Training Program (RTP). 
@@ -45,34 +31,11 @@
 
                     employment practices, league policies and general best practices.</p>
 
-                </div>
-            </div>
-            <div class="column2">
-                <div>
+
                     <p>The app
 
                     also manages the schedule of events during the entire training program 
 
                     and enables communications, via secure messaging, between league</p>
 
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <div class="container2">
-        <div class="box_grey">
-            <div class="wrapper">
-
-
-
-
-
-
-
-            </div>
-        </div>
-    </div>
-</div>
-{% endblock content %}
-
+{% endblock content.solution %}

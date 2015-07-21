@@ -1,29 +1,19 @@
-{% extends "base.html" %}
+{% extends "base_portfolio.html" %}
 {% load staticfiles %}
 
 {% block header %}
 <div class="header fansircle"></div>
 {% endblock header %}
 
-{% block content %}
-<div class="container2">
-    <div class="box_white">
-        <div class="wrapper">
-            <div class="location">Home Page &gt; Portfolio</div>
-            <div style="clear:both;"></div>
-            <div class="column1">
-                <h2>Idea</h2>
-                <div>
+{% block content.idea %}
                     <p>Create a data- and analytics-driven mobile tool that allows sports marketers to discover and
 
 implement new and creative revenue streams by tracking sports fan behavior, as well as 
 
 elevating the sports fan experience on game day.</p>
 
-                </div>
-            </div>
-            <div class="column2">
-                <h2>Technologies used</h2>
+{% endblock content.idea %}
+{% block content.technologies %}
                 <ul class="tech_icons">
                     <li class="tech large ios6"></li>
                     <li class="tech large android"></li>
@@ -32,12 +22,8 @@ elevating the sports fan experience on game day.</p>
                     <li class="tech large django"></li>
 
                 </ul>
-            </div>
-        </div>
-        <div class="wrapper">
-            <h2>Solution</h2>
-            <div class="column1">
-                <div>
+{% endblock content.technologies %}
+{% block content.solution %}
                     <p>FanSircle is a mobile app that simultaneously tracks sports fan demographics and behavior 
 
 while also enhancing how fans engage with their favorite teams. The FanSircle app allows sports 
@@ -54,10 +40,7 @@ sports stadium or arena, their fans’ networks, as well as what fans are doing 
 
 on their favorite teams.</p>
 
-                </div>
-            </div>
-            <div class="column2">
-                <div>
+
                     <p> In addition to collecting user behavior data at live events, FanSircle
 
 fuses a sports team’s existing data with newly gathered fan behavior statistics to compile a 
@@ -82,17 +65,5 @@ rewards for being a loyal fan. With its statistically proven value for both busi
 
 FanSircle is a win-win app for fans and sports marketers alike.</p>
 
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <div class="container2">
-        <div class="box_grey">
-
-        </div>
-    </div>
-
-</div>
-{% endblock content %}
+{% endblock content.solution %}
 

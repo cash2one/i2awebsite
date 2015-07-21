@@ -1,27 +1,17 @@
-{% extends "base.html" %}
+{% extends "base_portfolio.html" %}
 {% load staticfiles %}
 
 {% block header %}
 <div class="header billpay"></div>
 {% endblock header %}
 
-{% block content %}
-<div class="container2">
-    <div class="box_white">
-        <div class="wrapper">
-            <div class="location">Home Page &gt; Portfolio</div>
-            <div style="clear:both;"></div>
-            <div class="column1">
-                <h2>Idea</h2>
-                <div>
+{% block content.idea %}
                     <p>Build a mobile and web-based tool to enable consumer the ability to pay
 
                     their bills via a mobile app.</p>
+{% endblock content.idea %}
+{% block content.technologies %}
 
-                </div>
-            </div>
-            <div class="column2">
-                <h2>Technologies used</h2>
                 <ul class="tech_icons">
                     <li class="tech large mysql"></li>
                     <li class="tech large linux"></li>
@@ -33,12 +23,8 @@
                     <li class="tech large django"></li>
 
                 </ul>
-            </div>
-        </div>
-        <div class="wrapper">
-            <h2>Solution</h2>
-            <div class="column1">
-                <div>
+{% endblock content.technologies %}
+{% block content.solution %}
                     <p>The Bill Pay app is a downloadable smart phone app and integrated with a hosted server 
 
                     platform. Together, this solution allows a consumer to pay a bill by photographing a bill,
@@ -49,24 +35,8 @@
 
                     wallets and prepaid alternatives, giving consumers ease-of-use and freedom of choice.</p>
 
-                </div>
-            </div>
-            <div class="column2">
-                <div>
+
                     <p>It leverages smart-phone-enabled “snap and capture” capabilities, including identification 
 
                     using a Driver’s License, and linking with bank accounts by snapping a picture of a check.</p>
-
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <div class="container2">
-        <div class="box_grey">
-
-        </div>
-    </div>
-</div>
-{% endblock content %}
-
+{% endblock content.solution %}

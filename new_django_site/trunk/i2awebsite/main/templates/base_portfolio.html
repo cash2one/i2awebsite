@@ -1,0 +1,115 @@
+{% load staticfiles %}
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+<meta name="viewport"  user-scalable="no">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>{% block title %}i2aSolutions.com{% endblock title %}</title>
+<link href="{% static "css/reset.css" %}" media="screen" rel="stylesheet" type="text/css" />
+<link href="{% static "css/main.css" %}" media="screen" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="{% static "js/jquery-1.10.2.min.js" %}"></script>
+<script type="text/javascript">
+$(function() {
+    $('#menulist a.submenu_trigger').click(function() {
+        if (!$('#submenu').hasClass('active')) {
+            $('#submenu').addClass('active');
+            $('#submenu').addClass('animate');
+        }
+        return false;
+    });
+});
+</script>
+{% block head_extra %}
+{% endblock head_extra %}
+</head>
+<body>
+{% block preloader %}
+{% endblock preloader %}
+<div class="container">
+    <div class="menu">
+        <div class="holder">
+            <a href="{% url "home" %}"><div class="logo"></div></a>
+            <ul id="menulist">
+                <li {% if menu_pos == "home"         %}class="active"{% endif %}><a href="{% url "home" %}">ABOUT US</a></li>
+                <li {% if menu_pos == "categories"   %}class="active"{% endif %}><a class="submenu_trigger" href="{% url "home" %}">SOLUTIONS</a></li>
+                <li {% if menu_pos == "technologies" %}class="active"{% endif %}><a href="{% url "technologies" %}">TECHNOLOGIES</a></li>
+                <li {% if menu_pos == "portfolio"    %}class="active"{% endif %}><a href="{% url "portfolio" %}">PORTFOLIO</a></li>
+                <li {% if menu_pos == "careers"      %}class="active"{% endif %}><a href="{% url "careers" %}">CAREERS</a></li>
+                <li {% if menu_pos == "contact"      %}class="active"{% endif %}><a href="{% url "contact" %}">CONTACT US</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="submenu" {% if submenu_pos %}class="active"{% endif %}>
+        <ul id="submenulist">
+            <li {% if submenu_pos == "web"          %}class="active"{% endif %}><a href="{% url "solutions-web" %}">Web Apps</a></li>
+             <li {% if submenu_pos == "mobile"       %}class="active"{% endif %}><a href="{% url "solutions-mobile" %}">Mobile</a></li>
+            <li {% if submenu_pos == "enterprise"   %}class="active"{% endif %}><a href="{% url "solutions-enterprise" %}">Enterprise</a></li>
+            <li {% if submenu_pos == "ads"          %}class="active"{% endif %}><a href="{% url "solutions-ads" %}">Ad Delivery</a></li>
+            <li {% if submenu_pos == "location"     %}class="active"{% endif %}><a href="{% url "solutions-location" %}">Location Based</a></li>
+            <li {% if submenu_pos == "social"       %}class="active"{% endif %}><a href="{% url "solutions-social" %}">Social</a></li>
+            <li {% if submenu_pos == "assets"       %}class="active"{% endif %}><a href="{% url "solutions-assets" %}">Digital Asset Management</a></li>
+            <li {% if submenu_pos == "scheduling"   %}class="active"{% endif %}><a href="{% url "solutions-scheduling" %}">Scheduling</a></li>
+            
+            <li {% if submenu_pos == "consulting"   %}class="active"{% endif %}><a href="{% url "solutions-consulting" %}">Consulting</a></li>
+        </ul>
+    </div>
+    {% block header %}
+    <div class="header default"></div>
+    {% endblock header %}
+</div>
+<!-- CONTENT  -->
+
+<div class="container2">
+    <div class="box_white">
+        <div class="wrapper">
+            <div class="location">Home Page &gt; Portfolio</div>
+            <div style="clear:both;"></div>
+                <h2>Idea</h2>
+                {% block content.idea %}
+                {% endblock content.idea %}
+        </div>
+        <div class="wrapper">
+            <h2>Solution</h2>
+            {% block content.solution %}
+            {% endblock content.solution %}
+        </div>
+        <div class="wrapper">
+            <h2>Technologies used</h2>
+                {% block content.technologies %}
+                {% endblock content.technologies %}
+        </div>
+
+    </div>
+    <div class="container2">
+        <div class="box_grey">
+            {% block content.bottom %}
+            {% endblock content.bottom %}
+        </div>
+    </div>
+</div>
+</div>
+
+
+<div class="container2">
+<div class="box_color">
+    <div class="wrapperbottom">
+        <div class="logobottom"></div>
+
+        <div class="bottomcol"><h1><a href="{% url "portfolio" %}">Portfolio</a></h1></div>
+        <div class="bottomcol"><h1><a href="{% url "technologies" %}">Technologies</a></h1></div>
+        <div class="bottomcol"><h1><a href="{% url "careers" %}">Careers</a></h1></div>
+        <div class="bottomcol"><h1><a href="{% url "contact" %}">Contact us</a></h1></div>
+    </div>
+
+  <p style="color:#fff; width:100%; text-align:center;"> Copyright &copy; 2015, i2a Solutions Inc.</p>
+</div>
+</div>
+
+</body>
+</html>
+

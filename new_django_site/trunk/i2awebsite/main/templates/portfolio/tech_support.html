@@ -1,25 +1,15 @@
-{% extends "base.html" %}
+{% extends "base_portfolio.html" %}
 {% load staticfiles %}
 
 {% block header %}
 <div class="header tech_support"></div>
 {% endblock header %}
 
-{% block content %}
-<div class="container2">
-    <div class="box_white">
-        <div class="wrapper">
-            <div class="location">Home Page &gt; Portfolio</div>
-            <div style="clear:both;"></div>
-            <div class="column1">
-                <h2>Idea</h2>
-                <div>
+{% block content.idea %}
                     <p>Create a website to resell Tech Support for Dummies (TSD) services that integrates into the company’s web services.</p>
 
-                </div>
-            </div>
-            <div class="column2">
-                <h2>Technologies used</h2>
+{% endblock content.idea %}
+{% block content.technologies %}
                 <ul class="tech_icons">
                     <li class="tech large symfony"></li>
                     <li class="tech large mysql"></li>
@@ -30,27 +20,14 @@
 
 
                 </ul>
-            </div>
-        </div>
-        <div class="wrapper">
-            <h2>Solution</h2>
-            <div class="column1">
-                <div>
+{% endblock content.technologies %}
+{% block content.solution %}
                     <p>In order for a company to effectively sell Tech Support for Dummies services (technical support contracts for all types of home computers and electronics) on the web, we developed a web-based application that could access TSD’s product offerings.</p>
 
-                </div>
-            </div>
-            <div class="column2">
-                <div>
+
                     <p>The site allows consumers to order either one-time support or signup for a subscription plan that includes 24x7 support. The solutions utilize by the web- based eCommerce website were also integrated into Saleforce.com and the company’s call center to offer consumers the option to also order the service via call center agents.</p>
-
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <div class="container2">
-        <div class="box_grey">
+{% endblock content.solution %}
+{% block content.bottom %}
             <div class="wrapper">
                 <h1>Website</h1>
                 <div class="tight">
@@ -65,8 +42,4 @@
 
                 </div>
             </div>
-        </div>
-    </div>
-</div>
-{% endblock content %}
-
+{% endblock content.bottom %}

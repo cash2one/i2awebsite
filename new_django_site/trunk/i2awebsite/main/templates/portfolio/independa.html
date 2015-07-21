@@ -1,25 +1,15 @@
-{% extends "base.html" %}
+{% extends "base_portfolio.html" %}
 {% load staticfiles %}
 
 {% block header %}
 <div class="header independa"></div>
 {% endblock header %}
 
-{% block content %}
-<div class="container2">
-    <div class="box_white">
-        <div class="wrapper">
-            <div class="location">Home Page &gt; Portfolio</div>
-            <div style="clear:both;"></div>
-            <div class="column1">
-                <h2>Idea</h2>
-                <div>
+{% block content.idea %}
                     <p>Create a cloud based solution that extends and enhances the independence of an elderly loved ones and help postpone an assisted living situation.</p>
+{% endblock content.idea %}
+{% block content.technologies %}
 
-                </div>
-            </div>
-            <div class="column2">
-                <h2>Technologies used</h2>
                 <ul class="tech_icons">
                     <li class="tech large rabbitmq"></li>
                     <li class="tech large linux"></li>
@@ -33,29 +23,16 @@
                     <li class="tech large django"></li>
 
                 </ul>
-            </div>
-        </div>
-        <div class="wrapper">
-            <h2>Solution</h2>
-            <div class="column1">
-                <div>
+{% endblock content.technologies %}
+{% block content.solution %}
                     <p>We built Independa a web-based application that utilizes telephony technologies (IVR, Text-to-Speech and SMS Alerts) and stored all data centrally in a cloud.
 
                     We designed the product around smart calendaring to alert care receivers of pending appointments and remind them to do specific tasks such as take medicine, as well as confirming that the tasks were completed. Additionally, we developed a system that sends alerts via text messaging to the caregiver’s cell phone to keep them informed about an elderly loved one. We included multiple options (e-mail updates, automated calls, and text messages sent to a cell phone) on how they receive information.</p>
 
-                </div>
-            </div>
-            <div class="column2">
-                <div>
+ 
                     <p>The web-based application allows caregivers to easily enter pertinent information about an elderly loved one’s schedule including doctor appointments, medicine reminders, and birthdays into a calendar. Based on that information an elderly person is alerted via an automated, interactive IVR system of pending tasks and appointments. The application is then updated based on the elderly person’s responses. For example, if the elderly person selected “medicine running low,” the system automatically sends a text message to the caregiver to refill the prescription. We also integrated weather updates so a caregiver could be alerted of potential delays the weather might have on an elderly person attending pending appointments providing ample time to make other arrangements.</p>
-
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <div class="container2">
-        <div class="box_grey">
+{% endblock content.solution %}
+{% block content.bottom %}
             <div class="wrapper">
                 <h1>Website</h1>
                 <div class="tight">
@@ -63,14 +40,9 @@
 
                     <div class="centered"><a href="http://www.independa.com"><img src="{% static "img/icon_www.png" %}"><br>Independa.com</a></div>
 
-
-
-
-
-
                 </div>
             </div>
-        </div>
-    </div>
-</div>
-{% endblock content %}
+
+{% endblock content.bottom %}
+
+

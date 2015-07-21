@@ -1,29 +1,21 @@
-{% extends "base.html" %}
+{% extends "base_portfolio.html" %}
 {% load staticfiles %}
 
 {% block header %}
 <div class="header nba_combine"></div>
 {% endblock header %}
 
-{% block content %}
-<div class="container2">
-    <div class="box_white">
-        <div class="wrapper">
-            <div class="location">Home Page &gt; Portfolio</div>
-            <div style="clear:both;"></div>
-            <div class="column1">
-                <h2>Idea</h2>
-                <div>
+
+{% block content.idea %}
                     <p>Provide a streamlined and integrated solution for NBA general managers, scouting departments
 
 and other NBA personnel to gather and house essential information about players attending the 
 
 NBA Draft Combine.</p>
 
-                </div>
-            </div>
-            <div class="column2">
-                <h2>Technologies used</h2>
+{% endblock content.idea %}
+{% block content.technologies %}
+
                 <ul class="tech_icons">
                     
                     <li class="tech large mysql"></li>
@@ -35,12 +27,8 @@ NBA Draft Combine.</p>
 
 
                 </ul>
-            </div>
-        </div>
-        <div class="wrapper">
-            <h2>Solution</h2>
-            <div class="column1">
-                <div>
+{% endblock content.technologies %}
+{% block content.solution %}
                     <p>The NBA Draft Combine web app serves as a central repository for information about players
 
 who are participating in the NBA Draft Combine. Players are emailed invitations to access 
@@ -53,10 +41,7 @@ image, finance, security, and relationship management in order for the NBA Draft
 
 to tailor its services and improve programs to meet Combine participants’ needs.</p>
 
-                </div>
-            </div>
-            <div class="column2">
-                <div>
+
                     <p>NBA staff are able to stay apprised of each player’s progress in filling out the form by tracking
 
 the status of survey completion on each player’s profile. The web app also aggregates and 
@@ -69,12 +54,4 @@ the NBA Draft Combine app follows the player through to their new NBA team, maki
 
 application a longstanding resource for NBA scouts, staff and teams alike.</p>
 
-                </div>
-            </div>
-        </div>
-
-    </div>
-    
-</div>
-{% endblock content %}
-
+{% endblock content.solution %}

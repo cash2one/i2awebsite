@@ -1,25 +1,15 @@
-{% extends "base.html" %}
+{% extends "base_portfolio.html" %}
 {% load staticfiles %}
 
 {% block header %}
 <div class="header telvise"></div>
 {% endblock header %}
 
-{% block content %}
-<div class="container2">
-    <div class="box_white">
-        <div class="wrapper">
-            <div class="location">Home Page &gt; Portfolio</div>
-            <div style="clear:both;"></div>
-            <div class="column1">
-                <h2>Idea</h2>
-                <div>
+{% block content.idea %}
                     <p>Pre-roll commercials and pop-up ads online are disruptive, obnoxious and ineffective. Telvise challenged I2A Solutions to devise a way for businesses and marketers to better target theircustomer in a more engaging, relevant way, while also incentivizing all parties involved in the process.</p>
 
-                </div>
-            </div>
-            <div class="column2">
-                <h2>Technologies used</h2>
+{% endblock content.idea %}
+{% block content.technologies %}
                 <ul class="tech_icons">
                     <li class="tech large mysql"></li>
 
@@ -30,12 +20,8 @@
                     <li class="tech large django"></li>
 
                 </ul>
-            </div>
-        </div>
-        <div class="wrapper">
-            <h2>Solution</h2>
-            <div class="column1">
-                <div>
+ {% endblock content.technologies %}
+{% block content.solution %}
                     <p>To answer the call, I2A Solutions created an e-commerce video sharing platform where anyone 
 
 can create a channel, upload videos featuring brands and products, or search and shop for 
@@ -54,10 +40,7 @@ videos. Video makers simply upload a video they created to Telvise’s website, 
 
 featured in their video, and enjoy the commissions or sales that resulted from their creativity.</p>
 
-                </div>
-            </div>
-            <div class="column2">
-                <div>
+   
                     <p>Users can also easily share their videos by embedding them on their own websites or spreading 
 
 them across social media channels to share their shoppable videos with everyone in their 
@@ -76,13 +59,8 @@ They only pay for product sales, making the online platform a no brainer for bra
 
 marketers alike. Buyers win, videographers win, and merchants win with Telvise.</p>
 
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <div class="container2">
-        <div class="box_grey">
+ {% endblock content.solution %}
+{% block content.bottom %}
             <div class="wrapper">
                 <h1>Website</h1>
                 <div class="tight">
@@ -97,8 +75,6 @@ marketers alike. Buyers win, videographers win, and merchants win with Telvise.<
 
                 </div>
             </div>
-        </div>
-    </div>
-</div>
-{% endblock content %}
+
+{% endblock content.bottom %}
 

@@ -1,25 +1,14 @@
-{% extends "base.html" %}
+{% extends "base_portfolio.html" %}
 {% load staticfiles %}
 
 {% block header %}
 <div class="header salesforce"></div>
 {% endblock header %}
 
-{% block content %}
-<div class="container2">
-    <div class="box_white">
-        <div class="wrapper">
-            <div class="location">Home Page &gt; Portfolio</div>
-            <div style="clear:both;"></div>
-            <div class="column1">
-                <h2>Idea</h2>
-                <div>
+{% block content.idea %}
                     <p>Build a web-based application that seamlessly integrates the client’s many eCommerce applications into Salesforce.com. The solution needed to consolidate all the call center agents into one telephony solution based on Salesforce.com.</p>
-
-                </div>
-            </div>
-            <div class="column2">
-                <h2>Technologies used</h2>
+{% endblock content.idea %}
+{% block content.technologies %}
                 <ul class="tech_icons">
                     <li class="tech large mysql"></li>
 
@@ -30,27 +19,15 @@
                     <li class="tech large apex"></li>
 
                 </ul>
-            </div>
-        </div>
-        <div class="wrapper">
-            <h2>Solution</h2>
-            <div class="column1">
-                <div>
+{% endblock content.technologies %}
+{% block content.solution %}
                     <p>The client has multiple product offerings that it sells through several thousand 1-800 phone numbers run through a call center using a Salesforce.com solution. To help the client maximize its investment in its existing Salesforce.com system, we optimized it with a customized web-application that could do more with the data collected, which allows call center employees to be more efficient and ultimately take more inbound calls. For example, our web-based application automatically looks up the address of incoming calls and can identify the 1- 800 number dialed and populate the screen with the appropriate offerings.</p>
 
-                </div>
-            </div>
-            <div class="column2">
-                <div>
+
                     <p>We also studied the client’s existing SaaS architecture and how it managed and stored data collected from multiple systems including websites and call centers. Based on that knowledge we created a system that disbanded the multiple repositories where data was stored and funneled all data collected into a centralized cloud-based data repository that could be accessed and populated by the client’s multiple websites and telephony applications. By having access to more consolidated data the client can now run analysis on the success of a marketing campaign, the effectiveness of a 1-800 number, the cost of sales, and more.</p>
 
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <div class="container2">
-        <div class="box_grey">
+{% endblock content.solution %}
+{% block content.bottom %}
             <div class="wrapper">
                 <h1>Website</h1>
                 <div class="tight">
@@ -65,7 +42,5 @@
 
                 </div>
             </div>
-        </div>
-    </div>
-</div>
-{% endblock content %}
+{% endblock content.bottom %}
+

@@ -1,27 +1,18 @@
-{% extends "base.html" %}
+{% extends "base_portfolio.html" %}
 {% load staticfiles %}
 
 {% block header %}
 <div class="header tdg"></div>
 {% endblock header %}
 
-{% block content %}
-<div class="container2">
-    <div class="box_white">
-        <div class="wrapper">
-            <div class="location">Home Page &gt; Portfolio</div>
-            <div style="clear:both;"></div>
-            <div class="column1">
-                <h2>Idea</h2>
-                <div>
+{% block content.idea %}
                     <p>Build an all-inclusive app to connect different types of fans with
 
                     events occurring at TD Garden arena year-round.</p>
 
-                </div>
-            </div>
-            <div class="column2">
-                <h2>Technologies used</h2>
+
+{% endblock content.idea %}
+{% block content.technologies %}
                 <ul class="tech_icons">
                     <li class="tech large mysql"></li>
                     <li class="tech large linux"></li>
@@ -33,12 +24,8 @@
                     <li class="tech large django"></li>
 
                 </ul>
-            </div>
-        </div>
-        <div class="wrapper">
-            <h2>Solution</h2>
-            <div class="column1">
-                <div>
+{% endblock content.technologies %}
+{% block content.solution %}
                     <p>We designed and built the Official App for TD Garden arena in
 
                     Boston, Massachusetts. TD Garden is the home of the Boston Celtics and 
@@ -55,10 +42,6 @@
 
                     various events.</p>
 
-                </div>
-            </div>
-            <div class="column2">
-                <div>
                     <p> Users can also access specific seating information, find 
 
                     local restaurants around the venue and receive notifications for specific 
@@ -77,13 +60,8 @@
 
                     Each NBA application is compatible with iPhone and Android devices.</p>
 
-                </div>
-            </div>
-        </div>
-
-    </div>
-<div class="container2">
-        <div class="box_grey">
+{% endblock content.solution %}
+{% block content.bottom %}
             <div class="wrapper">
                 <h1>Download</h1>
                 <div class="tight">
@@ -107,9 +85,4 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-
-</div>
-{% endblock content %}
-
+{% endblock content.bottom %}

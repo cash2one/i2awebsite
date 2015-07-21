@@ -1,19 +1,11 @@
-{% extends "base.html" %}
+{% extends "base_portfolio.html" %}
 {% load staticfiles %}
 
 {% block header %}
 <div class="header trekadoo"></div>
 {% endblock header %}
 
-{% block content %}
-<div class="container2">
-    <div class="box_white">
-        <div class="wrapper">
-            <div class="location">Home Page &gt; Portfolio</div>
-            <div style="clear:both;"></div>
-            <div class="column1">
-                <h2>Idea</h2>
-                <div>
+{% block content.idea %}
                     <p>Another key feature of the app is a personal affirmations section that allows
 
 the app’s users to write positive statements, thanksgivings, or inspirational quotes to remind 
@@ -22,10 +14,8 @@ themselves of all they’re grateful for in their real lives each day. The $pend
 
 impossible possible and is ideal app for the dreamer in everyone.</p>
 
-                </div>
-            </div>
-            <div class="column2">
-                <h2>Technologies used</h2>
+{% endblock content.idea %}
+{% block content.technologies %}
                 <ul class="tech_icons">
                     <li class="tech large linux"></li>
                     <li class="tech large java"></li>
@@ -35,12 +25,8 @@ impossible possible and is ideal app for the dreamer in everyone.</p>
 
 
                 </ul>
-            </div>
-        </div>
-        <div class="wrapper">
-            <h2>Solution</h2>
-            <div class="column1">
-                <div>
+{% endblock content.technologies %}
+{% block content.solution %}
                     <p>Another key feature of the app is a personal affirmations section that allows
 
 the app’s users to write positive statements, thanksgivings, or inspirational quotes to remind 
@@ -49,10 +35,7 @@ themselves of all they’re grateful for in their real lives each day. The $pend
 
 impossible possible and is ideal app for the dreamer in everyone.</p>
 
-                </div>
-            </div>
-            <div class="column2">
-                <div>
+
                     <p>The app’s
 
 easy payment collection system makes money management a breeze with online credit card 
@@ -69,13 +52,8 @@ are available in real time and enjoy an easy 4-step checkout process that is sim
 
 hotel room or flight online. Save time and manage your bookings from anywhere with Trekadoo.</p>
 
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <div class="container2">
-        <div class="box_grey">
+{% endblock content.solution %}
+{% block content.bottom %}
             <div class="wrapper">
                 <h1>Website</h1>
                 <div class="tight">
@@ -90,8 +68,6 @@ hotel room or flight online. Save time and manage your bookings from anywhere wi
 
                 </div>
             </div>
-        </div>
-    </div>
-</div>
-{% endblock content %}
+
+{% endblock content.bottom %}
 

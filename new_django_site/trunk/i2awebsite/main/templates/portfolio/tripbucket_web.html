@@ -1,25 +1,15 @@
-{% extends "base.html" %}
+{% extends "base_portfolio.html" %}
 {% load staticfiles %}
 
 {% block header %}
 <div class="header tb"></div>
 {% endblock header %}
 
-{% block content %}
-<div class="container2">
-    <div class="box_white">
-        <div class="wrapper">
-            <div class="location">Home Page &gt; Portfolio</div>
-            <div style="clear:both;"></div>
-            <div class="column1">
-                <h2>Idea</h2>
-                <div>
+{% block content.idea %}
                     <p>Create a website consumers could use to create a bucket list of dreams and track, record, and share their experiences with friends and other community members.</p>
 
-                </div>
-            </div>
-            <div class="column2">
-                <h2>Technologies used</h2>
+{% endblock content.idea %}
+{% block content.technologies %}
                 <ul class="tech_icons">
                     <li class="tech large rabbitmq"></li>
                     <li class="tech large linux"></li>
@@ -36,27 +26,15 @@
                     <li class="tech large postgis"></li>
 
                 </ul>
-            </div>
-        </div>
-        <div class="wrapper">
-            <h2>Solution</h2>
-            <div class="column1">
-                <div>
+{% endblock content.technologies %}
+{% block content.solution %}
                     <p>A website may be a great way to learn about a destination and plan a trip, but people use a smartphone to document and accentuate the trip. We created a mobile application travelers could use to record what they should do and have done on thier trips.</p>
                     <p>The app includes the ability to add photos taken with a smartphone to dreams and to post status updates on social media sites such as Twitter and Facebook. </p>
 
-                </div>
-            </div>
-            <div class="column2">
-                <div><p>Travelers can use the app to view more details about their destination including things to do, maps of destination, recommended resturants, bars &amp; lodging, and events occurring nearby.</p>
+                <p>Travelers can use the app to view more details about their destination including things to do, maps of destination, recommended resturants, bars &amp; lodging, and events occurring nearby.</p>
                     <p>We tied the app experience to the TripBucket site. Users can sign-in to add dreams to their “Bucket List” and check off Bucket List items as well as add photos, tips and things to do to a specific dream. The app can also be used to search for worldwide destinations and events.</p>
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <div class="container2">
-        <div class="box_grey">
+{% endblock content.solution %}
+{% block content.bottom %}
             <div class="wrapper">
                 <h1>Website</h1>
                 <div class="tight">
@@ -71,8 +49,5 @@
 
                 </div>
             </div>
-        </div>
-    </div>
-</div>
-{% endblock content %}
 
+{% endblock content.bottom %}

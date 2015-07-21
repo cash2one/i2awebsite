@@ -225,4 +225,30 @@ urlpatterns = patterns('',
         {'menu_pos': 'portfolio'},
         name='portfolio-tripbucket_web',
     ),
+    url(r'^portfolio/99brews/$', TemplateView.as_view(
+        template_name='portfolio/99brews.html'),
+        {'menu_pos': 'portfolio'},
+        name='portfolio-99brews',
+    ),
+    url(r'^portfolio/balboa_park/$', TemplateView.as_view(
+        template_name='portfolio/balboa_park.html'),
+        {'menu_pos': 'portfolio'},
+        name='portfolio-balboapark',
+    ),
+    url(r'^portfolio/swim_meet/$', TemplateView.as_view(
+        template_name='portfolio/swim_meet.html'),
+        {'menu_pos': 'portfolio'},
+        name='portfolio-swim_meet',
+    ),
+    url(r'^portfolio/track_meet/$', TemplateView.as_view(
+        template_name='portfolio/track_meet.html'),
+        {'menu_pos': 'portfolio'},
+        name='portfolio-track_meet',
+    ),
+    url(r'^portfolio/usnp/$', TemplateView.as_view(
+        template_name='portfolio/usnp.html'),
+        {'menu_pos': 'portfolio'},
+        name='portfolio-usnp',
+    ),
+
 )

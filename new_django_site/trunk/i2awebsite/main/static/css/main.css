@@ -363,6 +363,26 @@ li a {text-decoration: none;
     height: 367px;
     background-image: url(../img/portfolio_headers/nba.jpg);
 }
+.header.ninetyninebrews {
+    height: 367px;
+    background-image: url(../img/portfolio_headers/99brew.jpg);
+}
+.header.balboapark {
+    height: 367px;
+    background-image: url(../img/portfolio_headers/balboa.jpg);
+}
+.header.swimmeet {
+    height: 367px;
+    background-image: url(../img/portfolio_headers/swim.jpg);
+}
+.header.trackmeet {
+    height: 367px;
+    background-image: url(../img/portfolio_headers/tf.jpg);
+}
+.header.usnp {
+    height: 367px;
+    background-image: url(../img/portfolio_headers/usnp.jpg);
+}
 .header.nba_dev {
     height: 367px;
     background-image: url(../img/portfolio_headers/nba_pd.jpg);
@@ -482,7 +502,16 @@ li a {text-decoration: none;
     height: 213px;
     background-image: url(../img/page_headers/contact_us.jpg);
 }
-
+ul.list {
+	padding-left: 20px;
+}
+ul.list,
+ul.list li {
+	display: list-item;
+	list-style-type: disc;
+	color: inherit;
+	text-align: left;
+}
 
 .bar{
 	height:680px;
@@ -715,7 +744,7 @@ min-height:90px;
 	line-height:52pt;
 	font-size:32pt;
 	font-family: 'karbon_regular';
-	text-align:center;
+	/*text-align:center;*/
 	opacity:0.9;
 	background:url(../img/barb.png) no-repeat center bottom;
 }
@@ -727,7 +756,7 @@ min-height:90px;
 	line-height:24pt;
 	font-size:18pt;
 	font-family: 'karbon_regular';
-	text-align:left;
+	/*text-align:left;*/
 	opacity:0.9;
 }
 .wrapper h3{
@@ -738,7 +767,7 @@ min-height:90px;
 	line-height:21pt;
 	font-size:18pt;
 	font-family: 'karbon_regular';
-	text-align:left;
+	/*text-align:left;*/
 	opacity:0.9;
 }
 .wrapper p{
@@ -756,7 +785,7 @@ min-height:90px;
 	line-height:24pt;
 	font-size:16pt;
 	font-family: 'karbon_regular';
-	text-align:center;
+	/*text-align:center;*/
 	opacity:0.9;
 }
 
@@ -776,7 +805,7 @@ min-height:90px;
 	line-height:52pt;
 	font-size:32pt;
 	font-family: 'karbon_regular';
-	text-align:center;
+	/*text-align:center;*/
 	opacity:0.9;
 	background:url(../img/barw.png) no-repeat center bottom;
 }
@@ -956,10 +985,17 @@ min-height:90px;
     background-position: -100% -1000%;
 }
 .download_box {
-    margin-left: 40px;
+    margin: 0 0 0 40px;
     padding-top: 80px;
     text-align: left;
     background: url(../img/icon_8.png) 50px 10px no-repeat;
+}
+.download_box.centered,
+.download_box.centered *
+{
+	text-align: center;
+	margin: 0 auto;
+	background-position: center 10px;
 }
 .checks{
 	margin-top:10px;
@@ -1601,6 +1637,117 @@ min-height:90px;
 	min-height:300px;
 	text-align:center;
 }
+.logotabel28{
+
+	background: url(../img/img_99brews.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:300px;
+	min-height:300px;
+	text-align:center;
+}
+.logotabel28:hover{
+	opacity:0.8;
+	background: url(../img/img_99brews.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:300px;
+	min-height:300px;
+	text-align:center;
+}
+.logotabel29{
+
+	background: url(../img/img_balboa.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:300px;
+	min-height:300px;
+	text-align:center;
+}
+.logotabel29:hover{
+	opacity:0.8;
+	background: url(../img/img_balboa.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:300px;
+	min-height:300px;
+	text-align:center;
+}
+.logotabel30{
+
+	background: url(../img/img_swim-meet.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:300px;
+	min-height:300px;
+	text-align:center;
+}
+.logotabel30:hover{
+	opacity:0.8;
+	background: url(../img/img_swim-meet.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:300px;
+	min-height:300px;
+	text-align:center;
+}
+.logotabel31{
+
+	background: url(../img/img_track.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:300px;
+	min-height:300px;
+	text-align:center;
+}
+.logotabel31:hover{
+	opacity:0.8;
+	background: url(../img/img_track.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:300px;
+	min-height:300px;
+	text-align:center;
+}
+.logotabel32{
+
+	background: url(../img/img_usnp.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:300px;
+	min-height:300px;
+	text-align:center;
+}
+.logotabel32:hover{
+	opacity:0.8;
+	background: url(../img/img_usnp.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:300px;
+	min-height:300px;
+	text-align:center;
+}
+
 .logotabel img{
 	float:left;
 }
