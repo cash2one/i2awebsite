@@ -196,6 +196,7 @@ li a {text-decoration: none;
 	color:#222;
 	font-size:20px;
 	text-align:right;
+	box-sizing: border-box;
 
 }
 .holder{
@@ -470,6 +471,11 @@ li a {text-decoration: none;
     height: 367px;
     background-image: url(../img/page_headers/technologies.jpg);
 }
+.header.solutions {
+    height: 367px;
+    background-image: url(../img/page_headers/solutions.jpg);
+}
+
 .header.careers {
     height: 367px;
     background-image: url(../img/page_headers/careers.jpg);
@@ -603,6 +609,11 @@ ul.list li {
 	background:#fff;
 	min-height:90px;
 }
+.box_white:empty {
+	height: 0!important;
+	padding-bottom: 0 !important;
+	min-height: 0!important;
+}
 .box_grey{
 	position:relative;
 	padding-bottom:50px;
@@ -661,6 +672,9 @@ min-height:90px;
 	width:800px;
 	text-align:center;
 }
+.box_white .wrapper {
+	width: 768px;
+}
 .wrapperbottom{
 	overflow: hidden;
 	padding-top:40px;
@@ -695,9 +709,9 @@ min-height:90px;
 }
 .columnx{
 	float:left;
-
-	width:370px;
-	margin-right:60px;
+	width: 50%;
+	/*width:370px;*/
+	/*margin-right:60px;*/
 }
 .column77{
 	width:100%;
@@ -706,27 +720,41 @@ min-height:90px;
 }
 .columny{
 	float:left;
-	width:370px;
+	/*width:370px;*/
+	width: 50%;
 }
 .column33{
 	text-align:center;
 	float:left;
-	width:266px;
+	/*width:266px;*/
+	width: 33%;
 }
 .column33 h2{
 	text-align:center;
 	float:left;
-	width:266px;
+	/*width:266px;*/
+	width: 33%;
 }
 .column33 p{
 	text-align:center;
 	float:left;
-	width:266px;
-}s
-.wrapper .tight {
-    margin-left: 65px;
-    margin-right: 65px;
+	/*width:266px;*/
+	width: 33%;
 }
+.wrapper .tight {
+    /*margin-left: 65px;
+    margin-right: 65px;
+    */
+    margin: auto;
+    text-align: center;
+}
+.tight .column1,
+.tight .column2 {
+	width: 300px;
+	display: inline-block;
+	margin: 0 35px;
+	float: none;
+}/*
 .tight .column1{
 	float: left;
 	width: 300px;
@@ -735,7 +763,7 @@ min-height:90px;
 .tight .column2{
 	float: left;
 	width: 300px;
-}
+}*/
 .wrapper h1{
 
 	color:#1c2543;
@@ -814,7 +842,8 @@ min-height:90px;
 }
 .wrapper .images_box4 img {
     float: left;
-    width: 200px;
+    /*width: 200px;*/
+    max-width: 25%;
 }
 .wrapper .tech_list {
     margin-bottom: 25pt;
@@ -839,14 +868,16 @@ min-height:90px;
     /*float: left;*/
 }
 .tech.small {
-    width: 25px;
-    height: 25px;
+    width: 37.5px;
+    height: 37.5px;
     background: url("../img/tech_icons_small.jpg");
 }
 .tech.large {
-    width: 45px;
-    height: 45px;
+    width: 67.5px;
+    height: 67.5px;
     background: url("../img/tech_icons.jpg");
+    /*transform:scale(1.5); -webkit-transform:scale(1.5); */
+/*-moz-transform:scale(1.5); -o-transform:scale(1.5);*/
 }
 .tech_list .tech {
     margin-right: 5px;
@@ -859,6 +890,9 @@ min-height:90px;
 }
 .tech_icons .tech {
     margin: 0 0 1px 1px;
+}
+.tech_icons .tech.large {
+	/*margin: 12px;*/
 }
 .tech.python {
     background-position: 0% 0%;
@@ -873,7 +907,7 @@ min-height:90px;
     background-position: -300% 0%;
 }
 .tech.unknown1 {
-    background-position: -0% 25px;
+    background-position: -0% -100%;
 }
 .tech.rabbitmq {
     background-position: -100% -100%;
@@ -987,10 +1021,10 @@ min-height:90px;
     background-position: -100% -1000%;
 }
 .download_box {
-    margin: 0 0 0 40px;
+    margin: 0;
     padding-top: 80px;
-    text-align: left;
-    background: url(../img/icon_8.png) 50px 10px no-repeat;
+    text-align: center;
+    background: url(../img/icon_8.png) center 10px no-repeat;
 }
 .download_box.centered,
 .download_box.centered *
@@ -1026,9 +1060,12 @@ min-height:90px;
 }
 .wrapper_portfolio a {
     display: block;
+    min-height: 0 !important;
+    height: auto !important;
+    line-height: 0;
 }
 .logotabel{
-	background: url(../img/img_nba.png) no-repeat;
+	background: url(../img/img_nba.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1038,7 +1075,7 @@ min-height:90px;
 	text-align:center;
 }
 .logotabel2{
-	background: url(../img/img_nhl.png) no-repeat;
+	background: url(../img/img_nhl.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1058,7 +1095,7 @@ min-height:90px;
 	text-align:center;
 }
 .logotabel4{
-	background: url(../img/img_atnt.png) no-repeat;
+	background: url(../img/img_atnt.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1068,7 +1105,7 @@ min-height:90px;
 	text-align:center;
 }
 .logotabel5{
-	background: url(../img/img_tdgarden.png) no-repeat;
+	background: url(../img/img_tdgarden.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1078,7 +1115,7 @@ min-height:90px;
 	text-align:center;
 }
 .logotabel6{
-	background: url(../img/img_mobilecheck.png) no-repeat;
+	background: url(../img/img_mobilecheck.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1088,7 +1125,7 @@ min-height:90px;
 	text-align:center;
 }
 .logotabel7{
-	background: url(../img/img_nbapd.png) no-repeat;
+	background: url(../img/img_nbapd.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1098,7 +1135,7 @@ min-height:90px;
 	text-align:center;
 }
 .logotabel8{
-	background: url(../img/img_independa.png) no-repeat;
+	background: url(../img/img_independa.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1109,7 +1146,7 @@ min-height:90px;
 }
 .logotabel:hover{
 	opacity:0.8;
-	background: url(../img/img_nba.png) no-repeat;
+	background: url(../img/img_nba.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1120,7 +1157,7 @@ min-height:90px;
 }
 .logotabel2:hover{
 	opacity:0.8;
-	background: url(../img/img_nhl.png) no-repeat;
+	background: url(../img/img_nhl.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1142,7 +1179,7 @@ min-height:90px;
 }
 .logotabel4:hover{
 	opacity:0.8;
-	background: url(../img/img_atnt.png) no-repeat;
+	background: url(../img/img_atnt.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1153,7 +1190,7 @@ min-height:90px;
 }
 .logotabel5:hover{
 	opacity:0.8;
-	background: url(../img/img_tdgarden.png) no-repeat;
+	background: url(../img/img_tdgarden.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1164,7 +1201,7 @@ min-height:90px;
 }
 .logotabel6:hover{
 	opacity:0.8;
-	background: url(../img/img_mobilecheck.png) no-repeat;
+	background: url(../img/img_mobilecheck.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1175,7 +1212,7 @@ min-height:90px;
 }
 .logotabel7:hover{
 	opacity:0.8;
-	background: url(../img/img_nbapd.png) no-repeat;
+	background: url(../img/img_nbapd.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1186,7 +1223,7 @@ min-height:90px;
 }
 .logotabel8:hover{
 	opacity:0.8;
-	background: url(../img/img_independa.png) no-repeat;
+	background: url(../img/img_independa.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1223,7 +1260,7 @@ min-height:90px;
 }
 .logotabel9{
 
-	background: url(../img/img_nbartp.png) no-repeat;
+	background: url(../img/img_nbartp.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1234,7 +1271,7 @@ min-height:90px;
 }
 .logotabel9:hover{
 	opacity:0.8;
-	background: url(../img/img_nbartp.png) no-repeat;
+	background: url(../img/img_nbartp.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1311,7 +1348,7 @@ min-height:90px;
 }
 .logotabel13{
 
-	background: url(../img/img_tripbucket.png) no-repeat;
+	background: url(../img/img_tripbucket.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1322,7 +1359,7 @@ min-height:90px;
 }
 .logotabel13:hover{
 	opacity:0.8;
-	background: url(../img/img_tripbucket.png) no-repeat;
+	background: url(../img/img_tripbucket.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1333,7 +1370,7 @@ min-height:90px;
 }
 .logotabel14{
 
-	background: url(../img/img_tripbucket_mobile.png) no-repeat;
+	background: url(../img/img_tripbucket_mobile.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1344,7 +1381,7 @@ min-height:90px;
 }
 .logotabel14:hover{
 	opacity:0.8;
-	background: url(../img/img_tripbucket_mobile.png) no-repeat;
+	background: url(../img/img_tripbucket_mobile.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1355,7 +1392,7 @@ min-height:90px;
 }
 .logotabel15{
 
-	background: url(../img/img_tb_ad.png) no-repeat;
+	background: url(../img/img_tb_ad.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1366,7 +1403,7 @@ min-height:90px;
 }
 .logotabel15:hover{
 	opacity:0.8;
-	background: url(../img/img_tb_ad.png) no-repeat;
+	background: url(../img/img_tb_ad.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1377,7 +1414,7 @@ min-height:90px;
 }
 .logotabel16{
 
-	background: url(../img/img_kms.png) no-repeat;
+	background: url(../img/img_kms.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1388,7 +1425,7 @@ min-height:90px;
 }
 .logotabel16:hover{
 	opacity:0.8;
-	background: url(../img/img_kms.png) no-repeat;
+	background: url(../img/img_kms.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1399,7 +1436,7 @@ min-height:90px;
 }
 .logotabel17{
 
-	background: url(../img/img_facial.png) no-repeat;
+	background: url(../img/img_facial.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1410,7 +1447,7 @@ min-height:90px;
 }
 .logotabel17:hover{
 	opacity:0.8;
-	background: url(../img/img_facial.png) no-repeat;
+	background: url(../img/img_facial.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1421,7 +1458,7 @@ min-height:90px;
 }
 .logotabel19{
 
-	background: url(../img/img_socialjane.png) no-repeat;
+	background: url(../img/img_socialjane.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1432,7 +1469,7 @@ min-height:90px;
 }
 .logotabel19:hover{
 	opacity:0.8;
-	background: url(../img/img_socialjane.png) no-repeat;
+	background: url(../img/img_socialjane.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1443,7 +1480,7 @@ min-height:90px;
 }
 .logotabel18{
 
-	background: url(../img/img_billpay.png) no-repeat;
+	background: url(../img/img_billpay.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1454,7 +1491,7 @@ min-height:90px;
 }
 .logotabel18:hover{
 	opacity:0.8;
-	background: url(../img/img_billpay.png) no-repeat;
+	background: url(../img/img_billpay.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -1761,7 +1798,7 @@ min-height:90px;
 	margin-left:2px;
 
 }
-.portfoliotitle{
+/*.portfoliotitle{
 	position:relative;
 	top:50px;
 	font-family:"karbon_bold";
@@ -1769,7 +1806,15 @@ min-height:90px;
 	color:#fff;
 	margin-left:20px;
 	margin-right:20px;
+}*/
+.portfoliotitle {
+	font-size: 0;
+	line-height: 0;
 }
+.portfoliotitle img {
+	max-width: 100%;
+}
+
 .buttons{
 	float:center;
 	margin: 0 auto;
@@ -1911,15 +1956,17 @@ display:none;
 	font-family: "karbon_bold"
 }
 .column1 ul{
-	text-align:left;
-	list-style-type:circle;
-	margin-left:20px;
+	/*text-align:left;*/
+	text-align: center;
+	list-style-type:none;
+	/*margin-left:20px;*/
 	line-height:24px;
 }
 .column2 ul{
-	text-align:left;
-	list-style-type:circle;
-	margin-left:20px;
+	/*text-align:left;*/
+	text-align: center;
+	list-style-type:none;
+	/*margin-left:20px;*/
 	line-height:24px;
 }
 .box_grey a{
@@ -1931,7 +1978,7 @@ display:none;
 .centered{
 	margin:20px auto;
 	text-align:center;
-	width:200px;
+	width:300px;
 	font-size:16pt;
 	font-family: "karbon_bold"
 	
@@ -2011,7 +2058,7 @@ display:none;
 	font-family: 'fira_regular';
 	
 	padding:0px;
-	
+	box-sizing: border-box;
 	width:100%;
 	background:#fff;
 	height:auto;
@@ -2152,7 +2199,7 @@ display:none;
 .header.atnt {
 	width:100%;
     height: 140px;
-    background-image: url(../img/portfolio_headers/atnt2.jpg);
+    background-image: url(../img/portfolio_headers/atnt.png);
 }
 .header.b3 {
 	width:100%;
@@ -2190,7 +2237,7 @@ display:none;
 .header.mobile_check {
 	width:100%;
     height: 140px;
-    background-image: url(../img/portfolio_headers/mobilecheck2.jpg);
+    background-image: url(../img/portfolio_headers/mobilecheck.jpg);
 }
 .header.mom {
 	width:100%;
@@ -2305,6 +2352,11 @@ display:none;
 	width:100%;
     height: 140px;
     background-image: url(../img/page_headers/technologies.jpg);
+}
+.header.solutions {
+	width:100%;
+    height: 140px;
+    background-image: url(../img/page_headers/solutions.jpg);
 }
 .header.careers {
 	width:100%;
@@ -2626,7 +2678,8 @@ width:100%;
 }
 .wrapper .images_box4 img {
     float: left;
-    width: 160px;
+    /*width: 160px;*/
+    max-width: 25%;
 }
 .wrapper .tech_list {
     margin-bottom: 25pt;
@@ -2653,6 +2706,10 @@ width:100%;
 	min-width:320px;
 	margin:0px auto;
 }
+.wrapper_portfolio > a {
+	position: relative;
+}
+
 .column3{
 	float:left;
 	width:90%;
@@ -3331,6 +3388,7 @@ display:none;
 	min-width:160px;
 	min-height:103px;
 }
+
 .buttong2{
 	display:none;
 }
@@ -3692,7 +3750,7 @@ li a {text-decoration: none;
 .header.atnt {
      height: 267px;
     background-size:160%;
-    background-image: url(../img/portfolio_headers/atnt2.jpg);
+    background-image: url(../img/portfolio_headers/atnt.png);
 }
 .header.b3 {
      height: 267px;
@@ -3727,7 +3785,7 @@ li a {text-decoration: none;
 .header.mobile_check {
      height: 267px;
     background-size:190%;
-    background-image: url(../img/portfolio_headers/mobilecheck2.jpg);
+    background-image: url(../img/portfolio_headers/mobilecheck.jpg);
 }
 .header.mom {
      height: 267px;
@@ -3839,6 +3897,11 @@ li a {text-decoration: none;
      height: 267px;
     background-size:190%;
     background-image: url(../img/page_headers/technologies.jpg);
+}
+.header.solutions {
+	 height: 267px;
+    background-size:190%;
+    background-image: url(../img/page_headers/solutions.jpg);
 }
 .header.careers {
      height: 267px;
@@ -3965,6 +4028,11 @@ li a {text-decoration: none;
 	width:100%;
 	background:#fff;
 	min-height:90px;
+}
+.box_white:empty {
+	height: 0!important;
+	padding-bottom: 0 !important;
+	min-height: 0!important;
 }
 .box_grey{
 	position:relative;
@@ -4210,7 +4278,7 @@ min-height:90px;
 .tech.mysql {
     background-position: -300% 0%;
 }
-.tech.unknown1 {
+.tech.unknown1 { /*open layers */
     background-position: -0% 25px;
 }
 .tech.rabbitmq {
@@ -4357,9 +4425,11 @@ min-height:90px;
 }
 .wrapper_portfolio a {
     display: block;
+    min-height: 0 !important;
+    height: auto !important;
 }
 .logotabel{
-	background: url(../img/img_nba.png) no-repeat;
+	background: url(../img/img_nba.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -4369,7 +4439,7 @@ min-height:90px;
 	text-align:center;
 }
 .logotabel2{
-	background: url(../img/img_nhl.png) no-repeat;
+	background: url(../img/img_nhl.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -4389,7 +4459,7 @@ min-height:90px;
 	text-align:center;
 }
 .logotabel4{
-	background: url(../img/img_atnt.png) no-repeat;
+	background: url(../img/img_atnt.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -4399,7 +4469,7 @@ min-height:90px;
 	text-align:center;
 }
 .logotabel5{
-	background: url(../img/img_tdgarden.png) no-repeat;
+	background: url(../img/img_tdgarden.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -4409,7 +4479,7 @@ min-height:90px;
 	text-align:center;
 }
 .logotabel6{
-	background: url(../img/img_mobilecheck.png) no-repeat;
+	background: url(../img/img_mobilecheck.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -4419,7 +4489,7 @@ min-height:90px;
 	text-align:center;
 }
 .logotabel7{
-	background: url(../img/img_nbapd.png) no-repeat;
+	background: url(../img/img_nbapd.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -4429,7 +4499,7 @@ min-height:90px;
 	text-align:center;
 }
 .logotabel8{
-	background: url(../img/img_independa.png) no-repeat;
+	background: url(../img/img_independa.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -4440,7 +4510,7 @@ min-height:90px;
 }
 .logotabel:hover{
 	opacity:0.8;
-	background: url(../img/img_nba.png) no-repeat;
+	background: url(../img/img_nba.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -4451,7 +4521,7 @@ min-height:90px;
 }
 .logotabel2:hover{
 	opacity:0.8;
-	background: url(../img/img_nhl.png) no-repeat;
+	background: url(../img/img_nhl.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -4473,7 +4543,7 @@ min-height:90px;
 }
 .logotabel4:hover{
 	opacity:0.8;
-	background: url(../img/img_atnt.png) no-repeat;
+	background: url(../img/img_atnt.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -4484,7 +4554,7 @@ min-height:90px;
 }
 .logotabel5:hover{
 	opacity:0.8;
-	background: url(../img/img_tdgarden.png) no-repeat;
+	background: url(../img/img_tdgarden.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -4495,7 +4565,7 @@ min-height:90px;
 }
 .logotabel6:hover{
 	opacity:0.8;
-	background: url(../img/img_mobilecheck.png) no-repeat;
+	background: url(../img/img_mobilecheck.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -4506,7 +4576,7 @@ min-height:90px;
 }
 .logotabel7:hover{
 	opacity:0.8;
-	background: url(../img/img_nbapd.png) no-repeat;
+	background: url(../img/img_nbapd.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -4517,7 +4587,7 @@ min-height:90px;
 }
 .logotabel8:hover{
 	opacity:0.8;
-	background: url(../img/img_independa.png) no-repeat;
+	background: url(../img/img_independa.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -4554,7 +4624,7 @@ min-height:90px;
 }
 .logotabel9{
 
-	background: url(../img/img_nbartp.png) no-repeat;
+	background: url(../img/img_nbartp.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -4565,7 +4635,7 @@ min-height:90px;
 }
 .logotabel9:hover{
 	opacity:0.8;
-	background: url(../img/img_nbartp.png) no-repeat;
+	background: url(../img/img_nbartp.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -4642,7 +4712,7 @@ min-height:90px;
 }
 .logotabel13{
 
-	background: url(../img/img_tripbucket.png) no-repeat;
+	background: url(../img/img_tripbucket.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -4653,7 +4723,7 @@ min-height:90px;
 }
 .logotabel13:hover{
 	opacity:0.8;
-	background: url(../img/img_tripbucket.png) no-repeat;
+	background: url(../img/img_tripbucket.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -4664,7 +4734,7 @@ min-height:90px;
 }
 .logotabel14{
 
-	background: url(../img/img_tripbucket_mobile.png) no-repeat;
+	background: url(../img/img_tripbucket_mobile.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -4675,7 +4745,7 @@ min-height:90px;
 }
 .logotabel14:hover{
 	opacity:0.8;
-	background: url(../img/img_tripbucket_mobile.png) no-repeat;
+	background: url(../img/img_tripbucket_mobile.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -4686,7 +4756,7 @@ min-height:90px;
 }
 .logotabel15{
 
-	background: url(../img/img_tb_ad.png) no-repeat;
+	background: url(../img/img_tb_ad.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -4697,7 +4767,7 @@ min-height:90px;
 }
 .logotabel15:hover{
 	opacity:0.8;
-	background: url(../img/img_tb_ad.png) no-repeat;
+	background: url(../img/img_tb_ad.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -4708,7 +4778,7 @@ min-height:90px;
 }
 .logotabel16{
 
-	background: url(../img/img_kms.png) no-repeat;
+	background: url(../img/img_kms.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -4719,7 +4789,7 @@ min-height:90px;
 }
 .logotabel16:hover{
 	opacity:0.8;
-	background: url(../img/img_kms.png) no-repeat;
+	background: url(../img/img_kms.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -4730,7 +4800,7 @@ min-height:90px;
 }
 .logotabel17{
 
-	background: url(../img/img_facial.png) no-repeat;
+	background: url(../img/img_facial.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -4741,7 +4811,7 @@ min-height:90px;
 }
 .logotabel17:hover{
 	opacity:0.8;
-	background: url(../img/img_facial.png) no-repeat;
+	background: url(../img/img_facial.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -4752,7 +4822,7 @@ min-height:90px;
 }
 .logotabel19{
 
-	background: url(../img/img_socialjane.png) no-repeat;
+	background: url(../img/img_socialjane.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -4763,7 +4833,7 @@ min-height:90px;
 }
 .logotabel19:hover{
 	opacity:0.8;
-	background: url(../img/img_socialjane.png) no-repeat;
+	background: url(../img/img_socialjane.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -4774,7 +4844,7 @@ min-height:90px;
 }
 .logotabel18{
 
-	background: url(../img/img_billpay.png) no-repeat;
+	background: url(../img/img_billpay.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -4785,7 +4855,7 @@ min-height:90px;
 }
 .logotabel18:hover{
 	opacity:0.8;
-	background: url(../img/img_billpay.png) no-repeat;
+	background: url(../img/img_billpay.jpg) no-repeat;
 	background-size: 100%;
 	width:25%;
 	float:left;
@@ -4983,12 +5053,21 @@ min-height:90px;
 }
 .portfoliotitle{
 	position:relative;
-	top:50px;
-	font-family:"karbon_bold";
-	font-size:30pt;
+	/*top:50px;*/
+	/*font-family:"karbon_bold";*/
+	/*font-size:30pt;*/
 	color:#fff;
-	margin-left:20px;
-	margin-right:20px;
+	/*margin-left:20px;*/
+	/*margin-right:20px;*/
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+	line-height: 0;
+}
+.portfoliotitle img {
+	max-width: 100%;
+	/*float: left;*/
+	font-size: 0;
 }
 .buttons{
 	float:center;
@@ -5175,4 +5254,24 @@ display:none;
 	color:#bbb;
 	font-family:"karbon_bold";
 }
+}
+.clear {clear:both;}
+.container_solutions .wrapper h2 {
+	text-align: left;
+}
+.solutions-boxes a {
+	height: 170px;
+	display: block;
+	float: left;
+	font-size: 0;
+	line-height: 0;
+	width: 20%;
+}
+.solutions-boxes a img {
+	min-width: 100%;
+	max-width: 100%;
+}
+.solutions-more {
+	clear: both;
+	padding-top: 20px;
 }

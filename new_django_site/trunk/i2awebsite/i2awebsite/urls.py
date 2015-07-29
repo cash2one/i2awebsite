@@ -35,6 +35,11 @@ urlpatterns = patterns('',
         template_name='our_process.html'),
         name='our_process',
     ),
+    url(r'^solutions/$', TemplateView.as_view(
+        template_name='solutions.html'),
+        {'menu_pos': 'solutions'},
+        name='solutions',
+    ),
     url(r'^solutions/ad_delivery/$', TemplateView.as_view(
         template_name='categories/ad_delivery.html'),
         {'menu_pos': 'categories', 'submenu_pos': 'ads'},

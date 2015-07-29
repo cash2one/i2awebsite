@@ -36,27 +36,13 @@ $(function() {
             <a href="{% url "home" %}"><div class="logo"></div></a>
             <ul id="menulist">
                 <li {% if menu_pos == "home"         %}class="active"{% endif %}><a href="{% url "home" %}">ABOUT US</a></li>
-                <li {% if menu_pos == "categories"   %}class="active"{% endif %}><a class="submenu_trigger" href="{% url "home" %}">SOLUTIONS</a></li>
+                <li {% if menu_pos == "solutions"   %}class="active"{% endif %}><a href="{% url "solutions" %}">SOLUTIONS</a></li>
                 <li {% if menu_pos == "technologies" %}class="active"{% endif %}><a href="{% url "technologies" %}">TECHNOLOGIES</a></li>
                 <li {% if menu_pos == "portfolio"    %}class="active"{% endif %}><a href="{% url "portfolio" %}">PORTFOLIO</a></li>
                 <li {% if menu_pos == "careers"      %}class="active"{% endif %}><a href="{% url "careers" %}">CAREERS</a></li>
                 <li {% if menu_pos == "contact"      %}class="active"{% endif %}><a href="{% url "contact" %}">CONTACT US</a></li>
             </ul>
         </div>
-    </div>
-    <div id="submenu" {% if submenu_pos %}class="active"{% endif %}>
-        <ul id="submenulist">
-            <li {% if submenu_pos == "web"          %}class="active"{% endif %}><a href="{% url "solutions-web" %}">Web Apps</a></li>
-             <li {% if submenu_pos == "mobile"       %}class="active"{% endif %}><a href="{% url "solutions-mobile" %}">Mobile</a></li>
-            <li {% if submenu_pos == "enterprise"   %}class="active"{% endif %}><a href="{% url "solutions-enterprise" %}">Enterprise</a></li>
-            <li {% if submenu_pos == "ads"          %}class="active"{% endif %}><a href="{% url "solutions-ads" %}">Ad Delivery</a></li>
-            <li {% if submenu_pos == "location"     %}class="active"{% endif %}><a href="{% url "solutions-location" %}">Location Based</a></li>
-            <li {% if submenu_pos == "social"       %}class="active"{% endif %}><a href="{% url "solutions-social" %}">Social</a></li>
-            <li {% if submenu_pos == "assets"       %}class="active"{% endif %}><a href="{% url "solutions-assets" %}">Digital Asset Management</a></li>
-            <li {% if submenu_pos == "scheduling"   %}class="active"{% endif %}><a href="{% url "solutions-scheduling" %}">Scheduling</a></li>
-            
-            <li {% if submenu_pos == "consulting"   %}class="active"{% endif %}><a href="{% url "solutions-consulting" %}">Consulting</a></li>
-        </ul>
     </div>
     {% block header %}
     <div class="header default"></div>
@@ -85,10 +71,7 @@ $(function() {
         </div>
 
     </div>
-    <div class="box_white">
-        {% block content.before_bottom %}
-        {% endblock content.before_bottom %}
-    </div>
+    <div class="box_white">{% block content.before_bottom %}{% endblock content.before_bottom %}</div>
     <div class="container2">
         <div class="box_grey">
             {% block content.bottom %}

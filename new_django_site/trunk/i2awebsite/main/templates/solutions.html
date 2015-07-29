@@ -1,0 +1,155 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block header %}
+<div class="header solutions"></div>
+{% endblock header %}
+
+{% block content %}
+<div class="container2 container_solutions">
+    <div class="box_white">
+        <div class="wrapper">
+            <div class="solutions-boxes">
+                <a href="#web_application_development"><img src="{% static "img/solutions/webapps.png" %}"></a>
+                <a href="#mobile_application_development"><img src="{% static "img/solutions/mobile.png" %}"></a>
+                <a href="#enterprise_application_development"><img src="{% static "img/solutions/enterprise.png" %}"></a>
+                <a href="#ad_delivery"><img src="{% static "img/solutions/addelivery.png" %}"></a>
+                <a href="#location_based_services"><img src="{% static "img/solutions/locationbased.png" %}"></a>
+                <a href="#social"><img src="{% static "img/solutions/social.png" %}"></a>
+                <a href="#digital_asset_management"><img src="{% static "img/solutions/digitalassetmanagement.png" %}"></a>
+                <a href="#scheduling_alerting_applications"><img src="{% static "img/solutions/scheduling.png" %}"></a>
+                <a href="#consulting"><img src="{% static "img/solutions/consulting.png" %}"></a>
+                <div class="clear"></div>
+            </div>
+        </div> 
+        <div class="wrapper" id="web_application_development">
+            <h2>Web Application Development</h2>
+            <div>
+                <p>We know how to implement and how to customize web applications to meet your company’s specific needs, so you can start with a system that’s robust and scalable. We will evaluate the data that needs to be acquired, how it needs to be accessed, and how that data will evolve over time. Whether you’re already utilizing cloud computing or want to migrate existing data to a cloud computing architecture, we can help you centralize your data with minimal support required by your existing development team.</p>
+            </div>
+            <div class="images_box4">
+                <a href="{% url "portfolio-moasis" %}"><img src="{% static "img/img_moasis.png" %}" /></a>
+                <a href="{% url "portfolio-mom" %}"><img src="{% static "img/img_mom.png" %}" /></a>
+                <a href="{% url "portfolio-atnt" %}"><img src="{% static "img/img_atnt.png" %}" /></a>
+                <a href="{% url "portfolio-independa" %}"><img src="{% static "img/img_independa.png" %}" /></a>
+            </div>
+            <p class="solutions-more"><a href="{% url "solutions-web" %}">See more</a></p>
+        </div>
+        <div class="wrapper" id="mobile_application_development">
+            <h2>Mobile Application Development</h2>
+            <div>
+                <p>i2a Solutions is an app development company that creates a variety of specific mobile applications for iPhone, iPad, Android, Microsoft, and BlackBerry platforms. We have expertise building standalone mobile applications that utilize the latest technologies (geo-coding, mapping, imaging, secure data protocols, etc.) and work with all the standardized API’s such as Yelp, Facebook, FourSquare, and Google Location so we can help you integrate popular social networking sites and existing location-based applications into your mobile product.<br><br>
+
+                Whether you have a web application that needs to go mobile or a concept for a standalone mobile application, we can help you make your mark in the mobile marketplace. If your company wants to create a mobile version of an existing web application, we will help you determine the features that will translate well into the mobile space and build a unique application that seamlessly integrates into your existing system. Conversely, if you have a concept for a standalone mobile application we can build that too.</p>
+            </div>
+            <div class="images_box4">
+                <a href="{% url "portfolio-nhl" %}"><img src="{% static "img/img_nhl.png" %}" /></a>
+                <a href="{% url "portfolio-tripbucket_mobile" %}"><img src="{% static "img/img_tripbucket_mobile.png" %}" /></a>
+                <a href="{% url "portfolio-mobile_check" %}"><img src="{% static "img/img_mobilecheck.png" %}" /></a>
+                <a href="{% url "portfolio-tdg" %}"><img src="{% static "img/img_tdgarden.png" %}" /></a>
+            </div>
+            <p class="solutions-more"><a href="{% url "solutions-mobile" %}">See more</a></p>
+        </div>
+        <div class="wrapper" id="enterprise_application_development">
+            <h2>Enterprise Application Development</h2>
+            <div>
+                <p>Your enterprise may have an idea for an application that provides a service to external customers or unique processes that serve as a competitive advantage. Developing an application requires more than programming skills. We serve as your partner and technical consultant, and take full responsibility for the success of your development project, allowing you to rest easy knowing that your project is in good hands.
+<br><br>
+Between the idea and the deliverable are several steps, each crucial to the successful development of your application. Outsourcing your business application development to i2a Solutions gives you access to a complete development team with expertise in every step of the development lifecycle.</p>
+            </div>
+            <div class="images_box4">
+                <a href="{% url "portfolio-salesforce" %}"><img src="{% static "img/img_salesforce.png" %}" /></a>
+                <a href="{% url "portfolio-nba_dev" %}"><img src="{% static "img/img_nbapd.png" %}" /></a>
+                <a href="{% url "portfolio-atnt" %}"><img src="{% static "img/img_atnt.png" %}" /></a>
+                <a href="{% url "portfolio-independa" %}"><img src="{% static "img/img_independa.png" %}" /></a>
+            </div>
+            <p class="solutions-more"><a href="{% url "solutions-enterprise" %}">See more</a></p>
+        </div>
+        <div class="wrapper" id="ad_delivery">
+            <h2>Ad delivery</h2>
+            <div>
+                <p>We create mobile marketing and social media marketing solutions that provides advertisers (small businesses, agencies, and marketers) the ability to target a specific customer based on their location or specific application platforms (sports, travel, etc.). Our easy to use solutions handle all types of ad types - banners, interstitials and video ads.</p>
+            </div>
+            <div class="images_box4">
+                <a href="{% url "portfolio-moasis" %}"><img src="{% static "img/img_moasis.png" %}" /></a>
+                <a href="{% url "portfolio-fanserv" %}"><img src="{% static "img/img_fanserv.png" %}" /></a>
+    <a href="{% url "portfolio-atnt" %}"><img src="{% static "img/img_atnt.png" %}" /></a>
+                <a href="{% url "portfolio-tripbucket_ad" %}"><img src="{% static "img/img_tb_ad.png" %}" /></a>
+                
+            </div>
+            <p class="solutions-more"><a href="{% url "solutions-ads" %}">See more</a></p>
+        </div>
+        <div class="wrapper" id="location_based_services">
+            <h2>Location Based Services</h2>
+            <div>
+                <p>The global market of location-based services (LBS) and Geolocation applications are enjoying strong growth. LBS services are designed to supply users of GPS- and Internet-enabled mobile devices with appropriate, timely and place-specific content. Geolocation is a forward-looking technology that provides the ability to track locations of users and follow their movements.<br><br>
+
+                LBS services allow businesses to provide offers of locally relevant products and services when consumers are most susceptible to make purchases. Whether you want to create a website application that uses location based technology to enhance the user experience or build a location based mobile application we have the expertise to make it an engaging and successful product. We work with your company to get the product requirements and evaluate whether commercial or open source mapping solutions would best serve the product.<br><br>Using commercial mapping solutions such as Microsoft MapPoint, Bing Maps, and Google Maps we can create turnkey location based applications that work seamlessly with existing services. For a more customized location based application complete with rich layers and features we use open source mapping products such as OpenStreetMap, OpenLayers, GeoServer, and Mapnick. Additionally, we can enable geocoding into any of our location-based applications or integrate maps into existing websites and web-based applications. Using all the standardized API’s we can easily integrate popular social networking features such as Yelp, Facebook, FourSquare, and Twitter.
+
+                If your company already has an application that needs to be monetized we can utilize our expertise with location detection technology to deliver location specific advertising to the users of the application.</p>
+            </div>
+            <div class="images_box4">
+                <a href="{% url "portfolio-moasis" %}"><img src="{% static "img/img_moasis.png" %}" /></a>
+                <a href="{% url "portfolio-tripbucket_web" %}"><img src="{% static "img/img_tripbucket.png" %}" /></a>
+                <a href="{% url "portfolio-atnt" %}"><img src="{% static "img/img_atnt.png" %}" /></a>
+                <a href="{% url "portfolio-fanserv" %}"><img src="{% static "img/img_fanserv.png" %}" /></a>
+            </div>
+            <p class="solutions-more"><a href="{% url "solutions-location" %}">See more</a></p>
+        </div>
+        <div class="wrapper" id="social">
+            <h2>Social Media Applications & Social Networking Applications</h2>
+            <div>
+                <p>At i2a Solutions, we incorporate all the social media tools needed in mobile and web-based apps without compromising the finished product. We believe there is plenty of room for new and engaging social networking applications to emerge as leaders in the social space and have the expertise to make your vision a reality. We will also provide the tools needed to perform effective social media management.
+                <br><br>
+                There is a difference between social networking and social media, but both are important when creating web-based applications. Social networking sites require a personal connection while social media sites offer a more public forum. Social networking is a tool people with common interests or goals use to meet online, to exchange ideas, and to share information. Social media is a content sharing platform that people and companies use for promotion and interacting with others.</p>
+            </div>
+            <div class="images_box4">
+                <a href="{% url "portfolio-socialjane" %}"><img src="{% static "img/img_socialjane.png" %}" /></a>
+                <a href="{% url "portfolio-tripbucket_web" %}"><img src="{% static "img/img_tripbucket.png" %}" /></a>
+                <a href="{% url "portfolio-nba" %}"><img src="{% static "img/img_nba.png" %}" /></a>
+                <a href="{% url "portfolio-nhl" %}"><img src="{% static "img/img_nhl.png" %}" /></a>
+            </div>
+            <p class="solutions-more"><a href="{% url "solutions-social" %}">See more</a></p>
+        </div>
+        <div class="wrapper" id="digital_asset_management">
+            <h2>Digital Asset Management</h2>
+            <div>
+                <p>We know how to implement and how to customize web applications to meet your company’s specific needs, so you can start with a system that’s robust and scalable. We will evaluate the data that needs to be acquired, how it needs to be accessed, and how that data will evolve over time. Whether you’re already utilizing cloud computing or want to migrate existing data to a cloud computing architecture, we can help you centralize your data with minimal support required by your existing development team.</p>
+            </div>
+            <div class="images_box4">
+                <a href="{% url "portfolio-tripbucket_web" %}"><img src="{% static "img/img_tripbucket.png" %}" /></a>
+                <a href="{% url "portfolio-fanserv" %}"><img src="{% static "img/img_fanserv.png" %}" /></a>
+                <a href="{% url "portfolio-independa" %}"><img src="{% static "img/img_independa.png" %}" /></a>
+                <a href="{% url "portfolio-nba_rtp" %}"><img src="{% static "img/img_nbartp.png" %}" /></a>
+            </div>
+            <p class="solutions-more"><a href="{% url "solutions-assets" %}">See more</a></p>
+        </div>
+        <div class="wrapper" id="scheduling_alerting_applications">
+            <h2>Scheduling & Alerting Applications</h2>
+            <div>
+                <p>Many companies, large and small, have unique needs for online scheduling applications or workforce management issues that a web or mobile applications will solve. i2a Solutions has worked diligently to provide custom development services where required to support these types of scenarios.</p>
+            </div>
+            <div class="images_box4">
+                <a href="{% url "portfolio-mom" %}"><img src="{% static "img/img_mom.png" %}" /></a>
+                <a href="{% url "portfolio-independa" %}"><img src="{% static "img/img_independa.png" %}" /></a>
+                <a href="{% url "portfolio-moasis" %}"><img src="{% static "img/img_moasis.png" %}" /></a>
+                <a href="{% url "portfolio-tdg" %}"><img src="{% static "img/img_tdgarden.png" %}" /></a>
+            </div>
+            <p class="solutions-more"><a href="{% url "solutions-scheduling" %}">See more</a></p>
+        </div>
+        <div class="wrapper" id="consulting">
+            <h2>Consulting</h2>
+            <div>
+                <p>We know developing products can be a daunting task, but it doesn’t have to be. Bringing your company’s products and projects to fruition is one of our specialties. Whether you company is a start-up in the beginning stages of product development and need a mock-up created to see how your application will look or are midway through a project and need to refine a system architecture we can help.</p>
+            </div>
+            <div class="images_box4">
+                <a href="{% url "portfolio-salesforce" %}"><img src="{% static "img/img_salesforce.png" %}" /></a>
+                <a href="{% url "portfolio-independa" %}"><img src="{% static "img/img_independa.png" %}" /></a>
+                <a href="{% url "portfolio-mobile_check" %}"><img src="{% static "img/img_mobilecheck.png" %}" /></a>
+                <a href="{% url "portfolio-facial" %}"><img src="{% static "img/img_facial.png" %}" /></a>
+            </div>
+            <p class="solutions-more"><a href="{% url "solutions-consulting" %}">See more</a></p>
+        </div>
+    </div>
+</div>
+{% endblock content %}
