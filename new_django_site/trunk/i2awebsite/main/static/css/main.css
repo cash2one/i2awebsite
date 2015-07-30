@@ -184,7 +184,30 @@ li a {text-decoration: none;
 100% {opacity:0.9; }
 }
 
-
+.solutions-boxes a {
+	height: 83px;
+	display: block;
+	float: left;
+	font-size: 0;
+	line-height: 0;
+	width: 11%;
+}
+.solutions-boxes a img {
+	min-width: 100%;
+	max-width: 100%;
+}
+.solutions-more {
+	clear: both;
+	padding-top: 20px;
+	font-weight:bold;
+	float:right;
+}
+h5{
+	text-align:left;
+	margin-top:30px;
+	line-height:20px;
+	font-weight:bold;
+}
 .menu{
 	font-family: 'fira_regular';s
 	position:relative;
@@ -873,8 +896,8 @@ min-height:90px;
     background: url("../img/tech_icons_small.jpg");
 }
 .tech.large {
-    width: 67.5px;
-    height: 67.5px;
+    width: 45px;
+    height: 45px;
     background: url("../img/tech_icons.jpg");
     /*transform:scale(1.5); -webkit-transform:scale(1.5); */
 /*-moz-transform:scale(1.5); -o-transform:scale(1.5);*/
@@ -3389,6 +3412,127 @@ display:none;
 	min-height:103px;
 }
 
+.logotabel28{
+
+	background: url(../img/img_99brews.png) no-repeat;
+	background-size: 100%;
+	float:left;
+	width:160px;
+	height:103px;
+	text-align:center;
+	max-height:103px;
+	min-width:160px;
+	min-height:103px;
+}
+.logotabel28:hover{
+	opacity:0.8;
+	background: url(../img/img_99brews.png) no-repeat;
+	background-size: 100%;
+	float:left;
+	width:160px;
+	height:103px;
+	text-align:center;
+	max-height:103px;
+	min-width:160px;
+	min-height:103px;
+}
+.logotabel29{
+
+	background: url(../img/img_balboa.png) no-repeat;
+	background-size: 100%;
+	float:left;
+	width:160px;
+	height:103px;
+	text-align:center;
+	max-height:103px;
+	min-width:160px;
+	min-height:103px;
+}
+.logotabel29:hover{
+	opacity:0.8;
+	background: url(../img/img_balboa.png) no-repeat;
+	background-size: 100%;
+	float:left;
+	width:160px;
+	height:103px;
+	text-align:center;
+	max-height:103px;
+	min-width:160px;
+	min-height:103px;
+}
+.logotabel30{
+
+	background: url(../img/img_swim-meet.png) no-repeat;
+	background-size: 100%;
+	float:left;
+	width:160px;
+	height:103px;
+	text-align:center;
+	max-height:103px;
+	min-width:160px;
+	min-height:103px;
+}
+.logotabel30:hover{
+	opacity:0.8;
+	background: url(../img/img_swim-meet.png) no-repeat;
+	background-size: 100%;
+	float:left;
+	width:160px;
+	height:103px;
+	text-align:center;
+	max-height:103px;
+	min-width:160px;
+	min-height:103px;
+}
+.logotabel31{
+
+	background: url(../img/img_track.png) no-repeat;
+	background-size: 100%;
+	float:left;
+	width:160px;
+	height:103px;
+	text-align:center;
+	max-height:103px;
+	min-width:160px;
+	min-height:103px;
+}
+.logotabel31:hover{
+	opacity:0.8;
+	background: url(../img/img_track.png) no-repeat;
+	background-size: 100%;
+	float:left;
+	width:160px;
+	height:103px;
+	text-align:center;
+	max-height:103px;
+	min-width:160px;
+	min-height:103px;
+}
+.logotabel32{
+
+	background: url(../img/img_usnp.png) no-repeat;
+	background-size: 100%;
+	float:left;
+	width:160px;
+	height:103px;
+	text-align:center;
+	max-height:103px;
+	min-width:160px;
+	min-height:103px;
+}
+.logotabel32:hover{
+	opacity:0.8;
+	background: url(../img/img_usnp.png) no-repeat;
+	background-size: 100%;
+	float:left;
+	width:160px;
+	height:103px;
+	text-align:center;
+	max-height:103px;
+	min-width:160px;
+	min-height:103px;
+}
+
 .buttong2{
 	display:none;
 }
@@ -3480,6 +3624,28 @@ display:none;
 	margin-left:20px;
 	line-height:24px;
 }
+.box_white .wrapper {
+	width: 90%;
+
+}
+.solutions-boxes a {
+	height: auto;
+	display: block;
+	float: left;
+	font-size: 0;
+	line-height: 0;
+	width: 33%;
+}
+.solutions-boxes a img {
+	min-width: 100%;
+	max-width: 100%;
+}
+.solutions-more {
+	clear: both;
+	padding-top: 20px;
+	font-weight:bold;
+	float:right;
+}
 }
 
 
@@ -3491,9 +3657,10 @@ display:none;
 
 
 
-
-
 @media screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+
+
 
 .preloader {
 	position: fixed;
@@ -5040,6 +5207,118 @@ min-height:90px;
 	min-height:170px;
 	text-align:center;
 }
+
+.logotabel28{
+
+	background: url(../img/img_99brews.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:100px;
+	min-height:170px;
+	text-align:center;
+}
+.logotabel28:hover{
+	opacity:0.8;
+	background: url(../img/img_99brews.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:100px;
+	min-height:170px;
+	text-align:center;
+}
+.logotabel29{
+
+	background: url(../img/img_balboa.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:100px;
+	min-height:170px;
+	text-align:center;
+}
+.logotabel29:hover{
+	opacity:0.8;
+	background: url(../img/img_balboa.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:100px;
+	min-height:170px;
+	text-align:center;
+}
+.logotabel30{
+
+	background: url(../img/img_swim-meet.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:100px;
+	min-height:170px;
+	text-align:center;
+}
+.logotabel30:hover{
+	opacity:0.8;
+	background: url(../img/img_swim-meet.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:100px;
+	min-height:170px;
+	text-align:center;
+}
+.logotabel31{
+
+	background: url(../img/img_track.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:100px;
+	min-height:170px;
+	text-align:center;
+}
+.logotabel31:hover{
+	opacity:0.8;
+	background: url(../img/img_track.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:100px;
+	min-height:170px;
+	text-align:center;
+}
+.logotabel32{
+
+	background: url(../img/img_usnp.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:100px;
+	min-height:170px;
+	text-align:center;
+}
+.logotabel32:hover{
+	opacity:0.8;
+	background: url(../img/img_usnp.png) no-repeat;
+	background-size: 100%;
+	width:25%;
+	float:left;
+	max-height:400px;
+	min-width:100px;
+	min-height:170px;
+	text-align:center;
+}
+
 .logotabel img{
 	float:left;
 }
@@ -5258,20 +5537,4 @@ display:none;
 .clear {clear:both;}
 .container_solutions .wrapper h2 {
 	text-align: left;
-}
-.solutions-boxes a {
-	height: 170px;
-	display: block;
-	float: left;
-	font-size: 0;
-	line-height: 0;
-	width: 20%;
-}
-.solutions-boxes a img {
-	min-width: 100%;
-	max-width: 100%;
-}
-.solutions-more {
-	clear: both;
-	padding-top: 20px;
 }
