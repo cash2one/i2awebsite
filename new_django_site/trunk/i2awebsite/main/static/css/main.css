@@ -185,12 +185,13 @@ li a {text-decoration: none;
 }
 
 .solutions-boxes a {
-	height: 83px;
+	height: 100px;
 	display: block;
 	float: left;
 	font-size: 0;
 	line-height: 0;
-	width: 11%;
+	width: 33%;
+	margin-top:-1px;
 }
 .solutions-boxes a img {
 	min-width: 100%;
