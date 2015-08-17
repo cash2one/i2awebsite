@@ -4,8 +4,7 @@
 <head>
 <meta charset="utf-8">
 <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-{% block add_meta %}
-{% endblock add_meta %}
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 <meta name="viewport"  user-scalable="no">
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -50,36 +49,8 @@ $(function() {
     {% endblock header %}
 </div>
 <!-- CONTENT  -->
-
-<div class="container2">
-    <div class="box_white">
-        <div class="wrapper">
-            <div class="location">Home Page &gt; Portfolio</div>
-            <div style="clear:both;"></div>
-                <h2>Idea</h2>
-                {% block content.idea %}
-                {% endblock content.idea %}
-        </div>
-        <div class="wrapper">
-            <h2>Solution</h2>
-            {% block content.solution %}
-            {% endblock content.solution %}
-        </div>
-        <div class="wrapper">
-            <h2>Technologies used</h2>
-                {% block content.technologies %}
-                {% endblock content.technologies %}
-        </div>
-
-    </div>
-    <div class="box_white">{% block content.before_bottom %}{% endblock content.before_bottom %}</div>
-    <div class="container2">
-        <div class="box_grey">
-            {% block content.bottom %}
-            {% endblock content.bottom %}
-        </div>
-    </div>
-</div>
+{% block content %}
+{% endblock content %}
 </div>
 
 

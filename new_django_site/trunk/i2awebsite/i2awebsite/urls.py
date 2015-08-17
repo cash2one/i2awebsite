@@ -21,6 +21,11 @@ urlpatterns = patterns('',
         {'menu_pos': 'portfolio'},
         name='portfolio',
     ),
+    url(r'^portfolio-more/$', TemplateView.as_view(
+        template_name='portfolio-more.html'),
+        {'menu_pos': 'portfolio'},
+        name='portfolio-more',
+    ),
     url(r'^careers/$', TemplateView.as_view(
         template_name='careers.html'),
         {'menu_pos': 'careers'},
