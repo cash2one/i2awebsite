@@ -101,7 +101,7 @@ STATIC_ROOT = BASE_DIR + '/static/'
 
 # import machine-specific settings
 try:
-    execfile('%s/i2awebsite/local-settings/%s.py' % (BASE_DIR.replace('\\','/'),
+    execfile('%s/i2awebsite/local_settings/%s.py' % (BASE_DIR.replace('\\','/'),
         'settings-%s' % platform.node().replace('.', '_')))
 except:
     print "Local settings file not found"
