@@ -10,6 +10,7 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
+import platform
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 
@@ -97,3 +98,10 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR + '/static/'
+
+# import machine-specific settings
+try:
+    execfile('%s/i2awebsite/local-settings/%s.py' % (BASE_DIR.replace('\\','/'),
+        'settings-%s' % platform.node().replace('.', '_')))
+except:
+    print "Local settings file not found"
