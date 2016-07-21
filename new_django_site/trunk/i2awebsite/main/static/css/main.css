@@ -672,8 +672,8 @@ ul.list li {
 	padding-bottom:50px;
 	width:100%;
 	background: #eee url(../img/bgtop22.jpg) no-repeat;
-	background-size:100%;
-min-height:90px;
+	background-size: auto 100%;
+	background-position: center;
 }
 .box_screenshots {
     margin: 0 auto;
@@ -1997,8 +1997,6 @@ display:none;
 	padding-bottom:20px;
 	width:100%;
 	background: #eee url(../img/bgtop22.jpg) no-repeat;
-	background-size: 100%;
-min-height:90px;
 }
 .box_screenshots {
     margin: 0 auto;
@@ -2375,7 +2373,36 @@ width:100%;
 
 }
 
+@media screen and (min-width : 860px) {
+	.box_color {
+		background-size:100% !important;
+	}
+}
 
+@media screen and (min-device-width : 860px) {
+	.box_color {
+		background-size:100%  !important;
+	}
+
+}
+
+@media screen and (max-width : 860px) {
+	.box_color {
+		min-height: 313px;
+		background-size:auto 100%  !important;
+	}
+	}
+}
+
+@media screen and (max-device-width : 860px) {
+	.box_color {
+		min-height: 313px;
+		background-size:auto 100%  !important;
+	}
+
+}
+
+	
 
 @media screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 
@@ -2949,7 +2976,6 @@ li a {text-decoration: none;
 	width:100%;
 	background: #eee url(../img/bgtop22.jpg) no-repeat;
 	background-size:100%;
-min-height:90px;
 }
 .box_screenshots {
     margin: 0 auto;
@@ -3515,6 +3541,7 @@ display:none;
 	text-align: left;
 }
 
+
 @media screen and (max-width: 440px) {
 	.buttong a { font-size: 20px; }
 	.wrapper_portfolio a {
@@ -3534,6 +3561,10 @@ display:none;
 	.buttong a { font-size: 20px; }
 	.wrapper_portfolio a {
 		width: 50%;
+	}
+
+	.box_color{
+		background-size: auto 100%;
 	}
 
 	.column1 ul, .column2 ul {
