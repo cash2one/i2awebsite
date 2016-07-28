@@ -1477,6 +1477,7 @@ display:none;
 		margin-bottom: 20px;
 		display: inline-block !important;
 		float:none;
+		width: 100%;
 	}
 
 	.bottom--links {
@@ -2369,6 +2370,12 @@ width:100%;
 		margin: auto;
 	}
 
+	.bottom--links {
+		float:left;
+		text-align: center;
+		width: 100%;
+		margin: 20px 0;
+	}
 }
 
 @media screen and (min-width : 860px) {
@@ -3474,6 +3481,7 @@ display:none;
 	font-size:14pt;
 	margin-top:10px;
 	margin-bottom:10px;
+	text-align: center;
 }
 .column4 h2{
 	color:#222;
@@ -3481,6 +3489,7 @@ display:none;
 	font-size:14pt;
 	margin-top:10px;
 	margin-bottom:10px;
+	text-align: center;
 }
 
 .logobottom{

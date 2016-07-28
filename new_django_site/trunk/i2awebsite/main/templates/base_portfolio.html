@@ -86,12 +86,16 @@ $(function() {
 <div class="container2">
 <div class="box_color">
     <div class="wrapperbottom">
-        <div class="logobottom"></div>
+        <div class="logobottom--cont">
+            <div class="logobottom"></div>
+        </div>
 
-        <div class="bottomcol"><h1><a href="{% url "portfolio" %}">Portfolio</a></h1></div>
-        <div class="bottomcol"><h1><a href="{% url "technologies" %}">Technologies</a></h1></div>
-        <div class="bottomcol"><h1><a href="{% url "careers" %}">Careers</a></h1></div>
-        <div class="bottomcol"><h1><a href="{% url "contact" %}">Contact us</a></h1></div>
+        <div class="bottom--links">
+            <div class="bottomcol"><h1><a href="{% url "portfolio" %}">Portfolio</a></h1></div>
+            <div class="bottomcol"><h1><a href="{% url "technologies" %}">Technologies</a></h1></div>
+            <div class="bottomcol"><h1><a href="{% url "careers" %}">Careers</a></h1></div>
+            <div class="bottomcol"><h1><a href="{% url "contact" %}">Contact us</a></h1></div>
+        </div>
     </div>
 
   <p style="color:#fff; width:100%; text-align:center;"> Copyright &copy; 2015, i2a Solutions Inc.</p>
