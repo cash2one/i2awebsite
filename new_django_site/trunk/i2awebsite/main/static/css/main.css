@@ -972,7 +972,7 @@ ul.list li {
     background-position: -300% -200%;
 }
 .tech.java {
-    background-position: 0% -300%;
+    background-position: 0.5% -299.7%;
 }
 .tech.php5 {
     background-position: -100% -300%;
@@ -1011,7 +1011,7 @@ ul.list li {
     background-position: 0% -600%;
 }
 .tech.oracle {
-    background-position: -100% -600%;
+    background-position: -100% -600.4%;
 }
 .tech.sqlserver {
     background-position: -200% -600%;
@@ -1020,7 +1020,7 @@ ul.list li {
     background-position: -300% -600%;
 }
 .tech.nginx {
-    background-position: 0% -700%;
+    background-position: 0% -701%;
 }
 .tech.jboss {
     background-position: -100% -700%;
@@ -1032,7 +1032,7 @@ ul.list li {
     background-position: -300% -700%;
 }
 .tech.aws {
-    background-position: 0% -800%;
+    background-position: 0% -799.7%;
 }
 .tech.joomla {
     background-position: -99% -800%;
@@ -1041,10 +1041,10 @@ ul.list li {
     background-position: -200% -801%;
 }
 .tech.aspnet {
-    background-position: -300% -800%;
+    background-position: -300% -799.7%;
 }
 .tech.msmq {
-    background-position: 0% -900%;
+    background-position: 0% -900.7%;
 }
 .tech.mssrs {
     background-position: -100% -900%;
@@ -3215,7 +3215,7 @@ li a {text-decoration: none;
     background-position: -300% -200%;
 }
 .tech.java {
-    background-position: 0% -300%;
+    background-position: 0.5% -299.7%;
 }
 .tech.php5 {
     background-position: -100% -300%;
@@ -3254,7 +3254,7 @@ li a {text-decoration: none;
     background-position: 0% -600%;
 }
 .tech.oracle {
-    background-position: -100% -600%;
+    background-position: -100% -600.4%;
 }
 .tech.sqlserver {
     background-position: -200% -600%;
@@ -3284,7 +3284,7 @@ li a {text-decoration: none;
     background-position: -200% -800%;
 }
 .tech.aspnet {
-    background-position: -300% -800%;
+    background-position: -300% -799.7%;
 }
 .tech.msmq {
     background-position: 0% -900.7%;
