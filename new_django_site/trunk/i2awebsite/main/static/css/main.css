@@ -987,7 +987,7 @@ ul.list li {
     background-position: 0% -400%;
 }
 .tech.blackberry {
-    background-position: -100% -400%;
+    background-position: -100% -399.7%;
 }
 .tech.postgresql {
     background-position: -200% -400%;
@@ -1002,7 +1002,7 @@ ul.list li {
     background-position: -100% -500%;
 }
 .tech.dotnet {
-    background-position: -200% -500%;
+    background-position: -200% -500.5%;
 }
 .tech.skype {
     background-position: -300% -500%;
@@ -1026,7 +1026,7 @@ ul.list li {
     background-position: -100% -700%;
 }
 .tech.tomcat {
-    background-position: -200% -700%;
+    background-position: -200% -699.7%;
 }
 .tech.terracotta {
     background-position: -300% -700%;
@@ -1035,10 +1035,10 @@ ul.list li {
     background-position: 0% -800%;
 }
 .tech.joomla {
-    background-position: -97% -800%;
+    background-position: -99% -800%;
 }
 .tech.cpp {
-    background-position: -200% -800%;
+    background-position: -200% -801%;
 }
 .tech.aspnet {
     background-position: -300% -800%;
@@ -1050,16 +1050,16 @@ ul.list li {
     background-position: -100% -900%;
 }
 .tech.mssas {
-    background-position: -200% -900%;
+    background-position: -200% -901%;
 }
 .tech.mssis {
-    background-position: -300% -900%;
+    background-position: -300% -901%;
 }
 .tech.miis {
-    background-position: 0% -1000%;
+    background-position: 0% -1000.7%;
 }
 .tech.mws {
-    background-position: -100% -1000%;
+    background-position: -100% -1000.7%;
 }
 .download_box {
     margin: 0;
@@ -3203,7 +3203,7 @@ li a {text-decoration: none;
     background-position: -300% -100%;
 }
 .tech.apache {
-    background-position: 0% -200%;
+    background-position: 0% -199.5%;
 }
 .tech.linux {
     background-position: -100% -200%;
@@ -3263,7 +3263,7 @@ li a {text-decoration: none;
     background-position: -300% -600%;
 }
 .tech.nginx {
-    background-position: 0% -700%;
+    background-position: 0% -701%;
 }
 .tech.jboss {
     background-position: -100% -700%;
@@ -3275,7 +3275,7 @@ li a {text-decoration: none;
     background-position: -300% -700%;
 }
 .tech.aws {
-    background-position: 0% -800%;
+    background-position: 0% -799.7%;
 }
 .tech.joomla {
     background-position: -100% -800%;
@@ -3287,7 +3287,7 @@ li a {text-decoration: none;
     background-position: -300% -800%;
 }
 .tech.msmq {
-    background-position: 0% -900%;
+    background-position: 0% -900.7%;
 }
 .tech.mssrs {
     background-position: -100% -900%;
