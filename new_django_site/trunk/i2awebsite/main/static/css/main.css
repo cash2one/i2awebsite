@@ -332,6 +332,17 @@ h5{
 
 }
 
+.circle--list {
+	margin-top: 20px;
+	list-style-type: circle;
+	padding-left: 20px;
+}
+
+.circle--list li {
+	padding: 5px 0;
+	text-align: left;
+}
+
 .header {
     clear: both;
     background-position: center;
