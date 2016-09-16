@@ -265,4 +265,9 @@ urlpatterns = patterns('',
         {'menu_pos': 'portfolio'},
         name='portfolio-battleship',
     ),
+    url(r'^portfolio/sandiego-museum-of-art/$', TemplateView.as_view(
+        template_name='portfolio/sandiego-museum.html'),
+        {'menu_pos': 'portfolio'},
+        name='portfolio-sandiego-museum',
+    ),
 )
