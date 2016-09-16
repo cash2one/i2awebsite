@@ -432,6 +432,11 @@ h5{
     background-image: url(../img/portfolio_headers/battleship.jpg);
 }
 
+.header.lookbooker {
+    height: 367px;
+    background-image: url(../img/portfolio_headers/lookbooker.jpg);
+}
+
 .header.sandiego-museum {
 	height: 367px;
     background-image: url(../img/portfolio_headers/sandiego-museum.jpg);
@@ -1276,6 +1281,10 @@ ul.list li {
 	background: url(../img/img_sandiego-museum.jpg) no-repeat;
 }
 
+.logotabel35{
+	background: url(../img/img_lookbooker.jpg) no-repeat;
+}
+
 .logorow{
 	float:center;
 	width:800px;
@@ -1889,7 +1898,7 @@ display:none;
     background-image: url(../img/page_headers/solutions.jpg);
 }
 
-.header.battleship,.header.sandiego-museum {
+.header.battleship,.header.sandiego-museum,.header.lookbooker {
 	width:100%;
     height: 140px;
 }
