@@ -260,5 +260,9 @@ urlpatterns = patterns('',
         {'menu_pos': 'portfolio'},
         name='portfolio-usnp',
     ),
-
+    url(r'^portfolio/battleship/$', TemplateView.as_view(
+        template_name='portfolio/battleship.html'),
+        {'menu_pos': 'portfolio'},
+        name='portfolio-battleship',
+    ),
 )
