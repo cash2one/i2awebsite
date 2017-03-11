@@ -1,0 +1,38 @@
+{% extends "base_portfolio.html" %}
+{% load staticfiles %}
+
+{% block header %}
+<div class="header bandwidthplace"></div>
+{% endblock header %}
+
+{% block content.idea %}
+                    <p>Build an online destination for all things broadband, including a Speed Test to measure and manage bandwidth performance.</p>
+
+{% endblock content.idea %}
+{% block content.technologies %}
+                <ul class="tech_icons">
+                    <li class="tech large mysql"></li>
+                    <li class="tech large apache"></li>
+                    <li class="tech large php5"></li>
+                    <li class="tech large jquery"></li>
+                </ul>
+{% endblock content.technologies %}
+{% block content.solution %}
+                    <p>Created a website that users can use at home, work, on a mobile or wireless device to test their speed without an application download.
+                        <br/><br/>We also built a Get More Speed feature that compares plans available near the user’s location. </p>
+{% endblock content.solution %}
+
+{% block content.bottom %}
+
+
+            <div class="wrapper">
+                <h1>Website</h1>
+                <div class="tight">
+
+
+                    <div class="centered"><a href="http://www.bandwidthplace.com" target="_blank"><img src="{% static "img/icon_www.png" %}"><br>Bandwidthplace.com</a></div>
+
+                </div>
+            </div>
+
+{% endblock content.bottom %}

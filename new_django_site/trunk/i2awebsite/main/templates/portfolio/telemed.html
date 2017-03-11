@@ -1,0 +1,38 @@
+{% extends "base_portfolio.html" %}
+{% load staticfiles %}
+
+{% block header %}
+<div class="header telemed"></div>
+{% endblock header %}
+
+{% block content.technologies %}
+                   
+<ul class="tech_icons">
+    <li class="tech large ios6"></li>
+    <li class="tech large android"></li>
+</ul>
+
+{% endblock content.technologies %}
+{% block content.idea %}
+
+                    <p>Create a HIPPA compliant tele-medicine app to help individuals get the professional medical help they need from a doctor or pharmacist through the convenience of a mobile app.</p>
+{% endblock content.idea %}
+{% block content.solution %}
+<p>
+The TeleMed App connects individuals to doctors and pharmacists within their insurance network to discuss ailments or specific medical concerns with them through text messaging, images and video conferencing directly from their mobile phone or tablet. 
+</p>
+<p>
+Key features include:
+    <ul class="circle--list">
+        <li>video, image and messaging capabilities with your doctor
+        <li>a robust search tool to find a TeleMed doctor and pharmacy within your insurance network
+        <li>the ability to invite family members to attend your appointment with you
+    </ul>
+</p>
+<p>
+A pharmacist is always on call during your appointment and can write prescriptions for you without you ever having to step foot in a doctor’s office. Medical concerns can be saved and included into your personal medical record for future reference and so your doctor can keep an eye on your condition.  
+This app is HIPPA compliant and adheres to all confidentiality measures to ensure all patients’ information is safe and secure.     
+</p>
+{% endblock content.solution %}
+
+

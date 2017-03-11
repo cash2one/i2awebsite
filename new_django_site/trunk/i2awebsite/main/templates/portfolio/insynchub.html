@@ -1,0 +1,46 @@
+{% extends "base_portfolio.html" %}
+{% load staticfiles %}
+
+{% block header %}
+<div class="header insynchub"></div>
+{% endblock header %}
+
+{% block content.idea %}
+                    <p>
+                        Build a web-based project management tool called inSyncHub to help companies large and small manage goals and ideas in one place from start to finish.
+                    </p>
+
+{% endblock content.idea %}
+{% block content.technologies %}
+                <ul class="tech_icons">
+                    <li class="tech large mysql"></li>
+                    <li class="tech large apache"></li>
+                    <li class="tech large python"></li>
+                    <li class="tech large jquery"></li>
+                    <li class="tech large django"></li>
+                </ul>
+{% endblock content.technologies %}
+{% block content.solution %}
+                    <p>
+                        i2a Solutions developed a system that breaks down projects into actionable tasks, assigns that work to teammates, and communicates to move projects forward.
+                        <br/><br/>In each task, users can add notes, comments, attachments, and provide estimations.
+                        <br/>Users can follow projects and tasks and, when the state of a project or task changes, followers get updates about the changes via email.
+                        <br/><br/>Another large feature offered is the Customer Relationship Management (CRM) tool, which helps manage interactions whether they are for future or current clients.
+                    </p>
+{% endblock content.solution %}
+
+{% block content.bottom %}
+
+
+            <div class="wrapper">
+                <h1>Website</h1>
+                <div class="tight">
+
+
+                    <div class="centered"><a href="https://insynchub.com" target="_blank"><img src="{% static "img/icon_www.png" %}"><br>InSyncHub.com</a></div>
+
+
+                </div>
+            </div>
+
+{% endblock content.bottom %}

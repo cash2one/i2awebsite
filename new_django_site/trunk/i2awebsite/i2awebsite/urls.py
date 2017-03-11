@@ -275,4 +275,49 @@ urlpatterns = patterns('',
         {'menu_pos': 'portfolio'},
         name='portfolio-lookbooker',
     ),
+    url(r'^portfolio/lifealert/$', TemplateView.as_view(
+        template_name='portfolio/lifealert.html'),
+        {'menu_pos': 'portfolio'},
+        name='portfolio-lifealert',
+    ),
+    url(r'^portfolio/venissimo/$', TemplateView.as_view(
+        template_name='portfolio/venissimo.html'),
+        {'menu_pos': 'portfolio'},
+        name='portfolio-venissimo',
+    ),
+    url(r'^portfolio/idwallet/$', TemplateView.as_view(
+        template_name='portfolio/idwallet.html'),
+        {'menu_pos': 'portfolio'},
+        name='portfolio-idwallet',
+    ),
+    url(r'^portfolio/telemed/$', TemplateView.as_view(
+        template_name='portfolio/telemed.html'),
+        {'menu_pos': 'portfolio'},
+        name='portfolio-telemed',
+    ),
+    url(r'^portfolio-mmajunkie/$', TemplateView.as_view(
+        template_name='portfolio/mmajunkie.html'),
+        {'menu_pos': 'portfolio'},
+        name='portfolio-mmajunkie',
+    ),
+    url(r'^portfolio-bandwidthplace/$', TemplateView.as_view(
+        template_name='portfolio/bandwidthplace.html'),
+        {'menu_pos': 'portfolio'},
+        name='portfolio-bandwidthplace',
+    ),
+    url(r'^portfolio-sportsusa/$', TemplateView.as_view(
+        template_name='portfolio/sportsusa.html'),
+        {'menu_pos': 'portfolio'},
+        name='portfolio-sportsusa',
+    ),
+    url(r'^portfolio-insynchub/$', TemplateView.as_view(
+        template_name='portfolio/insynchub.html'),
+        {'menu_pos': 'portfolio'},
+        name='portfolio-insynchub',
+    ),
+    url(r'^portfolio-theguru/$', TemplateView.as_view(
+        template_name='portfolio/theguru.html'),
+        {'menu_pos': 'portfolio'},
+        name='portfolio-theguru',
+    ),
 )
